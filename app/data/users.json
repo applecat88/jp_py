@@ -1,0 +1,12 @@
+{
+ "users": [
+  {
+   "name": "AppleCat Apple",
+   "identifier": "appleapplecat88@gmail.com",
+   "gender": "male",
+   "birth": "2001-01-01",
+   "salt": "7374064e7c368ffa6361bf1d20ac4198",
+   "password": "d12dfee387a3931c4c837307fb02379ebf9de63cef0fc4e54b89a23e36fbc866"
+  }
+ ]
+}

@@ -371,7 +371,15 @@ def base64_key():
     return base64.b64encode(os.urandom(16)).decode("ascii")
 
 
-def synthesize(text):
+def _mp3_bytes(data):
+    if not data or len(data) < 200:
+        return False
+    if data.startswith(b"ID3"):
+        return True
+    return data[0] == 255 and (data[1] & 0xE0) == 0xE0
+
+
+def synthesize(text, timeout=45):
     text = (text or "").strip()
     if not text:
         raise ValueError("empty text")
@@ -390,7 +398,7 @@ def synthesize(text):
         "X-RequestId:%s\r\nContent-Type:application/ssml+xml\r\nX-Timestamp:%sZ\r\nPath:ssml\r\n\r\n%s"
     ) % (request_id, stamp, ssml)
     sock = _connect(sec_ms_gec())
-    sock.settimeout(45)
+    sock.settimeout(timeout)
     try:
         _send_frame(sock, 1, config.encode("utf-8"))
         _send_frame(sock, 1, ssml_msg.encode("utf-8"))
@@ -434,13 +442,27 @@ def synthesize(text):
             pass
 
 
-def save(text, path):
+def save(text, path, timeout=45):
     folder = os.path.dirname(path)
     if folder and not os.path.isdir(folder):
         os.makedirs(folder)
-    data = synthesize(text)
-    with open(path, "wb") as handle:
+    data = synthesize(text, timeout)
+    if not _mp3_bytes(data):
+        raise IOError("no audio")
+    part = path + ".part"
+    with open(part, "wb") as handle:
         handle.write(data)
+    try:
+        if os.path.isfile(path):
+            os.remove(path)
+        os.rename(part, path)
+    except OSError:
+        with open(path, "wb") as handle:
+            handle.write(data)
+        try:
+            os.remove(part)
+        except OSError:
+            pass
     return len(data)
 
 

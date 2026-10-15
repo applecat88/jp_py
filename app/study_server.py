@@ -127,8 +127,34 @@ def clip_path(day_number, track, index, part):
     return os.path.join(folder, name)
 
 
-def _audio_ready(path):
-    return os.path.isfile(path) and os.path.getsize(path) > 200
+def _mp3_ready(path):
+    if not os.path.isfile(path):
+        return False
+    try:
+        if os.path.getsize(path) < 200:
+            return False
+        with open(path, "rb") as handle:
+            head = handle.read(3)
+    except OSError:
+        return False
+    if head.startswith(b"ID3"):
+        return True
+    return len(head) >= 2 and head[0] == 255 and (head[1] & 0xE0) == 0xE0
+
+
+def _discard_broken(path):
+    if not os.path.isfile(path) or _mp3_ready(path):
+        return
+    try:
+        age = time.time() - os.path.getmtime(path)
+    except OSError:
+        return
+    if age < 15:
+        return
+    try:
+        os.remove(path)
+    except OSError:
+        pass
 
 
 def cache_path(text):
@@ -138,36 +164,52 @@ def cache_path(text):
     return os.path.join(CACHE, digest + ".mp3")
 
 
-def cached_audio(text):
+def cached_audio(text, allow_network=True):
     path = cache_path(text)
-    if _audio_ready(path):
+    if _mp3_ready(path):
         return path
     legacy = os.path.join(AUDIO, os.path.basename(path))
-    if _audio_ready(legacy):
+    if _mp3_ready(legacy):
         shutil.copyfile(legacy, path)
         return path
-    native_voice.save(text, path)
+    if not allow_network:
+        raise IOError("local recording missing")
+    native_voice.save(text, path, timeout=12)
+    if not _mp3_ready(path):
+        raise IOError("recording not ready")
     return path
 
 
-def stored_audio(day_number, track, index, part, text):
+def stored_audio(day_number, track, index, part, text, allow_network=True, rebuild=False):
     path = clip_path(day_number, track, index, part)
-    if _audio_ready(path):
+    if rebuild:
+        _discard_broken(path)
+    if _mp3_ready(path):
         return path
+    if os.path.isfile(path):
+        time.sleep(0.4)
+        if _mp3_ready(path):
+            return path
     folder = os.path.dirname(path)
     if folder and not os.path.isdir(folder):
         os.makedirs(folder)
-    cached = cache_path(text)
-    legacy = os.path.join(AUDIO, os.path.basename(cached))
-    if _audio_ready(cached):
-        shutil.copyfile(cached, path)
-        return path
-    if _audio_ready(legacy):
-        shutil.copyfile(legacy, path)
-        return path
-    native_voice.save(text, path)
-    if not _audio_ready(cached):
-        shutil.copyfile(path, cached)
+    cached = cache_path(text) if text else ""
+    legacy = os.path.join(AUDIO, os.path.basename(cached)) if cached else ""
+    for source in (cached, legacy):
+        if source and _mp3_ready(source):
+            shutil.copyfile(source, path)
+            if _mp3_ready(path):
+                return path
+    if not allow_network:
+        raise IOError("local recording missing")
+    native_voice.save(text, path, timeout=12)
+    if not _mp3_ready(path):
+        raise IOError("recording not ready")
+    if cached and not _mp3_ready(cached):
+        try:
+            shutil.copyfile(path, cached)
+        except OSError:
+            pass
     return path
 
 
@@ -362,18 +404,24 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(payload)
 
-    def _audio_from_text(self, text, download_name, stored_path=None):
+    def _audio_from_text(self, text, download_name, stored_path=None, allow_network=True, rebuild=False):
         text = (text or "").strip()
         if not text or len(text) > 8000:
             self._send(400, "bad audio request", "text/plain; charset=utf-8")
             return
         try:
             if stored_path:
-                path = stored_audio(stored_path[0], stored_path[1], stored_path[2], stored_path[3], text)
+                path = stored_audio(
+                    stored_path[0], stored_path[1], stored_path[2], stored_path[3],
+                    text, allow_network, rebuild
+                )
             else:
-                path = cached_audio(text)
+                path = cached_audio(text, allow_network)
         except Exception:
-            self._send(502, "Japanese voice failed", "text/plain; charset=utf-8")
+            self._send(404, "recording not ready", "text/plain; charset=utf-8")
+            return
+        if not _mp3_ready(path):
+            self._send(404, "recording not ready", "text/plain; charset=utf-8")
             return
         self._send_mp3(path, download_name)
 
@@ -396,6 +444,8 @@ class Handler(BaseHTTPRequestHandler):
             track = (query.get("track") or ["dictation"])[0]
             part = (query.get("part") or [""])[0]
             download = (query.get("dl") or [""])[0] == "1"
+            allow_network = (query.get("local") or ["0"])[0] != "1"
+            rebuild = (query.get("rebuild") or [""])[0] == "1"
             text = audio_text(day_number, track, index, part)
             if part == "all":
                 name = "day-%02d-%s.mp3" % (day_number, track)
@@ -405,6 +455,8 @@ class Handler(BaseHTTPRequestHandler):
                 text,
                 name if download else "",
                 (day_number, track, index, part),
+                allow_network,
+                rebuild,
             )
             return
         if path == "/api/course":
@@ -444,8 +496,11 @@ class Handler(BaseHTTPRequestHandler):
         self._send(200, read_file(full), TYPES.get(ext, "text/plain; charset=utf-8"))
 
     def do_POST(self):
-        path = self.path.split("?", 1)[0]
+        parsed = urlparse(self.path)
+        path = parsed.path
         if path == "/api/audio":
+            query = parse_qs(parsed.query)
+            allow_network = (query.get("local") or ["0"])[0] != "1"
             length = int(self.headers.get("Content-Length", "0") or "0")
             if length < 0 or length > 1000000:
                 self._send(413, "too large", "text/plain; charset=utf-8")
@@ -457,7 +512,7 @@ class Handler(BaseHTTPRequestHandler):
                 self._send(400, "bad json", "text/plain; charset=utf-8")
                 return
             text = data.get("text") if isinstance(data, dict) else ""
-            self._audio_from_text(text if isinstance(text, str) else "", "")
+            self._audio_from_text(text if isinstance(text, str) else "", "", None, allow_network, False)
             return
         if path == "/api/logout":
             length = int(self.headers.get("Content-Length", "0") or "0")

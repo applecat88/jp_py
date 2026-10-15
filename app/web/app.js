@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var MODES = ["calendar", "study", "practice", "test", "listening"];
+  var MODES = ["calendar", "study", "practice", "test", "logs", "listening"];
   var course = null;
   var progress = null;
   var account = null;
@@ -9,6 +9,7 @@
   var session = {};
   var speakMap = {};
   var speakSeq = 0;
+  var logSeq = 0;
   var playToken = 0;
   var currentAudio = null;
   var saveTimer = null;
@@ -116,36 +117,42 @@
     var note = document.getElementById("voiceNote");
     if (!note) return;
     note.hidden = false;
-    note.textContent = "Each word, example, sentence, and reading line plays its own audio file from this project. Start and Stop, speed, and repeat count belong to that line. Pronunciation and Romaji can be shown or hidden on that line.";
+    note.textContent = "Recordings play from files saved in this project. If a file is missing or still downloading, Start tries again and the lesson stays open.";
+  }
+
+  function looksLikeMp3(buffer) {
+    var bytes = new Uint8Array(buffer);
+    if (bytes.length < 2) return false;
+    if (bytes[0] === 73 && bytes[1] === 68 && bytes[2] === 51) return true;
+    return bytes[0] === 255 && (bytes[1] & 224) === 224;
+  }
+
+  function noteAudio(message) {
+    var note = document.getElementById("voiceNote");
+    if (!note) return;
+    note.hidden = false;
+    note.textContent = message;
   }
 
   function speak(text, clip, rate) {
     var token = playToken;
     return new Promise(function (resolve) {
       var done = false;
+      var attempt = 0;
       function finish() {
         if (done) return;
         done = true;
         resolve();
       }
-      if (token !== playToken) {
-        finish();
-        return;
+      function failSoft() {
+        if (token !== playToken) {
+          finish();
+          return;
+        }
+        noteAudio("This recording is not ready yet. The lesson stays open, and Start will try the saved file again.");
+        window.setTimeout(finish, Math.max(900, Math.min(4000, String(text || "").length * 80)));
       }
-      var request;
-      if (clip && clip.day) {
-        request = fetch("/api/audio?day=" + clip.day + "&track=" + encodeURIComponent(clip.track) + "&i=" + clip.index);
-      } else {
-        request = fetch("/api/audio", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ text: text || "" })
-        });
-      }
-      request.then(function (response) {
-        if (token !== playToken || !response.ok) throw new Error("audio");
-        return response.blob();
-      }).then(function (blob) {
+      function playBlob(blob) {
         if (token !== playToken) {
           finish();
           return;
@@ -167,17 +174,59 @@
         audio.onerror = function () {
           URL.revokeObjectURL(url);
           if (currentAudio === audio) currentAudio = null;
-          finish();
+          again();
         };
+        loadVoices();
         var started = audio.play();
         if (started && started.catch) started.catch(function () { finish(); });
-      }).catch(function () {
+      }
+      function again() {
         if (token !== playToken) {
           finish();
           return;
         }
-        window.setTimeout(finish, Math.max(1400, String(text || "").length * 160));
-      });
+        attempt += 1;
+        if (attempt > 3) {
+          failSoft();
+          return;
+        }
+        window.setTimeout(fetchOnce, attempt === 1 ? 0 : 450 * (attempt - 1));
+      }
+      function fetchOnce() {
+        if (token !== playToken) {
+          finish();
+          return;
+        }
+        var local = attempt < 3 ? "1" : "0";
+        var rebuild = attempt === 2 ? "&rebuild=1" : "";
+        var request;
+        if (clip && clip.day) {
+          request = fetch("/api/audio?day=" + clip.day + "&track=" + encodeURIComponent(clip.track) + "&i=" + clip.index + "&local=" + local + rebuild);
+        } else {
+          request = fetch("/api/audio?local=" + local, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ text: text || "" })
+          });
+        }
+        request.then(function (response) {
+          if (token !== playToken || !response.ok) throw new Error("audio");
+          return response.blob();
+        }).then(function (blob) {
+          if (!blob || blob.size < 200) throw new Error("short");
+          return blob.slice(0, 4).arrayBuffer().then(function (head) {
+            if (!looksLikeMp3(head)) throw new Error("bad");
+            return blob;
+          });
+        }).then(playBlob).catch(function () {
+          if (token !== playToken) {
+            finish();
+            return;
+          }
+          again();
+        });
+      }
+      again();
     });
   }
 
@@ -261,13 +310,22 @@
     return html;
   }
 
+  function settingsDisabled() {
+    return session.playing ? " disabled" : "";
+  }
+
+  function syncSettingLock() {
+    document.body.classList.toggle("listening-live", !!session.playing);
+  }
+
   function itemControls(track, index) {
     var prefs = itemPrefs(track, index);
+    var locked = settingsDisabled();
     return '<div class="item-play">' +
       '<button type="button" class="small primary" data-act="item-start" data-track="' + track + '" data-index="' + index + '">Start</button>' +
       '<button type="button" class="small" data-act="stop">Stop</button>' +
-      '<label>Times <input class="item-times" type="number" min="1" max="10" step="1" value="' + prefs.times + '"></label>' +
-      '<label>Speed <input class="item-rate" type="range" min="0.6" max="1.2" step="0.1" value="' + prefs.rate + '"></label>' +
+      '<label class="setting">Times <input class="item-times" type="number" min="1" max="10" step="1" value="' + prefs.times + '"' + locked + '></label>' +
+      '<label class="setting">Speed <input class="item-rate" type="range" min="0.6" max="1.2" step="0.1" value="' + prefs.rate + '"' + locked + '></label>' +
       '<label class="check"><input class="item-guide" data-guide="pron" type="checkbox"' + (prefs.pron ? " checked" : "") + "> Pronunciation</label>" +
       '<label class="check"><input class="item-guide" data-guide="roma" type="checkbox"' + (prefs.roma ? " checked" : "") + "> Romaji</label>" +
       '<span class="review-status" data-status="' + track + "-" + index + '"></span></div>';
@@ -297,6 +355,7 @@
     var token = ++playToken;
     session.playing = true;
     session.itemPlaying = track + "-" + index;
+    syncSettingLock();
     speakRepeats(line.jp, prefs.times, token, function (pass, count) {
       var label = document.querySelector('[data-status="' + track + "-" + index + '"]');
       if (label) label.textContent = pass + " / " + count;
@@ -304,6 +363,7 @@
       if (!finished || token !== playToken) return;
       session.playing = false;
       session.itemPlaying = null;
+      syncSettingLock();
       var label = document.querySelector('[data-status="' + track + "-" + index + '"]');
       if (label) label.textContent = "";
     });
@@ -351,6 +411,7 @@
   function stopAudio() {
     playToken += 1;
     session.playing = false;
+    syncSettingLock();
     if (currentAudio) {
       currentAudio.pause();
       currentAudio = null;
@@ -396,12 +457,43 @@
     speakMap = {};
     renderDays();
     renderModes();
+    paintChrome();
     var view = document.getElementById("view");
     if (progress.mode === "calendar") view.innerHTML = calendarHTML();
     else if (progress.mode === "study") view.innerHTML = studyHTML();
     else if (progress.mode === "practice") view.innerHTML = practiceHTML();
     else if (progress.mode === "test") view.innerHTML = testHTML();
+    else if (progress.mode === "logs") view.innerHTML = logsHTML();
     else view.innerHTML = listeningHTML();
+    syncSettingLock();
+  }
+
+  function paintChrome() {
+    var studied = 0;
+    var n;
+    for (n = 1; n <= dayCount(); n++) if (record(n).studied) studied += 1;
+    var lesson = dayForDate(parseDate(todayISO()));
+    var progressLine = document.getElementById("footProgress");
+    var nextLine = document.getElementById("footNext");
+    if (progressLine) {
+      progressLine.textContent = studied + " of " + dayCount() + " lessons studied" +
+        (account && account.identifier ? " · " + account.identifier : "");
+    }
+    if (!nextLine) return;
+    if (!lesson) {
+      nextLine.textContent = "Today is outside this course.";
+      return;
+    }
+    var misses = (record(lesson).misses || []).length;
+    if (misses) {
+      nextLine.textContent = "Lesson " + lesson + " has " + misses + " answers to review.";
+      return;
+    }
+    if (record(lesson).studied) {
+      nextLine.textContent = "Today is lesson " + lesson + ". Review it, then listen once more.";
+      return;
+    }
+    nextLine.textContent = "Today is lesson " + lesson + ". Study, listen, write, then take the test.";
   }
 
   function renderModes() {
@@ -447,7 +539,15 @@
     Object.keys(days).forEach(function (key) {
       (days[key].tests || []).forEach(function (test) {
         if (!test || !test.at) return;
-        list.push({ day: Number(key), score: Number(test.score) || 0, total: Number(test.total) || 0, at: test.at });
+        list.push({
+          id: test.id || "",
+          day: Number(key),
+          score: Number(test.score) || 0,
+          total: Number(test.total) || 0,
+          at: test.at,
+          identifier: test.identifier || "",
+          attempts: Number(test.attempts) || 1
+        });
       });
     });
     return list;
@@ -508,15 +608,16 @@
       "<div><dt>Correct</dt><dd>" + correct + "</dd></div>" +
       "<div><dt>Incorrect</dt><dd>" + incorrect + "</dd></div>" +
       "<div><dt>Score</dt><dd>" + scoreScale(test) + " / 10</dd></div>" +
+      (Number(test.attempts) > 1 ? "<div><dt>Sittings</dt><dd>" + Number(test.attempts) + "</dd></div>" : "") +
       "</dl>";
   }
 
   function testHistoryHTML() {
     var mode = session.testSort || "date";
     var cards = sortTests(collectedTests(), mode).map(function (test) {
-      return '<div class="score-card">' + scoreDetailHTML(test) + "</div>";
+      return '<div class="score-card">' + scoreDetailHTML(test) + logActions("test", test.id) + "</div>";
     }).join("");
-    return '<div class="card"><h3>Past results</h3><p class="meta">The score is calculated from the answers. Sort the list, and the same score appears on the calendar at the time it was earned.</p>' +
+    return '<div class="card"><h3>Exam history</h3><p class="meta">Each lesson keeps one result. A new exam replaces that day’s result. Delete removes it.</p>' +
       '<label>Sort <select id="testSort">' +
       '<option value="date"' + (mode === "date" ? " selected" : "") + ">Date</option>" +
       '<option value="time"' + (mode === "time" ? " selected" : "") + ">Time</option>" +
@@ -606,17 +707,252 @@
     }).join("");
     return '<p class="kicker">Day ' + day.day + " · " + iso(lessonDate(day.day)) + "</p>" +
       "<h2>" + esc(day.title) + "</h2><p class=\"goal\">" + esc(day.goal) + "</p>" +
+      '<nav class="path" aria-label="Lesson steps">' +
+      '<a href="#vocab">Vocabulary</a><a href="#examples">Examples</a><a href="#sentences">Sentences</a>' +
+      '<a href="#reading">Reading</a><a href="#writing">Writing</a><a href="#listening">Listening</a><a href="#check">Check</a></nav>' +
       '<div class="row"><button type="button" class="primary" data-act="studied">Mark studied</button>' +
       '<button type="button" data-act="play-script">Play listening script</button></div>' +
-      '<div class="card"><h3>Vocabulary</h3>' + reviewControls("word") + words + "</div>" +
-      '<div class="card"><h3>Examples</h3>' + reviewControls("grammar") +
+      reviewCard() +
+      lessonLogSummary() +
+      '<div class="card" id="vocab"><h3>Vocabulary</h3>' + reviewControls("word") + words + "</div>" +
+      '<div class="card" id="examples"><h3>Examples</h3>' + reviewControls("grammar") +
       "<p class=\"meta\">Each example uses the audio file for that sentence. Start plays it. Stop ends it.</p></div>" + grammar +
-      '<div class="card"><h3>Sentences</h3>' + reviewControls("sentence") + sentences + "</div>" +
-      '<div class="card"><h3>Reading</h3>' + reading + "</div>" +
-      '<div class="card"><h3>Writing</h3><ol>' + writing + "</ol></div>" +
-      '<div class="card"><h3>Listening</h3>' + listeningBlock(false) + "</div>" +
-      '<div class="card"><h3>Check</h3><ol>' + quiz + "</ol>" +
+      '<div class="card" id="sentences"><h3>Sentences</h3>' + reviewControls("sentence") + sentences + "</div>" +
+      '<div class="card" id="reading"><h3>Reading</h3>' + reading + "</div>" +
+      '<div class="card" id="writing"><h3>Writing</h3><ol>' + writing + "</ol></div>" +
+      '<div class="card" id="listening"><h3>Listening</h3>' + listeningBlock(false) + "</div>" +
+      '<div class="card" id="check"><h3>Check</h3><ol>' + quiz + "</ol>" +
       '<button type="button" data-act="quiz-answers">Show check answers</button></div>';
+  }
+
+  function reviewCard() {
+    var misses = (record(progress.selectedDay).misses || []).slice(0, 8);
+    if (!misses.length) return "";
+    var rows = misses.map(function (item) {
+      return "<li><p class=\"jp\">" + esc(item.prompt) + "</p><p class=\"en\">" + esc(item.answer) + "</p></li>";
+    }).join("");
+    return '<div class="card" id="review"><h3>Review</h3><p class="meta">These answers did not match on the last test for this lesson. Read them once, then try the test again.</p><ol>' + rows + "</ol></div>";
+  }
+
+  function newLogId() {
+    logSeq += 1;
+    return "l" + Date.now().toString(36) + logSeq.toString(36);
+  }
+
+  function localInputValue(isoText) {
+    var date = new Date(isoText);
+    if (isNaN(date.getTime())) return "";
+    return iso(date) + "T" + pad(date.getHours()) + ":" + pad(date.getMinutes());
+  }
+
+  function fromLocalInput(value) {
+    var parts = String(value || "").split("T");
+    if (parts.length < 2) return null;
+    var day = parts[0].split("-");
+    var time = parts[1].split(":");
+    if (day.length < 3 || time.length < 2) return null;
+    var date = new Date(Number(day[0]), Number(day[1]) - 1, Number(day[2]), Number(time[0]), Number(time[1]), 0);
+    return isNaN(date.getTime()) ? null : date;
+  }
+
+  function eachRecord(fn) {
+    var days = progress.days || {};
+    Object.keys(days).forEach(function (key) { fn(days[key], Number(key)); });
+  }
+
+  function ensureLogs() {
+    var changed = false;
+    eachRecord(function (rec, day) {
+      rec.tests = rec.tests || [];
+      rec.studyLogs = rec.studyLogs || [];
+      var before = rec.tests.length;
+      rec.tests = consolidateDayTests(rec.tests);
+      if (rec.tests.length !== before) changed = true;
+      rec.tests.forEach(function (test) {
+        if (test && !test.id) {
+          test.id = newLogId();
+          changed = true;
+        }
+      });
+      if (rec.studied && !rec.studyLogs.length) {
+        var when = rec.tests[0] && rec.tests[0].at ? new Date(rec.tests[0].at) : lessonDate(day);
+        if (!rec.tests[0] || !rec.tests[0].at) when.setHours(12, 0, 0, 0);
+        rec.studyLogs.push({ id: newLogId(), at: when.toISOString(), note: "Studied" });
+        changed = true;
+      }
+    });
+    if (changed) save();
+  }
+
+  function consolidateDayTests(list) {
+    var kept = null;
+    var sittings = 0;
+    (list || []).forEach(function (test) {
+      if (!test || !test.at) return;
+      sittings += Number(test.attempts) || 1;
+      if (!kept || String(test.at) > String(kept.at)) kept = test;
+    });
+    if (!kept) return [];
+    if ((Number(kept.attempts) || 1) !== sittings) kept.attempts = sittings;
+    return [kept];
+  }
+
+  function collectedStudy() {
+    var list = [];
+    eachRecord(function (rec, day) {
+      (rec.studyLogs || []).forEach(function (item) {
+        if (!item || !item.at) return;
+        list.push({ id: item.id, day: day, at: item.at, note: item.note || "Studied" });
+      });
+    });
+    list.sort(function (a, b) { return String(b.at).localeCompare(String(a.at)); });
+    return list;
+  }
+
+  function pullFrom(kind, id) {
+    var found = null;
+    eachRecord(function (rec) {
+      var key = kind === "test" ? "tests" : "studyLogs";
+      var list = rec[key] || [];
+      var next = [];
+      list.forEach(function (item) {
+        if (item && item.id === id && !found) found = item;
+        else next.push(item);
+      });
+      rec[key] = next;
+      if (kind === "study" && !next.length) rec.studied = false;
+    });
+    return found;
+  }
+
+  function logActions(kind, id) {
+    if (!id) return "";
+    if (kind === "test") {
+      return '<div class="row"><button type="button" data-act="log-delete" data-kind="test" data-id="' + esc(id) + '">Delete</button></div>';
+    }
+    return '<div class="row"><button type="button" data-act="log-edit" data-kind="' + kind + '" data-id="' + esc(id) + '">Update</button>' +
+      '<button type="button" data-act="log-delete" data-kind="' + kind + '" data-id="' + esc(id) + '">Delete</button></div>';
+  }
+
+  function logFormHTML(kind) {
+    var form = session.logForm;
+    if (!form || form.kind !== kind || kind === "test") return "";
+    var extra = '<label>Note <input id="logNote" type="text" maxlength="80" value="' + esc(form.note || "") + '"></label>';
+    return '<div class="log-form"><p><strong>' + (form.id ? "Update this log" : "Add a log") + "</strong></p>" +
+      '<label>Lesson <input id="logDay" type="number" min="1" max="' + dayCount() + '" value="' + esc(form.day) + '"></label>' +
+      '<label>When <input id="logWhen" type="datetime-local" value="' + esc(form.when) + '"></label>' +
+      extra +
+      (session.logError ? '<p class="form-error">' + esc(session.logError) + "</p>" : "") +
+      '<div class="row"><button type="button" class="primary" data-act="log-save">Save</button>' +
+      '<button type="button" data-act="log-cancel">Cancel</button></div></div>';
+  }
+
+  function logListHTML(kind, items) {
+    if (!items.length) return "<p>No logs yet.</p>";
+    return items.map(function (item) {
+      var when = new Date(item.at);
+      var body = kind === "test"
+        ? scoreDetailHTML(item)
+        : "<p><strong>Day " + item.day + "</strong> · " + esc(item.note) + "</p><p class=\"meta\">" +
+          esc(iso(when) + " · " + clock(item.at)) + "</p>";
+      return '<div class="log-row">' + body + logActions(kind, item.id) + "</div>";
+    }).join("");
+  }
+
+  function lessonLogSummary() {
+    var day = progress.selectedDay;
+    var studies = collectedStudy().filter(function (item) { return item.day === day; });
+    var tests = collectedTests().filter(function (item) { return item.day === day; });
+    if (!studies.length && !tests.length) return "";
+    return '<div class="card"><h3>Logs for this lesson</h3>' +
+      (studies.length ? "<h4>Study</h4>" + logListHTML("study", studies) : "") +
+      (tests.length ? "<h4>Exam</h4>" + logListHTML("test", tests) : "") +
+      '<p><button type="button" data-act="mode" data-mode="logs">Open all logs</button></p></div>';
+  }
+
+  function logsHTML() {
+    var studies = collectedStudy();
+    var tests = sortTests(collectedTests(), "date");
+    return '<p class="kicker">Logs</p><h2>' + esc(currentDay().title) + "</h2>" +
+      "<p class=\"goal\">Study notes can be added or changed. Exam history keeps one result per lesson, and that result can only be deleted.</p>" +
+      '<div class="card"><h3>Study logs</h3><p class="meta">' + studies.length + " saved.</p>" +
+      '<p><button type="button" class="primary" data-act="log-add" data-kind="study">Add study log</button></p>' +
+      logFormHTML("study") + logListHTML("study", studies) + "</div>" +
+      '<div class="card"><h3>Exam history</h3><p class="meta">One result for each lesson. ' + tests.length + " saved.</p>" +
+      logListHTML("test", tests) + "</div>";
+  }
+
+  function readLogForm() {
+    var form = session.logForm;
+    if (!form) return;
+    var day = document.getElementById("logDay");
+    var when = document.getElementById("logWhen");
+    var note = document.getElementById("logNote");
+    var correct = document.getElementById("logCorrect");
+    var total = document.getElementById("logTotal");
+    if (day) form.day = day.value;
+    if (when) form.when = when.value;
+    if (note) form.note = note.value;
+    if (correct) form.correct = correct.value;
+    if (total) form.total = total.value;
+  }
+
+  function openLogForm(kind, item) {
+    progress.mode = "logs";
+    session.logError = "";
+    session.logForm = {
+      kind: kind,
+      id: item ? item.id : "",
+      day: item ? item.day : (progress.selectedDay || 1),
+      when: localInputValue(item ? item.at : new Date().toISOString()),
+      note: item ? (item.note || "Studied") : "Studied",
+      correct: item ? item.score : 0,
+      total: item ? item.total : 18
+    };
+  }
+
+  function saveLogForm() {
+    readLogForm();
+    var form = session.logForm;
+    if (!form || form.kind === "test") return;
+    var day = parseInt(form.day, 10);
+    var when = fromLocalInput(form.when);
+    if (!day || day < 1 || day > dayCount() || !when) {
+      session.logError = "Enter a lesson number and a date.";
+      render();
+      return;
+    }
+    var study = form.id ? pullFrom("study", form.id) : null;
+    if (!study) study = { id: form.id || newLogId() };
+    study.at = when.toISOString();
+    study.note = String(form.note || "").trim() || "Studied";
+    var studyRec = record(day);
+    studyRec.studyLogs = studyRec.studyLogs || [];
+    studyRec.studyLogs.push(study);
+    studyRec.studied = true;
+    session.logForm = null;
+    session.logError = "";
+    save();
+    render();
+  }
+
+  function clipForText(jp) {
+    var wanted = String(jp || "").trim();
+    if (!wanted || !course || !course.days) return null;
+    var i, j, item, parts, index;
+    for (i = 0; i < course.days.length; i++) {
+      var clips = course.days[i].audio || [];
+      for (j = 0; j < clips.length; j++) {
+        item = clips[j];
+        if (String(item.jp || "").trim() !== wanted) continue;
+        parts = String(item.file || "").split("/");
+        if (parts.length < 3) continue;
+        index = parseInt(parts[2], 10);
+        if (!index) continue;
+        return { day: course.days[i].day, track: parts[1], index: index - 1 };
+      }
+    }
+    return null;
   }
 
   function ensurePractice() {
@@ -718,7 +1054,8 @@
         romaji: line.romaji,
         answer: line.en,
         options: optionsFor(line.en, lineEnglish),
-        played: false
+        played: false,
+        clip: clipForText(line.jp)
       });
     });
     currentDay().quiz.forEach(function (item) {
@@ -864,9 +1201,9 @@
       '<button type="button" class="primary" data-act="play-all">Start</button>' +
       '<button type="button" data-act="stop">Stop</button>' +
       '<label class="timeline">Timeline <input id="timeline" type="range" min="0" max="' + max + '" step="1" value="' + index + '"> <span id="timelineLabel">' + place + "</span></label>" +
-      '<label>Times <input id="repeats" type="number" min="1" max="10" step="1" value="' + times + '"></label>' +
+      '<label class="setting">Times <input id="repeats" type="number" min="1" max="10" step="1" value="' + times + '"' + settingsDisabled() + '></label>' +
       '<label>Volume <input id="volume" type="range" min="0" max="1" step="0.05" value="' + volumeLevel() + '"> <span id="volumeLabel">' + Math.round(volumeLevel() * 100) + "%</span></label>" +
-      '<label>Speed <input id="rate" type="range" min="0.6" max="1.2" step="0.1" value="' + esc(progress.rate || 0.9) + '"></label>' +
+      '<label class="setting">Speed <input id="rate" type="range" min="0.6" max="1.2" step="0.1" value="' + esc(progress.rate || 0.9) + '"' + settingsDisabled() + '></label>' +
       '<a class="small dl" href="' + audioHref(state.day, state.track, 0, true) + '">Download</a>' +
       '<div class="passbar" aria-hidden="true"><span style="width:' + passWidth + '%"></span></div></div>';
   }
@@ -926,7 +1263,7 @@
 
   function reviewControls(track) {
     var times = clampRepeats(progress.repeats || 1);
-    return '<div class="review-head"><label>Times <input class="study-times" type="number" min="1" max="10" step="1" value="' + times + '"></label>' +
+    return '<div class="review-head"><label class="setting">Times <input class="study-times" type="number" min="1" max="10" step="1" value="' + times + '"' + settingsDisabled() + '></label>' +
       '<button type="button" class="primary" data-act="review-start" data-track="' + track + '">Start</button>' +
       '<button type="button" data-act="stop">Stop</button>' +
       '<span class="review-status" data-status="' + track + '"></span></div>';
@@ -961,11 +1298,13 @@
     var token = ++playToken;
     session.playing = true;
     session.studyReview = track;
+    syncSettingLock();
     function step(index) {
       if (token !== playToken) return;
       if (index >= lines.length) {
         session.playing = false;
         session.studyReview = null;
+        syncSettingLock();
         clearStudyMark();
         return;
       }
@@ -1027,6 +1366,7 @@
   function playLines(lines, start) {
     var token = ++playToken;
     session.playing = true;
+    syncSettingLock();
     function step(index) {
       if (token !== playToken) return;
       if (index >= lines.length) {
@@ -1124,7 +1464,51 @@
       return;
     }
     if (act === "studied") {
-      record(progress.selectedDay).studied = true;
+      var studiedRec = record(progress.selectedDay);
+      studiedRec.studied = true;
+      studiedRec.studyLogs = studiedRec.studyLogs || [];
+      studiedRec.studyLogs.push({ id: newLogId(), at: new Date().toISOString(), note: "Studied" });
+      save();
+      render();
+      return;
+    }
+    if (act === "log-add") {
+      if (el.getAttribute("data-kind") === "test") return;
+      openLogForm(el.getAttribute("data-kind"), null);
+      render();
+      return;
+    }
+    if (act === "log-edit") {
+      var editKind = el.getAttribute("data-kind");
+      if (editKind === "test") return;
+      var editId = el.getAttribute("data-id");
+      var editItem = null;
+      if (editKind === "test") {
+        collectedTests().forEach(function (item) { if (item.id === editId) editItem = item; });
+      } else {
+        collectedStudy().forEach(function (item) { if (item.id === editId) editItem = item; });
+      }
+      if (!editItem) return;
+      openLogForm(editKind, editItem);
+      render();
+      return;
+    }
+    if (act === "log-save") {
+      saveLogForm();
+      return;
+    }
+    if (act === "log-cancel") {
+      session.logForm = null;
+      session.logError = "";
+      render();
+      return;
+    }
+    if (act === "log-delete") {
+      var deleteKind = el.getAttribute("data-kind");
+      var deleteId = el.getAttribute("data-id");
+      if (!window.confirm(deleteKind === "test" ? "Delete this exam result?" : "Delete this study log?")) return;
+      pullFrom(deleteKind, deleteId);
+      if (session.logForm && session.logForm.id === deleteId) session.logForm = null;
       save();
       render();
       return;
@@ -1233,7 +1617,8 @@
       var item = session.test.items[session.test.index];
       session.test.picked = item.options[Number(el.getAttribute("data-index"))];
       session.test.checked = true;
-      if (session.test.picked === item.answer) session.test.score += 1;
+      item.correct = session.test.picked === item.answer;
+      if (item.correct) session.test.score += 1;
       render();
       return;
     }
@@ -1246,7 +1631,7 @@
       speakRepeats(listenItem.jp, 3, questionToken, function (pass) {
         listenItem.pass = pass;
         render();
-      }).then(function (finished) {
+      }, listenItem.clip || clipForText(listenItem.jp)).then(function (finished) {
         if (!finished) return;
         listenItem.phase = "ask";
         listenItem.played = true;
@@ -1294,6 +1679,7 @@
       var lineToken = ++playToken;
       var lineTimes = listenRepeats();
       session.playing = true;
+      syncSettingLock();
       session.listen.index = index;
       var line = listeningTracks(currentDay())[session.listen.track][index];
       speakRepeats(line.jp, lineTimes, lineToken, function (pass, count) {
@@ -1304,6 +1690,7 @@
         if (!finished) return;
         session.listen.revealed[index] = true;
         session.playing = false;
+        syncSettingLock();
         session.listen.pass = 0;
         render();
       });
@@ -1335,13 +1722,30 @@
     session.test.done = true;
     session.test.takenAt = new Date().toISOString();
     var rec = record(progress.selectedDay);
-    rec.tests.push({
+    var previous = consolidateDayTests(rec.tests || [])[0];
+    var sittings = ((previous && Number(previous.attempts)) || (rec.tests || []).length) + (previous ? 1 : 1);
+    if (!previous) sittings = 1;
+    rec.tests = [{
+      id: previous && previous.id ? previous.id : newLogId(),
       score: session.test.score,
       total: session.test.items.length,
       at: session.test.takenAt,
       scope: session.scope || "day",
-      identifier: account && account.identifier ? account.identifier : ""
+      identifier: account && account.identifier ? account.identifier : "",
+      attempts: sittings
+    }];
+    rec.studyLogs = rec.studyLogs || [];
+    if (!rec.studyLogs.length) {
+      rec.studyLogs.push({ id: newLogId(), at: session.test.takenAt, note: "Studied" });
+    }
+    var misses = [];
+    (session.test.items || []).forEach(function (item) {
+      if (item.correct) return;
+      var prompt = item.type === "quiz" ? item.q : (item.type === "listen" ? item.jp : item.prompt);
+      var answer = item.answer || item.a || "";
+      if (prompt) misses.push({ prompt: prompt, answer: answer });
     });
+    rec.misses = misses.slice(0, 12);
     rec.studied = true;
     save();
   }
@@ -1484,6 +1888,7 @@
       render();
     });
     document.getElementById("view").addEventListener("input", function (event) {
+      if (session.playing && event.target.closest && event.target.closest("label.setting")) return;
       if (event.target.id === "writeBox" && session.practice) session.practice.draft = event.target.value;
       if (event.target.id === "hideLines" && session.listen) {
         session.listen.hide = event.target.checked;
@@ -1543,6 +1948,7 @@
         }
       }
       if (event.target.id === "repeats") {
+        if (session.playing) return;
         progress.repeats = clampRepeats(event.target.value);
         event.target.value = progress.repeats;
         save();
@@ -1587,6 +1993,7 @@
     var lesson = dayForDate(parseDate(todayISO()));
     if (lesson && !saved) progress.selectedDay = lesson;
     session.month = lessonDate(progress.selectedDay);
+    ensureLogs();
     bind();
     loadVoices();
     if (window.speechSynthesis) speechSynthesis.onvoiceschanged = loadVoices;

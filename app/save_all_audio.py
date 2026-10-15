@@ -22,7 +22,38 @@ TRACKS = ("word", "grammar", "sentence", "reading", "dictation")
 
 
 def ready(path):
-    return os.path.isfile(path) and os.path.getsize(path) > 200
+    if not os.path.isfile(path):
+        return False
+    try:
+        if os.path.getsize(path) < 200:
+            return False
+        with open(path, "rb") as handle:
+            head = handle.read(3)
+    except OSError:
+        return False
+    if head.startswith(b"ID3"):
+        return True
+    return len(head) >= 2 and head[0] == 255 and (head[1] & 0xE0) == 0xE0
+
+
+def write_bytes(path, data):
+    folder = os.path.dirname(path)
+    if folder and not os.path.isdir(folder):
+        os.makedirs(folder)
+    part = path + ".part"
+    with open(part, "wb") as handle:
+        handle.write(data)
+    try:
+        if os.path.isfile(path):
+            os.remove(path)
+        os.rename(part, path)
+    except OSError:
+        with open(path, "wb") as handle:
+            handle.write(data)
+        try:
+            os.remove(part)
+        except OSError:
+            pass
 
 
 def log(message):
@@ -59,17 +90,10 @@ def jobs():
 def place(data, dests):
     if not os.path.isdir(CACHE):
         os.makedirs(CACHE)
-    import hashlib
-    digest = hashlib.sha1(dests and b"" or b"")
-    # cache by the spoken text is handled by the caller via the first write
     for dest in dests:
         if ready(dest):
             continue
-        folder = os.path.dirname(dest)
-        if folder and not os.path.isdir(folder):
-            os.makedirs(folder)
-        with open(dest, "wb") as handle:
-            handle.write(data)
+        write_bytes(dest, data)
 
 
 def write_all(course):
@@ -130,10 +154,7 @@ def main():
                 data = handle.read()
         else:
             data = native_voice.synthesize(text)
-            if not os.path.isdir(CACHE):
-                os.makedirs(CACHE)
-            with open(cached, "wb") as handle:
-                handle.write(data)
+            write_bytes(cached, data)
         place(data, dests)
 
     queue = list(pending)

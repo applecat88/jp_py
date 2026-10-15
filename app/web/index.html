@@ -44,16 +44,27 @@
   <div id="app">
     <header class="top">
       <div class="brand">
-        <p class="eyebrow">Client work</p>
-        <h1>Japanese study</h1>
+        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="16" fill="#f3ecdf"/>
+          <path d="M32 12c7 7 12 13 12 21a12 12 0 0 1-24 0c0-8 5-14 12-21z" fill="#243f36"/>
+          <circle cx="32" cy="33" r="3" fill="#a33b2b"/>
+        </svg>
+        <div>
+          <p class="eyebrow">Client work</p>
+          <h1>Japanese study</h1>
+        </div>
       </div>
-      <div class="controls">
-        <label>Course start <input id="startDate" type="date"></label>
-        <button id="todayBtn" type="button">Today's lesson</button>
-        <label class="check"><input id="hidePronunciation" type="checkbox"> Hide pronunciation</label>
-        <label class="check"><input id="hideRomaji" type="checkbox"> Hide romaji</label>
-        <p id="who" class="who" hidden></p>
-        <button id="signOut" type="button" hidden>Sign out</button>
+      <div class="header-actions">
+        <div class="header-row">
+          <button id="todayBtn" type="button">Today's lesson</button>
+          <p id="who" class="who" hidden></p>
+          <button id="signOut" type="button" hidden>Sign out</button>
+        </div>
+        <div class="header-row tools">
+          <label>Course start <input id="startDate" type="date"></label>
+          <label class="check"><input id="hidePronunciation" type="checkbox"> Hide pronunciation</label>
+          <label class="check"><input id="hideRomaji" type="checkbox"> Hide romaji</label>
+        </div>
       </div>
     </header>
     <p id="voiceNote" class="voice" hidden></p>
@@ -69,6 +80,10 @@
         <div id="view"></div>
       </main>
     </div>
+    <footer class="foot">
+      <p id="footProgress">Japanese study</p>
+      <p id="footNext">Sign in to open today's lesson.</p>
+    </footer>
   </div>
   <script src="app.js"></script>
 </body>
