@@ -1,0 +1,956 @@
+{
+ "76": [
+  {
+   "en": "It is not only that we want to stop paper.",
+   "romaji": "Kokyaku: Kami o yametai dake de wa arimasen."
+  },
+  {
+   "en": "The copying hurts too.",
+   "romaji": "Tenki mo itai desu."
+  },
+  {
+   "en": "Is it correct that it is not only paper but the copying too?",
+   "romaji": "Kaihatsu: Kami dake de naku tenki mo, to iu rikai de atte imasu ka."
+  },
+  {
+   "en": "Yes.",
+   "romaji": "Kokyaku: Hai."
+  },
+  {
+   "en": "Now it is two days, and we want it the same day.",
+   "romaji": "Ima wa futsuka de, tōjitsu ni shitai desu."
+  },
+  {
+   "en": "Those are the current figure and the target, right?",
+   "romaji": "Kaihatsu: Sore ga genjōchi to mokuhyōchi desu ne."
+  },
+  {
+   "en": "May the side route wait until the next round?",
+   "romaji": "Fuku keiro wa jikai de yoi desu ka."
+  },
+  {
+   "en": "Yes.",
+   "romaji": "Kokyaku: Yoi desu."
+  },
+  {
+   "en": "Success is speed, and a record of who pressed it.",
+   "romaji": "Seikō wa, hayasa to dare ga oshita ka ga nokoru koto desu."
+  }
+ ],
+ "68": [
+  {
+   "en": "Please add an amount column to the list.",
+   "romaji": "Kokyaku: Ichiran ni kingaku no retsu o tashite kudasai."
+  },
+  {
+   "en": "That is the whole change, and it is outside the frozen baseline.",
+   "romaji": "Kaihatsu: Henkō naiyō wa sore dake de, bēsurain no soto desu."
+  },
+  {
+   "en": "Does the date move?",
+   "romaji": "Kokyaku: Hizuke wa ugokimasu ka."
+  },
+  {
+   "en": "There is no schedule difference, and the effort difference is two person-days.",
+   "romaji": "Kaihatsu: Nittei sa wa nakute, kōsū sa wa nininnichi desu."
+  },
+  {
+   "en": "Then I will decide whether to accept it after I see the new estimate.",
+   "romaji": "Kokyaku: Dewa saimitsumori o mite kara, judaku suru ka dō ka o kimemasu."
+  }
+ ],
+ "49": [
+  {
+   "en": "Today is the hearing.",
+   "romaji": "Kaihatsu: Honjitsu wa hiaringu desu."
+  },
+  {
+   "en": "I will introduce myself.",
+   "romaji": "Jikoshōkai o sasete itadakimasu."
+  },
+  {
+   "en": "I am Yamada.",
+   "romaji": "Kokyaku: Yamada desu."
+  },
+  {
+   "en": "I have seen your company's materials.",
+   "romaji": "Onsha no shiryō wa mimashita."
+  },
+  {
+   "en": "Thank you.",
+   "romaji": "Kaihatsu: Arigatō gozaimasu."
+  },
+  {
+   "en": "May I record?",
+   "romaji": "Rokuon shite mo ii desu ka."
+  },
+  {
+   "en": "Yes.",
+   "romaji": "Kokyaku: Hai."
+  },
+  {
+   "en": "Please also give me the minutes.",
+   "romaji": "Gijiroku mo kudasai."
+  },
+  {
+   "en": "Understood.",
+   "romaji": "Kaihatsu: Shōchi shimashita."
+  },
+  {
+   "en": "We will start from the problem and close on time.",
+   "romaji": "Kadai kara hajimete, jikan dōri ni shimemasu."
+  }
+ ],
+ "58": [
+  {
+   "en": "Is it correct that we proceed with the other proposal?",
+   "romaji": "Kaihatsu: Betsuan de susumeru, to iu rikai de atte imasu ka."
+  },
+  {
+   "en": "Yes, I accept, and there is a condition.",
+   "romaji": "Kokyaku: Hai, ryōshō shimasu ga, jōken ga arimasu."
+  },
+  {
+   "en": "Let me confirm the condition.",
+   "romaji": "Kaihatsu: Jōken o kakunin sasete kudasai."
+  },
+  {
+   "en": "Freeze the scope by Friday, and no changes after that.",
+   "romaji": "Kokyaku: Kin'yō made ni han'i o tōketsu shi, sono ato wa henkō kinshi desu."
+  },
+  {
+   "en": "Understood.",
+   "romaji": "Kaihatsu: Shōchi shimashita."
+  },
+  {
+   "en": "We will proceed on that condition, and I will send the record today.",
+   "romaji": "Sono jōken de susume, kiroku wa kyō okurimasu."
+  }
+ ],
+ "77": [
+  {
+   "en": "It will make Friday at 500,000 yen before tax, and on the other side it does not include the totals.",
+   "romaji": "Kaihatsu: Zeibetsu gojūman'en de kin'yō ni maniau ippō de, shūkei wa fukumimasen."
+  },
+  {
+   "en": "Where is that \"provided that\" note written?",
+   "romaji": "Kokyaku: Sono tadashigaki wa, doko ni kaite arimasu ka."
+  },
+  {
+   "en": "Just after the conclusion.",
+   "romaji": "Kaihatsu: Ketsuron no chokugo desu."
+  },
+  {
+   "en": "We did not leave it unspoken.",
+   "romaji": "Anmoku ni wa shite imasen."
+  },
+  {
+   "en": "Is consumption tax included?",
+   "romaji": "Kokyaku: Shōhizei wa haitte imasu ka."
+  },
+  {
+   "en": "It is not included.",
+   "romaji": "Kaihatsu: Haitte imasen."
+  },
+  {
+   "en": "Including tax it is 550,000 yen.",
+   "romaji": "Zeikomi wa gojūgoman'en desu."
+  }
+ ],
+ "75": [
+  {
+   "en": "Today's purpose is to confirm acceptance and the stop time.",
+   "romaji": "Kaihatsu: Kyō no mokuteki wa, ukeire to teishi jikan no kakunin desu."
+  },
+  {
+   "en": "About where is the building now?",
+   "romaji": "Kokyaku: Seizō wa ima dono atari desu ka."
+  },
+  {
+   "en": "It is at the point of being eighty percent finished, and the detail screen is left.",
+   "romaji": "Kaihatsu: Hachiwari owatte iru tokoro de, nokori wa shōsai gamen desu."
+  },
+  {
+   "en": "The understanding that the stop is one hour is correct.",
+   "romaji": "Kokyaku: Teishi wa ichijikan, to iu rikai de atte imasu."
+  },
+  {
+   "en": "Then the only unresolved item is the wording, and next time is Friday at 10:00.",
+   "romaji": "Kaihatsu: Dewa miketsu wa mongon dake de, jikai wa kin'yō no jūji desu."
+  }
+ ],
+ "70": [
+  {
+   "en": "Please add the column, and keep the date as it is.",
+   "romaji": "Kokyaku: Retsu no tsuika o, hizuke wa sono mama de onegai shimasu."
+  },
+  {
+   "en": "If it stays as it is, the load on the test goes past the limit.",
+   "romaji": "Kaihatsu: Sono mama da to, shiken no fuka ga genkai o koemasu."
+  },
+  {
+   "en": "Then which do we put first?",
+   "romaji": "Kokyaku: Dewa, dochira o yūsen shimasu ka."
+  },
+  {
+   "en": "The right to decide sits with Yamada: put the column in the next phase, or move the date by two days.",
+   "romaji": "Kaihatsu: Ketteiken wa Yamada-san ni ari, retsu o jiki ni suru ka hizuke o futsuka ugokasu ka desu."
+  },
+  {
+   "en": "We will not move the date, and the column goes to the next phase.",
+   "romaji": "Kokyaku: Hizuke wa ugokasazu, retsu wa jiki ni shimasu."
+  }
+ ],
+ "69": [
+  {
+   "en": "This morning, after commit, it did not return to the list.",
+   "romaji": "Kokyaku: Kesa, kakutei no ato ichiran ni modorimasen deshita."
+  },
+  {
+   "en": "That is the observation, and it still happens even if we run it again.",
+   "romaji": "Kaihatsu: Jishō wa sore de ari, saijikkō shite mo saigen shimasu."
+  },
+  {
+   "en": "Will today's approvals stop?",
+   "romaji": "Kokyaku: Kyō no shōnin wa tomarimasu ka."
+  },
+  {
+   "en": "For now, it returns if you open the screen again.",
+   "romaji": "Kaihatsu: Zantei to shite, gamen o hirakinaoseba modorimasu."
+  },
+  {
+   "en": "I will not ask whose fault it was, so please tell me only the day of the lasting fix.",
+   "romaji": "Kokyaku: Ochido wa kikanai node, eikyū no hi dake oshiete kudasai."
+  }
+ ],
+ "71": [
+  {
+   "en": "The condition for acceptance is that ten cases finish through approval.",
+   "romaji": "Kaihatsu: Ukeire jōken wa, jukken ga shōnin made owaru koto desu."
+  },
+  {
+   "en": "Do the list and the return step pass?",
+   "romaji": "Kokyaku: Ichiran to modoru shori wa gōkaku desu ka."
+  },
+  {
+   "en": "Both pass, and what remains is only the wording on the print.",
+   "romaji": "Kaihatsu: Ryōhō tomo gōkaku de, nokoru no wa insatsu no mongon dake desu."
+  },
+  {
+   "en": "I will accept that with a condition.",
+   "romaji": "Kokyaku: Sore wa jōkentsuki de ukeiremasu."
+  },
+  {
+   "en": "The handling date is Wednesday of next week, and after that please sign the formal acceptance.",
+   "romaji": "Kaihatsu: Shori no hizuke wa raishū no suiyō de, sono ato ni kenshū no shomei o onegai shimasu."
+  }
+ ],
+ "56": [
+  {
+   "en": "When is the planned finish?",
+   "romaji": "Kokyaku: Kanryō yotei wa, itsu desu ka."
+  },
+  {
+   "en": "I will have it finished by Friday of the week after next.",
+   "romaji": "Kaihatsu: Saraishū no kin'yō made ni owarasemasu."
+  },
+  {
+   "en": "I want to see the screen partway through.",
+   "romaji": "Kokyaku: Tochū de gamen o mitai desu."
+  },
+  {
+   "en": "The middle check is five days after we start.",
+   "romaji": "Kaihatsu: Chūkan kakunin wa, chakushu no itsuka go desu."
+  },
+  {
+   "en": "If public holidays are not included, please use that date.",
+   "romaji": "Kokyaku: Shukujitsu ga haitte inai nara, sono hizuke de onegai shimasu."
+  }
+ ],
+ "48": [
+  {
+   "en": "Today we will talk about the problem.",
+   "romaji": "Kaihatsu: Honjitsu wa kadai ni tsuite hanashimasu."
+  },
+  {
+   "en": "I am the developer.",
+   "romaji": "Watashi wa kaihatsusha desu."
+  },
+  {
+   "en": "I am the client.",
+   "romaji": "Kokyaku: Watashi wa hatchūsha desu."
+  },
+  {
+   "en": "Paper at the workplace is the problem.",
+   "romaji": "Genba no kami ga kadai desu."
+  },
+  {
+   "en": "Are the users people on the floor?",
+   "romaji": "Kaihatsu: Riyōsha wa genba no hito desu ka."
+  },
+  {
+   "en": "Yes.",
+   "romaji": "Kokyaku: Hai."
+  },
+  {
+   "en": "The boss is the approver.",
+   "romaji": "Jōchō ga shōninsha desu."
+  },
+  {
+   "en": "The ideal is that it finishes on a screen, right?",
+   "romaji": "Kaihatsu: Risō wa, gamen de owaru koto desu ne."
+  }
+ ],
+ "54": [
+  {
+   "en": "It was decided that we build the list first.",
+   "romaji": "Kaihatsu: Ichiran o saki ni tsukuru, to kimarimashita."
+  },
+  {
+   "en": "The totals are out of scope.",
+   "romaji": "Shūkei wa taishōgai desu."
+  },
+  {
+   "en": "Yes.",
+   "romaji": "Kokyaku: Hai."
+  },
+  {
+   "en": "That understanding is correct.",
+   "romaji": "Sono rikai de atte imasu."
+  },
+  {
+   "en": "The item to take back is the night-time addressee.",
+   "romaji": "Kaihatsu: Mochikaeri wa, yakan no atesaki desu."
+  },
+  {
+   "en": "Please give it by Friday.",
+   "romaji": "Kin'yō made ni kudasai."
+  },
+  {
+   "en": "Understood.",
+   "romaji": "Kokyaku: Shōchi shimashita."
+  },
+  {
+   "en": "Please send the meeting note today.",
+   "romaji": "Giji memo wa kyōjū ni onegai shimasu."
+  },
+  {
+   "en": "I will send it today.",
+   "romaji": "Kaihatsu: Kyōjū ni okurimasu."
+  },
+  {
+   "en": "Next time is Friday at 10:00.",
+   "romaji": "Tsugi wa kin'yō no jūji desu."
+  }
+ ],
+ "67": [
+  {
+   "en": "While I am explaining, please stop me if there is a place you would trip.",
+   "romaji": "Kaihatsu: Setsumei shite iru uchi ni, tsumazuki ga areba tomete kudasai."
+  },
+  {
+   "en": "Are questions better on the spot?",
+   "romaji": "Kokyaku: Shitsumon wa, sonoba no hō ga ii desu ka."
+  },
+  {
+   "en": "During the demo, only a small sound that you are following, and I hear questions in the gap.",
+   "romaji": "Kaihatsu: Demo no aida wa aizuchi dake de, shitsumon wa aima ni kikimasu."
+  },
+  {
+   "en": "The wording is stiff.",
+   "romaji": "Kokyaku: Mongon ga katai desu."
+  },
+  {
+   "en": "Can you fix it before the test?",
+   "romaji": "Shiken no mae ni naosemasu ka."
+  },
+  {
+   "en": "I will fix it before the test starts.",
+   "romaji": "Kaihatsu: Shiken ga hajimaranai uchi ni naoshimasu."
+  }
+ ],
+ "52": [
+  {
+   "en": "May I repeat it back?",
+   "romaji": "Kaihatsu: Fukushō shite mo ii desu ka."
+  },
+  {
+   "en": "Is it correct that the list comes first?",
+   "romaji": "Ichiran ga saki, to iu rikai de atte imasu ka."
+  },
+  {
+   "en": "The list is correct.",
+   "romaji": "Kokyaku: Ichiran wa atte imasu."
+  },
+  {
+   "en": "The understanding of the upper limit is different.",
+   "romaji": "Jōgen no ninshiki ga chigaimasu."
+  },
+  {
+   "en": "Let me confirm the point that differs.",
+   "romaji": "Kaihatsu: Sōiten o kakunin sasete kudasai."
+  },
+  {
+   "en": "Is the upper limit 50,000 yen?",
+   "romaji": "Jōgen wa goman'en desu ka."
+  },
+  {
+   "en": "No.",
+   "romaji": "Kokyaku: Īe."
+  },
+  {
+   "en": "It is 100,000 yen.",
+   "romaji": "Jūman'en desu."
+  },
+  {
+   "en": "That point is settled.",
+   "romaji": "Soko wa kakutei desu."
+  },
+  {
+   "en": "Understood.",
+   "romaji": "Kaihatsu: Shōchi shimashita."
+  },
+  {
+   "en": "Only the night-time addressee is unresolved, right?",
+   "romaji": "Yakan no atesaki dake, miketsu desu ne."
+  }
+ ],
+ "51": [
+  {
+   "en": "I want to stop using paper and finish quickly.",
+   "romaji": "Kokyaku: Kami o yamete, hayaku owarasetai desu."
+  },
+  {
+   "en": "So the aim is same-day completion.",
+   "romaji": "Kaihatsu: Tsumari, sokujitsu ga nerai to iu koto desu ne."
+  },
+  {
+   "en": "Yes.",
+   "romaji": "Kokyaku: Hai."
+  },
+  {
+   "en": "When the amount is high, the route is different.",
+   "romaji": "Kingaku ga takai toki wa keiro ga chigaimasu."
+  },
+  {
+   "en": "Specifically, what is the upper limit?",
+   "romaji": "Kaihatsu: Gutaiteki ni wa, jōgen wa ikura desu ka."
+  },
+  {
+   "en": "100,000 yen.",
+   "romaji": "Kokyaku: Jūman'en desu."
+  },
+  {
+   "en": "Above that, the boss's boss looks.",
+   "romaji": "Sore ijō wa jōchō no ue no hito ga mimasu."
+  }
+ ],
+ "78": [
+  {
+   "en": "The button wording is different from the paper.",
+   "romaji": "Kokyaku: Botan no mongon ga, kami to chigaimasu."
+  },
+  {
+   "en": "Based on that comment, I will fix it on the spot.",
+   "romaji": "Kaihatsu: Sono shiteki o fumaete, sonoba de naoshimasu."
+  },
+  {
+   "en": "The column width can wait today.",
+   "romaji": "Kokyaku: Retsu no haba wa, kyō wa miokuri de yoi desu."
+  },
+  {
+   "en": "I will mark it as a comment we are not taking, and the next check is next Wednesday.",
+   "romaji": "Kaihatsu: Miokuri komento ni shite, saikakunin wa tsugi no suiyō desu."
+  },
+  {
+   "en": "You do not need to respond to the talk about color.",
+   "romaji": "Kokyaku: Iro no hanashi wa, taiō shinakute kekkō desu."
+  }
+ ],
+ "74": [
+  {
+   "en": "This is the second time.",
+   "romaji": "Kokyaku: Nidome desu."
+  },
+  {
+   "en": "I cannot trust this.",
+   "romaji": "Shinrai dekimasen."
+  },
+  {
+   "en": "I am at fault.",
+   "romaji": "Kaihatsu: Mōshiwake gozaimasen."
+  },
+  {
+   "en": "As you pointed out, the return step had stopped.",
+   "romaji": "Goshiteki no tōri, modoru shori ga tomatte imashita."
+  },
+  {
+   "en": "I do not need a defense.",
+   "romaji": "Kokyaku: Benmei wa kekkō desu."
+  },
+  {
+   "en": "What will you do next?",
+   "romaji": "Tsugi wa dō shimasu ka."
+  },
+  {
+   "en": "For now, approve on paper, and what stops a repeat is checking one case after it is applied.",
+   "romaji": "Kaihatsu: Tōmen wa kami de shōnin shi, saihatsu bōshi wa han'ei go no ikken kakunin desu."
+  },
+  {
+   "en": "Please give me that promise once more tomorrow morning.",
+   "romaji": "Kokyaku: Sono yakusoku o, ashita no asa mō ichido kudasai."
+  }
+ ],
+ "80": [
+  {
+   "en": "When is the next message?",
+   "romaji": "Kokyaku: Tsugi no renraku wa itsu desu ka."
+  },
+  {
+   "en": "As soon as the test ends, and at the latest I will send a middle report at 17:00.",
+   "romaji": "Kaihatsu: Shiken ga owari shidai desu ga, osokutomo jūshichi ji ni tochū keika o okurimasu."
+  },
+  {
+   "en": "If the result is bad, what happens to the date?",
+   "romaji": "Kokyaku: Kekka ga warukattara, hizuke wa dō narimasu ka."
+  },
+  {
+   "en": "The date depends on the result, and we will not promise it while it is not yet clear.",
+   "romaji": "Kaihatsu: Hizuke wa kekka shidai de, mihanmei no mama yakusoku wa shimasen."
+  },
+  {
+   "en": "Please just do not go silent.",
+   "romaji": "Kokyaku: Chinmoku dake wa, yamete kudasai."
+  }
+ ],
+ "64": [
+  {
+   "en": "Where are you now?",
+   "romaji": "Kokyaku: Ima, doko desu ka."
+  },
+  {
+   "en": "The design has just finished, and I am in the middle of building the screen.",
+   "romaji": "Kaihatsu: Sekkei ga owatta bakari de, gamen o tsukutte iru tokoro desu."
+  },
+  {
+   "en": "When does the test start?",
+   "romaji": "Kokyaku: Shiken wa itsu hajimarimasu ka."
+  },
+  {
+   "en": "It is two more person-days until we are about to start the test.",
+   "romaji": "Kaihatsu: Shiken ni hairu tokoro made, ato nininnichi desu."
+  },
+  {
+   "en": "Then Wednesday's finish is still only a likely time, right?",
+   "romaji": "Kokyaku: Dewa suiyō no shiagari wa, mada medo no mama desu ne."
+  }
+ ],
+ "61": [
+  {
+   "en": "I will start from the conclusion.",
+   "romaji": "Kaihatsu: Ketsuron kara mōshimasu."
+  },
+  {
+   "en": "I would like to ask for the first option.",
+   "romaji": "Daiichian o onegai shitai desu."
+  },
+  {
+   "en": "Why is the second option not recommended?",
+   "romaji": "Kokyaku: Dainian wa naze hisuishō desu ka."
+  },
+  {
+   "en": "Because it is over the budget.",
+   "romaji": "Kaihatsu: Yosan chōka da kara desu."
+  },
+  {
+   "en": "The benefit is that it will make Friday.",
+   "romaji": "Riten wa kin'yō ni maniau koto desu."
+  },
+  {
+   "en": "The drawback is that the totals are delayed, right?",
+   "romaji": "Kokyaku: Ketten wa shūkei ga okureru koto desu ne."
+  },
+  {
+   "en": "Yes.",
+   "romaji": "Kaihatsu: Hai."
+  },
+  {
+   "en": "The detail is on a separate sheet.",
+   "romaji": "Shōsai wa besshi ni arimasu."
+  },
+  {
+   "en": "Please consider it.",
+   "romaji": "Gokentō kudasai."
+  }
+ ],
+ "81": [
+  {
+   "en": "This is the wording that submits the completion report and asks for formal acceptance.",
+   "romaji": "Kaihatsu: Kanryō hōkoku o teishutsu shi, kenshū o onegai suru bunmen desu."
+  },
+  {
+   "en": "Is the leftover written?",
+   "romaji": "Kokyaku: Zanken wa kakarete imasu ka."
+  },
+  {
+   "en": "One piece of print wording, and I intend to close it during next week.",
+   "romaji": "Kaihatsu: Insatsu no mongon ikken de, raishūchū ni tojiru shozon desu."
+  },
+  {
+   "en": "When is the deadline for formal acceptance?",
+   "romaji": "Kokyaku: Kenshū no kigen wa itsu desu ka."
+  },
+  {
+   "en": "Friday at 17:00, and if it stays on hold please send one sentence.",
+   "romaji": "Kaihatsu: Kin'yō no jūshichi ji de, horyū nara ichibun kudasai."
+  }
+ ],
+ "73": [
+  {
+   "en": "From the floor, a question that a button cannot be pressed.",
+   "romaji": "Kokyaku: Genba kara, botan ga osenai to iu toiawase desu."
+  },
+  {
+   "en": "If it is known, send back the written answer; if it is not, pass it to the second stop.",
+   "romaji": "Kaihatsu: Kichi nara narejji o kaeshi, michi nara niji uke e mawashite kudasai."
+  },
+  {
+   "en": "It is the first time we have seen this.",
+   "romaji": "Kokyaku: Hajimete no jishō desu."
+  },
+  {
+   "en": "When is the deadline?",
+   "romaji": "Kigen wa itsu desu ka."
+  },
+  {
+   "en": "Four hours from receipt, or the next morning if it is outside hours.",
+   "romaji": "Kaihatsu: Uketsuke kara yojikan de, jikangai nara yokuasa desu."
+  },
+  {
+   "en": "As a way around it, may we approve on paper?",
+   "romaji": "Kokyaku: Kaihi wa, kami de shōnin shite yoi desu ka."
+  }
+ ],
+ "53": [
+  {
+   "en": "Please include the totals in this round too.",
+   "romaji": "Kokyaku: Shūkei mo, konkai ni fukumete kudasai."
+  },
+  {
+   "en": "If we include the totals, the scope grows.",
+   "romaji": "Kaihatsu: Shūkei o fukumeru to, han'i ga hirogarimasu."
+  },
+  {
+   "en": "Then the totals can be out of scope.",
+   "romaji": "Kokyaku: Dewa, shūkei wa taishōgai de ii desu."
+  },
+  {
+   "en": "Is it correct that the phone also waits until the next round?",
+   "romaji": "Kaihatsu: Sumaho mo jikai ni mawasu, to iu rikai de atte imasu ka."
+  },
+  {
+   "en": "Yes.",
+   "romaji": "Kokyaku: Hai."
+  },
+  {
+   "en": "Please keep this round to the main path only.",
+   "romaji": "Konkai wa honsen dake ni shite kudasai."
+  }
+ ],
+ "60": [
+  {
+   "en": "I will now read the estimate email.",
+   "romaji": "Kaihatsu: Mitsumori no mēru o ima kara yomimasu."
+  },
+  {
+   "en": "I wrote, please consider the smaller proposal.",
+   "romaji": "Shukushōan o gokentō kudasai, to kakimashita."
+  },
+  {
+   "en": "Are the cost and the assumptions in the wording?",
+   "romaji": "Kokyaku: Hiyō to zentei wa bunmen ni arimasu ka."
+  },
+  {
+   "en": "500,000 yen before tax, and the assumption is that the scope does not change.",
+   "romaji": "Kaihatsu: Zeibetsu de gojūman'en, zentei wa han'i ga kawaranai koto desu."
+  },
+  {
+   "en": "Where did you write the totals?",
+   "romaji": "Kokyaku: Shūkei wa doko ni kakimashita ka."
+  },
+  {
+   "en": "They wait for the next phase.",
+   "romaji": "Kaihatsu: Jiki taiō desu."
+  },
+  {
+   "en": "I closed with, I am waiting for your reply by Friday.",
+   "romaji": "Kin'yō made ni gohensin o omachi shite orimasu, to tojimashita."
+  }
+ ],
+ "57": [
+  {
+   "en": "Please put both the totals and the printing in this round.",
+   "romaji": "Kokyaku: Shūkei mo insatsu mo, konkai ni irete kudasai."
+  },
+  {
+   "en": "Building all of it in one go is difficult.",
+   "romaji": "Kaihatsu: Zenbu o ikki ni tsukuru no wa muzukashii desu."
+  },
+  {
+   "en": "The date cannot move.",
+   "romaji": "Kokyaku: Hizuke wa ugokasemasen."
+  },
+  {
+   "en": "Instead, how about delivering in stages, starting from the list?",
+   "romaji": "Kaihatsu: Kawari ni, ichiran kara dankaiteki ni dashite wa dō desu ka."
+  },
+  {
+   "en": "If we cut printing, I will look at that other proposal.",
+   "romaji": "Kokyaku: Insatsu o kezuru nara, sono betsuan de mimasu."
+  }
+ ],
+ "62": [
+  {
+   "en": "The flow of the screen is list, detail, approval.",
+   "romaji": "Kaihatsu: Gamen no nagare wa, ichiran, shōsai, shōnin desu."
+  },
+  {
+   "en": "Is it different from the order on paper?",
+   "romaji": "Kokyaku: Kami no jun to chigaimasu ka."
+  },
+  {
+   "en": "It is the same order.",
+   "romaji": "Kaihatsu: Onaji jun desu."
+  },
+  {
+   "en": "When you press the commit button, it becomes approved.",
+   "romaji": "Kakutei botan o osu to, shōninzumi ni narimasu."
+  },
+  {
+   "en": "Can you press it if a field is empty?",
+   "romaji": "Kokyaku: Kara no ran de osemasu ka."
+  },
+  {
+   "en": "If a required field is empty, you cannot press it.",
+   "romaji": "Kaihatsu: Hissuran ga kara da to osemasen."
+  },
+  {
+   "en": "The error words appear under the field.",
+   "romaji": "Erā mongon ga ran no shita ni demasu."
+  }
+ ],
+ "50": [
+  {
+   "en": "Right now we circulate paper.",
+   "romaji": "Kokyaku: Ima wa kami o kairan shite imasu."
+  },
+  {
+   "en": "It takes two days.",
+   "romaji": "Futsuka kakarimasu."
+  },
+  {
+   "en": "About how many cases a day?",
+   "romaji": "Kaihatsu: Kensū wa ichinichi ni dono kurai desu ka."
+  },
+  {
+   "en": "Ten.",
+   "romaji": "Kokyaku: Jukken desu."
+  },
+  {
+   "en": "There are also many copying mistakes.",
+   "romaji": "Tenki no misu mo ōi desu."
+  },
+  {
+   "en": "So you want a list and a filter.",
+   "romaji": "Kaihatsu: Ichiran to shiborikomi ga hoshii, to iu koto desu ne."
+  },
+  {
+   "en": "Yes.",
+   "romaji": "Kokyaku: Hai."
+  },
+  {
+   "en": "I want you to shorten the waiting time.",
+   "romaji": "Machijikan o mijikaku shite hoshii desu."
+  }
+ ],
+ "65": [
+  {
+   "en": "The building is eighty percent finished, and only the detail screen is left.",
+   "romaji": "Kaihatsu: Seizō wa hachiwari owatte ite, nokori wa shōsai gamen dake desu."
+  },
+  {
+   "en": "What share is the whole?",
+   "romaji": "Kokyaku: Zentai de wa nanwari desu ka."
+  },
+  {
+   "en": "Half, and the outlook is that it finishes on Friday.",
+   "romaji": "Kaihatsu: Gowari de, mitōshi wa kin'yō ni owaru koto desu."
+  },
+  {
+   "en": "Is there a gap from being late?",
+   "romaji": "Kokyaku: Okure no sabun wa arimasu ka."
+  },
+  {
+   "en": "Not yet, and the report will be every Wednesday.",
+   "romaji": "Kaihatsu: Mada nakute, hōkoku wa maishū suiyō ni shimasu."
+  }
+ ],
+ "79": [
+  {
+   "en": "Can you add one column?",
+   "romaji": "Kokyaku: Retsu o ippon kakemasu ka."
+  },
+  {
+   "en": "It is inside the specification, right?",
+   "romaji": "Shiyō no han'i desu yo ne."
+  },
+  {
+   "en": "It does not follow the screen specification. It leaves the line.",
+   "romaji": "Kaihatsu: Gamen shiyō ni sotte orazu, itsudatsu desu."
+  },
+  {
+   "en": "Is it impossible at no extra charge?",
+   "romaji": "Kokyaku: Mushō de wa muri desu ka."
+  },
+  {
+   "en": "It is outside the estimated effort, so it becomes a chargeable estimate, and we will not change it by speech.",
+   "romaji": "Kaihatsu: Kōsūgai na node yūshō mitsumori ni shi, kōtō de wa kaemasen."
+  },
+  {
+   "en": "Then I will decide whether to permit it after I see the estimate.",
+   "romaji": "Kokyaku: Dewa mitsumori o mite kara, kyodaku suru ka dō ka o kimemasu."
+  }
+ ],
+ "59": [
+  {
+   "en": "Please somehow include the totals this round too.",
+   "romaji": "Kokyaku: Shūkei mo, nantoka konkai ni onegai shimasu."
+  },
+  {
+   "en": "It would go over the budget, so please let us leave it this round.",
+   "romaji": "Kaihatsu: Yosan chōka ni naru node, konkai wa miokurasete kudasai."
+  },
+  {
+   "en": "Does the date stay Friday?",
+   "romaji": "Kokyaku: Hizuke wa kin'yō no mama desu ka."
+  },
+  {
+   "en": "If we cut the scope, we can meet Friday.",
+   "romaji": "Kaihatsu: Han'i o kezureba, kin'yō de taiō dekimasu."
+  },
+  {
+   "en": "Then please present the smaller proposal again on Friday.",
+   "romaji": "Kokyaku: Dewa shukushōan o kin'yō ni saiteiji shite kudasai."
+  }
+ ],
+ "82": [
+  {
+   "en": "Again it does not return to the list, and the floor has stopped.",
+   "romaji": "Kokyaku: Mata ichiran ni modorazu, genba ga tomatte imasu."
+  },
+  {
+   "en": "That is our understanding of the observation, and right now we are collecting the log.",
+   "romaji": "Kaihatsu: Jishō wa sore da to iu rikai de, ima rogu o totte iru tokoro desu."
+  },
+  {
+   "en": "What should we do about today's approvals?",
+   "romaji": "Kokyaku: Kyō no shōnin wa dō sureba yoi desu ka."
+  },
+  {
+   "en": "For now, go back to paper, and the lasting fix is the next window.",
+   "romaji": "Kaihatsu: Zantei de kami ni modoshi, eikyū wa tsugi no hoshu mado desu."
+  },
+  {
+   "en": "Please close it with the 17:00 follow-up and one case that goes through.",
+   "romaji": "Kokyaku: Jūshichi ji no zokuhō to, tōtta ikken de tojite kudasai."
+  }
+ ],
+ "55": [
+  {
+   "en": "The rough figure is ten person-days, 500,000 yen before tax.",
+   "romaji": "Kaihatsu: Gaisan wa jūninnichi de, zeibetsu de gojūman'en desu."
+  },
+  {
+   "en": "What is the assumption?",
+   "romaji": "Kokyaku: Zentei wa nan desu ka."
+  },
+  {
+   "en": "That the scope does not change.",
+   "romaji": "Kaihatsu: Han'i ga kawaranai koto desu."
+  },
+  {
+   "en": "Until when is the quote good?",
+   "romaji": "Kokyaku: Yūkō kigen wa itsu made desu ka."
+  },
+  {
+   "en": "Two weeks, and I will issue the formal estimate on Friday.",
+   "romaji": "Kaihatsu: Nishūkan de, honmitsumori wa kin'yō ni dashimasu."
+  }
+ ],
+ "72": [
+  {
+   "en": "We will stop it for one hour from 22:00 on Thursday.",
+   "romaji": "Kaihatsu: Mokuyō no nijūni ji kara ichijikan, tomemasu."
+  },
+  {
+   "en": "What happens to requests during that time?",
+   "romaji": "Kokyaku: Sono aida no shinsei wa dō shimasu ka."
+  },
+  {
+   "en": "We return to paper, and when it is over we send one case through and check.",
+   "romaji": "Kaihatsu: Kami un'yō ni modoshi, owattara ikken tōshite kakunin shimasu."
+  },
+  {
+   "en": "What happens if it fails?",
+   "romaji": "Kokyaku: Shippai shitara dō narimasu ka."
+  },
+  {
+   "en": "We put the previous version back and call Yamada at once.",
+   "romaji": "Kaihatsu: Kirimodoshite, Yamada-san e sugu renraku shimasu."
+  }
+ ],
+ "63": [
+  {
+   "en": "I will now show the approval flow with sample data.",
+   "romaji": "Kaihatsu: Ima kara, shōnin no nagare o karidēta de omise shimasu."
+  },
+  {
+   "en": "Live names will not appear, right?",
+   "romaji": "Kokyaku: Honban no namae wa demasen ne."
+  },
+  {
+   "en": "They will not, and when you click this row the detail opens.",
+   "romaji": "Kaihatsu: Demasen shi, kono gyō o kurikku suru to shōsai ga hirakimasu."
+  },
+  {
+   "en": "Is the only difference from paper the position of the button?",
+   "romaji": "Kokyaku: Kami to chigau no wa, botan no ichi dake desu ka."
+  },
+  {
+   "en": "Only the position. Up to here, do you have a question?",
+   "romaji": "Kaihatsu: Ichi dake de, koko made goshitsumon wa arimasu ka."
+  }
+ ],
+ "66": [
+  {
+   "en": "First I apologize, and a failure in the test environment makes us two days late.",
+   "romaji": "Kaihatsu: Mazu owabi shimasu ga, shiken kankyō no koshō de futsuka okuremasu."
+  },
+  {
+   "en": "When is the new date?",
+   "romaji": "Kokyaku: Atarashii hizuke wa itsu desu ka."
+  },
+  {
+   "en": "Next Wednesday, and we will not move it further.",
+   "romaji": "Kaihatsu: Tsugi no suiyō de, sore ijō wa ugokashimasen."
+  },
+  {
+   "en": "Will you win it back by working on a day off?",
+   "romaji": "Kokyaku: Kyūjitsu shukkin de modosu no desu ka."
+  },
+  {
+   "en": "No. With a recovery plan that has no work on days off, I will send a follow-up in the evening.",
+   "romaji": "Kaihatsu: Īe, kyūjitsu shukkin nashi no rikabari de yūgata ni zokuhō o okurimasu."
+  }
+ ]
+}

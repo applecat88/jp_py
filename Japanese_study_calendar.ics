@@ -1,0 +1,992 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Japanese study//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Japanese study
+BEGIN:VEVENT
+UID:japanese-study-day-01-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:Day 1 · Introductions\, work\, and です／ます
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-02-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Day 2 · This and that\, and adjectives
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-03-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Day 3 · Places\, existence\, and going
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-04-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+SUMMARY:Day 4 · Numbers\, prices\, and counters
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-05-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Day 5 · Clock time\, days\, and “from … until …”
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-06-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Day 6 · People\, “this book\,” and possession
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-07-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Day 7 · Where the action happens\, and the tool you use
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-08-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Day 8 · Past\, negative\, and who did it
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-09-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Day 9 · How often\, already\, and not yet
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-10-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Day 10 · Adjectives in the past and the negative
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-11-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:Day 11 · Likes\, skill\, and wanting a thing
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-12-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Day 12 · Wanting to do something\, and inviting someone
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-13-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:Day 13 · The て form
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-14-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Day 14 · Requests and steps
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-15-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Day 15 · What is happening\, and what is still true
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-16-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Day 16 · Permission\, prohibition\, and access
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-17-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Day 17 · Because\, so\, and but
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-18-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Day 18 · Comparing things
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-19-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Day 19 · Plain forms
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-20-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Day 20 · I think\, they said\, it might be
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-21-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Day 21 · Sentences that describe a noun
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-22-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Day 22 · When\, before\, and after
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-23-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Day 23 · Being able to
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-24-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Day 24 · At the same time\, and a few examples of what you do
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-25-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Day 25 · Plans and how sure you are
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-26-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Day 26 · If and when it happens: たら
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-27-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Day 27 · Whenever you do that\, if it is true\, and even if
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-28-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Day 28 · Advice
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-29-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Day 29 · Giving\, receiving\, and who owns the task
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-30-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Day 30 · Asking someone to do the work
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-31-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Day 31 · Try it\, do it ahead of time\, and “oops”
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-32-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Day 32 · Become\, and make it so
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-33-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Day 33 · In order to\, and so that
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-34-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Day 34 · Must\, should\, and need not
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-35-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Day 35 · It looks like\, I heard\, and it seems
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-36-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Day 36 · When the file is saved\, and when something happens to yo
+ u
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-37-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Day 37 · Let me\, and have someone do it
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-38-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Day 38 · Toward now\, from now on\, and “I came to be able”
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-39-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Day 39 · Polite words you will hear at work
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-40-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:Day 40 · Email and chat
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-41-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Day 41 · Paths\, folders\, and where a file lives
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-42-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Day 42 · Bugs\, tickets\, and what you expected
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-43-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Day 43 · Shopping\, colors\, and “too”
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-44-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Day 44 · Explaining the situation: んです
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-45-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Day 45 · Only\, lists\, and the little words at the end
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-46-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Day 46 · How to do it\, and easy or hard to do
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-47-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Day 47 · I have done it before\, and even so
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-48-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Day 48 · Who is in the room
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-49-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:Day 49 · Opening the meeting
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-50-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:Day 50 · Hearing what they want
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-51-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Day 51 · Making the request concrete
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-52-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Day 52 · Saying it back
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-53-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Day 53 · What is in\, and what waits
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-54-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Day 54 · The note after the meeting
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-55-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Day 55 · The estimate and its assumptions
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-56-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Day 56 · The dates you can keep
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-57-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Day 57 · A smaller yes
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-58-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Day 58 · Agree\, and name the condition
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-59-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Day 59 · A no that keeps the work
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-60-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Day 60 · The careful sentence in an email
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-61-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:Day 61 · The proposal\, conclusion first
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-62-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Day 62 · Walking through the screen
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-63-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Day 63 · Showing the screen
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-64-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:Day 64 · Where the work is right now
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-65-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Day 65 · How much is done
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-66-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Day 66 · Late\, and the new date
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-67-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Day 67 · While the screen is in front of them
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-68-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:Day 68 · A change after the freeze
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-69-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:Day 69 · A defect\, without blame
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-70-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:Day 70 · When the pressure lands on you
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-71-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+SUMMARY:Day 71 · Acceptance
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-72-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:Day 72 · The day it goes live
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-73-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261227
+SUMMARY:Day 73 · After it is live
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-74-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261228
+SUMMARY:Day 74 · When the client is unhappy
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-75-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261228
+DTEND;VALUE=DATE:20261229
+SUMMARY:Day 75 · One meeting\, in order
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-76-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:Day 76 · The first hearing\, in your words
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-77-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:Day 77 · The estimate\, with both sides
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-78-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Day 78 · After the demo\, based on what they said
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-79-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:Day 79 · A change that stays inside the line
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-80-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270102
+DTEND;VALUE=DATE:20270103
+SUMMARY:Day 80 · The next message depends on the result
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-81-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+SUMMARY:Day 81 · The letter that asks for acceptance
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:japanese-study-day-82-20261015@local
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:Day 82 · The call after it is live
+DESCRIPTION:Open the Japanese study app and click Today's lesson.\n1. Study
+ : 20 words, 3 grammar patterns, examples, 15 sentences, reading, writing.\
+ n2. Listening: dialogue, then vocabulary, examples, and sentences. Use Dow
+ nload if you want the file.\n3. Practice.\n4. Test.\n5. Click Mark studied
+ .\nWhen the lesson is finished, tick this event Done in Google Calendar.
+END:VEVENT
+END:VCALENDAR

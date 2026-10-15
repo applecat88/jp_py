@@ -1,0 +1,354 @@
+{
+ "days": {
+  "81": {
+   "tests": [],
+   "studied": false
+  },
+  "19": {
+   "tests": [],
+   "studied": false
+  },
+  "74": {
+   "tests": [],
+   "studied": false
+  },
+  "56": {
+   "tests": [],
+   "studied": false
+  },
+  "23": {
+   "tests": [],
+   "studied": false
+  },
+  "50": {
+   "tests": [],
+   "studied": false
+  },
+  "21": {
+   "tests": [],
+   "studied": false
+  },
+  "53": {
+   "tests": [],
+   "studied": false
+  },
+  "57": {
+   "tests": [],
+   "studied": false
+  },
+  "54": {
+   "tests": [],
+   "studied": false
+  },
+  "40": {
+   "tests": [],
+   "studied": false
+  },
+  "73": {
+   "tests": [],
+   "studied": false
+  },
+  "9": {
+   "tests": [],
+   "studied": false
+  },
+  "68": {
+   "tests": [],
+   "studied": false
+  },
+  "41": {
+   "tests": [],
+   "studied": false
+  },
+  "55": {
+   "tests": [],
+   "studied": false
+  },
+  "8": {
+   "tests": [],
+   "studied": false
+  },
+  "71": {
+   "tests": [],
+   "studied": false
+  },
+  "38": {
+   "tests": [],
+   "studied": false
+  },
+  "47": {
+   "tests": [],
+   "studied": false
+  },
+  "31": {
+   "tests": [],
+   "studied": false
+  },
+  "43": {
+   "tests": [],
+   "studied": false
+  },
+  "10": {
+   "tests": [],
+   "studied": false
+  },
+  "65": {
+   "tests": [],
+   "studied": false
+  },
+  "12": {
+   "tests": [],
+   "studied": false
+  },
+  "32": {
+   "tests": [],
+   "studied": false
+  },
+  "82": {
+   "tests": [],
+   "studied": false
+  },
+  "49": {
+   "tests": [],
+   "studied": false
+  },
+  "6": {
+   "tests": [],
+   "studied": false
+  },
+  "64": {
+   "tests": [],
+   "studied": false
+  },
+  "34": {
+   "tests": [],
+   "studied": false
+  },
+  "28": {
+   "tests": [],
+   "studied": false
+  },
+  "76": {
+   "tests": [],
+   "studied": false
+  },
+  "78": {
+   "tests": [],
+   "studied": false
+  },
+  "36": {
+   "tests": [],
+   "studied": false
+  },
+  "45": {
+   "tests": [],
+   "studied": false
+  },
+  "5": {
+   "studied": true,
+   "tests": [
+    {
+     "total": 18,
+     "score": 14,
+     "at": "2026-10-15T16:21:05.842Z",
+     "scope": "day"
+    }
+   ]
+  },
+  "46": {
+   "tests": [],
+   "studied": false
+  },
+  "25": {
+   "tests": [],
+   "studied": false
+  },
+  "51": {
+   "tests": [],
+   "studied": false
+  },
+  "75": {
+   "tests": [],
+   "studied": false
+  },
+  "18": {
+   "tests": [],
+   "studied": false
+  },
+  "52": {
+   "tests": [],
+   "studied": false
+  },
+  "16": {
+   "tests": [],
+   "studied": false
+  },
+  "39": {
+   "tests": [],
+   "studied": false
+  },
+  "61": {
+   "tests": [],
+   "studied": false
+  },
+  "15": {
+   "tests": [],
+   "studied": false
+  },
+  "72": {
+   "tests": [],
+   "studied": false
+  },
+  "2": {
+   "tests": [],
+   "studied": false
+  },
+  "22": {
+   "tests": [],
+   "studied": false
+  },
+  "80": {
+   "tests": [],
+   "studied": false
+  },
+  "35": {
+   "tests": [],
+   "studied": false
+  },
+  "26": {
+   "tests": [],
+   "studied": false
+  },
+  "66": {
+   "tests": [],
+   "studied": false
+  },
+  "13": {
+   "tests": [],
+   "studied": false
+  },
+  "1": {
+   "tests": [
+    {
+     "total": 18,
+     "score": 14,
+     "at": "2026-10-14T03:04:27.286Z",
+     "scope": "day"
+    }
+   ],
+   "studied": true
+  },
+  "14": {
+   "tests": [],
+   "studied": false
+  },
+  "7": {
+   "tests": [],
+   "studied": false
+  },
+  "79": {
+   "tests": [],
+   "studied": false
+  },
+  "44": {
+   "tests": [],
+   "studied": false
+  },
+  "20": {
+   "tests": [],
+   "studied": false
+  },
+  "58": {
+   "tests": [],
+   "studied": false
+  },
+  "59": {
+   "tests": [],
+   "studied": false
+  },
+  "3": {
+   "tests": [],
+   "studied": false
+  },
+  "27": {
+   "tests": [],
+   "studied": false
+  },
+  "60": {
+   "tests": [],
+   "studied": false
+  },
+  "11": {
+   "tests": [],
+   "studied": false
+  },
+  "48": {
+   "tests": [],
+   "studied": false
+  },
+  "62": {
+   "tests": [],
+   "studied": false
+  },
+  "4": {
+   "tests": [],
+   "studied": false
+  },
+  "63": {
+   "tests": [],
+   "studied": false
+  },
+  "67": {
+   "tests": [],
+   "studied": false
+  },
+  "30": {
+   "tests": [],
+   "studied": false
+  },
+  "42": {
+   "tests": [],
+   "studied": false
+  },
+  "24": {
+   "tests": [],
+   "studied": false
+  },
+  "70": {
+   "tests": [],
+   "studied": false
+  },
+  "69": {
+   "tests": [],
+   "studied": false
+  },
+  "17": {
+   "tests": [],
+   "studied": false
+  },
+  "33": {
+   "tests": [],
+   "studied": false
+  },
+  "37": {
+   "tests": [],
+   "studied": false
+  },
+  "77": {
+   "tests": [],
+   "studied": false
+  },
+  "29": {
+   "tests": [],
+   "studied": false
+  }
+ },
+ "hideRomaji": false,
+ "hidePronunciation": false,
+ "rate": 1,
+ "selectedDay": 5,
+ "mode": "study",
+ "repeats": 3,
+ "volume": 0.65,
+ "startDate": "2026-10-15"
+}

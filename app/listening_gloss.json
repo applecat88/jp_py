@@ -1,0 +1,307 @@
+{
+  "4": [
+    {"romaji": "Fairu ga sanko arimasu.", "en": "There are three files."},
+    {"romaji": "Hon wa yonsen en desu.", "en": "The book is 4,000 yen."},
+    {"romaji": "Shisutemu wa yūryō desu.", "en": "The system is paid."},
+    {"romaji": "Hito wa hitori imasu.", "en": "There is one person."},
+    {"romaji": "Erā wa zero desu.", "en": "There are zero errors."}
+  ],
+  "5": [
+    {"romaji": "Kyō wa suiyōbi desu.", "en": "Today is Wednesday."},
+    {"romaji": "Ima, gogo niji desu.", "en": "It is 2 p.m. now."},
+    {"romaji": "Kaigi wa niji han kara desu.", "en": "The meeting is from 2:30."},
+    {"romaji": "Kaigi wa yoji made desu.", "en": "The meeting is until 4:00."},
+    {"romaji": "Yoru, watashi wa ie de hon o yomimasu.", "en": "At night I read a book at home."}
+  ],
+  "6": [
+    {"romaji": "Kono hito wa watashi no dōryō desu.", "en": "This person is my colleague."},
+    {"romaji": "Jōshi no namae wa Tanaka desu.", "en": "My boss's name is Tanaka."},
+    {"romaji": "Purojekuto wa ōkii desu.", "en": "The project is big."},
+    {"romaji": "Dēta wa pasokon no naka ni arimasu.", "en": "The data is inside the computer."},
+    {"romaji": "Tomodachi mo kyō, kaisha e kimasu.", "en": "My friend is also coming to the company today."}
+  ],
+  "7": [
+    {"romaji": "Sābā wa ofisu ni arimasu.", "en": "The server is in the office."},
+    {"romaji": "Watashi wa ofisu de kōdo o kakimasu.", "en": "I write code in the office."},
+    {"romaji": "Erā wa fairu no naka ni arimasu.", "en": "The error is inside the file."},
+    {"romaji": "Rinku wa burauza ni arimasu.", "en": "The link is in the browser."},
+    {"romaji": "Kaigi wa kaigishitsu desu.", "en": "The meeting is in the meeting room."}
+  ],
+  "8": [
+    {"romaji": "Kinō, watashi wa erā o naoshimashita.", "en": "Yesterday I fixed the error."},
+    {"romaji": "Fairu wa hirakimasen deshita.", "en": "The file did not open."},
+    {"romaji": "Mēru wa okurimashita.", "en": "I sent the email."},
+    {"romaji": "Kaigi wa owarimasen deshita.", "en": "The meeting did not finish."},
+    {"romaji": "Kyō, sono kaigi o hajimemasu.", "en": "Today I will start that meeting."}
+  ],
+  "9": [
+    {"romaji": "Watashi wa yoku ie de benkyō shimasu.", "en": "I often study at home."},
+    {"romaji": "Shūmatsu wa zenzen hatarakimasen.", "en": "I do not work at all on the weekend."},
+    {"romaji": "Mō shiryō o okurimashita.", "en": "I already sent the materials."},
+    {"romaji": "Mada erā wa naoshimasen.", "en": "I have not fixed the error yet."},
+    {"romaji": "Kaigi wa tsuki ni nikai arimasu.", "en": "There is a meeting twice a month."}
+  ],
+  "10": [
+    {"romaji": "Kono apuri wa benri desu.", "en": "This app is convenient."},
+    {"romaji": "Demo sukoshi muzukashii desu.", "en": "But it is a little difficult."},
+    {"romaji": "Settei wa kantan deshita.", "en": "The settings were simple."},
+    {"romaji": "Sābā wa omokunai desu.", "en": "The server is not heavy."},
+    {"romaji": "Mondai no gen'in wa furui fairu desu.", "en": "The cause of the problem is an old file."},
+    {"romaji": "Daijōbu desu.", "en": "It is all right."}
+  ],
+  "11": [
+    {"romaji": "Watashi wa kōdo o kaku koto ga suki desu.", "en": "I like writing code."},
+    {"romaji": "Dezain wa nigate desu.", "en": "Design is my weak point."},
+    {"romaji": "Kōhī wa hoshikunai desu.", "en": "I do not want coffee."},
+    {"romaji": "Mizu ga hoshii desu.", "en": "I want water."},
+    {"romaji": "Atarashii kībōdo mo hoshii desu.", "en": "I also want a new keyboard."}
+  ],
+  "12": [
+    {"romaji": "Atarashii sofuto o insutōru shitai desu.", "en": "I want to install new software."},
+    {"romaji": "Issho ni kakunin shimasen ka.", "en": "Shall we check it together?"},
+    {"romaji": "Furui fairu wa sakujo shimashō.", "en": "Let's delete the old files."},
+    {"romaji": "Pasuwādo wa kaetakunai desu.", "en": "I do not want to change the password."},
+    {"romaji": "Ato de shiryō o kyōyū shimasu.", "en": "I will share the materials later."}
+  ],
+  "13": [
+    {"romaji": "Ie o dete, eki made arukimasu.", "en": "I leave home and walk to the station."},
+    {"romaji": "Densha ni notte, kaisha e ikimasu.", "en": "I take the train and go to the company."},
+    {"romaji": "Mēru o yonde, erā o naoshimasu.", "en": "I read the email and fix the error."},
+    {"romaji": "Fairu o hozon shite, kaerimasu.", "en": "I save the file and go home."}
+  ],
+  "14": [
+    {"romaji": "Mazu fairu o hiraite kudasai.", "en": "First, please open the file."},
+    {"romaji": "Tsugi ni namae o nyūryoku shite kudasai.", "en": "Next, please enter the name."},
+    {"romaji": "Hozon shite kara, tojinaide kudasai.", "en": "After saving, please do not close it."},
+    {"romaji": "Mada kakunin shimasu.", "en": "I will still check."},
+    {"romaji": "Seikō no messēji o matte kudasai.", "en": "Please wait for the success message."}
+  ],
+  "15": [
+    {"romaji": "Ima, shisutemu o kōshin shite imasu.", "en": "I am updating the system now."},
+    {"romaji": "Sābā wa onrain desu.", "en": "The server is online."},
+    {"romaji": "Hitotsu no gamen wa hiraite imasu.", "en": "One screen is open."},
+    {"romaji": "Hozon wa mada kanryō shite imasen.", "en": "The save is not finished yet."},
+    {"romaji": "Tsūchi o mite, matte kudasai.", "en": "Look at the notification and please wait."}
+  ],
+  "16": [
+    {"romaji": "Gesuto wa mite mo ii desu.", "en": "Guests may look."},
+    {"romaji": "Henkō shite wa ikemasen.", "en": "You must not make changes."},
+    {"romaji": "Pasuwādo wa hissu desu.", "en": "A password is required."},
+    {"romaji": "Namae wa nyūryoku shinakute mo ii desu.", "en": "You do not have to enter a name."},
+    {"romaji": "Kono forudā wa hikōkai desu.", "en": "This folder is private."}
+  ],
+  "17": [
+    {"romaji": "Honban de bagu ga arimashita.", "en": "There was a bug in production."},
+    {"romaji": "Furui fairu ga gen'in na node, sakujo shite kudasai.", "en": "An old file is the cause, so please delete it."},
+    {"romaji": "Eikyō wa ōkikunai desu.", "en": "The impact is not large."},
+    {"romaji": "Demo kokyaku ni renraku shite kudasai.", "en": "But please contact the customer."},
+    {"romaji": "Shūsei wa mada kanryō shite imasen.", "en": "The fix is not complete yet."}
+  ],
+  "18": [
+    {"romaji": "Furui sābā yori, atarashii sābā no hō ga hayai desu.", "en": "The new server is faster than the old server."},
+    {"romaji": "Demo furui hō ga antei desu.", "en": "But the old one is more stable."},
+    {"romaji": "Saizu wa onaji desu.", "en": "The size is the same."},
+    {"romaji": "Seinō wa atarashii hō ga ii desu.", "en": "The new one has better performance."},
+    {"romaji": "Watashi wa antei o erabimasu.", "en": "I will choose stability."}
+  ],
+  "19": [
+    {"romaji": "Kono tango no imi ga wakarimasen.", "en": "I do not understand this word's meaning."},
+    {"romaji": "Jisho de shirabete kudasai.", "en": "Please look it up in a dictionary."},
+    {"romaji": "Kinō, reibun o yomimashita.", "en": "Yesterday I read the example sentences."},
+    {"romaji": "Machigai o naoshimashita.", "en": "I corrected the mistakes."},
+    {"romaji": "Ashita mo fukushū shimasu.", "en": "I will review again tomorrow."}
+  ],
+  "20": [
+    {"romaji": "Kokyaku wa \"roguin dekinai\" to itte imashita.", "en": "The customer was saying that they cannot log in."},
+    {"romaji": "Watashi wa pasuwādo no mondai da to omoimasu.", "en": "I think it is a password problem."},
+    {"romaji": "Tabun kigen no mondai kamoshiremasen.", "en": "It might be a deadline problem."},
+    {"romaji": "Mada ketsuron wa iimasen.", "en": "I will not state a conclusion yet."},
+    {"romaji": "Ashita, jijitsu o kakunin shimasu.", "en": "Tomorrow I will check the facts."}
+  ],
+  "21": [
+    {"romaji": "Kinō tsukutta fairu o hiraite kudasai.", "en": "Please open the file that was made yesterday."},
+    {"romaji": "Kaihatsusha ga kaita shiyō o yomimasu.", "en": "I will read the specification the developer wrote."},
+    {"romaji": "Kokyaku ga hoshii kinō wa mittsu desu.", "en": "There are three features the customer wants."},
+    {"romaji": "Kiroku suru koto ga taisetsu desu.", "en": "Writing it down is important."},
+    {"romaji": "Shiyō ni nai mono wa tsukurimasen.", "en": "I will not build things that are not in the spec."}
+  ],
+  "22": [
+    {"romaji": "Hozon suru mae ni, namae o kakunin shite kudasai.", "en": "Before saving, please check the name."},
+    {"romaji": "Erā ga deta toki, rogu o mite kudasai.", "en": "When an error appears, please look at the log."},
+    {"romaji": "Kōshin no chokugo wa machimasu.", "en": "Right after an update, I wait."},
+    {"romaji": "Kigen wa ashita desu.", "en": "The deadline is tomorrow."},
+    {"romaji": "Sanji ikō ni renraku shimasu.", "en": "I will contact you from 3:00 onward."}
+  ],
+  "23": [
+    {"romaji": "Watashi wa rogu ga yomemasu.", "en": "I can read logs."},
+    {"romaji": "Demo gen'in wa wakarimasen.", "en": "But I do not understand the cause."},
+    {"romaji": "Kono bagu wa shudō de saigen dekimasu.", "en": "This bug can be reproduced by hand."},
+    {"romaji": "Tsūchi no oto ga kikoemasen.", "en": "I cannot hear the notification sound."},
+    {"romaji": "Debaggu dekiru hito o yobimasu.", "en": "I will call someone who can debug."}
+  ],
+  "24": [
+    {"romaji": "Ongaku o kikinagara sagyō shimasu.", "en": "I work while listening to music."},
+    {"romaji": "Tsūchi wa jama na node, oto o keshimasu.", "en": "Notifications get in the way, so I turn the sound off."},
+    {"romaji": "Kaigi de wa memo o torinagara kikimasu.", "en": "In meetings I listen while taking notes."},
+    {"romaji": "Shūmatsu wa hashittari, hon o yondari shimasu.", "en": "On weekends I run and read books, among other things."}
+  ],
+  "25": [
+    {"romaji": "Raigetsu, apuri o kōshin suru tsumori desu.", "en": "I intend to update the app next month."},
+    {"romaji": "Chūshi wa shimasen.", "en": "I will not cancel it."},
+    {"romaji": "Risuku wa sukoshi aru deshō.", "en": "There is probably a little risk."},
+    {"romaji": "Junbi wa konshū shimasu.", "en": "I will prepare this week."},
+    {"romaji": "Han'i wa roguin dake desu.", "en": "The scope is login only."}
+  ],
+  "26": [
+    {"romaji": "Erā ga detara, rogu o mite kudasai.", "en": "If an error appears, please look at the log."},
+    {"romaji": "Seijō dattara, tsugi ni susumimasu.", "en": "If it was normal, I move on to the next step."},
+    {"romaji": "Saihatsu shitara, kirimodoshimasu.", "en": "If it happens again, I roll back."},
+    {"romaji": "Wakaranakattara, kanrisha o yobimasu.", "en": "If I do not understand, I call an administrator."}
+  ],
+  "27": [
+    {"romaji": "Botan o osu to, hozon saremasu.", "en": "When you press the button, it gets saved."},
+    {"romaji": "Atai ga kara nara, erā desu.", "en": "If the value is empty, it is an error."},
+    {"romaji": "Shippai shite mo, rogu wa nokorimasu.", "en": "Even if it fails, the log remains."},
+    {"romaji": "Kanarazu kakunin shite kara tojite kudasai.", "en": "Be sure to check, and then close it."}
+  ],
+  "28": [
+    {"romaji": "Kyō wa depuroi shinai hō ga ii desu.", "en": "You had better not deploy today."},
+    {"romaji": "Rogu o minaoshitara dō desu ka.", "en": "How about reviewing the log?"},
+    {"romaji": "Memori ga fusoku shite imasu.", "en": "Memory is running short."},
+    {"romaji": "Sokudo mo teika shite imasu.", "en": "The speed has dropped too."},
+    {"romaji": "Gen'in wa mada fumei desu.", "en": "The cause is still unknown."}
+  ],
+  "29": [
+    {"romaji": "Okyakusama kara mēru ga todokimashita.", "en": "An email arrived from the customer."},
+    {"romaji": "Tantō wa watashi desu.", "en": "I am the person in charge."},
+    {"romaji": "Shiryō wa dōryō ga kuremashita.", "en": "A colleague gave me the materials."},
+    {"romaji": "Mitsumori wa ashita watashimasu.", "en": "I will hand over the estimate tomorrow."},
+    {"romaji": "Shagai ni wa rogu o watashimasen.", "en": "I will not give logs to people outside the company."}
+  ],
+  "30": [
+    {"romaji": "Sabun o mite moraemasu ka.", "en": "Could you look at the diff for me?"},
+    {"romaji": "Konfurikuto wa mō naoshimashita.", "en": "I already fixed the conflict."},
+    {"romaji": "Shōnin shite itadakemasu ka.", "en": "Could I ask you to approve it?"},
+    {"romaji": "Nōki wa ashita desu.", "en": "The delivery date is tomorrow."},
+    {"romaji": "Tsugō ga warukattara, itte kudasai.", "en": "If the timing is bad, please tell me."}
+  ],
+  "31": [
+    {"romaji": "Kyasshu o keshite mite kudasai.", "en": "Please try clearing the cache."},
+    {"romaji": "Rogu wa nokoshite oite kudasai.", "en": "Please leave the log as it is."},
+    {"romaji": "Tōkun wa ayamatte keshite shimaimashita.", "en": "I deleted the token by mistake."},
+    {"romaji": "Sesshon wa kigengire desu.", "en": "The session has expired."},
+    {"romaji": "Mō ichido tameshimasu.", "en": "I will try once more."}
+  ],
+  "32": [
+    {"romaji": "Sābā ga osoku narimashita.", "en": "The server got slow."},
+    {"romaji": "Tsūchi o ofu ni shimashita.", "en": "I turned notifications off."},
+    {"romaji": "Deforuto ni modosu koto ni shimashita.", "en": "I decided to restore the default."},
+    {"romaji": "Furui tōkun wa mukō desu.", "en": "The old token is invalid."},
+    {"romaji": "Shūmatsu ni rirīsu suru koto ni narimashita.", "en": "It was decided that we will release on the weekend."}
+  ],
+  "33": [
+    {"romaji": "Sekyuriti no tame ni, ninshō o hissu ni shimasu.", "en": "For security, I will make authentication required."},
+    {"romaji": "Dēta o hogo suru tame ni angōka shimasu.", "en": "I encrypt the data in order to protect it."},
+    {"romaji": "Shoshinsha demo tsukaeru yō ni, tejun o kantan ni shimasu.", "en": "I will simplify the steps so beginners can use it too."},
+    {"romaji": "Nōki wa enchō shimasen.", "en": "I will not extend the delivery date."}
+  ],
+  "34": [
+    {"romaji": "Kiyaku ni dōi shinakereba narimasen.", "en": "You have to agree to the terms."},
+    {"romaji": "Shomei wa nakute mo ii desu.", "en": "A signature is optional."},
+    {"romaji": "Saishinban o tsukau beki desu.", "en": "You should use the latest version."},
+    {"romaji": "Kyūban wa sapōto gire desu.", "en": "The old version is out of support."},
+    {"romaji": "Rogu o nokosu koto wa gimu desu.", "en": "Keeping logs is an obligation."}
+  ],
+  "35": [
+    {"romaji": "Kin'yōbi ni rirīsu da sō desu.", "en": "I hear the release is on Friday."},
+    {"romaji": "Demo mada fuantei na yō desu.", "en": "But it still seems unstable."},
+    {"romaji": "Sābā ga ochisō desu.", "en": "The server looks ready to go down."},
+    {"romaji": "Kiji no hanashi wa uwasa kamoshiremasen.", "en": "The story in the article might be a rumor."},
+    {"romaji": "Kōshiki no bunsho dake mite kudasai.", "en": "Please look only at the official document."}
+  ],
+  "36": [
+    {"romaji": "Mēru wa jushin saremashita.", "en": "The email was received."},
+    {"romaji": "Akaunto wa rokku sarete imasu.", "en": "The account is locked."},
+    {"romaji": "Sukyan de kyōi ga mitsukarimashita.", "en": "A threat was found by the scan."},
+    {"romaji": "Fairu wa kakuri sarete imasu.", "en": "The file is quarantined."},
+    {"romaji": "Sōshinmoto o kakunin shite kudasai.", "en": "Please check the sender."}
+  ],
+  "37": [
+    {"romaji": "Kono ken wa watashi ni yarasete kudasai.", "en": "Please let me handle this matter."},
+    {"romaji": "Shiryō wa jizen ni haifu shimasu.", "en": "I will distribute the materials beforehand."},
+    {"romaji": "Ashita wa kesseki shimasu.", "en": "I will be absent tomorrow."},
+    {"romaji": "Dairi ni shusseki shite moraimasu.", "en": "I will have a substitute attend."},
+    {"romaji": "Okyakusama wa matasemasen.", "en": "I will not keep the customer waiting."}
+  ],
+  "38": [
+    {"romaji": "Rogu ga tamatte kimashita.", "en": "Logs have piled up."},
+    {"romaji": "Yōryō wa hette ikimasu.", "en": "Free space keeps going down."},
+    {"romaji": "Junji sakujo shimasu.", "en": "I will delete them one after another."},
+    {"romaji": "Watashi wa tejun ga yomeru yō ni narimashita.", "en": "I became able to read the procedure."},
+    {"romaji": "Sābisu wa ashita saikai shimasu.", "en": "The service resumes tomorrow."}
+  ],
+  "39": [
+    {"romaji": "Osewa ni natte orimasu.", "en": "Thank you for your continued support."},
+    {"romaji": "Ashita, sanji ni mairimasu.", "en": "I will come at 3:00 tomorrow."},
+    {"romaji": "Shiryō wa goran ni narimashita ka.", "en": "Have you looked at the materials?"},
+    {"romaji": "Fumei na ten wa watashi ga gosetsumei shimasu.", "en": "I will explain any points that are unclear."},
+    {"romaji": "Yoroshiku onegai itashimasu.", "en": "I appreciate your help."}
+  ],
+  "40": [
+    {"romaji": "Kenmei wa \"ashita no kaigi\" desu.", "en": "The subject is tomorrow's meeting."},
+    {"romaji": "Fairu o tenpu shimashita.", "en": "I attached the file."},
+    {"romaji": "Gokakunin kudasai.", "en": "Please check it."},
+    {"romaji": "Henshin wa kin'yōbi made ni onegai shimasu.", "en": "Please reply by Friday."},
+    {"romaji": "Ijō desu.", "en": "That is all."}
+  ],
+  "41": [
+    {"romaji": "Zettai pasu o tsukatte kudasai.", "en": "Please use an absolute path."},
+    {"romaji": "Kakuchōshi wa txt desu.", "en": "The extension is txt."},
+    {"romaji": "Kono fairu wa yomitori sen'yō desu.", "en": "This file is read-only."},
+    {"romaji": "Furui fairu wa gomibako ni idō shimasu.", "en": "I will move the old file to the trash."},
+    {"romaji": "Yōryō ga fusoku shite imasu.", "en": "There is not enough space."}
+  ],
+  "42": [
+    {"romaji": "Botan o oshite mo hozon saremasen.", "en": "It does not save even when I press the button."},
+    {"romaji": "Sankai tameshimashita.", "en": "I tried three times."},
+    {"romaji": "Nikai saigen shimasu.", "en": "It reproduces twice."},
+    {"romaji": "Sukurīnshotto o tenpu shimasu.", "en": "I will attach a screenshot."},
+    {"romaji": "Burokkā ka dō ka wa ashita handan shimasu.", "en": "I will decide tomorrow whether it is a blocker."}
+  ],
+  "43": [
+    {"romaji": "Kono shatsu wa yasukute, iro mo ii desu.", "en": "This shirt is cheap, and the color is nice too."},
+    {"romaji": "Demo chiisasugimasu.", "en": "But it is too small."},
+    {"romaji": "Okane wa tarimasu.", "en": "I have enough money."},
+    {"romaji": "Kādo de haraimasu.", "en": "I will pay by card."},
+    {"romaji": "Reshīto o kudasai.", "en": "The receipt, please."}
+  ],
+  "44": [
+    {"romaji": "Jitsu wa, netsu ga aru n desu.", "en": "Actually, I have a fever."},
+    {"romaji": "Atama mo itai desu.", "en": "My head hurts too."},
+    {"romaji": "Byōin ni itte, kusuri o moraimasu.", "en": "I will go to the hospital and get medicine."},
+    {"romaji": "Kyō wa zaitaku ni shimasu.", "en": "I will work from home today."},
+    {"romaji": "Kaigi ni wa okuremasu.", "en": "I will be late for the meeting."},
+    {"romaji": "Sumimasen.", "en": "I am sorry."}
+  ],
+  "45": [
+    {"romaji": "Kanrisha dake ga honban o kaeraremasu.", "en": "Only an administrator can change production."},
+    {"romaji": "Tesuto wa sanjuppun kurai desu.", "en": "The test takes about 30 minutes."},
+    {"romaji": "Rogu ya gamen nado o mimashita.", "en": "I looked at the logs, the screen, and so on."},
+    {"romaji": "Omotta hodo warukunai desu yo.", "en": "It is not as bad as I thought."},
+    {"romaji": "Ashita no jūji goro ni tsuzuki o yarimashō.", "en": "Let's continue around 10:00 tomorrow."}
+  ],
+  "46": [
+    {"romaji": "Tsukaikata wa mokuji no tsugi ni arimasu.", "en": "The instructions are after the table of contents."},
+    {"romaji": "Naoshikata wa furoku desu.", "en": "How to fix it is in the appendix."},
+    {"romaji": "Kono gamen wa miyasui desu.", "en": "This screen is easy to read."},
+    {"romaji": "Ano erā wa wakarinikui desu.", "en": "That error is hard to understand."},
+    {"romaji": "Futoji kara yonde kudasai.", "en": "Please start reading from the bold text."}
+  ],
+  "47": [
+    {"romaji": "Kono erā o mita koto ga arimasu.", "en": "I have seen this error before."},
+    {"romaji": "Tamani demasu.", "en": "It appears sometimes."},
+    {"romaji": "Kinō naoshita noni, kyō mo demashita.", "en": "I fixed it yesterday, and yet it appeared again today."},
+    {"romaji": "Zannen desu ga, kyō no rirīsu wa muri desu.", "en": "I am sorry, but today's release is impossible."},
+    {"romaji": "Kongo wa rogu o nokoshimasu.", "en": "From now on I will keep logs."}
+  ]
+}

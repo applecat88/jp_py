@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Japanese study</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+  <div id="gate">
+    <section class="login-card">
+      <img src="login-art.jpg" alt="A notebook open to the character あ, a red book, tea, and plum blossoms">
+      <div class="login-body">
+        <h2 id="gateTitle">Sign in</h2>
+        <p id="gateNote" class="meta">Enter your identifier and password. A new identifier starts registration.</p>
+        <form id="loginForm">
+          <label>Identifier <input id="loginId" autocomplete="username" required></label>
+          <label>Password <input id="loginPassword" type="password" autocomplete="current-password" required></label>
+          <p id="loginError" class="form-error"></p>
+          <button class="primary" type="submit">Continue</button>
+        </form>
+        <form id="registerForm" hidden>
+          <label>Name <input id="regName" autocomplete="name" required></label>
+          <label>Identifier <input id="regId" autocomplete="username" required></label>
+          <label>Gender
+            <select id="regGender" required>
+              <option value="">Choose</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label>Date of birth <input id="regBirth" type="date" required></label>
+          <label>Password <input id="regPassword" type="password" autocomplete="new-password" required></label>
+          <p id="regError" class="form-error"></p>
+          <div class="row">
+            <button class="primary" type="submit">Create account</button>
+            <button id="regBack" type="button">Back</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+  <div id="app">
+    <header class="top">
+      <div class="brand">
+        <p class="eyebrow">Client work</p>
+        <h1>Japanese study</h1>
+      </div>
+      <div class="controls">
+        <label>Course start <input id="startDate" type="date"></label>
+        <button id="todayBtn" type="button">Today's lesson</button>
+        <label class="check"><input id="hidePronunciation" type="checkbox"> Hide pronunciation</label>
+        <label class="check"><input id="hideRomaji" type="checkbox"> Hide romaji</label>
+        <p id="who" class="who" hidden></p>
+        <button id="signOut" type="button" hidden>Sign out</button>
+      </div>
+    </header>
+    <p id="voiceNote" class="voice" hidden></p>
+    <div class="shell">
+      <aside>
+        <label class="find">Find
+          <input id="findDay" type="search" placeholder="Day, word, or title">
+        </label>
+        <ol id="dayList"></ol>
+      </aside>
+      <main>
+        <nav id="modes" aria-label="Study modes"></nav>
+        <div id="view"></div>
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

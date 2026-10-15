@@ -1,0 +1,363 @@
+[
+  {
+    "day": 1,
+    "title": "Introductions, work, and です／ます",
+    "goal": "Say who you are, what you study, and what you do at work.",
+    "vocabulary": [
+      {"jp": "私", "hira": "わたし", "romaji": "watashi", "en": "I"},
+      {"jp": "今日", "hira": "きょう", "romaji": "kyō", "en": "today"},
+      {"jp": "明日", "hira": "あした", "romaji": "ashita", "en": "tomorrow"},
+      {"jp": "毎日", "hira": "まいにち", "romaji": "mainichi", "en": "every day"},
+      {"jp": "人", "hira": "ひと", "romaji": "hito", "en": "person"},
+      {"jp": "会社", "hira": "かいしゃ", "romaji": "kaisha", "en": "company"},
+      {"jp": "仕事", "hira": "しごと", "romaji": "shigoto", "en": "work"},
+      {"jp": "時間", "hira": "じかん", "romaji": "jikan", "en": "time"},
+      {"jp": "日本語", "hira": "にほんご", "romaji": "nihongo", "en": "Japanese language"},
+      {"jp": "英語", "hira": "えいご", "romaji": "eigo", "en": "English language"},
+      {"jp": "勉強", "hira": "べんきょう", "romaji": "benkyō", "en": "study"},
+      {"jp": "読む", "hira": "よむ", "romaji": "yomu", "en": "to read"},
+      {"jp": "書く", "hira": "かく", "romaji": "kaku", "en": "to write"},
+      {"jp": "見る", "hira": "みる", "romaji": "miru", "en": "to see; to watch"},
+      {"jp": "聞く", "hira": "きく", "romaji": "kiku", "en": "to listen; to ask"},
+      {"jp": "作る", "hira": "つくる", "romaji": "tsukuru", "en": "to make"},
+      {"jp": "使う", "hira": "つかう", "romaji": "tsukau", "en": "to use"},
+      {"jp": "分かる", "hira": "わかる", "romaji": "wakaru", "en": "to understand"},
+      {"jp": "開発", "hira": "かいはつ", "romaji": "kaihatsu", "en": "development"},
+      {"jp": "システム", "hira": "しすてむ", "romaji": "shisutemu", "en": "system"}
+    ],
+    "grammar": [
+      {
+        "title": "A は B です — A is B",
+        "explanation": "は marks the topic and is pronounced wa. です is the polite ending for “is.” Time words such as 今日, 明日, and 毎日 usually do not need は when they start the sentence.",
+        "examples": [
+          {"jp": "私はエンジニアです。", "romaji": "Watashi wa enjinia desu.", "en": "I am an engineer."},
+          {"jp": "これは日本語です。", "romaji": "Kore wa nihongo desu.", "en": "This is Japanese."},
+          {"jp": "今日は仕事です。", "romaji": "Kyō wa shigoto desu.", "en": "Today is work."}
+        ]
+      },
+      {
+        "title": "A は B ですか — Is A B?",
+        "explanation": "Add か to make a polite question. The word order stays the same. Answer with はい or いいえ, then the sentence.",
+        "examples": [
+          {"jp": "日本語が分かりますか。", "romaji": "Nihongo ga wakarimasu ka.", "en": "Do you understand Japanese?"},
+          {"jp": "今日は仕事ですか。", "romaji": "Kyō wa shigoto desu ka.", "en": "Is today a work day?"},
+          {"jp": "はい、毎日勉強します。", "romaji": "Hai, mainichi benkyō shimasu.", "en": "Yes, I study every day."}
+        ]
+      },
+      {
+        "title": "A を Vます — I do A",
+        "explanation": "を marks the thing the verb acts on, and is pronounced o. Change the dictionary verb to the ます stem: 読む→読みます, 書く→書きます, 見る→見ます, 聞く→聞きます, 作る→作ります, 使う→使います. 勉強 is a noun, so say 勉強します. 仕事 is also a noun: 仕事をします. 分かる takes が, not を.",
+        "examples": [
+          {"jp": "日本語を読みます。", "romaji": "Nihongo o yomimasu.", "en": "I read Japanese."},
+          {"jp": "システムを作ります。", "romaji": "Shisutemu o tsukurimasu.", "en": "I make a system."},
+          {"jp": "英語が分かります。", "romaji": "Eigo ga wakarimasu.", "en": "I understand English."}
+        ]
+      }
+    ],
+    "sentences": [
+      {"jp": "私は人です。", "romaji": "Watashi wa hito desu.", "en": "I am a person."},
+      {"jp": "今日は会社です。", "romaji": "Kyō wa kaisha desu.", "en": "Today is the company."},
+      {"jp": "明日も仕事です。", "romaji": "Ashita mo shigoto desu.", "en": "Tomorrow is also work."},
+      {"jp": "毎日日本語を勉強します。", "romaji": "Mainichi nihongo o benkyō shimasu.", "en": "I study Japanese every day."},
+      {"jp": "英語を読みます。", "romaji": "Eigo o yomimasu.", "en": "I read English."},
+      {"jp": "日本語を書きます。", "romaji": "Nihongo o kakimasu.", "en": "I write Japanese."},
+      {"jp": "時間を見ます。", "romaji": "Jikan o mimasu.", "en": "I look at the time."},
+      {"jp": "日本語を聞きます。", "romaji": "Nihongo o kikimasu.", "en": "I listen to Japanese."},
+      {"jp": "システムを使います。", "romaji": "Shisutemu o tsukaimasu.", "en": "I use the system."},
+      {"jp": "システムを作ります。", "romaji": "Shisutemu o tsukurimasu.", "en": "I make a system."},
+      {"jp": "開発をします。", "romaji": "Kaihatsu o shimasu.", "en": "I do development."},
+      {"jp": "仕事をします。", "romaji": "Shigoto o shimasu.", "en": "I do work."},
+      {"jp": "日本語が分かりますか。", "romaji": "Nihongo ga wakarimasu ka.", "en": "Do you understand Japanese?"},
+      {"jp": "はい、分かります。", "romaji": "Hai, wakarimasu.", "en": "Yes, I understand."},
+      {"jp": "明日も仕事をします。", "romaji": "Ashita mo shigoto o shimasu.", "en": "I will also work tomorrow."}
+    ],
+    "reading": {
+      "jp": "私は会社の人です。毎日仕事をします。今日は日本語を勉強します。日本語を読みます。日本語を書きます。英語も分かります。明日はシステムを作ります。開発の時間です。",
+      "romaji": "Watashi wa kaisha no hito desu. Mainichi shigoto o shimasu. Kyō wa nihongo o benkyō shimasu. Nihongo o yomimasu. Nihongo o kakimasu. Eigo mo wakarimasu. Ashita wa shisutemu o tsukurimasu. Kaihatsu no jikan desu.",
+      "en": "I am a person at a company. I work every day. Today I study Japanese. I read Japanese. I write Japanese. I also understand English. Tomorrow I will make a system. It is development time."
+    },
+    "readingLines": [
+      {"jp": "私は会社の人です。", "romaji": "Watashi wa kaisha no hito desu.", "en": "I am a person at a company."},
+      {"jp": "毎日仕事をします。", "romaji": "Mainichi shigoto o shimasu.", "en": "I work every day."},
+      {"jp": "今日は日本語を勉強します。", "romaji": "Kyō wa nihongo o benkyō shimasu.", "en": "Today I study Japanese."},
+      {"jp": "日本語を読みます。", "romaji": "Nihongo o yomimasu.", "en": "I read Japanese."},
+      {"jp": "日本語を書きます。", "romaji": "Nihongo o kakimasu.", "en": "I write Japanese."},
+      {"jp": "英語も分かります。", "romaji": "Eigo mo wakarimasu.", "en": "I also understand English."},
+      {"jp": "明日はシステムを作ります。", "romaji": "Ashita wa shisutemu o tsukurimasu.", "en": "Tomorrow I will make a system."},
+      {"jp": "開発の時間です。", "romaji": "Kaihatsu no jikan desu.", "en": "It is development time."}
+    ],
+    "writing": [
+      {"prompt": "I am a person.", "answer": "私は人です。"},
+      {"prompt": "I study Japanese every day.", "answer": "毎日日本語を勉強します。"},
+      {"prompt": "I read English.", "answer": "英語を読みます。"},
+      {"prompt": "I write Japanese.", "answer": "日本語を書きます。"},
+      {"prompt": "I use the system.", "answer": "システムを使います。"},
+      {"prompt": "I understand Japanese.", "answer": "日本語が分かります。"},
+      {"prompt": "Tomorrow I will make a system.", "answer": "明日、システムを作ります。"},
+      {"prompt": "Do you understand English?", "answer": "英語が分かりますか。"}
+    ],
+    "listening": {
+      "script": "私は毎日日本語を勉強します。今日、仕事をします。日本語を読みます。英語も分かります。明日もシステムを作ります。",
+      "lines": [
+        {"jp": "私は毎日日本語を勉強します。", "romaji": "Watashi wa mainichi nihongo o benkyō shimasu.", "en": "I study Japanese every day."},
+        {"jp": "今日、仕事をします。", "romaji": "Kyō, shigoto o shimasu.", "en": "Today I work."},
+        {"jp": "日本語を読みます。", "romaji": "Nihongo o yomimasu.", "en": "I read Japanese."},
+        {"jp": "英語も分かります。", "romaji": "Eigo mo wakarimasu.", "en": "I also understand English."},
+        {"jp": "明日もシステムを作ります。", "romaji": "Ashita mo shisutemu o tsukurimasu.", "en": "Tomorrow I will also make a system."}
+      ],
+      "questions": [
+        {"q": "What do I study every day?", "a": "Japanese."},
+        {"q": "What do I do today?", "a": "I work."},
+        {"q": "What will I make tomorrow?", "a": "A system."}
+      ]
+    },
+    "quiz": [
+      {"q": "How is the topic particle は pronounced?", "a": "wa"},
+      {"q": "How do you make a polite question?", "a": "Add か."},
+      {"q": "What is the ます form of 読む?", "a": "読みます"},
+      {"q": "Which particle does 分かる take?", "a": "が"},
+      {"q": "How do you say “I do work”?", "a": "仕事をします。"}
+    ]
+  },
+  {
+    "day": 2,
+    "title": "This and that, and adjectives",
+    "goal": "Point at things, ask what they are, and describe them.",
+    "vocabulary": [
+      {"jp": "これ", "hira": "これ", "romaji": "kore", "en": "this"},
+      {"jp": "それ", "hira": "それ", "romaji": "sore", "en": "that (near you)"},
+      {"jp": "あれ", "hira": "あれ", "romaji": "are", "en": "that (over there)"},
+      {"jp": "何", "hira": "なに", "romaji": "nani", "en": "what"},
+      {"jp": "新しい", "hira": "あたらしい", "romaji": "atarashii", "en": "new"},
+      {"jp": "古い", "hira": "ふるい", "romaji": "furui", "en": "old"},
+      {"jp": "大きい", "hira": "おおきい", "romaji": "ōkii", "en": "big"},
+      {"jp": "小さい", "hira": "ちいさい", "romaji": "chiisai", "en": "small"},
+      {"jp": "本", "hira": "ほん", "romaji": "hon", "en": "book"},
+      {"jp": "名前", "hira": "なまえ", "romaji": "namae", "en": "name"},
+      {"jp": "買う", "hira": "かう", "romaji": "kau", "en": "to buy"},
+      {"jp": "読む", "hira": "よむ", "romaji": "yomu", "en": "to read"},
+      {"jp": "書く", "hira": "かく", "romaji": "kaku", "en": "to write"},
+      {"jp": "見る", "hira": "みる", "romaji": "miru", "en": "to see; to watch"},
+      {"jp": "使う", "hira": "つかう", "romaji": "tsukau", "en": "to use"},
+      {"jp": "画面", "hira": "がめん", "romaji": "gamen", "en": "screen"},
+      {"jp": "機能", "hira": "きのう", "romaji": "kinō", "en": "function; feature"},
+      {"jp": "設定", "hira": "せってい", "romaji": "settei", "en": "settings"},
+      {"jp": "保存", "hira": "ほぞん", "romaji": "hozon", "en": "save"},
+      {"jp": "エラー", "hira": "えらー", "romaji": "erā", "en": "error"}
+    ],
+    "grammar": [
+      {
+        "title": "これ／それ／あれ — this, that, that over there",
+        "explanation": "これ is near the speaker. それ is near the listener. あれ is far from both. These words stand alone. They do not sit in front of a noun.",
+        "examples": [
+          {"jp": "これは本です。", "romaji": "Kore wa hon desu.", "en": "This is a book."},
+          {"jp": "それは画面です。", "romaji": "Sore wa gamen desu.", "en": "That is a screen."},
+          {"jp": "あれは古いシステムです。", "romaji": "Are wa furui shisutemu desu.", "en": "That over there is an old system."}
+        ]
+      },
+      {
+        "title": "何ですか — what is it?",
+        "explanation": "何 is “what.” In 何ですか the reading is often nan, not nani. Answer by replacing 何 with the noun.",
+        "examples": [
+          {"jp": "これは何ですか。", "romaji": "Kore wa nan desu ka.", "en": "What is this?"},
+          {"jp": "それはエラーです。", "romaji": "Sore wa erā desu.", "en": "That is an error."},
+          {"jp": "名前は何ですか。", "romaji": "Namae wa nan desu ka.", "en": "What is your name?"}
+        ]
+      },
+      {
+        "title": "Noun は い-adjective です",
+        "explanation": "い-adjectives such as 新しい, 古い, 大きい, and 小さい come before です, or directly before a noun. Do not say 新しいな. 保存 is a noun here: 保存をします.",
+        "examples": [
+          {"jp": "本は新しいです。", "romaji": "Hon wa atarashii desu.", "en": "The book is new."},
+          {"jp": "画面は大きいです。", "romaji": "Gamen wa ōkii desu.", "en": "The screen is big."},
+          {"jp": "小さい本を買います。", "romaji": "Chiisai hon o kaimasu.", "en": "I will buy a small book."}
+        ]
+      }
+    ],
+    "sentences": [
+      {"jp": "これは本です。", "romaji": "Kore wa hon desu.", "en": "This is a book."},
+      {"jp": "それは何ですか。", "romaji": "Sore wa nan desu ka.", "en": "What is that?"},
+      {"jp": "あれは画面です。", "romaji": "Are wa gamen desu.", "en": "That over there is a screen."},
+      {"jp": "本は新しいです。", "romaji": "Hon wa atarashii desu.", "en": "The book is new."},
+      {"jp": "システムは古いです。", "romaji": "Shisutemu wa furui desu.", "en": "The system is old."},
+      {"jp": "画面は大きいです。", "romaji": "Gamen wa ōkii desu.", "en": "The screen is big."},
+      {"jp": "エラーは小さいです。", "romaji": "Erā wa chiisai desu.", "en": "The error is small."},
+      {"jp": "名前を書きます。", "romaji": "Namae o kakimasu.", "en": "I write the name."},
+      {"jp": "新しい本を買います。", "romaji": "Atarashii hon o kaimasu.", "en": "I will buy a new book."},
+      {"jp": "古い本を読みます。", "romaji": "Furui hon o yomimasu.", "en": "I read an old book."},
+      {"jp": "設定を見ます。", "romaji": "Settei o mimasu.", "en": "I look at the settings."},
+      {"jp": "機能を使います。", "romaji": "Kinō o tsukaimasu.", "en": "I use the feature."},
+      {"jp": "保存をします。", "romaji": "Hozon o shimasu.", "en": "I save."},
+      {"jp": "これはエラーですか。", "romaji": "Kore wa erā desu ka.", "en": "Is this an error?"},
+      {"jp": "はい、小さいエラーです。", "romaji": "Hai, chiisai erā desu.", "en": "Yes, it is a small error."}
+    ],
+    "reading": {
+      "jp": "これは新しい本です。それは古い本です。あれは大きい画面です。名前を書きます。設定を見ます。機能を使います。それから保存をします。エラーは小さいです。",
+      "romaji": "Kore wa atarashii hon desu. Sore wa furui hon desu. Are wa ōkii gamen desu. Namae o kakimasu. Settei o mimasu. Kinō o tsukaimasu. Sorekara hozon o shimasu. Erā wa chiisai desu.",
+      "en": "This is a new book. That is an old book. That over there is a big screen. I write the name. I look at the settings. I use the feature. Then I save. The error is small."
+    },
+    "readingLines": [
+      {"jp": "これは新しい本です。", "romaji": "Kore wa atarashii hon desu.", "en": "This is a new book."},
+      {"jp": "それは古い本です。", "romaji": "Sore wa furui hon desu.", "en": "That is an old book."},
+      {"jp": "あれは大きい画面です。", "romaji": "Are wa ōkii gamen desu.", "en": "That over there is a big screen."},
+      {"jp": "名前を書きます。", "romaji": "Namae o kakimasu.", "en": "I write the name."},
+      {"jp": "設定を見ます。", "romaji": "Settei o mimasu.", "en": "I look at the settings."},
+      {"jp": "機能を使います。", "romaji": "Kinō o tsukaimasu.", "en": "I use the feature."},
+      {"jp": "それから保存をします。", "romaji": "Sorekara hozon o shimasu.", "en": "Then I save."},
+      {"jp": "エラーは小さいです。", "romaji": "Erā wa chiisai desu.", "en": "The error is small."}
+    ],
+    "writing": [
+      {"prompt": "What is this?", "answer": "これは何ですか。"},
+      {"prompt": "This is a book.", "answer": "これは本です。"},
+      {"prompt": "The screen is big.", "answer": "画面は大きいです。"},
+      {"prompt": "I will buy a new book.", "answer": "新しい本を買います。"},
+      {"prompt": "I look at the settings.", "answer": "設定を見ます。"},
+      {"prompt": "I use the feature.", "answer": "機能を使います。"},
+      {"prompt": "The error is small.", "answer": "エラーは小さいです。"},
+      {"prompt": "What is your name?", "answer": "名前は何ですか。"}
+    ],
+    "listening": {
+      "script": "これは新しい本です。それは画面です。画面は大きいです。設定を見ます。エラーは小さいです。保存をします。",
+      "lines": [
+        {"jp": "これは新しい本です。", "romaji": "Kore wa atarashii hon desu.", "en": "This is a new book."},
+        {"jp": "それは画面です。", "romaji": "Sore wa gamen desu.", "en": "That is a screen."},
+        {"jp": "画面は大きいです。", "romaji": "Gamen wa ōkii desu.", "en": "The screen is big."},
+        {"jp": "設定を見ます。", "romaji": "Settei o mimasu.", "en": "I look at the settings."},
+        {"jp": "エラーは小さいです。", "romaji": "Erā wa chiisai desu.", "en": "The error is small."},
+        {"jp": "保存をします。", "romaji": "Hozon o shimasu.", "en": "I save."}
+      ],
+      "questions": [
+        {"q": "Is the book new or old?", "a": "New."},
+        {"q": "Is the screen big or small?", "a": "Big."},
+        {"q": "What do I do at the end?", "a": "I save."}
+      ]
+    },
+    "quiz": [
+      {"q": "Which word is near the listener?", "a": "それ"},
+      {"q": "How do you ask “what is this?”", "a": "これは何ですか。"},
+      {"q": "Where does an い-adjective sit before a noun?", "a": "Directly before the noun: 新しい本."},
+      {"q": "What is 保存 in English?", "a": "save"},
+      {"q": "What is the ます form of 買う?", "a": "買います"}
+    ]
+  },
+  {
+    "day": 3,
+    "title": "Places, existence, and going",
+    "goal": "Say where things are, where people are, and where you go.",
+    "vocabulary": [
+      {"jp": "ここ", "hira": "ここ", "romaji": "koko", "en": "here"},
+      {"jp": "そこ", "hira": "そこ", "romaji": "soko", "en": "there (near you)"},
+      {"jp": "あそこ", "hira": "あそこ", "romaji": "asoko", "en": "over there"},
+      {"jp": "どこ", "hira": "どこ", "romaji": "doko", "en": "where"},
+      {"jp": "上", "hira": "うえ", "romaji": "ue", "en": "above; on"},
+      {"jp": "下", "hira": "した", "romaji": "shita", "en": "below; under"},
+      {"jp": "中", "hira": "なか", "romaji": "naka", "en": "inside"},
+      {"jp": "外", "hira": "そと", "romaji": "soto", "en": "outside"},
+      {"jp": "前", "hira": "まえ", "romaji": "mae", "en": "front; before"},
+      {"jp": "後ろ", "hira": "うしろ", "romaji": "ushiro", "en": "behind"},
+      {"jp": "学校", "hira": "がっこう", "romaji": "gakkō", "en": "school"},
+      {"jp": "家", "hira": "いえ", "romaji": "ie", "en": "house; home"},
+      {"jp": "行く", "hira": "いく", "romaji": "iku", "en": "to go"},
+      {"jp": "来る", "hira": "くる", "romaji": "kuru", "en": "to come"},
+      {"jp": "いる", "hira": "いる", "romaji": "iru", "en": "to exist (people, animals)"},
+      {"jp": "ある", "hira": "ある", "romaji": "aru", "en": "to exist (things)"},
+      {"jp": "ファイル", "hira": "ふぁいる", "romaji": "fairu", "en": "file"},
+      {"jp": "フォルダー", "hira": "ふぉるだー", "romaji": "forudā", "en": "folder"},
+      {"jp": "ネットワーク", "hira": "ねっとわーく", "romaji": "nettowāku", "en": "network"},
+      {"jp": "場所", "hira": "ばしょ", "romaji": "basho", "en": "place"}
+    ],
+    "grammar": [
+      {
+        "title": "Place に あります／います",
+        "explanation": "あります is for things. います is for people and animals. に marks the place of existence. Use が to introduce the thing or person.",
+        "examples": [
+          {"jp": "ここに本があります。", "romaji": "Koko ni hon ga arimasu.", "en": "There is a book here."},
+          {"jp": "会社に人がいます。", "romaji": "Kaisha ni hito ga imasu.", "en": "There is a person at the company."},
+          {"jp": "フォルダーの中にファイルがあります。", "romaji": "Forudā no naka ni fairu ga arimasu.", "en": "There is a file inside the folder."}
+        ]
+      },
+      {
+        "title": "Place へ 行きます",
+        "explanation": "へ marks the destination and is pronounced e. 行きます is “go.” 来ます is “come.” 来ます is irregular: 来る → 来ます.",
+        "examples": [
+          {"jp": "学校へ行きます。", "romaji": "Gakkō e ikimasu.", "en": "I go to school."},
+          {"jp": "家へ来ます。", "romaji": "Ie e kimasu.", "en": "I come home."},
+          {"jp": "明日、会社へ行きます。", "romaji": "Ashita, kaisha e ikimasu.", "en": "I will go to the company tomorrow."}
+        ]
+      },
+      {
+        "title": "Place は どこですか",
+        "explanation": "どこ means “where.” ここ is near the speaker, そこ is near the listener, and あそこ is far from both. 上, 下, 中, 外, 前, and 後ろ attach with の: 本の上.",
+        "examples": [
+          {"jp": "学校はどこですか。", "romaji": "Gakkō wa doko desu ka.", "en": "Where is the school?"},
+          {"jp": "ファイルはどこですか。", "romaji": "Fairu wa doko desu ka.", "en": "Where is the file?"},
+          {"jp": "場所はここです。", "romaji": "Basho wa koko desu.", "en": "The place is here."}
+        ]
+      }
+    ],
+    "sentences": [
+      {"jp": "ここに本があります。", "romaji": "Koko ni hon ga arimasu.", "en": "There is a book here."},
+      {"jp": "そこに人がいます。", "romaji": "Soko ni hito ga imasu.", "en": "There is a person there."},
+      {"jp": "学校はどこですか。", "romaji": "Gakkō wa doko desu ka.", "en": "Where is the school?"},
+      {"jp": "家はあそこです。", "romaji": "Ie wa asoko desu.", "en": "The house is over there."},
+      {"jp": "会社へ行きます。", "romaji": "Kaisha e ikimasu.", "en": "I go to the company."},
+      {"jp": "家へ来ます。", "romaji": "Ie e kimasu.", "en": "I come home."},
+      {"jp": "本は上にあります。", "romaji": "Hon wa ue ni arimasu.", "en": "The book is above."},
+      {"jp": "ファイルはフォルダーの中にあります。", "romaji": "Fairu wa forudā no naka ni arimasu.", "en": "The file is inside the folder."},
+      {"jp": "人は外にいます。", "romaji": "Hito wa soto ni imasu.", "en": "The person is outside."},
+      {"jp": "学校の前に人がいます。", "romaji": "Gakkō no mae ni hito ga imasu.", "en": "There is a person in front of the school."},
+      {"jp": "後ろに画面があります。", "romaji": "Ushiro ni gamen ga arimasu.", "en": "There is a screen behind."},
+      {"jp": "下に本があります。", "romaji": "Shita ni hon ga arimasu.", "en": "There is a book underneath."},
+      {"jp": "ネットワークはどこですか。", "romaji": "Nettowāku wa doko desu ka.", "en": "Where is the network?"},
+      {"jp": "場所は会社です。", "romaji": "Basho wa kaisha desu.", "en": "The place is the company."},
+      {"jp": "明日、学校へ行きます。", "romaji": "Ashita, gakkō e ikimasu.", "en": "I will go to school tomorrow."}
+    ],
+    "reading": {
+      "jp": "今日は学校へ行きます。学校はここです。学校の前に人がいます。家はあそこです。家の中に本があります。ファイルはフォルダーの中にあります。ネットワークの場所は会社です。明日も会社へ行きます。",
+      "romaji": "Kyō wa gakkō e ikimasu. Gakkō wa koko desu. Gakkō no mae ni hito ga imasu. Ie wa asoko desu. Ie no naka ni hon ga arimasu. Fairu wa forudā no naka ni arimasu. Nettowāku no basho wa kaisha desu. Ashita mo kaisha e ikimasu.",
+      "en": "Today I go to school. The school is here. There is a person in front of the school. The house is over there. There is a book inside the house. The file is inside the folder. The place of the network is the company. Tomorrow I will also go to the company."
+    },
+    "readingLines": [
+      {"jp": "今日は学校へ行きます。", "romaji": "Kyō wa gakkō e ikimasu.", "en": "Today I go to school."},
+      {"jp": "学校はここです。", "romaji": "Gakkō wa koko desu.", "en": "The school is here."},
+      {"jp": "学校の前に人がいます。", "romaji": "Gakkō no mae ni hito ga imasu.", "en": "There is a person in front of the school."},
+      {"jp": "家はあそこです。", "romaji": "Ie wa asoko desu.", "en": "The house is over there."},
+      {"jp": "家の中に本があります。", "romaji": "Ie no naka ni hon ga arimasu.", "en": "There is a book inside the house."},
+      {"jp": "ファイルはフォルダーの中にあります。", "romaji": "Fairu wa forudā no naka ni arimasu.", "en": "The file is inside the folder."},
+      {"jp": "ネットワークの場所は会社です。", "romaji": "Nettowāku no basho wa kaisha desu.", "en": "The place of the network is the company."},
+      {"jp": "明日も会社へ行きます。", "romaji": "Ashita mo kaisha e ikimasu.", "en": "Tomorrow I will also go to the company."}
+    ],
+    "writing": [
+      {"prompt": "There is a book here.", "answer": "ここに本があります。"},
+      {"prompt": "There is a person at the company.", "answer": "会社に人がいます。"},
+      {"prompt": "Where is the school?", "answer": "学校はどこですか。"},
+      {"prompt": "I go to school.", "answer": "学校へ行きます。"},
+      {"prompt": "The file is inside the folder.", "answer": "ファイルはフォルダーの中にあります。"},
+      {"prompt": "The house is over there.", "answer": "家はあそこです。"},
+      {"prompt": "Where is the network?", "answer": "ネットワークはどこですか。"},
+      {"prompt": "Tomorrow I will go to the company.", "answer": "明日、会社へ行きます。"}
+    ],
+    "listening": {
+      "script": "学校はどこですか。学校はここです。家はあそこです。フォルダーの中にファイルがあります。明日、会社へ行きます。",
+      "lines": [
+        {"jp": "学校はどこですか。", "romaji": "Gakkō wa doko desu ka.", "en": "Where is the school?"},
+        {"jp": "学校はここです。", "romaji": "Gakkō wa koko desu.", "en": "The school is here."},
+        {"jp": "家はあそこです。", "romaji": "Ie wa asoko desu.", "en": "The house is over there."},
+        {"jp": "フォルダーの中にファイルがあります。", "romaji": "Forudā no naka ni fairu ga arimasu.", "en": "There is a file inside the folder."},
+        {"jp": "明日、会社へ行きます。", "romaji": "Ashita, kaisha e ikimasu.", "en": "Tomorrow I will go to the company."}
+      ],
+      "questions": [
+        {"q": "Where is the school?", "a": "Here."},
+        {"q": "Where is the house?", "a": "Over there."},
+        {"q": "Where do I go tomorrow?", "a": "To the company."}
+      ]
+    },
+    "quiz": [
+      {"q": "Which verb is for things, あります or います?", "a": "あります"},
+      {"q": "How is the particle へ pronounced?", "a": "e"},
+      {"q": "What is the ます form of 来る?", "a": "来ます"},
+      {"q": "Which word means “where”?", "a": "どこ"},
+      {"q": "How do you say “inside the folder”?", "a": "フォルダーの中"}
+    ]
+  }
+]
