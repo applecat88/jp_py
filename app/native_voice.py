@@ -17,6 +17,8 @@ TRUSTED_CLIENT_TOKEN = "6A5AA1D4EAFF4E9FB37E23D68491D6F4"
 WIN_EPOCH = 11644473600
 S_TO_NS = 1e9
 VOICE = "ja-JP-NanamiNeural"
+STYLE = ""
+OUTPUT = "audio-24khz-48kbitrate-mono-mp3"
 SEC_MS_GEC_VERSION = "2-143.0.3650.75"
 HOST = "speech.platform.bing.com"
 
@@ -387,12 +389,21 @@ def synthesize(text, timeout=45):
     config = (
         "X-Timestamp:%s\r\nContent-Type:application/json; charset=utf-8\r\nPath:speech.config\r\n\r\n"
         '{"context":{"synthesis":{"audio":{"metadataoptions":{"sentenceBoundaryEnabled":"false","wordBoundaryEnabled":"false"},'
-        '"outputFormat":"audio-24khz-48kbitrate-mono-mp3"}}}}\r\n'
-    ) % stamp
-    ssml = (
-        "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xml:lang='ja-JP'>"
-        "<voice name='%s'><prosody pitch='+0Hz' rate='+0%%' volume='+0%%'>%s</prosody></voice></speak>"
-    ) % (VOICE, _xml(text))
+        '"outputFormat":"%s"}}}}\r\n'
+    ) % (stamp, OUTPUT)
+    spoken = _xml(text)
+    if STYLE:
+        spoken = "<mstts:express-as style='%s'>%s</mstts:express-as>" % (STYLE, spoken)
+        ssml = (
+            "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' "
+            "xmlns:mstts='https://www.w3.org/2001/mstts' xml:lang='ja-JP'>"
+            "<voice name='%s'>%s</voice></speak>"
+        ) % (VOICE, spoken)
+    else:
+        ssml = (
+            "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xml:lang='ja-JP'>"
+            "<voice name='%s'><prosody pitch='+0Hz' rate='+0%%' volume='+0%%'>%s</prosody></voice></speak>"
+        ) % (VOICE, spoken)
     request_id = uuid.uuid4().hex
     ssml_msg = (
         "X-RequestId:%s\r\nContent-Type:application/ssml+xml\r\nX-Timestamp:%sZ\r\nPath:ssml\r\n\r\n%s"
@@ -405,6 +416,7 @@ def synthesize(text, timeout=45):
         audio = bytearray()
         pending = b""
         pending_op = None
+        last_text = ""
         while True:
             fin, opcode, payload = _recv_frame(sock)
             if opcode == 0 and pending_op is not None:
@@ -423,6 +435,7 @@ def synthesize(text, timeout=45):
                 _send_frame(sock, 10, payload)
                 continue
             if opcode == 1:
+                last_text = payload.decode("utf-8", "replace")[:240]
                 if b"Path:turn.end" in payload:
                     break
                 continue
@@ -433,7 +446,8 @@ def synthesize(text, timeout=45):
                     if body:
                         audio.extend(body)
         if len(audio) < 200:
-            raise IOError("no audio")
+            detail = last_text.encode("ascii", "replace").decode("ascii")
+            raise IOError("no audio " + detail)
         return bytes(audio)
     finally:
         try:

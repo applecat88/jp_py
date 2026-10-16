@@ -20,7 +20,7 @@ import webbrowser
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import parse_qs, urlparse
 
-import native_voice
+import ai_voice
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 WEB = os.path.normpath(os.path.join(ROOT, "web"))
@@ -142,75 +142,92 @@ def _mp3_ready(path):
     return len(head) >= 2 and head[0] == 255 and (head[1] & 0xE0) == 0xE0
 
 
-def _discard_broken(path):
-    if not os.path.isfile(path) or _mp3_ready(path):
-        return
-    try:
-        age = time.time() - os.path.getmtime(path)
-    except OSError:
-        return
-    if age < 15:
-        return
-    try:
-        os.remove(path)
-    except OSError:
-        pass
-
-
 def cache_path(text):
-    if not os.path.isdir(CACHE):
-        os.makedirs(CACHE)
-    digest = hashlib.sha1(text.encode("utf-8")).hexdigest()
-    return os.path.join(CACHE, digest + ".mp3")
+    return ai_voice.cache_path(text)
+
+
+def combine_local(day_number, track):
+    day = find_day(day_number)
+    if day is None or track not in TRACKS:
+        return ""
+    if track == "extra":
+        sources = []
+        words = track_lines(day, "word")
+        examples = track_lines(day, "grammar")
+        for index in range(len(words)):
+            sources.append(clip_path(day_number, "word", index, ""))
+        for index in range(len(examples)):
+            sources.append(clip_path(day_number, "grammar", index, ""))
+    else:
+        lines = track_lines(day, track)
+        sources = [clip_path(day_number, track, index, "") for index in range(len(lines))]
+    if not sources or not all(_mp3_ready(path) for path in sources):
+        return ""
+    dest = clip_path(day_number, track, 0, "all")
+    folder = os.path.dirname(dest)
+    if folder and not os.path.isdir(folder):
+        os.makedirs(folder)
+    part = dest + ".part"
+    try:
+        with open(part, "wb") as handle:
+            for path in sources:
+                with open(path, "rb") as source:
+                    handle.write(source.read())
+        if os.path.isfile(dest):
+            os.remove(dest)
+        os.rename(part, dest)
+    except OSError:
+        try:
+            os.remove(part)
+        except OSError:
+            pass
+        return ""
+    if _mp3_ready(dest):
+        return dest
+    return ""
 
 
 def cached_audio(text, allow_network=True):
-    path = cache_path(text)
-    if _mp3_ready(path):
+    path = cache_path(text) if text else ""
+    if path and _mp3_ready(path):
         return path
-    legacy = os.path.join(AUDIO, os.path.basename(path))
-    if _mp3_ready(legacy):
-        shutil.copyfile(legacy, path)
-        return path
-    if not allow_network:
-        raise IOError("local recording missing")
-    native_voice.save(text, path, timeout=12)
-    if not _mp3_ready(path):
-        raise IOError("recording not ready")
-    return path
+    raise IOError("local recording missing")
 
 
 def stored_audio(day_number, track, index, part, text, allow_network=True, rebuild=False):
     path = clip_path(day_number, track, index, part)
-    if rebuild:
-        _discard_broken(path)
     if _mp3_ready(path):
         return path
-    if os.path.isfile(path):
-        time.sleep(0.4)
-        if _mp3_ready(path):
-            return path
-    folder = os.path.dirname(path)
-    if folder and not os.path.isdir(folder):
-        os.makedirs(folder)
-    cached = cache_path(text) if text else ""
-    legacy = os.path.join(AUDIO, os.path.basename(cached)) if cached else ""
-    for source in (cached, legacy):
-        if source and _mp3_ready(source):
-            shutil.copyfile(source, path)
-            if _mp3_ready(path):
-                return path
-    if not allow_network:
+    if part == "all":
+        combined = combine_local(day_number, track)
+        if combined:
+            return combined
         raise IOError("local recording missing")
-    native_voice.save(text, path, timeout=12)
-    if not _mp3_ready(path):
-        raise IOError("recording not ready")
-    if cached and not _mp3_ready(cached):
-        try:
-            shutil.copyfile(path, cached)
-        except OSError:
-            pass
-    return path
+    cached = cache_path(text) if text else ""
+    if cached and _mp3_ready(cached):
+        return cached
+    raise IOError("local recording missing")
+
+
+def local_audio_file(rel):
+    rel = (rel or "").replace("\\", "/").split("?", 1)[0].lstrip("/")
+    parts = rel.split("/")
+    if len(parts) != 3 or ".." in parts:
+        return ""
+    folder, track, name = parts
+    if not folder.startswith("day-") or track not in TRACKS:
+        return ""
+    if name != "all.mp3":
+        stem = name[:-4] if name.endswith(".mp3") else ""
+        if len(stem) != 2 or not stem.isdigit():
+            return ""
+    full = os.path.normpath(os.path.join(AUDIO, folder, track, name))
+    root = os.path.normpath(AUDIO)
+    if full != root and not full.startswith(root + os.sep):
+        return ""
+    if not _mp3_ready(full):
+        return ""
+    return full
 
 
 def write_file(path, text):
@@ -392,17 +409,75 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(payload)
 
+    def _send_file(self, path, content_type, download_name):
+        try:
+            size = os.path.getsize(path)
+        except OSError:
+            self._send(404, "recording not ready", "text/plain; charset=utf-8")
+            return
+        start = 0
+        end = size - 1 if size else 0
+        status = 200
+        ranged = False
+        header = self.headers.get("Range") or ""
+        if size and header.startswith("bytes="):
+            spec = header[6:].split(",", 1)[0].strip()
+            if "-" in spec:
+                left, right = spec.split("-", 1)
+                try:
+                    if left == "":
+                        count = int(right or "0")
+                        if count < 1:
+                            raise ValueError("range")
+                        start = size - count if count < size else 0
+                    else:
+                        start = int(left)
+                        end = int(right) if right else size - 1
+                    ranged = True
+                except ValueError:
+                    start = 0
+                    end = size - 1
+                    ranged = False
+        if ranged and (start < 0 or start >= size):
+            self.send_response(416)
+            self.send_header("Content-Range", "bytes */%d" % size)
+            self.send_header("Content-Length", "0")
+            self.end_headers()
+            return
+        if ranged and end >= size:
+            end = size - 1
+        if ranged and end < start:
+            end = size - 1
+        if ranged:
+            status = 206
+        length = 0 if not size else end - start + 1
+        try:
+            self.send_response(status)
+            self.send_header("Content-Type", content_type)
+            self.send_header("Accept-Ranges", "bytes")
+            self.send_header("Content-Length", str(length))
+            if status == 206:
+                self.send_header("Content-Range", "bytes %d-%d/%d" % (start, end, size))
+            self.send_header("Cache-Control", "public, max-age=86400")
+            if download_name:
+                self.send_header("Content-Disposition", 'attachment; filename="%s"' % download_name)
+            self.end_headers()
+            if length < 1:
+                return
+            with open(path, "rb") as handle:
+                handle.seek(start)
+                remaining = length
+                while remaining > 0:
+                    chunk = handle.read(65536 if remaining > 65536 else remaining)
+                    if not chunk:
+                        break
+                    self.wfile.write(chunk)
+                    remaining -= len(chunk)
+        except OSError:
+            return
+
     def _send_mp3(self, path, download_name):
-        with open(path, "rb") as handle:
-            payload = handle.read()
-        self.send_response(200)
-        self.send_header("Content-Type", "audio/mpeg")
-        self.send_header("Content-Length", str(len(payload)))
-        self.send_header("Cache-Control", "public, max-age=86400")
-        if download_name:
-            self.send_header("Content-Disposition", 'attachment; filename="%s"' % download_name)
-        self.end_headers()
-        self.wfile.write(payload)
+        self._send_file(path, "audio/mpeg", download_name)
 
     def _audio_from_text(self, text, download_name, stored_path=None, allow_network=True, rebuild=False):
         text = (text or "").strip()
@@ -433,6 +508,13 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         parsed = urlparse(self.path)
         path = parsed.path
+        if path.startswith("/audio/"):
+            full = local_audio_file(path[len("/audio/"):])
+            if not full:
+                self._send(404, "recording not ready", "text/plain; charset=utf-8")
+                return
+            self._send_file(full, "audio/mpeg", "")
+            return
         if path == "/api/audio":
             query = parse_qs(parsed.query)
             try:

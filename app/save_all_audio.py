@@ -6,10 +6,9 @@ import io
 import json
 import os
 import sys
-import threading
 import time
 
-import native_voice
+import ai_voice
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, "data")
@@ -17,7 +16,6 @@ COURSE = os.path.join(DATA, "course.json")
 AUDIO = os.path.join(DATA, "audio")
 CACHE = os.path.join(AUDIO, "cache")
 STATUS = os.path.join(AUDIO, "save_status.txt")
-WORKERS = 4
 TRACKS = ("word", "grammar", "sentence", "reading", "dictation")
 
 
@@ -81,7 +79,12 @@ def jobs():
     pending = []
     for text in order:
         dests = grouped[text]
-        if all(ready(path) for path in dests):
+        cached = ai_voice.cache_path(text)
+        fresh = ready(cached) and all(
+            ready(path) and os.path.getmtime(path) + 1 >= os.path.getmtime(cached)
+            for path in dests
+        )
+        if fresh:
             continue
         pending.append((text, dests))
     return course, pending
@@ -91,8 +94,6 @@ def place(data, dests):
     if not os.path.isdir(CACHE):
         os.makedirs(CACHE)
     for dest in dests:
-        if ready(dest):
-            continue
         write_bytes(dest, data)
 
 
@@ -109,7 +110,8 @@ def write_all(course):
             if not paths or not all(ready(path) for path in paths):
                 continue
             dest = os.path.join(AUDIO, "day-%02d" % number, kind, "all.mp3")
-            if ready(dest):
+            newest = max(os.path.getmtime(path) for path in paths)
+            if ready(dest) and os.path.getmtime(dest) + 1 >= newest:
                 continue
             folder = os.path.dirname(dest)
             if not os.path.isdir(folder):
@@ -121,7 +123,9 @@ def write_all(course):
             made += 1
         extra_paths = buckets["word"] + buckets["grammar"]
         extra = os.path.join(AUDIO, "day-%02d" % number, "extra", "all.mp3")
-        if extra_paths and all(ready(path) for path in extra_paths) and not ready(extra):
+        extra_newest = max(os.path.getmtime(path) for path in extra_paths) if extra_paths else 0
+        extra_stale = (not ready(extra)) or os.path.getmtime(extra) + 1 < extra_newest
+        if extra_paths and all(ready(path) for path in extra_paths) and extra_stale:
             folder = os.path.dirname(extra)
             if not os.path.isdir(folder):
                 os.makedirs(folder)
@@ -133,6 +137,15 @@ def write_all(course):
     return made
 
 
+def report(done, total, fail, started):
+    if done % 25 != 0 and done != total:
+        return
+    elapsed = time.time() - started
+    rate = done / elapsed if elapsed else 0
+    left = (total - done) / rate if rate else 0
+    log("saved %d/%d fail %d left_min %.0f" % (done, total, fail, left / 60.0))
+
+
 def main():
     course, pending = jobs()
     total = len(pending)
@@ -141,67 +154,63 @@ def main():
         made = write_all(course)
         log("done combined %d" % made)
         return
-    lock = threading.Lock()
-    state = {"done": 0, "fail": 0, "started": time.time()}
-
-    def work(text, dests):
-        import hashlib
-        digest = hashlib.sha1(text.encode("utf-8")).hexdigest()
-        cached = os.path.join(CACHE, digest + ".mp3")
-        data = None
-        if ready(cached):
-            with open(cached, "rb") as handle:
-                data = handle.read()
-        else:
-            data = native_voice.synthesize(text)
-            write_bytes(cached, data)
-        place(data, dests)
-
-    queue = list(pending)
-    index = {"n": 0}
-
-    def worker():
-        while True:
-            with lock:
-                if index["n"] >= len(queue):
-                    return
-                text, dests = queue[index["n"]]
-                index["n"] += 1
-                current = index["n"]
-            tries = 0
-            while tries < 4:
-                try:
-                    work(text, dests)
-                    with lock:
-                        state["done"] += 1
-                        done = state["done"]
-                        fail = state["fail"]
-                        elapsed = time.time() - state["started"]
-                    if done % 25 == 0 or done == total:
-                        rate = done / elapsed if elapsed else 0
-                        left = (total - done) / rate if rate else 0
-                        log("saved %d/%d fail %d left_min %.0f" % (done, total, fail, left / 60.0))
-                    break
-                except Exception as exc:
-                    tries += 1
-                    if tries >= 4:
-                        with lock:
-                            state["fail"] += 1
-                            fail = state["fail"]
-                        log("fail %d at %d %s" % (fail, current, type(exc).__name__))
-                    else:
-                        time.sleep(1.5 * tries)
-
-    threads = []
-    for _ in range(WORKERS):
-        thread = threading.Thread(target=worker)
-        thread.daemon = True
-        thread.start()
-        threads.append(thread)
-    for thread in threads:
-        thread.join()
+    started = time.time()
+    done = 0
+    fail = 0
+    index = 0
+    inflight = []
+    while index < total or inflight:
+        while index < total and len(inflight) < 8:
+            text, dests = pending[index]
+            index += 1
+            cached = ai_voice.cache_path(text)
+            if ready(cached):
+                with open(cached, "rb") as handle:
+                    place(handle.read(), dests)
+                done += 1
+                report(done, total, fail, started)
+                continue
+            try:
+                payload = ai_voice.request_job(text, 50)
+            except Exception as exc:
+                fail += 1
+                log("fail %d at %d %s" % (fail, index, type(exc).__name__))
+                continue
+            inflight.append({
+                "text": text,
+                "dests": dests,
+                "payload": payload,
+                "since": time.time(),
+                "tries": 0,
+            })
+        waiting = []
+        for job in inflight:
+            if time.time() - job["since"] > 90:
+                fail += 1
+                log("fail %d at timeout %s" % (fail, type(IOError).__name__))
+                continue
+            try:
+                data = ai_voice.fetch_if_ready(job["payload"], 20)
+            except Exception as exc:
+                job["tries"] += 1
+                if job["tries"] > 5:
+                    fail += 1
+                    log("fail %d fetch %s" % (fail, type(exc).__name__))
+                    continue
+                waiting.append(job)
+                continue
+            if not data:
+                waiting.append(job)
+                continue
+            write_bytes(ai_voice.cache_path(job["text"]), data)
+            place(data, job["dests"])
+            done += 1
+            report(done, total, fail, started)
+        inflight = waiting
+        if inflight:
+            time.sleep(0.4)
     made = write_all(course)
-    log("finished saved %d fail %d combined %d" % (state["done"], state["fail"], made))
+    log("finished saved %d fail %d combined %d" % (done, fail, made))
 
 
 if __name__ == "__main__":

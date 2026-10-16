@@ -113,120 +113,245 @@
     return id;
   }
 
-  function loadVoices() {
-    var note = document.getElementById("voiceNote");
-    if (!note) return;
-    note.hidden = false;
-    note.textContent = "Recordings play from files saved in this project. If a file is missing or still downloading, Start tries again and the lesson stays open.";
+  function trackTitle(track) {
+    var names = {
+      dictation: "Dialogue",
+      word: "Vocabulary",
+      grammar: "Examples",
+      extra: "Vocabulary and examples",
+      sentence: "Sentences",
+      reading: "Reading"
+    };
+    var source = String(track || "");
+    if (source.indexOf("listen-") === 0) source = source.slice(7);
+    return names[source] || "Listening";
   }
 
-  function looksLikeMp3(buffer) {
-    var bytes = new Uint8Array(buffer);
-    if (bytes.length < 2) return false;
-    if (bytes[0] === 73 && bytes[1] === 68 && bytes[2] === 51) return true;
-    return bytes[0] === 255 && (bytes[1] & 224) === 224;
+  function clipText(text, max) {
+    var value = String(text || "").replace(/\s+/g, " ");
+    if (value.length <= max) return value;
+    return value.slice(0, max) + "…";
+  }
+
+  function lineWhere(track, index, total, jp) {
+    var place = "line " + (index + 1);
+    if (total) place += " of " + total;
+    var where = trackTitle(track) + " · " + place;
+    if (jp) where += " · " + clipText(jp, 18);
+    return where;
+  }
+
+  function runningWhere(item, pass, count) {
+    var text = item.partName + " · line " + (item.index + 1) + " of " + item.partSize;
+    if (item.partCount > 1) text = "Part " + (item.partIndex + 1) + " of " + item.partCount + " · " + text;
+    if (pass && count) text += " · play " + pass + " of " + count;
+    var hidden = session.listen && session.listen.hide && !(session.listen.revealed && session.listen.revealed[item.index]);
+    if (!hidden && item.jp) text += " · " + clipText(item.jp, 18);
+    return text;
+  }
+
+  function rateText(rate) {
+    var n = Number(rate);
+    if (n !== n || !n) n = Number(progress && progress.rate ? progress.rate : 0.9);
+    return (Math.round(n * 10) / 10).toFixed(1);
+  }
+
+  function setHear(patch) {
+    if (!session.hear) session.hear = { phase: "idle", where: "", pass: 0, passes: 0, rate: 0 };
+    var key;
+    for (key in patch) {
+      if (Object.prototype.hasOwnProperty.call(patch, key)) session.hear[key] = patch[key];
+    }
+    paintListenStatus();
+  }
+
+  function paintListenStatus() {
+    var note = document.getElementById("voiceNote");
+    if (!note) return;
+    var hear = session.hear || { phase: "idle" };
+    var phase = hear.phase || "idle";
+    var place = hear.where ? " · " + hear.where : "";
+    var count = hear.pass && hear.passes ? " · play " + hear.pass + " of " + hear.passes : "";
+    var speed = (phase === "playing" || phase === "loading") && hear.rate ? " · speed " + rateText(hear.rate) : "";
+    var text = "Not playing.";
+    if (phase === "loading") text = "Loading" + place + count + speed + ".";
+    else if (phase === "playing") text = "Playing" + place + count + speed + ".";
+    else if (phase === "stopped") text = "Stopped" + place + ".";
+    else if (phase === "done") text = "Finished" + place + ".";
+    else if (phase === "missing") text = "This recording is not ready yet. The lesson stays open, and Start will try the saved file again.";
+    note.hidden = false;
+    note.className = "voice " + phase;
+    note.textContent = text;
   }
 
   function noteAudio(message) {
-    var note = document.getElementById("voiceNote");
-    if (!note) return;
-    note.hidden = false;
-    note.textContent = message;
+    setHear({ phase: "missing" });
+    if (message) {
+      var note = document.getElementById("voiceNote");
+      if (note) note.textContent = message;
+    }
+  }
+
+  function releaseAudio(node) {
+    if (!node) return;
+    node.onended = null;
+    node.onerror = null;
+    node.onplaying = null;
+    node.onloadedmetadata = null;
+    try { node.pause(); } catch (err) {}
+  }
+
+  function audioFile(dayNumber, track, index, whole) {
+    var folder = track;
+    var fileIndex = Number(index) || 0;
+    var name = "all.mp3";
+    if (!whole) {
+      if (folder === "extra") {
+        var day = dayByNumber(dayNumber);
+        var words = day && day.vocabulary ? day.vocabulary.length : 0;
+        if (fileIndex < words) folder = "word";
+        else {
+          folder = "grammar";
+          fileIndex = fileIndex - words;
+        }
+      }
+      name = pad(fileIndex + 1) + ".mp3";
+    }
+    return "/audio/day-" + pad(Number(dayNumber)) + "/" + folder + "/" + name;
   }
 
   function speak(text, clip, rate) {
     var token = playToken;
     return new Promise(function (resolve) {
-      var done = false;
-      var attempt = 0;
-      function finish() {
-        if (done) return;
-        done = true;
-        resolve();
+      var settled = false;
+      var audio = null;
+      var blobUrl = "";
+      var fallback = "";
+      var attemptToken = 0;
+      function settle(ok) {
+        if (settled) return;
+        settled = true;
+        releaseAudio(audio);
+        if (currentAudio === audio) currentAudio = null;
+        if (blobUrl) {
+          URL.revokeObjectURL(blobUrl);
+          blobUrl = "";
+        }
+        resolve(!!ok);
       }
-      function failSoft() {
+      function fail() {
         if (token !== playToken) {
-          finish();
+          settle(false);
           return;
         }
         noteAudio("This recording is not ready yet. The lesson stays open, and Start will try the saved file again.");
-        window.setTimeout(finish, Math.max(900, Math.min(4000, String(text || "").length * 80)));
+        settle(false);
       }
-      function playBlob(blob) {
-        if (token !== playToken) {
-          finish();
+      function applyRate(node) {
+        var next = Number(rate || (progress && progress.rate) || 0.9);
+        if (!(next > 0)) next = 0.9;
+        try { node.playbackRate = next; } catch (err) {}
+        return next;
+      }
+      function start(url) {
+        if (settled || token !== playToken) {
+          settle(false);
           return;
         }
-        if (currentAudio) {
-          currentAudio.pause();
-          currentAudio = null;
-        }
-        var url = URL.createObjectURL(blob);
-        var audio = new Audio(url);
+        var mine = ++attemptToken;
+        releaseAudio(audio);
+        if (currentAudio && currentAudio !== audio) releaseAudio(currentAudio);
+        audio = new Audio();
         currentAudio = audio;
+        audio.preload = "auto";
         audio.volume = volumeLevel();
-        audio.playbackRate = Number(rate || progress.rate || 0.9);
-        audio.onended = function () {
-          URL.revokeObjectURL(url);
-          if (currentAudio === audio) currentAudio = null;
-          finish();
-        };
-        audio.onerror = function () {
-          URL.revokeObjectURL(url);
-          if (currentAudio === audio) currentAudio = null;
-          again();
-        };
-        loadVoices();
-        var started = audio.play();
-        if (started && started.catch) started.catch(function () { finish(); });
-      }
-      function again() {
-        if (token !== playToken) {
-          finish();
-          return;
-        }
-        attempt += 1;
-        if (attempt > 3) {
-          failSoft();
-          return;
-        }
-        window.setTimeout(fetchOnce, attempt === 1 ? 0 : 450 * (attempt - 1));
-      }
-      function fetchOnce() {
-        if (token !== playToken) {
-          finish();
-          return;
-        }
-        var local = attempt < 3 ? "1" : "0";
-        var rebuild = attempt === 2 ? "&rebuild=1" : "";
-        var request;
-        if (clip && clip.day) {
-          request = fetch("/api/audio?day=" + clip.day + "&track=" + encodeURIComponent(clip.track) + "&i=" + clip.index + "&local=" + local + rebuild);
-        } else {
-          request = fetch("/api/audio?local=" + local, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ text: text || "" })
-          });
-        }
-        request.then(function (response) {
-          if (token !== playToken || !response.ok) throw new Error("audio");
-          return response.blob();
-        }).then(function (blob) {
-          if (!blob || blob.size < 200) throw new Error("short");
-          return blob.slice(0, 4).arrayBuffer().then(function (head) {
-            if (!looksLikeMp3(head)) throw new Error("bad");
-            return blob;
-          });
-        }).then(playBlob).catch(function () {
+        setHear({ phase: "loading", rate: applyRate(audio) });
+        function recover() {
+          if (mine !== attemptToken || settled) return;
+          attemptToken += 1;
           if (token !== playToken) {
-            finish();
+            settle(false);
             return;
           }
-          again();
-        });
+          if (fallback) {
+            var nextUrl = fallback;
+            fallback = "";
+            start(nextUrl);
+            return;
+          }
+          fail();
+        }
+        audio.onloadedmetadata = function () {
+          if (mine !== attemptToken || settled) return;
+          applyRate(audio);
+        };
+        audio.onplaying = function () {
+          if (mine !== attemptToken || settled || token !== playToken) return;
+          if (session.eyeHeld) {
+            session.eyeHeldAudio = true;
+            try { audio.pause(); } catch (err) {}
+            noteAudio("Paused for an eye rest. Playback continues when the rest ends.");
+            return;
+          }
+          setHear({ phase: "playing", rate: applyRate(audio) });
+        };
+        audio.onended = function () {
+          if (mine !== attemptToken) return;
+          if (token !== playToken) {
+            settle(false);
+            return;
+          }
+          settle(true);
+        };
+        audio.onerror = function () {
+          recover();
+        };
+        audio.src = url;
+        applyRate(audio);
+        var started = audio.play();
+        if (started && started.catch) {
+          started.catch(function (err) {
+            if (mine !== attemptToken || settled) return;
+            if (token !== playToken || (err && (err.name === "AbortError" || err.name === "NotAllowedError"))) {
+              if (token === playToken && err && err.name === "NotAllowedError") setHear({ phase: "stopped" });
+              settle(false);
+              return;
+            }
+            recover();
+          });
+        }
       }
-      again();
+      if (clip && clip.day) {
+        var fileUrl = audioFile(clip.day, clip.track, clip.index, false);
+        fallback = "/api/audio?day=" + clip.day + "&track=" + encodeURIComponent(clip.track) + "&i=" + clip.index + "&local=1";
+        if (fallback === fileUrl) fallback = "";
+        start(fileUrl);
+        return;
+      }
+      var spoken = String(text || "").trim();
+      if (!spoken) {
+        fail();
+        return;
+      }
+      setHear({ phase: "loading" });
+      fetch("/api/audio?local=1", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text: spoken })
+      }).then(function (response) {
+        if (token !== playToken || !response.ok) throw new Error("audio");
+        return response.blob();
+      }).then(function (blob) {
+        if (token !== playToken) {
+          settle(false);
+          return;
+        }
+        if (!blob || blob.size < 200) throw new Error("short");
+        blobUrl = URL.createObjectURL(blob);
+        start(blobUrl);
+      }).catch(function () {
+        fail();
+      });
     });
   }
 
@@ -344,28 +469,75 @@
     return track.indexOf("listen-") === 0 ? track.slice(7) : track;
   }
 
+  function highlightPiece(track, index) {
+    var current = document.querySelector('[data-review-item="' + track + "-" + index + '"]');
+    var nodes = document.querySelectorAll(".review-current");
+    var i;
+    var already = false;
+    for (i = 0; i < nodes.length; i++) {
+      if (nodes[i] === current) already = true;
+      else nodes[i].classList.remove("review-current");
+    }
+    if (!current) return;
+    current.classList.add("review-current");
+    if (!already && current.scrollIntoView) current.scrollIntoView({ block: "nearest" });
+  }
+
   function playOne(track, index) {
     var prefs = readItemInputs(track, index);
     var line = (listeningTracks(currentDay())[sourceTrack(track)] || [])[index];
     if (!line) return;
-    if (currentAudio) {
-      currentAudio.pause();
-      currentAudio = null;
-    }
     var token = ++playToken;
+    if (currentAudio) {
+      var previous = currentAudio;
+      currentAudio = null;
+      releaseAudio(previous);
+    }
     session.playing = true;
     session.itemPlaying = track + "-" + index;
     syncSettingLock();
+    var marks = document.querySelectorAll(".review-status");
+    for (var m = 0; m < marks.length; m++) marks[m].textContent = "";
+    highlightPiece(track, index);
+    setHear({
+      phase: "loading",
+      where: lineWhere(track, index, 0, line.jp),
+      pass: 1,
+      passes: prefs.times,
+      rate: prefs.rate
+    });
     speakRepeats(line.jp, prefs.times, token, function (pass, count) {
+      if (token !== playToken) return;
+      highlightPiece(track, index);
+      setHear({
+        phase: "loading",
+        where: lineWhere(track, index, 0, line.jp),
+        pass: pass,
+        passes: count,
+        rate: prefs.rate
+      });
       var label = document.querySelector('[data-status="' + track + "-" + index + '"]');
-      if (label) label.textContent = pass + " / " + count;
+      if (label) label.textContent = "Playing · play " + pass + " of " + count;
     }, line.clip, prefs.rate).then(function (finished) {
-      if (!finished || token !== playToken) return;
+      if (token !== playToken) return;
       session.playing = false;
       session.itemPlaying = null;
       syncSettingLock();
+      highlightPiece(track, index);
+      if (!finished) {
+        var stuck = document.querySelector('[data-status="' + track + "-" + index + '"]');
+        if (stuck) stuck.textContent = "";
+        return;
+      }
+      if (session.hear && session.hear.phase === "missing") return;
+      setHear({
+        phase: "done",
+        where: lineWhere(track, index, 0, line.jp),
+        pass: 0,
+        passes: 0
+      });
       var label = document.querySelector('[data-status="' + track + "-" + index + '"]');
-      if (label) label.textContent = "";
+      if (label) label.textContent = "Finished";
     });
   }
 
@@ -395,8 +567,8 @@
     function step(pass) {
       if (token !== playToken) return Promise.resolve(false);
       if (onPass) onPass(pass, count);
-      return speak(text, clip, rate).then(function () {
-        if (token !== playToken) return false;
+      return speak(text, clip, rate).then(function (ok) {
+        if (!ok || token !== playToken) return false;
         if (pass >= count) return true;
         return new Promise(function (resolve) {
           window.setTimeout(function () {
@@ -408,16 +580,55 @@
     return step(1);
   }
 
+  function holdAudioForEyes() {
+    session.eyeHeld = true;
+    if (currentAudio && !currentAudio.paused && !currentAudio.ended) {
+      try { currentAudio.pause(); } catch (err) {}
+      session.eyeHeldAudio = true;
+      noteAudio("Paused for an eye rest. Playback continues when the rest ends.");
+      return true;
+    }
+    return !!session.eyeHeldAudio;
+  }
+
+  function releaseAudioForEyes() {
+    var resume = !!(session.eyeHeldAudio && currentAudio && currentAudio.paused && !currentAudio.ended);
+    session.eyeHeld = false;
+    session.eyeHeldAudio = false;
+    if (!resume) return;
+    var started = currentAudio.play();
+    if (started && started.catch) started.catch(function () {});
+  }
+
   function stopAudio() {
+    session.eyeHeld = false;
+    session.eyeHeldAudio = false;
+    var wasPlaying = !!session.playing;
     playToken += 1;
     session.playing = false;
+    session.playAllParts = false;
+    session.queue = null;
     syncSettingLock();
     if (currentAudio) {
-      currentAudio.pause();
+      var playing = currentAudio;
       currentAudio = null;
+      releaseAudio(playing);
     }
     if (window.speechSynthesis) speechSynthesis.cancel();
+    if (wasPlaying) setHear({ phase: "stopped" });
   }
+
+  window.JapaneseStudyAudio = {
+    hold: holdAudioForEyes,
+    release: releaseAudioForEyes,
+    busy: function () {
+      var note = document.getElementById("voiceNote");
+      return !!(session.playing || (note && (note.classList.contains("playing") || note.classList.contains("loading"))));
+    },
+    held: function () {
+      return !!session.eyeHeldAudio;
+    }
+  };
 
   function scopeDays() {
     var selected = progress.selectedDay || 1;
@@ -458,6 +669,7 @@
     renderDays();
     renderModes();
     paintChrome();
+    paintListenStatus();
     var view = document.getElementById("view");
     if (progress.mode === "calendar") view.innerHTML = calendarHTML();
     else if (progress.mode === "study") view.innerHTML = studyHTML();
@@ -475,6 +687,11 @@
     var lesson = dayForDate(parseDate(todayISO()));
     var progressLine = document.getElementById("footProgress");
     var nextLine = document.getElementById("footNext");
+    var bar = document.getElementById("footBar");
+    var meter = document.querySelector(".foot-meter");
+    var pct = dayCount() ? Math.round(studied * 100 / dayCount()) : 0;
+    if (bar) bar.style.width = pct + "%";
+    if (meter) meter.setAttribute("aria-valuenow", String(pct));
     if (progressLine) {
       progressLine.textContent = studied + " of " + dayCount() + " lessons studied" +
         (account && account.identifier ? " · " + account.identifier : "");
@@ -1080,7 +1297,7 @@
     if (item.type === "listen") {
       var playing = item.phase === "playing";
       return head + '<div class="card"><p class="meta">The line plays three times. Then choose the English.</p>' +
-        (playing ? "<p>Playing… " + (item.pass || 1) + " / 3</p>" : "") +
+        (playing ? "<p>Playing · play " + (item.pass || 1) + " of 3.</p>" : "") +
         (item.played || playing ? "" : '<button type="button" class="primary" data-act="play-question">Play</button>') +
         (item.played ? choiceHTML(item) : "") +
         (session.test.checked ? '<p class="jp">' + esc(item.jp) + "</p>" + guidesHTML(item) : "") +
@@ -1195,23 +1412,24 @@
     var pass = session.playing ? (state.pass || 1) : 0;
     var passes = state.passes || times;
     var passWidth = passes ? Math.round((pass / passes) * 100) : 0;
-    var place = total ? (index + 1) + " / " + total : "0 / 0";
-    if (session.playing && pass) place += " · " + pass + " / " + passes;
+    var place = total ? "Line " + (index + 1) + " of " + total : "No lines";
+    if (session.playing && pass) place += " · play " + pass + " of " + passes;
+    else place += " · not playing";
     return '<div class="player">' +
       '<button type="button" class="primary" data-act="play-all">Start</button>' +
+      '<button type="button" data-act="play-day">All parts</button>' +
       '<button type="button" data-act="stop">Stop</button>' +
+      '<p id="nowPart" class="now-part">' + esc(nowPlayingText()) + "</p>" +
       '<label class="timeline">Timeline <input id="timeline" type="range" min="0" max="' + max + '" step="1" value="' + index + '"> <span id="timelineLabel">' + place + "</span></label>" +
       '<label class="setting">Times <input id="repeats" type="number" min="1" max="10" step="1" value="' + times + '"' + settingsDisabled() + '></label>' +
       '<label>Volume <input id="volume" type="range" min="0" max="1" step="0.05" value="' + volumeLevel() + '"> <span id="volumeLabel">' + Math.round(volumeLevel() * 100) + "%</span></label>" +
       '<label class="setting">Speed <input id="rate" type="range" min="0.6" max="1.2" step="0.1" value="' + esc(progress.rate || 0.9) + '"' + settingsDisabled() + '></label>' +
-      '<a class="small dl" href="' + audioHref(state.day, state.track, 0, true) + '">Download</a>' +
+      '<a class="small dl" href="' + audioHref(state.day, state.track, 0, true) + '" download>Download</a>' +
       '<div class="passbar" aria-hidden="true"><span style="width:' + passWidth + '%"></span></div></div>';
   }
 
   function audioHref(dayNumber, track, index, whole) {
-    var href = "/api/audio?day=" + dayNumber + "&track=" + encodeURIComponent(track);
-    href += whole ? "&part=all" : "&i=" + index;
-    return href + "&dl=1";
+    return audioFile(dayNumber, track, index, whole);
   }
 
   function listenLinesHTML(lines, forceShow) {
@@ -1221,14 +1439,14 @@
       var hidden = !forceShow && state.hide && !state.revealed[index];
       var current = index === state.index ? " current" : "";
       var passNote = session.playing && index === state.index && state.pass
-        ? " · " + state.pass + " / " + (state.passes || times)
+        ? " · play " + state.pass + " of " + (state.passes || times)
         : "";
-      return '<div class="piece listen-line' + current + '" data-review-item="listen-' + state.track + "-" + index + '"><p class="meta">' + (index + 1) + passNote + "</p>" +
+      return '<div class="piece listen-line' + current + '" data-review-item="listen-' + state.track + "-" + index + '"><p class="meta">Line ' + (index + 1) + passNote + "</p>" +
         itemControls("listen-" + state.track, index) +
         (hidden ? '<p class="jp">Hidden until you play it</p><div class="guide-slot"></div>' :
           '<p class="jp">' + esc(line.jp) + '</p><div class="guide-slot">' + guidesFor(line, "listen-" + state.track, index) + "</div>" +
           '<p class="en">' + esc(line.en || "") + "</p>") +
-        '<a class="small dl" href="' + audioHref(state.day, state.track, index) + '">Download</a></div>';
+        '<a class="small dl" href="' + audioHref(state.day, state.track, index) + '" download>Download</a></div>';
     }).join("");
   }
 
@@ -1279,15 +1497,11 @@
 
   function markStudy(track, index, pass, count) {
     clearStudyMark();
-    var current = document.querySelector('[data-review-item="' + track + "-" + index + '"]');
-    if (current) {
-      current.classList.add("review-current");
-      if (current.scrollIntoView) current.scrollIntoView({ block: "nearest" });
-    }
+    highlightPiece(track, index);
     var labels = document.querySelectorAll(".review-status");
     for (var i = 0; i < labels.length; i++) {
       if (labels[i].getAttribute("data-status") === track) {
-        labels[i].textContent = (index + 1) + " · " + pass + " / " + count;
+        labels[i].textContent = "Playing · line " + (index + 1) + " · play " + pass + " of " + count;
       }
     }
   }
@@ -1306,13 +1520,30 @@
         session.studyReview = null;
         syncSettingLock();
         clearStudyMark();
+        if (session.hear && session.hear.phase !== "missing" && session.hear.phase !== "stopped") {
+          setHear({ phase: "done", where: trackTitle(track) });
+        }
         return;
       }
       speakRepeats(lines[index].jp, clampRepeats(progress.repeats || 1), token, function (pass, count) {
         if (token !== playToken) return;
+        setHear({
+          phase: "loading",
+          where: lineWhere(track, index, lines.length, lines[index].jp),
+          pass: pass,
+          passes: count,
+          rate: progress.rate
+        });
         markStudy(track, index, pass, count);
       }, lines[index].clip).then(function (finished) {
-        if (!finished || token !== playToken) return;
+        if (token !== playToken) return;
+        if (!finished) {
+          session.playing = false;
+          session.studyReview = null;
+          syncSettingLock();
+          clearStudyMark();
+          return;
+        }
         window.setTimeout(function () { step(index + 1); }, 350);
       });
     }
@@ -1334,7 +1565,7 @@
         '<p class="jp">' + esc(line.jp) + "</p>" +
         guidesHTML(line) +
         '<p class="en">' + esc(line.en || "") + "</p>" +
-        '<a class="small dl" href="' + audioHref(day.day, track, index) + '">Download</a></div>';
+        '<a class="small dl" href="' + audioHref(day.day, track, index) + '" download>Download</a></div>';
     }).join("");
   }
 
@@ -1352,46 +1583,196 @@
         var lines = listeningTracks(day)[pair[0]] || [];
         if (!lines.length) return "";
         return "<h4>" + pair[1] + " (" + lines.length + ') <a class="small dl" href="' +
-          audioHref(day.day, pair[0], 0, true) + '">Download</a></h4>' + catalogLines(day, pair[0]);
+          audioHref(day.day, pair[0], 0, true) + '" download>Download</a></h4>' + catalogLines(day, pair[0]);
       }).join("");
       return '<details class="card"' + (day.day === progress.selectedDay ? " open" : "") + ">" +
         "<summary>Day " + day.day + " · " + esc(day.title) + "</summary>" + body + "</details>";
     }).join("");
     return '<p class="kicker">Listening · all lessons</p><h2>Every listening line</h2>' +
       '<div class="row"><button type="button" data-act="listen-scope" data-scope="lesson">This lesson</button></div>' +
-      '<p class="meta">' + days.length + " lessons. Nanami speaks each line. Download saves that line. Download beside a heading saves the whole track.</p>" +
+      '<p class="meta">' + days.length + " lessons. Each line plays from the recording saved in this project. Download saves that line. Download beside a heading saves the whole track.</p>" +
       blocks;
   }
 
-  function playLines(lines, start) {
+  function nowPlayingText() {
+    var item = session.queue && session.listen ? session.queue[session.listen.queuePos] : null;
+    if (!session.playing || !item) return "Not playing.";
+    return "Now playing · " + runningWhere(item, session.listen.pass, session.listen.passes);
+  }
+
+  function queueFromLines(track, lines) {
+    var name = trackTitle(track);
+    return (lines || []).map(function (line, index) {
+      return {
+        track: track,
+        index: index,
+        jp: line.jp,
+        hira: line.hira,
+        romaji: line.romaji,
+        en: line.en,
+        clip: line.clip || null,
+        partSize: lines.length,
+        partIndex: 0,
+        partCount: 1,
+        partName: name
+      };
+    });
+  }
+
+  function dayQueue() {
+    var parts = [
+      ["dictation", "Dialogue"],
+      ["word", "Vocabulary"],
+      ["grammar", "Examples"],
+      ["sentence", "Sentences"],
+      ["reading", "Reading"]
+    ];
+    var tracks = listeningTracks(currentDay());
+    var present = parts.filter(function (pair) { return (tracks[pair[0]] || []).length; });
+    var queue = [];
+    present.forEach(function (pair, partIndex) {
+      var lines = tracks[pair[0]];
+      lines.forEach(function (line, index) {
+        queue.push({
+          track: pair[0],
+          index: index,
+          jp: line.jp,
+          hira: line.hira,
+          romaji: line.romaji,
+          en: line.en,
+          clip: line.clip || null,
+          partSize: lines.length,
+          partIndex: partIndex,
+          partCount: present.length,
+          partName: pair[1]
+        });
+      });
+    });
+    return queue;
+  }
+
+  function paintPlayingLine(item) {
+    var state = session.listen;
+    if (!state || !item) return;
+    var buttons = document.querySelectorAll("[data-act='track']");
+    var i;
+    for (i = 0; i < buttons.length; i++) {
+      var on = buttons[i].getAttribute("data-track") === item.track;
+      if (on) buttons[i].setAttribute("aria-pressed", "true");
+      else buttons[i].removeAttribute("aria-pressed");
+      buttons[i].classList.toggle("playing-part", on);
+    }
+    var rows = document.querySelectorAll(".listen-line");
+    for (i = 0; i < rows.length; i++) {
+      var running = (rows[i].getAttribute("data-review-item") || "") === "listen-" + item.track + "-" + item.index;
+      rows[i].classList.toggle("current", running);
+      rows[i].classList.toggle("running", running);
+    }
+    var current = document.querySelector(".listen-line.running");
+    if (current) {
+      var meta = current.querySelector(".meta");
+      if (meta) meta.textContent = "Now playing · " + runningWhere(item, state.pass, state.passes);
+      var badge = current.querySelector(".review-status");
+      if (badge) badge.textContent = "Now playing";
+      if (current.scrollIntoView) current.scrollIntoView({ block: "nearest" });
+    }
+    var now = document.getElementById("nowPart");
+    if (now) now.textContent = "Now playing · " + runningWhere(item, state.pass, state.passes);
+    var label = document.getElementById("timelineLabel");
+    if (label) {
+      label.textContent = item.partName + " · line " + (item.index + 1) + " of " + item.partSize +
+        " · play " + (state.pass || 1) + " of " + (state.passes || 1);
+    }
+    var timeline = document.getElementById("timeline");
+    if (timeline && document.activeElement !== timeline) {
+      timeline.max = String(Math.max(0, item.partSize - 1));
+      timeline.value = String(item.index);
+    }
+    var bar = document.querySelector(".passbar span");
+    if (bar && state.passes) bar.style.width = Math.round((state.pass / state.passes) * 100) + "%";
+  }
+
+  function revealListenLine(item) {
+    var node = document.querySelector('[data-review-item="listen-' + item.track + '-' + item.index + '"]');
+    if (!node) return;
+    var jp = node.querySelector(".jp");
+    if (!jp || jp.textContent !== "Hidden until you play it") return;
+    jp.textContent = item.jp || "";
+    var slot = node.querySelector(".guide-slot");
+    if (slot) slot.innerHTML = guidesFor(item, "listen-" + item.track, item.index);
+    if (!item.en || !slot || !slot.parentNode) return;
+    var en = document.createElement("p");
+    en.className = "en";
+    en.textContent = item.en;
+    slot.parentNode.insertBefore(en, slot.nextSibling);
+  }
+
+  function playQueue(queue, start, allParts) {
     var token = ++playToken;
     session.playing = true;
+    session.playAllParts = !!allParts;
+    session.queue = queue || [];
     syncSettingLock();
-    function step(index) {
+    function step(pos) {
       if (token !== playToken) return;
-      if (index >= lines.length) {
+      if (!session.queue.length || pos >= session.queue.length) {
         session.playing = false;
-        if (session.listen) {
-          session.listen.pass = 0;
-          session.listen.index = 0;
+        session.playAllParts = false;
+        session.queue = null;
+        if (session.listen) session.listen.pass = 0;
+        syncSettingLock();
+        if (!session.hear || (session.hear.phase !== "missing" && session.hear.phase !== "stopped")) {
+          setHear({ phase: "done", where: allParts ? "All parts" : (session.listen ? trackTitle(session.listen.track) : "") });
         }
         render();
         return;
       }
-      session.listen.index = index;
-      speakRepeats(lines[index].jp, listenRepeats(), token, function (pass, count) {
-        if (!session.listen) return;
+      var item = session.queue[pos];
+      ensureListen();
+      var trackChanged = session.listen.track !== item.track;
+      if (trackChanged) session.listen.revealed = {};
+      session.listen.track = item.track;
+      session.listen.index = item.index;
+      session.listen.queuePos = pos;
+      var node = document.querySelector('[data-review-item="listen-' + item.track + '-' + item.index + '"]');
+      if (trackChanged || !node) render();
+      speakRepeats(item.jp, listenRepeats(), token, function (pass, count) {
+        if (token !== playToken || !session.listen) return;
         session.listen.pass = pass;
         session.listen.passes = count;
-        render();
-      }, lines[index].clip).then(function (finished) {
-        if (!finished || token !== playToken) return;
-        session.listen.revealed[index] = true;
-        render();
-        window.setTimeout(function () { step(index + 1); }, 350);
+        setHear({
+          phase: "loading",
+          where: runningWhere(item, pass, count),
+          pass: pass,
+          passes: count,
+          rate: progress.rate
+        });
+        paintPlayingLine(item);
+      }, item.clip).then(function (finished) {
+        if (token !== playToken) return;
+        if (!finished) {
+          session.playing = false;
+          session.playAllParts = false;
+          session.queue = null;
+          syncSettingLock();
+          render();
+          return;
+        }
+        if (!session.listen.revealed) session.listen.revealed = {};
+        session.listen.revealed[item.index] = true;
+        revealListenLine(item);
+        window.setTimeout(function () { step(pos + 1); }, 350);
       });
     }
-    step(start);
+    step(start || 0);
+  }
+
+  function playLines(lines, start) {
+    var track = session.listen && session.listen.track ? session.listen.track : "dictation";
+    if (!session.listen) {
+      session.listen = { day: currentDay().day, track: track, index: 0, hide: true, revealed: {}, pass: 0, passes: 1 };
+    }
+    playQueue(queueFromLines(track, lines), start || 0, false);
   }
 
   function onClick(event) {
@@ -1534,7 +1915,7 @@
       progress.mode = "listening";
       save();
       render();
-      playLines(currentDay().listening.lines, 0);
+      playLines(listeningTracks(currentDay()).dictation, 0);
       return;
     }
     if (act === "practice-kind") {
@@ -1628,13 +2009,20 @@
       var questionToken = ++playToken;
       listenItem.phase = "playing";
       listenItem.pass = 1;
+      setHear({ phase: "loading", where: "Test listening", pass: 1, passes: 3, rate: progress.rate });
       speakRepeats(listenItem.jp, 3, questionToken, function (pass) {
         listenItem.pass = pass;
+        setHear({ phase: "loading", where: "Test listening", pass: pass, passes: 3, rate: progress.rate });
         render();
       }, listenItem.clip || clipForText(listenItem.jp)).then(function (finished) {
-        if (!finished) return;
+        if (questionToken !== playToken || !finished) {
+          if (!listenItem.played) listenItem.phase = "";
+          if (progress.mode === "test") render();
+          return;
+        }
         listenItem.phase = "ask";
         listenItem.played = true;
+        if (!session.hear || session.hear.phase !== "missing") setHear({ phase: "done", where: "Test listening" });
         render();
       });
       return;
@@ -1685,13 +2073,25 @@
       speakRepeats(line.jp, lineTimes, lineToken, function (pass, count) {
         session.listen.pass = pass;
         session.listen.passes = count;
+        setHear({
+          phase: "loading",
+          where: lineWhere(session.listen.track, index, 0),
+          pass: pass,
+          passes: count,
+          rate: progress.rate
+        });
         render();
       }, line.clip).then(function (finished) {
-        if (!finished) return;
-        session.listen.revealed[index] = true;
+        if (lineToken !== playToken) return;
         session.playing = false;
         syncSettingLock();
         session.listen.pass = 0;
+        if (!finished) {
+          render();
+          return;
+        }
+        session.listen.revealed[index] = true;
+        if (!session.hear || session.hear.phase !== "missing") setHear({ phase: "done" });
         render();
       });
       return;
@@ -1704,8 +2104,21 @@
       return;
     }
     if (act === "play-all") {
-      var trackLines = listeningTracks(currentDay())[session.listen.track];
-      playLines(trackLines, session.listen.index || 0);
+      ensureListen();
+      playLines(listeningTracks(currentDay())[session.listen.track], session.listen.index || 0);
+      return;
+    }
+    if (act === "play-day") {
+      ensureListen();
+      var dayLines = dayQueue();
+      var dayStart = 0;
+      for (var q = 0; q < dayLines.length; q++) {
+        if (dayLines[q].track === session.listen.track && dayLines[q].index === (session.listen.index || 0)) {
+          dayStart = q;
+          break;
+        }
+      }
+      playQueue(dayLines, dayStart, true);
       return;
     }
     if (act === "stop") {
@@ -1798,9 +2211,27 @@
 
   var bound = false;
 
+  function applyTheme(name) {
+    var easy = name === "easy";
+    document.documentElement.classList.toggle("theme-easy", easy);
+    var active = easy ? "easy" : "modern";
+    var buttons = document.querySelectorAll("[data-theme]");
+    var i;
+    for (i = 0; i < buttons.length; i++) {
+      buttons[i].setAttribute("aria-pressed", buttons[i].getAttribute("data-theme") === active ? "true" : "false");
+    }
+    try { localStorage.setItem("japanese-study-theme", active); } catch (err) {}
+  }
+
   function bind() {
     if (bound) return;
     bound = true;
+    document.body.addEventListener("click", function (event) {
+      var themeBtn = event.target && event.target.closest ? event.target.closest("[data-theme]") : null;
+      if (!themeBtn) return;
+      applyTheme(themeBtn.getAttribute("data-theme"));
+    });
+    applyTheme(document.documentElement.classList.contains("theme-easy") ? "easy" : "modern");
     document.getElementById("view").addEventListener("click", onClick);
     document.getElementById("modes").addEventListener("click", onClick);
     document.getElementById("dayList").addEventListener("click", onClick);
@@ -1930,7 +2361,7 @@
       if (event.target.id === "timeline") {
         var timelineLabel = document.getElementById("timelineLabel");
         var timelineMax = Number(event.target.max);
-        if (timelineLabel) timelineLabel.textContent = (Number(event.target.value) + 1) + " / " + (timelineMax + 1);
+        if (timelineLabel) timelineLabel.textContent = "Line " + (Number(event.target.value) + 1) + " of " + (timelineMax + 1) + (session.playing ? "" : " · not playing");
       }
     });
     document.getElementById("view").addEventListener("change", function (event) {
@@ -1956,7 +2387,16 @@
       }
       if (event.target.id === "timeline" && session.listen) {
         session.listen.index = Number(event.target.value);
-        if (session.playing) {
+        if (session.playing && session.playAllParts && session.queue) {
+          var seekAt = 0;
+          for (var s = 0; s < session.queue.length; s++) {
+            if (session.queue[s].track === session.listen.track && session.queue[s].index === session.listen.index) {
+              seekAt = s;
+              break;
+            }
+          }
+          playQueue(session.queue, seekAt, true);
+        } else if (session.playing) {
           var seekLines = listeningTracks(currentDay())[session.listen.track] || [];
           playLines(seekLines, session.listen.index);
         } else {
@@ -1995,8 +2435,6 @@
     session.month = lessonDate(progress.selectedDay);
     ensureLogs();
     bind();
-    loadVoices();
-    if (window.speechSynthesis) speechSynthesis.onvoiceschanged = loadVoices;
     render();
   }
 

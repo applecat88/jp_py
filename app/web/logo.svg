@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Japanese study">
+  <rect width="64" height="64" rx="18" fill="#f3ecdf"/>
+  <rect x="3.25" y="3.25" width="57.5" height="57.5" rx="15.5" fill="none" stroke="#243f36" stroke-width="1.4" opacity="0.28"/>
+  <text x="32" y="46" text-anchor="middle" font-family="Yu Mincho, Yu Gothic, Meiryo, serif" font-size="40" fill="#243f36">あ</text>
+  <circle cx="50.5" cy="13.5" r="6.2" fill="#a33b2b"/>
+  <circle cx="50.5" cy="13.5" r="3.6" fill="none" stroke="#f6f1e7" stroke-width="1.15"/>
+</svg>

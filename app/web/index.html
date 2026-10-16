@@ -4,10 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Japanese study</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <script>
+    try {
+      if (localStorage.getItem("japanese-study-theme") === "easy") {
+        document.documentElement.classList.add("theme-easy");
+      }
+    } catch (err) {}
+  </script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="locked">
   <div id="gate">
+    <div class="gate-wrap">
+    <div class="theme-switch" role="group" aria-label="Display">
+      <button type="button" data-theme="modern" aria-pressed="true">Modern</button>
+      <button type="button" data-theme="easy" aria-pressed="false">Easy on eyes</button>
+    </div>
     <section class="login-card">
       <img src="login-art.jpg" alt="A notebook open to the character あ, a red book, tea, and plum blossoms">
       <div class="login-body">
@@ -40,51 +53,68 @@
         </form>
       </div>
     </section>
+    </div>
   </div>
   <div id="app">
     <header class="top">
       <div class="brand">
-        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
-          <rect width="64" height="64" rx="16" fill="#f3ecdf"/>
-          <path d="M32 12c7 7 12 13 12 21a12 12 0 0 1-24 0c0-8 5-14 12-21z" fill="#243f36"/>
-          <circle cx="32" cy="33" r="3" fill="#a33b2b"/>
-        </svg>
-        <div>
-          <p class="eyebrow">Client work</p>
+        <img class="logo" src="logo.svg" alt="">
+        <div class="brand-copy">
           <h1>Japanese study</h1>
+          <p class="eyebrow">Client work</p>
         </div>
       </div>
+      <nav id="modes" aria-label="Study modes"></nav>
       <div class="header-actions">
         <div class="header-row">
+          <div class="theme-switch" role="group" aria-label="Display">
+            <button type="button" data-theme="modern" aria-pressed="true">Modern</button>
+            <button type="button" data-theme="easy" aria-pressed="false">Easy on eyes</button>
+          </div>
           <button id="todayBtn" type="button">Today's lesson</button>
           <p id="who" class="who" hidden></p>
           <button id="signOut" type="button" hidden>Sign out</button>
         </div>
-        <div class="header-row tools">
+      </div>
+    </header>
+    <div class="shell">
+      <aside>
+        <div class="aside-head">
+          <p class="aside-label">Lessons</p>
+          <label class="find">Find
+            <input id="findDay" type="search" placeholder="Day, word, or title">
+          </label>
+        </div>
+        <ol id="dayList"></ol>
+        <div class="aside-tools">
           <label>Course start <input id="startDate" type="date"></label>
           <label class="check"><input id="hidePronunciation" type="checkbox"> Hide pronunciation</label>
           <label class="check"><input id="hideRomaji" type="checkbox"> Hide romaji</label>
         </div>
-      </div>
-    </header>
-    <p id="voiceNote" class="voice" hidden></p>
-    <div class="shell">
-      <aside>
-        <label class="find">Find
-          <input id="findDay" type="search" placeholder="Day, word, or title">
-        </label>
-        <ol id="dayList"></ol>
+        <footer class="foot">
+          <div class="foot-progress">
+            <span class="foot-mark" aria-hidden="true">あ</span>
+            <p id="footProgress">Japanese study</p>
+          </div>
+          <div class="foot-meter" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Lessons studied">
+            <span id="footBar"></span>
+          </div>
+          <p id="footNext">Sign in to open today's lesson.</p>
+        </footer>
       </aside>
-      <main>
-        <nav id="modes" aria-label="Study modes"></nav>
-        <div id="view"></div>
-      </main>
+      <div class="stage">
+        <p id="voiceNote" class="voice idle" aria-live="polite">Not playing.</p>
+        <div id="eyeBlink" class="eye-blink" hidden></div>
+        <div class="stage-body">
+          <main>
+            <div id="view"></div>
+          </main>
+          <aside id="eyeRail" class="eye-rail" lang="en" aria-label="Eye protection"></aside>
+        </div>
+      </div>
     </div>
-    <footer class="foot">
-      <p id="footProgress">Japanese study</p>
-      <p id="footNext">Sign in to open today's lesson.</p>
-    </footer>
   </div>
   <script src="app.js"></script>
+  <script src="eye.js"></script>
 </body>
 </html>

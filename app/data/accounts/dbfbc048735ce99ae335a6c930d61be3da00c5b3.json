@@ -1,434 +1,460 @@
 {
- "hidePronunciation": false,
- "rate": 1,
- "volume": 0.65,
- "hideRomaji": false,
+ "selectedDay": 7,
  "startDate": "2026-10-14",
  "days": {
-  "37": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "6": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "63": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "41": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "15": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "82": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "72": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "78": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "55": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "32": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "56": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "50": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "65": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "60": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "51": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "66": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "18": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "62": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "3": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "57": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "39": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "35": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "47": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "74": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "54": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "71": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "31": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "17": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "53": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "73": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "80": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "16": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "14": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "58": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "36": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "9": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "81": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "30": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "45": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "23": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "2": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "68": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "67": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "5": {
-   "studied": true,
-   "tests": [],
-   "studyLogs": [
-    {
-     "note": "Studied",
-     "at": "2026-10-15T16:21:05.842Z",
-     "id": "lmva5li7h4"
-    }
-   ]
-  },
-  "76": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "61": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "29": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "38": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "22": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "1": {
-   "studied": true,
-   "tests": [],
-   "studyLogs": [
-    {
-     "note": "Studied",
-     "at": "2026-10-14T03:04:27.286Z",
-     "id": "lmva5li7h2"
-    }
-   ]
-  },
-  "13": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "12": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "69": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "70": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "24": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "25": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "40": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "48": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "42": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "34": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "75": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "28": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "46": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "64": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
   "27": {
    "studied": false,
-   "tests": [],
-   "studyLogs": []
-  },
-  "26": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
   "43": {
    "studied": false,
-   "tests": [],
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "79": {
+  "39": {
    "studied": false,
-   "tests": [],
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "49": {
+  "82": {
    "studied": false,
-   "tests": [],
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "10": {
+  "65": {
    "studied": false,
-   "tests": [],
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "44": {
+  "50": {
    "studied": false,
-   "tests": [],
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "21": {
+  "24": {
    "studied": false,
-   "tests": [],
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
   "8": {
    "studied": false,
-   "tests": [],
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "19": {
-   "studied": false,
-   "tests": [],
-   "studyLogs": []
+  "1": {
+   "tests": [
+    {
+     "total": 18,
+     "score": 13,
+     "id": "lmvaxde821",
+     "attempts": 1,
+     "at": "2026-10-16T12:09:36.578Z",
+     "scope": "day",
+     "identifier": "appleapplecat88@gmail.com"
+    }
+   ],
+   "studyLogs": [
+    {
+     "id": "lmvaxde822",
+     "note": "Studied",
+     "at": "2026-10-16T12:09:36.578Z"
+    }
+   ],
+   "misses": [
+    {
+     "prompt": "はい、分かります。",
+     "answer": "Yes, I understand."
+    },
+    {
+     "prompt": "How do you make a polite question?",
+     "answer": "Add か."
+    },
+    {
+     "prompt": "What is the ます form of 読む?",
+     "answer": "読みます"
+    },
+    {
+     "prompt": "Which particle does 分かる take?",
+     "answer": "が"
+    },
+    {
+     "prompt": "How do you say “I do work”?",
+     "answer": "仕事をします。"
+    }
+   ],
+   "studied": true
   },
-  "4": {
+  "78": {
    "studied": false,
-   "tests": [],
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "20": {
+  "23": {
    "studied": false,
-   "tests": [],
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "59": {
+  "9": {
    "studied": false,
-   "tests": [],
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "7": {
+  "55": {
    "studied": false,
-   "tests": [],
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "77": {
+  "67": {
    "studied": false,
-   "tests": [],
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "33": {
+  "30": {
    "studied": false,
-   "tests": [],
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
+  },
+  "16": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "62": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "51": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "34": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
   },
   "52": {
    "studied": false,
-   "tests": [],
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
+  },
+  "6": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "57": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "69": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "22": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "19": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "47": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "12": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "29": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "45": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "53": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "15": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "76": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "64": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "17": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "70": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "56": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "80": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "5": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "48": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "60": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "25": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "18": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "71": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "4": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "37": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "61": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "28": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "74": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "3": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "59": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "7": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "42": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "38": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "41": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "68": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "36": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "20": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "31": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "33": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "44": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "81": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "54": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "66": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "46": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "79": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "73": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "14": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "26": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "2": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "35": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "13": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "77": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "32": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "63": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "72": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "40": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "49": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "21": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "10": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
   },
   "11": {
    "studied": false,
-   "tests": [],
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
+  },
+  "58": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "75": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
   }
  },
- "repeats": 3,
- "selectedDay": 5,
- "mode": "study"
+ "hidePronunciation": false,
+ "volume": 0.65,
+ "rate": 1,
+ "mode": "study",
+ "hideRomaji": false,
+ "repeats": 5
 }
