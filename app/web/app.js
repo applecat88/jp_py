@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var MODES = ["calendar", "study", "practice", "test", "logs", "listening"];
+  var MODES = ["calendar", "study", "grammar", "practice", "test", "logs", "listening"];
   var course = null;
   var progress = null;
   var account = null;
@@ -376,10 +376,64 @@
     return !progress.hidePronunciation;
   }
 
+  function isHiraChar(ch) {
+    var code = ch.charCodeAt(0);
+    return code >= 0x3041 && code <= 0x3096;
+  }
+
+  function isPunctChar(ch) {
+    return "。、！？「」『』（）()…・,.!?　 ".indexOf(ch) >= 0;
+  }
+
+  function cutPronunciation(jp, hira) {
+    if (!jp || !hira) return hira || "";
+    var parts = [];
+    var i = 0;
+    var j = 0;
+    while (i < jp.length && j < hira.length) {
+      var ch = jp.charAt(i);
+      if ((isHiraChar(ch) || isPunctChar(ch)) && ch === hira.charAt(j)) {
+        i += 1;
+        j += 1;
+        continue;
+      }
+      if (isPunctChar(ch)) {
+        i += 1;
+        continue;
+      }
+      var start = i;
+      while (i < jp.length && !isHiraChar(jp.charAt(i)) && !isPunctChar(jp.charAt(i))) i += 1;
+      if (i === start) return hira;
+      var mark = hira.length;
+      if (i < jp.length && isPunctChar(jp.charAt(i))) mark = hira.indexOf(jp.charAt(i), j);
+      else if (i < jp.length && isHiraChar(jp.charAt(i))) {
+        var k = i;
+        while (k < jp.length && isHiraChar(jp.charAt(k))) k += 1;
+        mark = hira.indexOf(jp.substring(i, k), j);
+      }
+      if (mark < j || mark === j) return hira;
+      parts.push(hira.substring(j, mark));
+      j = mark;
+    }
+    if (j < hira.length && i >= jp.length) {
+      var rest = hira.substring(j).replace(/^[。、！？]+/, "");
+      if (rest) parts.push(rest);
+    }
+    return parts.join(" ");
+  }
+
+  function pronunciationOf(item, track) {
+    var hira = (item && item.hira) || "";
+    if (!hira) return "";
+    if (track === "word" || track === "listen-word") return hira;
+    return cutPronunciation((item && (item.jp || item.answer)) || "", hira);
+  }
+
   function guidesHTML(item) {
     var html = "";
     if (!item) return html;
-    if (showPronunciation() && item.hira) html += '<p class="pronunciation">' + esc(item.hira) + "</p>";
+    var pronunciation = pronunciationOf(item, "");
+    if (showPronunciation() && pronunciation) html += '<p class="pronunciation">' + esc(pronunciation) + "</p>";
     if (showRomaji() && item.romaji) html += '<p class="romaji">' + esc(item.romaji) + "</p>";
     return html;
   }
@@ -430,7 +484,8 @@
     var prefs = itemPrefs(track, index);
     var html = "";
     if (!item) return html;
-    if (prefs.pron && item.hira) html += '<p class="pronunciation">' + esc(item.hira) + "</p>";
+    var pronunciation = pronunciationOf(item, track);
+    if (prefs.pron && pronunciation) html += '<p class="pronunciation">' + esc(pronunciation) + "</p>";
     if (prefs.roma && item.romaji) html += '<p class="romaji">' + esc(item.romaji) + "</p>";
     return html;
   }
@@ -469,6 +524,27 @@
     return track.indexOf("listen-") === 0 ? track.slice(7) : track;
   }
 
+  function showGrammarStep(node) {
+    if (!node || !node.closest) return;
+    var step = node.closest(".grammar-example");
+    if (!step) return;
+    var stage = step.closest(".grammar-stage");
+    if (!stage) return;
+    var steps = stage.querySelectorAll(".grammar-example");
+    var on = 0;
+    var i;
+    for (i = 0; i < steps.length; i++) {
+      var active = steps[i] === step;
+      if (active) on = i;
+      steps[i].hidden = !active;
+      steps[i].classList.toggle("is-on", active);
+    }
+    var count = stage.querySelector(".grammar-count");
+    if (count) count.textContent = (on + 1) + " / " + steps.length;
+    var meter = stage.querySelector(".grammar-meter span");
+    if (meter && steps.length) meter.style.width = ((on + 1) / steps.length * 100) + "%";
+  }
+
   function highlightPiece(track, index) {
     var current = document.querySelector('[data-review-item="' + track + "-" + index + '"]');
     var nodes = document.querySelectorAll(".review-current");
@@ -479,11 +555,13 @@
       else nodes[i].classList.remove("review-current");
     }
     if (!current) return;
+    showGrammarStep(current);
     current.classList.add("review-current");
     if (!already && current.scrollIntoView) current.scrollIntoView({ block: "nearest" });
   }
 
   function playOne(track, index) {
+    if (eyesBlocked()) return;
     var prefs = readItemInputs(track, index);
     var line = (listeningTracks(currentDay())[sourceTrack(track)] || [])[index];
     if (!line) return;
@@ -630,6 +708,24 @@
     }
   };
 
+  function eyesBlocked() {
+    var api = window.JapaneseStudyEyes;
+    if (!api || !api.blocking) return false;
+    try { return !!api.blocking(); } catch (err) { return false; }
+  }
+
+  function whenEyesClear(fn) {
+    if (!eyesBlocked()) {
+      fn();
+      return;
+    }
+    var timer = window.setInterval(function () {
+      if (eyesBlocked()) return;
+      window.clearInterval(timer);
+      fn();
+    }, 300);
+  }
+
   function scopeDays() {
     var selected = progress.selectedDay || 1;
     var scope = session.scope || "day";
@@ -673,6 +769,7 @@
     var view = document.getElementById("view");
     if (progress.mode === "calendar") view.innerHTML = calendarHTML();
     else if (progress.mode === "study") view.innerHTML = studyHTML();
+    else if (progress.mode === "grammar") view.innerHTML = grammarLibraryHTML();
     else if (progress.mode === "practice") view.innerHTML = practiceHTML();
     else if (progress.mode === "test") view.innerHTML = testHTML();
     else if (progress.mode === "logs") view.innerHTML = logsHTML();
@@ -893,19 +990,129 @@
       '<div class="calendar">' + cells + "</div>" + scoreDialogHTML();
   }
 
+  function grammarPointsHTML(explanation) {
+    var api = window.JapaneseStudyGrammar;
+    var summary = api && api.points ? api.points(explanation) : { items: [explanation || ""], more: false };
+    var items = (summary.items || []).map(function (item) {
+      return "<li>" + esc(item) + "</li>";
+    }).join("");
+    var more = summary.more ? '<p class="meta grammar-more">The rest of the rule is in the explanation.</p>' : "";
+    return '<section class="grammar-points"><h4><span>1</span> Key points</h4><ul>' + items + "</ul>" + more + "</section>";
+  }
+
+  function grammarStage(blocks) {
+    var count = (blocks.match(/class="grammar-example/g) || []).length;
+    var nav = count > 1
+      ? '<div class="grammar-nav"><button type="button" data-act="grammar-step" data-dir="-1">Previous</button>' +
+        '<span class="grammar-count">1 / ' + count + "</span>" +
+        '<button type="button" data-act="grammar-step" data-dir="1">Next</button></div>' +
+        '<div class="grammar-meter" aria-hidden="true"><span style="width:' + (100 / count) + '%"></span></div>'
+      : "";
+    return '<div class="grammar-stage"><div class="grammar-examples">' + blocks + "</div>" + nav + "</div>";
+  }
+
+  function grammarCardHTML(pattern, patternIndex, lessonHTML) {
+    var green = greenExampleHTML(pattern.title);
+    return '<article class="grammar-card">' +
+      '<div class="grammar-mark" aria-hidden="true"><span class="grammar-ring"></span>' +
+      '<svg class="leaf" viewBox="0 0 32 32"><path d="M16 28C16 18 8 12 6 4c10 2 20 8 21 18-3 2-7 5-11 6z" fill="currentColor"/><path d="M16 26c0-10 2-16 6-20" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></div>' +
+      '<p class="grammar-index">Pattern ' + (patternIndex + 1) + "</p>" +
+      "<h3>" + esc(pattern.title) + "</h3>" +
+      grammarPointsHTML(pattern.explanation) +
+      '<section class="grammar-detail"><h4><span>2</span> Explanation and examples</h4>' +
+      '<p class="grammar-prose">' + esc(pattern.explanation) + "</p>" +
+      "<h5>Lesson examples</h5>" + lessonHTML +
+      (green ? '<div class="grammar-green"><h5>The same pattern, on the living world</h5>' +
+        '<p class="meta">Forests, water, and energy. Read these aloud, then cover the English and say them again.</p>' +
+        grammarStage(green) + "</div>" : "") +
+      "</section></article>";
+  }
+
+  function libraryLine(dayNumber, index, item) {
+    var id = speakId(item.jp || "", { day: dayNumber, track: "grammar", index: index });
+    return '<div class="piece"><div class="item-play">' +
+      '<button type="button" class="small primary" data-act="speak" data-id="' + id + '">Start</button>' +
+      '<button type="button" class="small" data-act="stop">Stop</button></div>' +
+      '<p class="jp">' + esc(item.jp || "") + "</p>" +
+      guidesHTML(item) +
+      (item.en ? '<p class="en">' + esc(item.en) + "</p>" : "") +
+      "</div>";
+  }
+
+  function grammarLibraryHTML() {
+    var depth = progress.grammarDepth === "detail" ? "detail" : "summary";
+    var days = (course.days || []).map(function (day) {
+      var exampleIndex = 0;
+      var cards = (day.grammar || []).map(function (pattern, patternIndex) {
+        var examples = (pattern.examples || []).map(function (ex, index) {
+          var mark = exampleIndex;
+          exampleIndex += 1;
+          return '<div class="grammar-example' + (index ? "" : " is-on") + '"' + (index ? " hidden" : "") + ">" +
+            libraryLine(day.day, mark, ex) + "</div>";
+        }).join("");
+        return grammarCardHTML(pattern, patternIndex, grammarStage(examples));
+      }).join("");
+      if (!cards) return "";
+      var open = day.day === progress.selectedDay ? " open" : "";
+      return '<details class="grammar-day" id="grammar-day-' + day.day + '"' + open + ">" +
+        "<summary>Day " + day.day + " · " + esc(day.title) + "</summary>" + cards + "</details>";
+    }).join("");
+    return '<p class="kicker">All ' + dayCount() + " lessons</p>" +
+      "<h2>Grammar</h2>" +
+      '<p class="goal">Every pattern in the course. Summary shows the key points. In detail adds the explanation, the lesson lines, and the living-world lines.</p>' +
+      '<div class="grammar-tools">' +
+      '<div class="grammar-switch" role="group" aria-label="How much to show">' +
+      '<button type="button" data-act="grammar-depth" data-depth="summary"' + (depth === "summary" ? ' aria-pressed="true"' : "") + ">Summary</button>" +
+      '<button type="button" data-act="grammar-depth" data-depth="detail"' + (depth === "detail" ? ' aria-pressed="true"' : "") + ">In detail</button>" +
+      "</div>" +
+      '<label class="find">Find a pattern<input id="grammarFind" type="search" placeholder="Particle, title, or meaning"></label>' +
+      "</div>" +
+      '<div class="grammar-library' + (depth === "detail" ? " is-detail" : " is-summary") + '">' + days + "</div>";
+  }
+
+  function filterGrammarLibrary(raw) {
+    var query = String(raw || "").trim().toLowerCase();
+    var days = document.querySelectorAll(".grammar-day");
+    var d;
+    for (d = 0; d < days.length; d++) {
+      var cards = days[d].querySelectorAll(".grammar-card");
+      var shown = 0;
+      var c;
+      for (c = 0; c < cards.length; c++) {
+        var blob = (cards[c].textContent || "").toLowerCase();
+        var match = !query || blob.indexOf(query) >= 0;
+        cards[c].hidden = !match;
+        if (match) shown += 1;
+      }
+      days[d].hidden = shown === 0;
+      if (query && shown) days[d].open = true;
+    }
+  }
+
+  function greenExampleHTML(title) {
+    var api = window.JapaneseStudyGrammar;
+    var lines = api && api.green ? api.green(title) : [];
+    return lines.map(function (item, index) {
+      return '<div class="grammar-example' + (index ? "" : " is-on") + '"' + (index ? " hidden" : "") + ">" +
+        '<p class="jp">' + esc(item.jp) + "</p>" + guidesHTML(item) +
+        '<p class="en">' + esc(item.en) + "</p></div>";
+    }).join("");
+  }
+
   function studyHTML() {
     var day = currentDay();
     var words = day.vocabulary.map(function (word, index) {
       return pieceHTML("word", index, word);
     }).join("");
     var exampleIndex = 0;
-    var grammar = day.grammar.map(function (pattern) {
-      var examples = (pattern.examples || []).map(function (ex) {
+    var grammar = day.grammar.map(function (pattern, patternIndex) {
+      var examples = (pattern.examples || []).map(function (ex, index) {
         var mark = exampleIndex;
         exampleIndex += 1;
-        return pieceHTML("grammar", mark, ex);
+        return '<div class="grammar-example' + (index ? "" : " is-on") + '"' + (index ? " hidden" : "") + ">" +
+          pieceHTML("grammar", mark, ex) + "</div>";
       }).join("");
-      return '<div class="card"><h3>' + esc(pattern.title) + "</h3><p>" + esc(pattern.explanation) + "</p>" + examples + "</div>";
+      return grammarCardHTML(pattern, patternIndex, grammarStage(examples));
     }).join("");
     var sentences = day.sentences.map(function (line, index) {
       return pieceHTML("sentence", index, line);
@@ -925,15 +1132,15 @@
     return '<p class="kicker">Day ' + day.day + " · " + iso(lessonDate(day.day)) + "</p>" +
       "<h2>" + esc(day.title) + "</h2><p class=\"goal\">" + esc(day.goal) + "</p>" +
       '<nav class="path" aria-label="Lesson steps">' +
-      '<a href="#vocab">Vocabulary</a><a href="#examples">Examples</a><a href="#sentences">Sentences</a>' +
+      '<a href="#vocab">Vocabulary</a><a href="#examples">Grammar</a><a href="#sentences">Sentences</a>' +
       '<a href="#reading">Reading</a><a href="#writing">Writing</a><a href="#listening">Listening</a><a href="#check">Check</a></nav>' +
       '<div class="row"><button type="button" class="primary" data-act="studied">Mark studied</button>' +
       '<button type="button" data-act="play-script">Play listening script</button></div>' +
       reviewCard() +
       lessonLogSummary() +
       '<div class="card" id="vocab"><h3>Vocabulary</h3>' + reviewControls("word") + words + "</div>" +
-      '<div class="card" id="examples"><h3>Examples</h3>' + reviewControls("grammar") +
-      "<p class=\"meta\">Each example uses the audio file for that sentence. Start plays it. Stop ends it.</p></div>" + grammar +
+      '<div class="card" id="examples"><h3>Grammar</h3>' + reviewControls("grammar") +
+      "<p class=\"meta\">Read the key points first. Then study the explanation one example at a time. Start plays the lesson recording. The living-world lines use the same pattern for forests, water, and energy.</p></div>" + grammar +
       '<div class="card" id="sentences"><h3>Sentences</h3>' + reviewControls("sentence") + sentences + "</div>" +
       '<div class="card" id="reading"><h3>Reading</h3>' + reading + "</div>" +
       '<div class="card" id="writing"><h3>Writing</h3><ol>' + writing + "</ol></div>" +
@@ -1507,6 +1714,7 @@
   }
 
   function playStudy(track, times) {
+    if (eyesBlocked()) return;
     progress.repeats = clampRepeats(times);
     var lines = listeningTracks(currentDay())[track] || [];
     var token = ++playToken;
@@ -1544,7 +1752,9 @@
           clearStudyMark();
           return;
         }
-        window.setTimeout(function () { step(index + 1); }, 350);
+        whenEyesClear(function () {
+          window.setTimeout(function () { step(index + 1); }, 350);
+        });
       });
     }
     step(0);
@@ -1708,6 +1918,7 @@
   }
 
   function playQueue(queue, start, allParts) {
+    if (eyesBlocked()) return;
     var token = ++playToken;
     session.playing = true;
     session.playAllParts = !!allParts;
@@ -1758,10 +1969,13 @@
           render();
           return;
         }
-        if (!session.listen.revealed) session.listen.revealed = {};
-        session.listen.revealed[item.index] = true;
-        revealListenLine(item);
-        window.setTimeout(function () { step(pos + 1); }, 350);
+        whenEyesClear(function () {
+          if (token !== playToken || !session.listen) return;
+          if (!session.listen.revealed) session.listen.revealed = {};
+          session.listen.revealed[item.index] = true;
+          revealListenLine(item);
+          window.setTimeout(function () { step(pos + 1); }, 350);
+        });
       });
     }
     step(start || 0);
@@ -1776,6 +1990,7 @@
   }
 
   function onClick(event) {
+    if (eyesBlocked()) return;
     var el = event.target.closest ? event.target.closest("[data-act]") : null;
     if (!el || !document.getElementById("view").contains(el) && !document.getElementById("modes").contains(el) && !document.getElementById("dayList").contains(el)) {
       return;
@@ -1794,9 +2009,35 @@
       render();
       return;
     }
+    if (act === "grammar-depth") {
+      progress.grammarDepth = el.getAttribute("data-depth") === "detail" ? "detail" : "summary";
+      save();
+      var library = document.querySelector(".grammar-library");
+      if (library) {
+        library.classList.toggle("is-detail", progress.grammarDepth === "detail");
+        library.classList.toggle("is-summary", progress.grammarDepth !== "detail");
+        var depthButtons = document.querySelectorAll("[data-act='grammar-depth']");
+        var depthIndex;
+        for (depthIndex = 0; depthIndex < depthButtons.length; depthIndex++) {
+          depthButtons[depthIndex].setAttribute("aria-pressed", depthButtons[depthIndex].getAttribute("data-depth") === progress.grammarDepth ? "true" : "false");
+        }
+      } else render();
+      return;
+    }
     if (act === "open-day") {
       stopAudio();
       progress.selectedDay = Number(el.getAttribute("data-day"));
+      if (progress.mode === "grammar") {
+        save();
+        renderDays();
+        var grammarDay = document.getElementById("grammar-day-" + progress.selectedDay);
+        if (grammarDay) {
+          grammarDay.hidden = false;
+          grammarDay.open = true;
+          if (grammarDay.scrollIntoView) grammarDay.scrollIntoView({ block: "start" });
+        }
+        return;
+      }
       progress.mode = progress.mode === "calendar" ? "study" : progress.mode;
       session.practice = null;
       session.test = null;
@@ -1967,6 +2208,19 @@
         ? "This matches the model."
         : "The model answer is different. Compare the two lines.";
       render();
+      return;
+    }
+    if (act === "grammar-step") {
+      var stage = el.closest(".grammar-stage");
+      if (!stage) return;
+      var steps = stage.querySelectorAll(".grammar-example");
+      var current = 0;
+      var stepIndex;
+      for (stepIndex = 0; stepIndex < steps.length; stepIndex++) if (!steps[stepIndex].hidden) current = stepIndex;
+      var nextStep = current + Number(el.getAttribute("data-dir") || 1);
+      if (nextStep < 0) nextStep = steps.length - 1;
+      if (nextStep >= steps.length) nextStep = 0;
+      showGrammarStep(steps[nextStep]);
       return;
     }
     if (act === "item-start") {
@@ -2226,6 +2480,23 @@
   function bind() {
     if (bound) return;
     bound = true;
+    document.addEventListener("click", function (event) {
+      if (!eyesBlocked()) return;
+      var target = event.target;
+      if (!target || !target.closest) return;
+      if (target.closest("#eyeOverlay") || target.closest("#eyeBlink") || target.closest("#eyeRail")) return;
+      if (target.closest("#view, #modes, #dayList, .header-actions, .aside-tools, .aside-head")) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    }, true);
+    document.addEventListener("keydown", function (event) {
+      if (!eyesBlocked()) return;
+      var target = event.target;
+      if (target && target.closest && (target.closest("#eyeOverlay") || target.closest("#eyeBlink") || target.closest("#eyeRail"))) return;
+      event.preventDefault();
+      event.stopPropagation();
+    }, true);
     document.body.addEventListener("click", function (event) {
       var themeBtn = event.target && event.target.closest ? event.target.closest("[data-theme]") : null;
       if (!themeBtn) return;
@@ -2320,6 +2591,7 @@
     });
     document.getElementById("view").addEventListener("input", function (event) {
       if (session.playing && event.target.closest && event.target.closest("label.setting")) return;
+      if (event.target.id === "grammarFind") filterGrammarLibrary(event.target.value);
       if (event.target.id === "writeBox" && session.practice) session.practice.draft = event.target.value;
       if (event.target.id === "hideLines" && session.listen) {
         session.listen.hide = event.target.checked;

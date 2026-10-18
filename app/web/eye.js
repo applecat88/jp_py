@@ -20,6 +20,7 @@
     longFor: 120000,
     warmthMode: "auto",
     warmthScale: 80,
+    tint: "amber",
     dim: 0,
     sound: true,
     distanceSeen: false,
@@ -38,12 +39,69 @@
     ["Down", 90], ["Down left", 135], ["Left", 180], ["Up left", 225]
   ];
   var STATUS = { watch: "On", rest: "Resting", away: "Away", off: "Off", defer: "Break soon" };
+  var TINTS = {
+    amber: { name: "Amber", warm: "#ffb15a", sky: "#f6d7a8", hill: "#e0a15a", night: "#5c3b28", paper: "#fff6e8", glow: "#ffe08a", cheek: "#e8896a", ink: "#3a2418" },
+    moss: { name: "Moss", warm: "#b7c98a", sky: "#d7e6c6", hill: "#7ea36a", night: "#2c4634", paper: "#f7fbf2", glow: "#f4e7a4", cheek: "#e09b78", ink: "#243328" },
+    sea: { name: "Sea", warm: "#8ec4d4", sky: "#c9e6f0", hill: "#6aa8b8", night: "#1d3d4a", paper: "#f4fbfc", glow: "#fff1c4", cheek: "#e7a090", ink: "#16323c" },
+    rose: { name: "Rose", warm: "#f0b0b0", sky: "#f8d6d1", hill: "#e08b8b", night: "#5a3038", paper: "#fff6f4", glow: "#ffe0a8", cheek: "#e07070", ink: "#4a2430" },
+    dusk: { name: "Dusk", warm: "#cbb6e8", sky: "#ddd0f2", hill: "#8b74b8", night: "#2e2444", paper: "#f8f4fc", glow: "#ffe7a8", cheek: "#e09aaa", ink: "#2a203c" },
+    ink: { name: "Ink", warm: "#d9c7b0", sky: "#efe4d4", hill: "#8d7b68", night: "#2c2622", paper: "#fbf7f1", glow: "#f0d7a4", cheek: "#c98978", ink: "#2a241e" }
+  };
   var EYE_MARK =
-    '<svg class="eye-icon" viewBox="0 0 64 40" aria-hidden="true">' +
-      '<path d="M4 20C12 8 22 2 32 2s20 6 28 18c-8 12-18 18-28 18S12 32 4 20z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>' +
-      '<circle cx="32" cy="20" r="7.5" fill="none" stroke="currentColor" stroke-width="2.4"/>' +
-      '<circle cx="32" cy="20" r="3.1" fill="currentColor"/>' +
+    '<svg class="eye-icon" viewBox="0 0 64 48" aria-hidden="true">' +
+      '<ellipse cx="24" cy="28" rx="14" ry="12" fill="none" stroke="currentColor" stroke-width="2.2"/>' +
+      '<path d="M16 16l6 8M32 16l-6 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>' +
+      '<path d="M18 28c2.2 2 4.2 2 6.2 0M24 28c2.2 2 4.2 2 6.2 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>' +
+      '<path d="M40 22h10l3 6H37z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>' +
+      '<path d="M45 22v-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>' +
+      '<circle cx="45" cy="16" r="2" fill="currentColor"/>' +
     "</svg>";
+
+  function storybook() {
+    return '<svg class="storybook" viewBox="0 0 640 360" role="img" aria-label="A lantern keeper resting on a hill under the moon">' +
+      '<rect class="sb-sky" width="640" height="360" rx="28"/>' +
+      '<g class="sb-stars sb-glow">' +
+        '<circle cx="70" cy="48" r="3"/><circle cx="128" cy="86" r="2"/><circle cx="210" cy="42" r="2.4"/>' +
+        '<circle cx="360" cy="58" r="2"/><circle cx="430" cy="36" r="2.6"/><circle cx="560" cy="120" r="2"/>' +
+      "</g>" +
+      '<circle class="sb-glow" cx="508" cy="74" r="34"/>' +
+      '<path class="sb-hill" d="M0 214c70-48 130-48 200 0 72-52 140-40 210 8 60-28 120-20 230-8v146H0z"/>' +
+      '<path class="sb-night" d="M150 250c18-10 28-10 46 0 16-8 30-6 44 2v28h-90z" opacity="0.35"/>' +
+      '<g class="sb-keeper">' +
+        '<ellipse class="sb-paper" cx="286" cy="214" rx="78" ry="62"/>' +
+        '<path class="sb-paper" d="M232 168l18 28h-28zM340 168l-18 28h28z"/>' +
+        '<path class="sb-cheek" d="M238 176l8 14h-14zM334 176l-8 14h14z"/>' +
+        '<path class="sb-ink" d="M250 208c8 6 14 6 22 0M300 208c8 6 14 6 22 0" stroke-width="3" stroke-linecap="round"/>' +
+        '<path class="sb-ink" d="M274 228c8 8 18 8 26 0" stroke-width="2.4" stroke-linecap="round"/>' +
+        '<circle class="sb-cheek" cx="246" cy="224" r="8" opacity="0.85"/>' +
+        '<circle class="sb-cheek" cx="328" cy="224" r="8" opacity="0.85"/>' +
+        '<path class="sb-hill" d="M236 258c16 16 84 16 102 0 8 18-10 28-51 28s-59-10-51-28z"/>' +
+      "</g>" +
+      '<g class="sb-lantern">' +
+        '<path class="sb-ink" d="M430 168v18" stroke-width="3" stroke-linecap="round"/>' +
+        '<rect class="sb-glow" x="408" y="186" width="44" height="52" rx="10"/>' +
+        '<path class="sb-paper" d="M422 200c6 10 6 18 0 26M438 198c6 12 6 20 0 30" stroke-width="2"/>' +
+        '<circle class="sb-glow" cx="430" cy="160" r="5"/>' +
+      "</g>" +
+      '<g class="sb-book">' +
+        '<path class="sb-paper" d="M168 248h52v28h-52z"/>' +
+        '<path class="sb-ink" d="M194 248v28" stroke-width="2"/>' +
+        '<path class="sb-cheek" d="M194 248v10" stroke-width="3" stroke-linecap="round"/>' +
+      "</g>" +
+    "</svg>";
+  }
+
+  function tintSwatches() {
+    var keys = ["amber", "moss", "sea", "rose", "dusk", "ink"];
+    var html = '<div class="eye-swatches" role="group" aria-label="Color">';
+    var i;
+    for (i = 0; i < keys.length; i++) {
+      var tint = TINTS[keys[i]];
+      html += '<button type="button" data-set="tint" data-value="' + keys[i] + '">' +
+        '<i style="background:' + tint.warm + '"></i>' + tint.name + "</button>";
+    }
+    return html + "</div>";
+  }
 
   var settings = {};
   var state = {
@@ -146,6 +204,7 @@
     settings.enabled = settings.enabled !== false;
     if (["gentle", "standard", "strict"].indexOf(settings.strictness) < 0) settings.strictness = "standard";
     if (["auto", "off", "day", "evening", "night"].indexOf(settings.warmthMode) < 0) settings.warmthMode = "auto";
+    if (!TINTS[settings.tint]) settings.tint = "amber";
     settings.blinkEvery = clampNum(settings.blinkEvery, 60000, 30 * 60000, DEFAULTS.blinkEvery);
     settings.lookEvery = clampNum(settings.lookEvery, 60000, 90 * 60000, DEFAULTS.lookEvery);
     settings.lookFor = clampNum(settings.lookFor, 10000, 60000, DEFAULTS.lookFor);
@@ -249,7 +308,21 @@
     return autoWarmth(date);
   }
 
+  function applyPalette() {
+    var tint = TINTS[settings.tint] || TINTS.amber;
+    var root = document.documentElement;
+    root.style.setProperty("--eye-tint", tint.warm);
+    root.style.setProperty("--sb-sky", tint.sky);
+    root.style.setProperty("--sb-hill", tint.hill);
+    root.style.setProperty("--sb-night", tint.night);
+    root.style.setProperty("--sb-paper", tint.paper);
+    root.style.setProperty("--sb-glow", tint.glow);
+    root.style.setProperty("--sb-cheek", tint.cheek);
+    root.style.setProperty("--sb-ink", tint.ink);
+  }
+
   function applyFilter(now) {
+    applyPalette();
     var dim = Math.round((settings.dim || 0)) / 100;
     var warm = warmthPreset(new Date(now)) * (settings.warmthScale / 100);
     if (warm < 0) warm = 0;
@@ -280,8 +353,20 @@
     return tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || !!el.isContentEditable;
   }
 
-  function shouldDefer() {
-    return lessonBusy() || fieldBusy();
+  function studyBlocked() {
+    if (ui.rest && (ui.rest.locked || settings.enabled)) return true;
+    if (ui.blinkOpen && (ui.blinkLocked || settings.enabled)) return true;
+    return false;
+  }
+
+  function applyStudyLock() {
+    var on = studyBlocked();
+    document.body.classList.toggle("eye-locked", on);
+    if (!on) return;
+    var el = document.activeElement;
+    if (!el || !el.closest) return;
+    if (el.closest("#eyeOverlay") || el.closest("#eyeBlink") || el.closest("#eyeRail")) return;
+    try { el.blur(); } catch (err) {}
   }
 
   function holdLesson() {
@@ -492,8 +577,8 @@
           '<span class="eye-status"><i></i><span data-eye="status">On</span></span>' +
           '<button type="button" class="eye-shrink" data-act="shrink">Hide</button>' +
         "</div>" +
-        '<p class="eye-note">While this screen is in front of you, it handles breaks and brightness.</p>' +
-        '<img class="eye-picture" src="eye.svg" alt="An eye resting on a distant horizon" width="320" height="180">' +
+        '<p class="eye-note">While eye protection is on, a lesson pauses until the break and the eye exercises are finished.</p>' +
+        '<div class="eye-picture">' + storybook() + "</div>" +
         '<div class="eye-hero">' +
           '<div class="eye-ring-wrap">' +
             '<svg class="eye-ring" viewBox="0 0 120 120" aria-hidden="true">' +
@@ -535,6 +620,7 @@
         '<label class="eye-slider"><span class="eye-slider-top"><span>Brightness</span><span data-eye="dim-label">As is</span></span>' +
           '<input data-eye="dim" data-set="dim" type="range" min="0" max="40" step="1" value="0" aria-label="Screen brightness"></label>' +
         '<p class="eye-label">Color</p>' +
+        tintSwatches() +
         seg("warmthMode", [["auto", "Auto"], ["off", "Off"], ["day", "Day"], ["evening", "Evening"], ["night", "Night"]]) +
         '<label class="eye-slider"><span class="eye-slider-top"><span>Strength</span><span data-eye="scale-label">80%</span></span>' +
           '<input data-eye="scale" data-set="warmthScale" type="range" min="0" max="130" step="5" value="80" aria-label="Color strength"></label>' +
@@ -562,7 +648,7 @@
     if (blink) {
       blink.innerHTML =
         '<span class="eye-blink-mark" aria-hidden="true">' + EYE_MARK + "</span>" +
-        "<p>Blink fully 3 times. Let the upper and lower lashes meet.</p>" +
+        "<p>Blink fully 3 times. Learning stays paused until you finish. Let the upper and lower lashes meet.</p>" +
         '<button type="button" data-act="blink-done">Done</button>';
     }
     var overlay = document.createElement("div");
@@ -574,6 +660,7 @@
         '<p class="eye-kicker" data-eye="kicker"></p>' +
         '<h2 id="eyeRestTitle" data-eye="title"></h2>' +
         '<p class="eye-copy" data-eye="body"></p>' +
+        '<p class="eye-rule">The lesson stays paused until this break and the exercises are finished.</p>' +
         '<div class="eye-stage" data-eye="stage"></div>' +
         '<p class="eye-count" data-eye="count" aria-hidden="true"></p>' +
         '<p class="eye-hold" data-eye="hold"></p>' +
@@ -639,7 +726,7 @@
 
   function cast(key, raw) {
     if (key === "sound") return raw === "true";
-    if (key === "strictness" || key === "warmthMode") return raw;
+    if (key === "strictness" || key === "warmthMode" || key === "tint") return raw;
     return Number(raw);
   }
 
@@ -751,6 +838,7 @@
   }
 
   function paint() {
+    applyPalette();
     var current = mode();
     var next = nextBreak();
     var rail = document.getElementById("eyeRail");
@@ -791,12 +879,7 @@
     text("dur-near", shortDur(drillMs("near")));
     text("dur-gaze", shortDur(drillMs("gaze")));
     text("dur-long", shortDur(drillMs("long")));
-    var help = {
-      gentle: "You can close a break at any time.",
-      standard: "A scheduled break can be delayed once.",
-      strict: "A scheduled break runs until it ends."
-    };
-    text("strict-note", help[settings.strictness] || help.standard);
+    text("strict-note", "While eye protection is on, a lesson pauses until the break and the eye exercises finish. A scheduled break cannot be skipped.");
     text("power", !settings.enabled ? "Start protection" : ui.powerArm && Date.now() - ui.powerArm < 6000 ? "Stopping means breaks will not come" : "Stop protection");
     if (ui.nodes.ring) ui.nodes.ring.style.strokeDashoffset = String(C * (1 - Math.max(0, Math.min(1, progress))));
     markPressed();
@@ -862,6 +945,7 @@
       ui.sinceSave = 0;
       save(false);
     }
+    applyStudyLock();
     paint();
   }
 
@@ -871,11 +955,6 @@
     var lookDue = state.lookMs >= settings.lookEvery && now >= ui.snoozeLook;
     var kind = longDue ? "long" : lookDue ? "look" : "";
     if (kind) {
-      if (shouldDefer()) {
-        if (!ui.deferUntil) ui.deferUntil = now + 45000;
-        ui.deferKind = lessonBusy() ? "audio" : "type";
-        if (now < ui.deferUntil) return;
-      }
       ui.deferUntil = 0;
       startRest(kind, true);
       return;
@@ -885,12 +964,26 @@
     if (state.blinkMs >= settings.blinkEvery) openBlink();
   }
 
+  function mandatoryLook() {
+    return [
+      { id: "look", ms: settings.lookFor },
+      { id: "blink", ms: drillMs("blink") },
+      { id: "eight", ms: drillMs("eight") }
+    ];
+  }
+
   function openBlink() {
     var blink = document.getElementById("eyeBlink");
     if (!blink || ui.rest) return;
     ui.blinkOpen = true;
+    ui.blinkLocked = !!settings.enabled;
     blink.hidden = false;
     window.clearTimeout(ui.blinkTimer);
+    if (ui.blinkLocked) {
+      holdLesson();
+      applyStudyLock();
+      return;
+    }
     ui.blinkTimer = window.setTimeout(function () { closeBlink(false); }, 14000);
   }
 
@@ -898,11 +991,14 @@
     var blink = document.getElementById("eyeBlink");
     if (!ui.blinkOpen) return;
     ui.blinkOpen = false;
+    ui.blinkLocked = false;
     window.clearTimeout(ui.blinkTimer);
     state.blinkMs = 0;
     if (confirmed) state.blinkCount += 1;
     if (blink) blink.hidden = true;
+    if (!ui.rest) releaseLesson();
     save(true);
+    applyStudyLock();
     paint();
   }
 
@@ -910,7 +1006,9 @@
     if (ui.rest) return;
     if (!settings.enabled && scheduled) return;
     if (!takeLock()) return;
-    var steps = kind === "long" ? planLong(settings.longFor) : [{ id: kind, ms: drillMs(kind) }];
+    var steps = kind === "long"
+      ? planLong(settings.longFor)
+      : (scheduled && settings.enabled && kind === "look" ? mandatoryLook() : [{ id: kind, ms: drillMs(kind) }]);
     var now = Date.now();
     var rest = {
       id: TAB + "-" + now,
@@ -922,6 +1020,7 @@
       phase: "run",
       origin: true,
       scheduled: !!scheduled,
+      locked: !!(scheduled && settings.enabled),
       held: false,
       shown: ""
     };
@@ -932,6 +1031,7 @@
     ui.returnFocus = document.activeElement;
     if (ui.blinkOpen) {
       ui.blinkOpen = false;
+      ui.blinkLocked = false;
       window.clearTimeout(ui.blinkTimer);
       var blink = document.getElementById("eyeBlink");
       if (blink) blink.hidden = true;
@@ -954,7 +1054,8 @@
       total: rest.total,
       started: rest.started,
       endsAt: rest.endsAt,
-      scheduled: rest.scheduled
+      scheduled: rest.scheduled,
+      locked: !!rest.locked
     };
   }
 
@@ -972,6 +1073,7 @@
       phase: "run",
       origin: false,
       scheduled: !!raw.scheduled,
+      locked: !!raw.scheduled,
       held: holdLesson(),
       shown: ""
     };
@@ -990,6 +1092,7 @@
     var app = document.getElementById("app");
     if (app && "inert" in HTMLElement.prototype) app.inert = true;
     if (ui.dialog && ui.dialog.focus) ui.dialog.focus();
+    applyStudyLock();
   }
 
   function closeOverlay() {
@@ -1000,12 +1103,13 @@
       try { ui.returnFocus.focus(); } catch (err) {}
     }
     ui.returnFocus = null;
+    applyStudyLock();
   }
 
   function syncActions(rest) {
     var done = rest.phase === "done";
     show(ui.nodes.snooze, !done && canSnooze(rest));
-    show(ui.nodes.dismiss, !done && rest.scheduled && settings.strictness === "gentle");
+    show(ui.nodes.dismiss, !done && rest.scheduled && settings.strictness === "gentle" && !rest.locked && !settings.enabled);
     show(ui.nodes.cancel, !done && !rest.scheduled);
     if (canSnooze(rest)) {
       var label = settings.strictness === "gentle" || rest.kind === "long" ? "In 5 minutes" : "In 3 minutes";
@@ -1015,6 +1119,7 @@
 
   function canSnooze(rest) {
     if (!rest || !rest.scheduled || rest.phase === "done") return false;
+    if (rest.locked || settings.enabled) return false;
     if (settings.strictness === "strict") return false;
     if (settings.strictness === "gentle") return true;
     if (rest.kind === "long") return !ui.longSnoozed;
@@ -1106,7 +1211,7 @@
     if (!stage) return;
     var html = "";
     if (step.id === "look") {
-      html = '<img class="eye-look" src="eye.svg" alt="" width="360" height="200">';
+      html = '<div class="eye-look">' + storybook() + "</div>";
     } else if (step.id === "blink") {
       html = '<div class="eye-lidbox" aria-hidden="true"><div class="eye-lid-shape"><i class="top"></i><i class="bot"></i></div></div><p class="eye-beat" data-eye="beat"></p>';
     } else if (step.id === "palm") {
@@ -1246,7 +1351,7 @@
 
   function dismissRest() {
     var rest = ui.rest;
-    if (!rest || !rest.scheduled || settings.strictness !== "gentle") return;
+    if (!rest || !rest.scheduled || rest.locked || settings.enabled || settings.strictness !== "gentle") return;
     state.lookMs = 0;
     state.blinkMs = 0;
     state.stretchMs = 0;
@@ -1303,6 +1408,7 @@
       cancelRest();
       return;
     }
+    if (ui.rest.locked || settings.enabled) return;
     if (canSnooze(ui.rest)) {
       snoozeRest();
       return;
@@ -1347,7 +1453,9 @@
     ui.hiddenAt = 0;
     ui.lastTick = now;
     if (ui.rest && ui.rest.phase === "run") {
-      var left = Math.max(0, (ui.rest.frozenLeft == null ? ui.rest.endsAt - now : ui.rest.frozenLeft) - away);
+      var frozen = ui.rest.frozenLeft == null ? Math.max(0, ui.rest.endsAt - now) : ui.rest.frozenLeft;
+      var countHidden = !(ui.rest.locked || settings.enabled);
+      var left = Math.max(0, countHidden ? frozen - away : frozen);
       ui.rest.endsAt = now + left;
       ui.rest.started = ui.rest.endsAt - (ui.rest.total || sumSteps(ui.rest.steps));
       ui.rest.shown = "";
@@ -1392,9 +1500,14 @@
       if (ui.ctx && ui.ctx.state === "suspended") ui.ctx.resume();
     }, { passive: true });
     applyFilter(Date.now());
+    applyStudyLock();
     paint();
     window.setInterval(tick, 250);
   }
+
+  window.JapaneseStudyEyes = {
+    blocking: studyBlocked
+  };
 
   boot();
 })();

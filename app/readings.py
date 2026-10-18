@@ -4,6 +4,9 @@
 Vocabulary hiragana wins when a romaji word matches it. Other words are
 converted with Hepburn rules used in this course: ō/ū are long vowels,
 and the particles wa, e, and o are は, へ, and を.
+
+A long vowel written with the katakana mark ー is spelled with the vowel
+in these guides: エラー is えらあ, and メール is めえる.
 """
 import re
 
@@ -54,6 +57,50 @@ _PUNCT = {
     u";": u"。", u":": u"：",
 }
 _TOKEN = re.compile(u"[A-Za-z\u00c0-\u024f\u2019']+|[.,!?;:]+")
+_CHOUON = set(u"ーｰ")
+_VOWEL = {}
+
+
+def _fill_vowels():
+    groups = (
+        (u"あいうえお", u"aiueo"), (u"ぁぃぅぇぉ", u"aiueo"),
+        (u"かきくけこ", u"aiueo"), (u"がぎぐげご", u"aiueo"),
+        (u"さしすせそ", u"aiueo"), (u"ざじずぜぞ", u"aiueo"),
+        (u"たちつてと", u"aiueo"), (u"だぢづでど", u"aiueo"),
+        (u"なにぬねの", u"aiueo"), (u"はひふへほ", u"aiueo"),
+        (u"ばびぶべぼ", u"aiueo"), (u"ぱぴぷぺぽ", u"aiueo"),
+        (u"まみむめも", u"aiueo"), (u"やゆよ", u"auo"), (u"ゃゅょ", u"auo"),
+        (u"らりるれろ", u"aiueo"), (u"わを", u"ao"), (u"ゎ", u"a"),
+        (u"アイウエオ", u"aiueo"), (u"ァィゥェォ", u"aiueo"),
+        (u"カキクケコ", u"aiueo"), (u"ガギグゲゴ", u"aiueo"),
+        (u"サシスセソ", u"aiueo"), (u"ザジズゼゾ", u"aiueo"),
+        (u"タチツテト", u"aiueo"), (u"ダヂヅデド", u"aiueo"),
+        (u"ナニヌネノ", u"aiueo"), (u"ハヒフヘホ", u"aiueo"),
+        (u"バビブベボ", u"aiueo"), (u"パピプペポ", u"aiueo"),
+        (u"マミムメモ", u"aiueo"), (u"ヤユヨ", u"auo"), (u"ャュョ", u"auo"),
+        (u"ラリルレロ", u"aiueo"), (u"ワヲ", u"ao"), (u"ヮ", u"a"),
+        (u"ヴゔ", u"uu"),
+    )
+    letters = {u"a": u"あ", u"i": u"い", u"u": u"う", u"e": u"え", u"o": u"お"}
+    for kana, vowels in groups:
+        for index, ch in enumerate(kana):
+            _VOWEL[ch] = letters[vowels[index]]
+
+
+_fill_vowels()
+
+
+def expand_chouon(text):
+    """Spell a katakana long-vowel mark with the hiragana vowel."""
+    if not text or not any(ch in _CHOUON for ch in text):
+        return text or u""
+    out = []
+    for ch in text:
+        if ch in _CHOUON and out and out[-1] in _VOWEL:
+            out.append(_VOWEL[out[-1]])
+            continue
+        out.append(ch)
+    return u"".join(out)
 
 
 def _norm_key(text):
@@ -192,7 +239,7 @@ def pronunciation(romaji, lexicon=None):
             parts.append(_PARTICLE[key])
         else:
             parts.append(_convert_token(piece))
-    return u"".join(parts)
+    return expand_chouon(u"".join(parts))
 
 
 def _bare(text):
@@ -211,7 +258,29 @@ def _remember(bank, jp, romaji, hira):
         bank[bare] = reading
 
 
+def _expand_saved(course):
+    for day in course.get("days") or []:
+        for word in day.get("vocabulary") or []:
+            if word.get("hira"):
+                word["hira"] = expand_chouon(word["hira"])
+        groups = []
+        for pattern in day.get("grammar") or []:
+            groups.append(pattern.get("examples") or [])
+        groups.append(day.get("sentences") or [])
+        groups.append(day.get("readingLines") or [])
+        listening = day.get("listening") or {}
+        groups.append(listening.get("lines") or [])
+        for group in groups:
+            for line in group:
+                if line.get("hira"):
+                    line["hira"] = expand_chouon(line["hira"])
+        for item in day.get("writing") or []:
+            if item.get("hira"):
+                item["hira"] = expand_chouon(item["hira"])
+
+
 def apply_readings(course):
+    _expand_saved(course)
     lexicon = lexicon_from_course(course)
     bank = {}
     for day in course.get("days") or []:

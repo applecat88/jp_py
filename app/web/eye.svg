@@ -1,12 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Eye protection">
-  <rect width="640" height="360" rx="28" fill="#241c16"/>
-  <rect x="1.5" y="1.5" width="637" height="357" rx="26.5" fill="none" stroke="#d7b089" stroke-opacity="0.35"/>
-  <path d="M0 214h640" stroke="#d7b089" stroke-width="2" stroke-opacity="0.55"/>
-  <path d="M0 250c70-36 120-36 190 0 70-36 120-36 190 0 70-36 110-36 180 0 40-20 60-20 80 0v110H0z" fill="#3a3128"/>
-  <circle cx="468" cy="92" r="28" fill="#f3eadc"/>
-  <circle cx="468" cy="92" r="46" fill="none" stroke="#f3eadc" stroke-opacity="0.28" stroke-width="2"/>
-  <path d="M150 168c36-52 86-78 170-78s134 26 170 78c-36 52-86 78-170 78s-134-26-170-78z" fill="#1a1512" stroke="#f3eadc" stroke-width="6" stroke-linejoin="round"/>
-  <circle cx="320" cy="168" r="34" fill="#f3eadc"/>
-  <circle cx="320" cy="168" r="16" fill="#241c16"/>
-  <circle cx="330" cy="160" r="6" fill="#f3eadc"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="A lantern keeper resting on a hill under the moon">
+  <rect width="640" height="360" rx="28" fill="#f6d7a8"/>
+  <circle cx="70" cy="48" r="3" fill="#ffe08a"/>
+  <circle cx="128" cy="86" r="2" fill="#ffe08a"/>
+  <circle cx="210" cy="42" r="2.4" fill="#ffe08a"/>
+  <circle cx="360" cy="58" r="2" fill="#ffe08a"/>
+  <circle cx="430" cy="36" r="2.6" fill="#ffe08a"/>
+  <circle cx="508" cy="74" r="34" fill="#ffe08a"/>
+  <path d="M0 214c70-48 130-48 200 0 72-52 140-40 210 8 60-28 120-20 230-8v146H0z" fill="#e0a15a"/>
+  <ellipse cx="286" cy="214" rx="78" ry="62" fill="#fff6e8"/>
+  <path d="M232 168l18 28h-28zM340 168l-18 28h28z" fill="#fff6e8"/>
+  <path d="M238 176l8 14h-14zM334 176l-8 14h14z" fill="#e8896a"/>
+  <path d="M250 208c8 6 14 6 22 0M300 208c8 6 14 6 22 0" fill="none" stroke="#3a2418" stroke-width="3" stroke-linecap="round"/>
+  <path d="M274 228c8 8 18 8 26 0" fill="none" stroke="#3a2418" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="246" cy="224" r="8" fill="#e8896a"/>
+  <circle cx="328" cy="224" r="8" fill="#e8896a"/>
+  <rect x="408" y="186" width="44" height="52" rx="10" fill="#ffe08a"/>
+  <circle cx="430" cy="160" r="5" fill="#ffe08a"/>
+  <path d="M168 248h52v28h-52z" fill="#fff6e8"/>
 </svg>

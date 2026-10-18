@@ -5,7 +5,7 @@ This file continues your classroom after Days 1–3. It is written so you can st
 Each day has the same five parts:
 
 1. **Vocabulary** — 20 new words, with hiragana, romaji, and English.
-2. **Grammar** — 3 patterns, each with a short explanation and examples.
+2. **Grammar** — 3 patterns. Each pattern has two parts: the key points first, then the explanation with examples. In the app, the second part also practices the same pattern with forests, water, and energy.
 3. **Fifteen sample sentences** — using that day’s words and grammar, plus words you already know.
 4. **Reading practice** — a short passage, then romaji, then English.
 5. **Writing practice** — translate or write first, then check the model answers.
@@ -18,7 +18,7 @@ Two short extras sit at the end of each day, because your plan also asks for lis
 ## How to study one day
 
 1. Read the 20 words aloud. Cover the English and say the meaning. Then cover the Japanese and say the word.
-2. Read each grammar pattern and copy the three examples by hand.
+2. Read the key points. Then read the explanation and say the examples. In the app, step through them, including the living-world lines, and copy three by hand.
 3. Read the 15 sentences aloud. Then hide the English and translate. Then hide the Japanese and rebuild the sentence.
 4. Read the passage twice: once for sounds, once for meaning.
 5. Do the writing **before** you look at the answers.
