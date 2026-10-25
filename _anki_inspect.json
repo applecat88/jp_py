@@ -1,0 +1,489 @@
+{
+  "samples": {
+    "words": {
+      "notes": [
+        {
+          "fields": {
+            "Front": "I",
+            "Back": "私/watashi"
+          },
+          "tags": [
+            "day01",
+            "japanese"
+          ],
+          "modelName": "Basic"
+        },
+        {
+          "fields": {
+            "Front": "Today",
+            "Back": "今日/kyō"
+          },
+          "tags": [
+            "day01",
+            "japanese"
+          ],
+          "modelName": "Basic"
+        },
+        {
+          "fields": {
+            "Front": "Tomorrow",
+            "Back": "明日/ashita"
+          },
+          "tags": [
+            "day01",
+            "japanese"
+          ],
+          "modelName": "Basic"
+        }
+      ],
+      "count": 1640
+    },
+    "sentences": {
+      "notes": [
+        {
+          "fields": {
+            "Front": "I am a person.",
+            "Back": "私は人です。/Watashi wa hito desu."
+          },
+          "tags": [
+            "day01",
+            "japanese",
+            "sentence"
+          ],
+          "modelName": "Basic"
+        },
+        {
+          "fields": {
+            "Front": "Today is the company.",
+            "Back": "今日は会社です。/Kyō wa kaisha desu."
+          },
+          "tags": [
+            "day01",
+            "japanese",
+            "sentence"
+          ],
+          "modelName": "Basic"
+        },
+        {
+          "fields": {
+            "Front": "Tomorrow is also work.",
+            "Back": "明日も仕事です。/Ashita mo shigoto desu."
+          },
+          "tags": [
+            "day01",
+            "japanese",
+            "sentence"
+          ],
+          "modelName": "Basic"
+        }
+      ],
+      "count": 1230
+    }
+  },
+  "decks": [
+    {
+      "notes": 1640,
+      "name": "Japanese"
+    },
+    {
+      "notes": 100,
+      "name": "Japanese::01 Days 01-05"
+    },
+    {
+      "notes": 100,
+      "name": "Japanese::02 Days 06-10"
+    },
+    {
+      "notes": 100,
+      "name": "Japanese::03 Days 11-15"
+    },
+    {
+      "notes": 100,
+      "name": "Japanese::04 Days 16-20"
+    },
+    {
+      "notes": 100,
+      "name": "Japanese::05 Days 21-25"
+    },
+    {
+      "notes": 100,
+      "name": "Japanese::06 Days 26-30"
+    },
+    {
+      "notes": 100,
+      "name": "Japanese::07 Days 31-35"
+    },
+    {
+      "notes": 100,
+      "name": "Japanese::08 Days 36-40"
+    },
+    {
+      "notes": 100,
+      "name": "Japanese::09 Days 41-45"
+    },
+    {
+      "notes": 100,
+      "name": "Japanese::10 Days 46-50"
+    },
+    {
+      "notes": 100,
+      "name": "Japanese::11 Days 51-55"
+    },
+    {
+      "notes": 100,
+      "name": "Japanese::12 Days 56-60"
+    },
+    {
+      "notes": 100,
+      "name": "Japanese::13 Days 61-65"
+    },
+    {
+      "notes": 100,
+      "name": "Japanese::14 Days 66-70"
+    },
+    {
+      "notes": 100,
+      "name": "Japanese::15 Days 71-75"
+    },
+    {
+      "notes": 100,
+      "name": "Japanese::16 Days 76-80"
+    },
+    {
+      "notes": 40,
+      "name": "Japanese::17 Days 81-82"
+    },
+    {
+      "notes": 1230,
+      "name": "Japanese Sentences"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::01 Introductions, work, and です／ます"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::02 This and that, and adjectives"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::03 Places, existence, and going"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::04 Numbers, prices, and counters"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::05 Clock time, days, and “from … until …”"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::06 People, “this book,” and possession"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::07 Where the action happens, and the tool you use"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::08 Past, negative, and who did it"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::09 How often, already, and not yet"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::10 Adjectives in the past and the negative"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::11 Likes, skill, and wanting a thing"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::12 Wanting to do something, and inviting someone"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::13 The て form"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::14 Requests and steps"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::15 What is happening, and what is still true"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::16 Permission, prohibition, and access"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::17 Because, so, and but"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::18 Comparing things"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::19 Plain forms"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::20 I think, they said, it might be"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::21 Sentences that describe a noun"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::22 When, before, and after"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::23 Being able to"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::24 At the same time, and a few examples of what you do"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::25 Plans and how sure you are"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::26 If and when it happens: たら"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::27 Whenever you do that, if it is true, and even if"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::28 Advice"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::29 Giving, receiving, and who owns the task"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::30 Asking someone to do the work"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::31 Try it, do it ahead of time, and “oops”"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::32 Become, and make it so"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::33 In order to, and so that"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::34 Must, should, and need not"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::35 It looks like, I heard, and it seems"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::36 When the file is saved, and when something happens to you"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::37 Let me, and have someone do it"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::38 Toward now, from now on, and “I came to be able”"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::39 Polite words you will hear at work"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::40 Email and chat"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::41 Paths, folders, and where a file lives"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::42 Bugs, tickets, and what you expected"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::43 Shopping, colors, and “too”"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::44 Explaining the situation: んです"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::45 Only, lists, and the little words at the end"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::46 How to do it, and easy or hard to do"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::47 I have done it before, and even so"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::48 Who is in the room"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::49 Opening the meeting"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::50 Hearing what they want"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::51 Making the request concrete"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::52 Saying it back"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::53 What is in, and what waits"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::54 The note after the meeting"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::55 The estimate and its assumptions"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::56 The dates you can keep"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::57 A smaller yes"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::58 Agree, and name the condition"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::59 A no that keeps the work"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::60 The careful sentence in an email"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::61 The proposal, conclusion first"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::62 Walking through the screen"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::63 Showing the screen"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::64 Where the work is right now"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::65 How much is done"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::66 Late, and the new date"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::67 While the screen is in front of them"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::68 A change after the freeze"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::69 A defect, without blame"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::70 When the pressure lands on you"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::71 Acceptance"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::72 The day it goes live"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::73 After it is live"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::74 When the client is unhappy"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::75 One meeting, in order"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::76 The first hearing, in your words"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::77 The estimate, with both sides"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::78 After the demo, based on what they said"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::79 A change that stays inside the line"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::80 The next message depends on the result"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::81 The letter that asks for acceptance"
+    },
+    {
+      "notes": 15,
+      "name": "Japanese Sentences::82 The call after it is live"
+    }
+  ]
+}

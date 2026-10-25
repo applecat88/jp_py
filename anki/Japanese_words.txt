@@ -1,0 +1,1646 @@
+#separator:tab
+#html:true
+#notetype:Basic
+#deck column:3
+#tags column:4
+Front	Back	Deck	Tags
+I	私/watashi<br>[sound:d01w01.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+Today	今日/kyō<br>[sound:d01w02.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+Tomorrow	明日/ashita<br>[sound:d01w03.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+Every day	毎日/mainichi<br>[sound:d01w04.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+Person	人/hito<br>[sound:d01w05.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+Company	会社/kaisha<br>[sound:d01w06.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+Work	仕事/shigoto<br>[sound:d01w07.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+Time	時間/jikan<br>[sound:d01w08.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+Japanese language	日本語/nihongo<br>[sound:d01w09.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+English language	英語/eigo<br>[sound:d01w10.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+Study	勉強/benkyō<br>[sound:d01w11.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+To read	読む/yomu<br>[sound:d01w12.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+To write	書く/kaku<br>[sound:d01w13.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+To see; to watch	見る/miru<br>[sound:d01w14.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+To listen; to ask	聞く/kiku<br>[sound:d01w15.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+To make	作る/tsukuru<br>[sound:d01w16.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+To use	使う/tsukau<br>[sound:d01w17.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+To understand	分かる/wakaru<br>[sound:d01w18.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+Development	開発/kaihatsu<br>[sound:d01w19.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+System	システム/shisutemu<br>[sound:d01w20.mp3]	japanese_words::01 Introductions, work, and です／ます	day01 japanese word
+This	これ/kore<br>[sound:d02w01.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+That (near you)	それ/sore<br>[sound:d02w02.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+That (over there)	あれ/are<br>[sound:d02w03.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+What	何/nani<br>[sound:d02w04.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+New	新しい/atarashii<br>[sound:d02w05.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+Old	古い/furui<br>[sound:d02w06.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+Big	大きい/ōkii<br>[sound:d02w07.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+Small	小さい/chiisai<br>[sound:d02w08.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+Book	本/hon<br>[sound:d02w09.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+Name	名前/namae<br>[sound:d02w10.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+To buy	買う/kau<br>[sound:d02w11.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+To read	読む/yomu<br>[sound:d02w12.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+To write	書く/kaku<br>[sound:d02w13.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+To see; to watch	見る/miru<br>[sound:d02w14.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+To use	使う/tsukau<br>[sound:d02w15.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+Screen	画面/gamen<br>[sound:d02w16.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+Function; feature	機能/kinō<br>[sound:d02w17.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+Settings	設定/settei<br>[sound:d02w18.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+Save	保存/hozon<br>[sound:d02w19.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+Error	エラー/erā<br>[sound:d02w20.mp3]	japanese_words::02 This and that, and adjectives	day02 japanese word
+Here	ここ/koko<br>[sound:d03w01.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+There (near you)	そこ/soko<br>[sound:d03w02.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+Over there	あそこ/asoko<br>[sound:d03w03.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+Where	どこ/doko<br>[sound:d03w04.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+Above; on	上/ue<br>[sound:d03w05.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+Below; under	下/shita<br>[sound:d03w06.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+Inside	中/naka<br>[sound:d03w07.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+Outside	外/soto<br>[sound:d03w08.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+Front; before	前/mae<br>[sound:d03w09.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+Behind	後ろ/ushiro<br>[sound:d03w10.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+School	学校/gakkō<br>[sound:d03w11.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+House; home	家/ie<br>[sound:d03w12.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+To go	行く/iku<br>[sound:d03w13.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+To come	来る/kuru<br>[sound:d03w14.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+To exist (people, animals)	いる/iru<br>[sound:d03w15.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+To exist (things)	ある/aru<br>[sound:d03w16.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+File	ファイル/fairu<br>[sound:d03w17.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+Folder	フォルダー/forudā<br>[sound:d03w18.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+Network	ネットワーク/nettowāku<br>[sound:d03w19.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+Place	場所/basho<br>[sound:d03w20.mp3]	japanese_words::03 Places, existence, and going	day03 japanese word
+One	一/ichi<br>[sound:d04w01.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Two	二/ni<br>[sound:d04w02.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Three	三/san<br>[sound:d04w03.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Four	四/yon / shi<br>[sound:d04w04.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Five	五/go<br>[sound:d04w05.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Six	六/roku<br>[sound:d04w06.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Seven	七/nana / shichi<br>[sound:d04w07.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Eight	八/hachi<br>[sound:d04w08.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Nine	九/kyū / ku<br>[sound:d04w09.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Ten	十/jū<br>[sound:d04w10.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Hundred	百/hyaku<br>[sound:d04w11.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Thousand	千/sen<br>[sound:d04w12.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Ten thousand	万/man<br>[sound:d04w13.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Yen	円/en<br>[sound:d04w14.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Zero	ゼロ/zero<br>[sound:d04w15.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Number; ID	番号/bangō<br>[sound:d04w16.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+How much (price)	いくら/ikura<br>[sound:d04w17.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Price	値段/nedan<br>[sound:d04w18.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Free of charge	無料/muryō<br>[sound:d04w19.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Paid; not free	有料/yūryō<br>[sound:d04w20.mp3]	japanese_words::04 Numbers, prices, and counters	day04 japanese word
+Now	今/ima<br>[sound:d05w01.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+A.m.; morning (clock)	午前/gozen<br>[sound:d05w02.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+P.m.; afternoon (clock)	午後/gogo<br>[sound:d05w03.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Morning	朝/asa<br>[sound:d05w04.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Noon; daytime	昼/hiru<br>[sound:d05w05.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Night	夜/yoru<br>[sound:d05w06.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+O’clock	時/ji<br>[sound:d05w07.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Minute	分/fun / pun<br>[sound:d05w08.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Half (past the hour)	半/han<br>[sound:d05w09.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Monday	月曜日/getsuyōbi<br>[sound:d05w10.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Tuesday	火曜日/kayōbi<br>[sound:d05w11.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Wednesday	水曜日/suiyōbi<br>[sound:d05w12.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Thursday	木曜日/mokuyōbi<br>[sound:d05w13.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Friday	金曜日/kin'yōbi<br>[sound:d05w14.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Saturday	土曜日/doyōbi<br>[sound:d05w15.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Sunday	日曜日/nichiyōbi<br>[sound:d05w16.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Weekend	週末/shūmatsu<br>[sound:d05w17.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Plan; schedule	予定/yotei<br>[sound:d05w18.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Meeting	会議/kaigi<br>[sound:d05w19.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Every week	毎週/maishū<br>[sound:d05w20.mp3]	japanese_words::05 Clock time, days, and “from … until …”	day05 japanese word
+Friend	友達/tomodachi<br>[sound:d06w01.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+Teacher	先生/sensei<br>[sound:d06w02.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+Student	学生/gakusei<br>[sound:d06w03.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+Family	家族/kazoku<br>[sound:d06w04.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+My father	父/chichi<br>[sound:d06w05.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+My mother	母/haha<br>[sound:d06w06.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+Colleague	同僚/dōryō<br>[sound:d06w07.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+One’s boss	上司/jōshi<br>[sound:d06w08.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+Team (IT)	チーム/chīmu<br>[sound:d06w09.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+Project (IT)	プロジェクト/purojekuto<br>[sound:d06w10.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+Personal computer	パソコン/pasokon<br>[sound:d06w11.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+Smartphone	スマホ/sumaho<br>[sound:d06w12.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+Email (IT)	メール/mēru<br>[sound:d06w13.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+Data (IT)	データ/dēta<br>[sound:d06w14.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+User (IT)	ユーザー/yūzā<br>[sound:d06w15.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+Account (IT)	アカウント/akaunto<br>[sound:d06w16.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+Password (IT)	パスワード/pasuwādo<br>[sound:d06w17.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+Photo	写真/shashin<br>[sound:d06w18.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+Materials; a document (IT)	資料/shiryō<br>[sound:d06w19.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+Customer; client (IT)	顧客/kokyaku<br>[sound:d06w20.mp3]	japanese_words::06 People, “this book,” and possession	day06 japanese word
+Office (IT)	オフィス/ofisu<br>[sound:d07w01.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Meeting room	会議室/kaigishitsu<br>[sound:d07w02.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Cafe	カフェ/kafe<br>[sound:d07w03.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Station	駅/eki<br>[sound:d07w04.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Shop	店/mise<br>[sound:d07w05.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Room	部屋/heya<br>[sound:d07w06.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Desk	机/tsukue<br>[sound:d07w07.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Keyboard (IT)	キーボード/kībōdo<br>[sound:d07w08.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Mouse (IT)	マウス/mausu<br>[sound:d07w09.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Code (IT)	コード/kōdo<br>[sound:d07w10.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Server (IT)	サーバー/sābā<br>[sound:d07w11.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+App (IT)	アプリ/apuri<br>[sound:d07w12.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Software (IT)	ソフト/sofuto<br>[sound:d07w13.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Browser (IT)	ブラウザ/burauza<br>[sound:d07w14.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Link (IT)	リンク/rinku<br>[sound:d07w15.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Button (IT)	ボタン/botan<br>[sound:d07w16.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Menu (IT)	メニュー/menyū<br>[sound:d07w17.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Window (IT)	ウィンドウ/windō<br>[sound:d07w18.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Internet (IT)	インターネット/intānetto<br>[sound:d07w19.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Database (IT)	データベース/dētabēsu<br>[sound:d07w20.mp3]	japanese_words::07 Where the action happens, and the tool you use	day07 japanese word
+Yesterday	昨日/kinō<br>[sound:d08w01.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+Who	だれ/dare<br>[sound:d08w02.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To open (a file, a window)	開く/hiraku<br>[sound:d08w03.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To close	閉じる/tojiru<br>[sound:d08w04.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To press; to push	押す/osu<br>[sound:d08w05.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To send	送る/okuru<br>[sound:d08w06.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To wait	待つ/matsu<br>[sound:d08w07.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To start something	始める/hajimeru<br>[sound:d08w08.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To end (by itself)	終わる/owaru<br>[sound:d08w09.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To fix; to correct	直す/naosu<br>[sound:d08w10.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To eat	食べる/taberu<br>[sound:d08w11.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To drink	飲む/nomu<br>[sound:d08w12.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To get up; to wake	起きる/okiru<br>[sound:d08w13.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To sleep; to go to bed	寝る/neru<br>[sound:d08w14.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To work	働く/hataraku<br>[sound:d08w15.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To rest; to take time off	休む/yasumu<br>[sound:d08w16.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To speak; to talk	話す/hanasu<br>[sound:d08w17.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To teach; to tell	教える/oshieru<br>[sound:d08w18.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To learn from someone	習う/narau<br>[sound:d08w19.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+To go home; to return	帰る/kaeru<br>[sound:d08w20.mp3]	japanese_words::08 Past, negative, and who did it	day08 japanese word
+Always	いつも/itsumo<br>[sound:d09w01.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+Often	よく/yoku<br>[sound:d09w02.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+Sometimes	ときどき/tokidoki<br>[sound:d09w03.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+Not very (with a negative)	あまり/amari<br>[sound:d09w04.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+Not at all (with a negative)	ぜんぜん/zenzen<br>[sound:d09w05.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+Usually	たいてい/taitei<br>[sound:d09w06.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+Week	週/shū<br>[sound:d09w07.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+Month; Monday’s 月	月/tsuki / getsu<br>[sound:d09w08.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+Year	年/toshi / nen<br>[sound:d09w09.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+Time; occurrence (counter)	回/kai<br>[sound:d09w10.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+For the first time	初めて/hajimete<br>[sound:d09w11.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+Already	もう/mō<br>[sound:d09w12.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+Still; not yet	まだ/mada<br>[sound:d09w13.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+Soon; right away	すぐ/sugu<br>[sound:d09w14.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+Later	あとで/ato de<br>[sound:d09w15.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+A little while ago	さっき/sakki<br>[sound:d09w16.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+Recently	最近/saikin<br>[sound:d09w17.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+Next time; this time	今度/kondo<br>[sound:d09w18.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+The first; the beginning	最初/saisho<br>[sound:d09w19.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+The last; the end	最後/saigo<br>[sound:d09w20.mp3]	japanese_words::09 How often, already, and not yet	day09 japanese word
+Good	いい/ii<br>[sound:d10w01.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Bad	悪い/warui<br>[sound:d10w02.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Early; fast (time)	早い/hayai<br>[sound:d10w03.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Late; slow	遅い/osoi<br>[sound:d10w04.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Expensive; high	高い/takai<br>[sound:d10w05.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Cheap	安い/yasui<br>[sound:d10w06.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Difficult	難しい/muzukashii<br>[sound:d10w07.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Easy; kind	易しい/yasashii<br>[sound:d10w08.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Busy	忙しい/isogashii<br>[sound:d10w09.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Convenient (な)	便利/benri<br>[sound:d10w10.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Inconvenient (な)	不便/fuben<br>[sound:d10w11.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Simple; easy (な)	簡単/kantan<br>[sound:d10w12.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Complicated (な)	複雑/fukuzatsu<br>[sound:d10w13.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Important (な)	大切/taisetsu<br>[sound:d10w14.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Necessary (な)	必要/hitsuyō<br>[sound:d10w15.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+All right; OK (な)	大丈夫/daijōbu<br>[sound:d10w16.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Problem	問題/mondai<br>[sound:d10w17.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Cause (IT)	原因/gen'in<br>[sound:d10w18.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Fast (speed)	速い/hayai<br>[sound:d10w19.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Heavy; slow (a machine)	重い/omoi<br>[sound:d10w20.mp3]	japanese_words::10 Adjectives in the past and the negative	day10 japanese word
+Liked; pleasing (な)	好き/suki<br>[sound:d11w01.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Disliked (な)	嫌い/kirai<br>[sound:d11w02.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Skillful (な)	上手/jōzu<br>[sound:d11w03.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Unskillful (な)	下手/heta<br>[sound:d11w04.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+One’s strong point (な)	得意/tokui<br>[sound:d11w05.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+One’s weak point (な)	苦手/nigate<br>[sound:d11w06.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Wanted (thing)	欲しい/hoshii<br>[sound:d11w07.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Water	水/mizu<br>[sound:d11w08.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Tea	お茶/ocha<br>[sound:d11w09.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Coffee	コーヒー/kōhī<br>[sound:d11w10.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Meal; rice	ご飯/gohan<br>[sound:d11w11.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Music	音楽/ongaku<br>[sound:d11w12.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Movie	映画/eiga<br>[sound:d11w13.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Hobby	趣味/shumi<br>[sound:d11w14.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Interest	興味/kyōmi<br>[sound:d11w15.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Experience	経験/keiken<br>[sound:d11w16.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Travel	旅行/ryokō<br>[sound:d11w17.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Cooking; cuisine	料理/ryōri<br>[sound:d11w18.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Game	ゲーム/gēmu<br>[sound:d11w19.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+Design (IT)	デザイン/dezain<br>[sound:d11w20.mp3]	japanese_words::11 Likes, skill, and wanting a thing	day11 japanese word
+To learn	学ぶ/manabu<br>[sound:d12w01.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To memorize; to remember	覚える/oboeru<br>[sound:d12w02.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To practice	練習する/renshū suru<br>[sound:d12w03.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To look up; to investigate	調べる/shiraberu<br>[sound:d12w04.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To search for	探す/sagasu<br>[sound:d12w05.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To decide	決める/kimeru<br>[sound:d12w06.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To choose	選ぶ/erabu<br>[sound:d12w07.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To change something	変える/kaeru<br>[sound:d12w08.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To erase; to turn off	消す/kesu<br>[sound:d12w09.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To copy (IT)	コピーする/kopī suru<br>[sound:d12w10.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To download (IT)	ダウンロードする/daunrōdo suru<br>[sound:d12w11.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To upload (IT)	アップロードする/appurōdo suru<br>[sound:d12w12.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To install (IT)	インストールする/insutōru suru<br>[sound:d12w13.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To delete (IT)	削除する/sakujo suru<br>[sound:d12w14.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To input; to type in (IT)	入力する/nyūryoku suru<br>[sound:d12w15.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To click (IT)	クリックする/kurikku suru<br>[sound:d12w16.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To check; to confirm	確認する/kakunin suru<br>[sound:d12w17.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To explain	説明する/setsumei suru<br>[sound:d12w18.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To share (IT)	共有する/kyōyū suru<br>[sound:d12w19.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+Together	一緒に/issho ni<br>[sound:d12w20.mp3]	japanese_words::12 Wanting to do something, and inviting someone	day12 japanese word
+To walk	歩く/aruku<br>[sound:d13w01.mp3]	japanese_words::13 The て form	day13 japanese word
+To run	走る/hashiru<br>[sound:d13w02.mp3]	japanese_words::13 The て form	day13 japanese word
+To hurry	急ぐ/isogu<br>[sound:d13w03.mp3]	japanese_words::13 The て form	day13 japanese word
+To swim	泳ぐ/oyogu<br>[sound:d13w04.mp3]	japanese_words::13 The て form	day13 japanese word
+To play; to spend time	遊ぶ/asobu<br>[sound:d13w05.mp3]	japanese_words::13 The て form	day13 japanese word
+To call	呼ぶ/yobu<br>[sound:d13w06.mp3]	japanese_words::13 The て form	day13 japanese word
+To board; to ride	乗る/noru<br>[sound:d13w07.mp3]	japanese_words::13 The て form	day13 japanese word
+To get off	降りる/oriru<br>[sound:d13w08.mp3]	japanese_words::13 The て form	day13 japanese word
+To enter	入る/hairu<br>[sound:d13w09.mp3]	japanese_words::13 The て form	day13 japanese word
+To go out; to exit	出る/deru<br>[sound:d13w10.mp3]	japanese_words::13 The て form	day13 japanese word
+To put on (a shirt, a jacket)	着る/kiru<br>[sound:d13w11.mp3]	japanese_words::13 The て form	day13 japanese word
+To wash	洗う/arau<br>[sound:d13w12.mp3]	japanese_words::13 The て form	day13 japanese word
+To brush; to polish	磨く/migaku<br>[sound:d13w13.mp3]	japanese_words::13 The て form	day13 japanese word
+To pour on oneself (a shower)	浴びる/abiru<br>[sound:d13w14.mp3]	japanese_words::13 The て form	day13 japanese word
+Train	電車/densha<br>[sound:d13w15.mp3]	japanese_words::13 The て form	day13 japanese word
+Bus	バス/basu<br>[sound:d13w16.mp3]	japanese_words::13 The て form	day13 japanese word
+Bicycle	自転車/jitensha<br>[sound:d13w17.mp3]	japanese_words::13 The て form	day13 japanese word
+Shower	シャワー/shawā<br>[sound:d13w18.mp3]	japanese_words::13 The て form	day13 japanese word
+Tooth	歯/ha<br>[sound:d13w19.mp3]	japanese_words::13 The て form	day13 japanese word
+Breakfast	朝ごはん/asagohan<br>[sound:d13w20.mp3]	japanese_words::13 The て form	day13 japanese word
+First	まず/mazu<br>[sound:d14w01.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Next	次に/tsugi ni<br>[sound:d14w02.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+And then	それから/sorekara<br>[sound:d14w03.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Procedure; steps (IT)	手順/tejun<br>[sound:d14w04.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Operation (IT)	操作/sōsa<br>[sound:d14w05.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Reboot (IT)	再起動/saikidō<br>[sound:d14w06.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Update; refresh (IT)	更新/kōshin<br>[sound:d14w07.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Connection (IT)	接続/setsuzoku<br>[sound:d14w08.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Disconnection (IT)	切断/setsudan<br>[sound:d14w09.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Login (IT)	ログイン/roguin<br>[sound:d14w10.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Logout (IT)	ログアウト/roguauto<br>[sound:d14w11.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Username (IT)	ユーザー名/yūzāmei<br>[sound:d14w12.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Privilege; permission level (IT)	権限/kengen<br>[sound:d14w13.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Success	成功/seikō<br>[sound:d14w14.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Failure	失敗/shippai<br>[sound:d14w15.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Warning (IT)	警告/keikoku<br>[sound:d14w16.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Message (IT)	メッセージ/messēji<br>[sound:d14w17.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Log (IT)	ログ/rogu<br>[sound:d14w18.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Backup (IT)	バックアップ/bakkuappu<br>[sound:d14w19.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+Retry (IT)	再試行/saishikō<br>[sound:d14w20.mp3]	japanese_words::14 Requests and steps	day14 japanese word
+At present; currently	現在/genzai<br>[sound:d15w01.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Execution; running a job (IT)	実行/jikkō<br>[sound:d15w02.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Processing (IT)	処理/shori<br>[sound:d15w03.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Loading; reading in (IT)	読み込み/yomikomi<br>[sound:d15w04.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Standby; waiting (IT)	待機/taiki<br>[sound:d15w05.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+In use (IT)	使用中/shiyōchū<br>[sound:d15w06.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Online (IT)	オンライン/onrain<br>[sound:d15w07.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Offline (IT)	オフライン/ofurain<br>[sound:d15w08.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Startup; boot (IT)	起動/kidō<br>[sound:d15w09.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Stop; halt (IT)	停止/teishi<br>[sound:d15w10.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Completion (IT)	完了/kanryō<br>[sound:d15w11.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Interruption (IT)	中断/chūdan<br>[sound:d15w12.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Response (IT)	応答/ōtō<br>[sound:d15w13.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Delay (IT)	遅延/chien<br>[sound:d15w14.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Free space; a vacancy	空き/aki<br>[sound:d15w15.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Capacity (IT)	容量/yōryō<br>[sound:d15w16.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Progress (IT)	進捗/shinchoku<br>[sound:d15w17.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Notification (IT)	通知/tsūchi<br>[sound:d15w18.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Display (IT)	表示/hyōji<br>[sound:d15w19.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Hidden; not displayed (IT)	非表示/hihyōji<br>[sound:d15w20.mp3]	japanese_words::15 What is happening, and what is still true	day15 japanese word
+Rule	規則/kisoku<br>[sound:d16w01.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Prohibition (IT)	禁止/kinshi<br>[sound:d16w02.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Permission; approval	許可/kyoka<br>[sound:d16w03.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Possible (な)	可能/kanō<br>[sound:d16w04.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Impossible (な)	不可能/fukanō<br>[sound:d16w05.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Required (な) (IT)	必須/hissu<br>[sound:d16w06.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Optional (な) (IT)	任意/nin'i<br>[sound:d16w07.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Public; to publish	公開/kōkai<br>[sound:d16w08.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Private; unpublished	非公開/hikōkai<br>[sound:d16w09.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Editing (IT)	編集/henshū<br>[sound:d16w10.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Viewing (access) (IT)	閲覧/etsuran<br>[sound:d16w11.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+A change (IT)	変更/henkō<br>[sound:d16w12.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Creation (IT)	作成/sakusei<br>[sound:d16w13.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Read access (IT)	読み取り/yomitori<br>[sound:d16w14.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Write access (IT)	書き込み/kakikomi<br>[sound:d16w15.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Administrator (IT)	管理者/kanrisha<br>[sound:d16w16.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Guest (IT)	ゲスト/gesuto<br>[sound:d16w17.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Restriction (IT)	制限/seigen<br>[sound:d16w18.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Exception (IT)	例外/reigai<br>[sound:d16w19.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Caution; attention	注意/chūi<br>[sound:d16w20.mp3]	japanese_words::16 Permission, prohibition, and access	day16 japanese word
+Reason	理由/riyū<br>[sound:d17w01.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Result	結果/kekka<br>[sound:d17w02.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Impact; influence (IT)	影響/eikyō<br>[sound:d17w03.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Defect; malfunction (IT)	不具合/fuguai<br>[sound:d17w04.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Bug (IT)	バグ/bagu<br>[sound:d17w05.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+A fix; correction (IT)	修正/shūsei<br>[sound:d17w06.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Handling; a response (IT)	対応/taiō<br>[sound:d17w07.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+A report	報告/hōkoku<br>[sound:d17w08.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Contact	連絡/renraku<br>[sound:d17w09.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Environment (IT)	環境/kankyō<br>[sound:d17w10.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Production (IT)	本番/honban<br>[sound:d17w11.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Exam; a test	試験/shiken<br>[sound:d17w12.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Urgent (な)	緊急/kinkyū<br>[sound:d17w13.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Safe (な)	安全/anzen<br>[sound:d17w14.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Dangerous; danger (な)	危険/kiken<br>[sound:d17w15.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Important (な)	重要/jūyō<br>[sound:d17w16.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Ordinary; normal (な)	普通/futsū<br>[sound:d17w17.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Special (な)	特別/tokubetsu<br>[sound:d17w18.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Details (IT)	詳細/shōsai<br>[sound:d17w19.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Reproduction (of a bug) (IT)	再現/saigen<br>[sound:d17w20.mp3]	japanese_words::17 Because, so, and but	day17 japanese word
+Than	より/yori<br>[sound:d18w01.mp3]	japanese_words::18 Comparing things	day18 japanese word
+The side that…	ほう/hō<br>[sound:d18w02.mp3]	japanese_words::18 Comparing things	day18 japanese word
+The most; number one	一番/ichiban<br>[sound:d18w03.mp3]	japanese_words::18 Comparing things	day18 japanese word
+Which of the two	どちら/dochira<br>[sound:d18w04.mp3]	japanese_words::18 Comparing things	day18 japanese word
+Which of three or more	どれ/dore<br>[sound:d18w05.mp3]	japanese_words::18 Comparing things	day18 japanese word
+Light; lightweight (an app)	軽い/karui<br>[sound:d18w06.mp3]	japanese_words::18 Comparing things	day18 japanese word
+Strong	強い/tsuyoi<br>[sound:d18w07.mp3]	japanese_words::18 Comparing things	day18 japanese word
+Weak	弱い/yowai<br>[sound:d18w08.mp3]	japanese_words::18 Comparing things	day18 japanese word
+Bright	明るい/akarui<br>[sound:d18w09.mp3]	japanese_words::18 Comparing things	day18 japanese word
+Dark	暗い/kurai<br>[sound:d18w10.mp3]	japanese_words::18 Comparing things	day18 japanese word
+The same	同じ/onaji<br>[sound:d18w11.mp3]	japanese_words::18 Comparing things	day18 japanese word
+To differ; to be wrong	違う/chigau<br>[sound:d18w12.mp3]	japanese_words::18 Comparing things	day18 japanese word
+Version (IT)	バージョン/bājon<br>[sound:d18w13.mp3]	japanese_words::18 Comparing things	day18 japanese word
+Performance (IT)	性能/seinō<br>[sound:d18w14.mp3]	japanese_words::18 Comparing things	day18 japanese word
+Speed (IT)	速度/sokudo<br>[sound:d18w15.mp3]	japanese_words::18 Comparing things	day18 japanese word
+Size (IT)	サイズ/saizu<br>[sound:d18w16.mp3]	japanese_words::18 Comparing things	day18 japanese word
+Quality	品質/hinshitsu<br>[sound:d18w17.mp3]	japanese_words::18 Comparing things	day18 japanese word
+Stable (な) (IT)	安定/antei<br>[sound:d18w18.mp3]	japanese_words::18 Comparing things	day18 japanese word
+Efficiency	効率/kōritsu<br>[sound:d18w19.mp3]	japanese_words::18 Comparing things	day18 japanese word
+Compatibility (IT)	互換/gokan<br>[sound:d18w20.mp3]	japanese_words::18 Comparing things	day18 japanese word
+To say	言う/iu<br>[sound:d19w01.mp3]	japanese_words::19 Plain forms	day19 japanese word
+To think	思う/omou<br>[sound:d19w02.mp3]	japanese_words::19 Plain forms	day19 japanese word
+To come to know	知る/shiru<br>[sound:d19w03.mp3]	japanese_words::19 Plain forms	day19 japanese word
+To hold; to have	持つ/motsu<br>[sound:d19w04.mp3]	japanese_words::19 Plain forms	day19 japanese word
+To put; to place	置く/oku<br>[sound:d19w05.mp3]	japanese_words::19 Plain forms	day19 japanese word
+To take	取る/toru<br>[sound:d19w06.mp3]	japanese_words::19 Plain forms	day19 japanese word
+To take out; to submit	出す/dasu<br>[sound:d19w07.mp3]	japanese_words::19 Plain forms	day19 japanese word
+To be able to do	できる/dekiru<br>[sound:d19w08.mp3]	japanese_words::19 Plain forms	day19 japanese word
+To become	なる/naru<br>[sound:d19w09.mp3]	japanese_words::19 Plain forms	day19 japanese word
+Dictionary	辞書/jisho<br>[sound:d19w10.mp3]	japanese_words::19 Plain forms	day19 japanese word
+Meaning	意味/imi<br>[sound:d19w11.mp3]	japanese_words::19 Plain forms	day19 japanese word
+Example sentence	例文/reibun<br>[sound:d19w12.mp3]	japanese_words::19 Plain forms	day19 japanese word
+Vocabulary word	単語/tango<br>[sound:d19w13.mp3]	japanese_words::19 Plain forms	day19 japanese word
+Grammar	文法/bunpō<br>[sound:d19w14.mp3]	japanese_words::19 Plain forms	day19 japanese word
+Kanji	漢字/kanji<br>[sound:d19w15.mp3]	japanese_words::19 Plain forms	day19 japanese word
+A piece of writing; sentences	文章/bunshō<br>[sound:d19w16.mp3]	japanese_words::19 Plain forms	day19 japanese word
+Mistake	間違い/machigai<br>[sound:d19w17.mp3]	japanese_words::19 Plain forms	day19 japanese word
+The correct answer	正解/seikai<br>[sound:d19w18.mp3]	japanese_words::19 Plain forms	day19 japanese word
+Review	復習/fukushū<br>[sound:d19w19.mp3]	japanese_words::19 Plain forms	day19 japanese word
+Homework	宿題/shukudai<br>[sound:d19w20.mp3]	japanese_words::19 Plain forms	day19 japanese word
+To pass on; to tell	伝える/tsutaeru<br>[sound:d20w01.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+To ask someone to do something	頼む/tanomu<br>[sound:d20w02.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+A promise	約束/yakusoku<br>[sound:d20w03.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+An opinion	意見/iken<br>[sound:d20w04.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+An idea; a thought	考え/kangae<br>[sound:d20w05.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+A feeling	気持ち/kimochi<br>[sound:d20w06.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+A fact	事実/jijitsu<br>[sound:d20w07.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+True (な)	本当/hontō<br>[sound:d20w08.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+A lie	うそ/uso<br>[sound:d20w09.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+Probably	たぶん/tabun<br>[sound:d20w10.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+Surely; I expect	きっと/kitto<br>[sound:d20w11.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+Probably (a bit more formal)	おそらく/osoraku<br>[sound:d20w12.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+Absolutely	絶対/zettai<br>[sound:d20w13.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+Possibility	可能性/kanōsei<br>[sound:d20w14.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+A proposal	提案/teian<br>[sound:d20w15.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+Agreement; in favor	賛成/sansei<br>[sound:d20w16.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+Opposition; against	反対/hantai<br>[sound:d20w17.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+A judgment	判断/handan<br>[sound:d20w18.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+A conclusion	結論/ketsuron<br>[sound:d20w19.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+A hypothesis (IT)	仮説/kasetsu<br>[sound:d20w20.mp3]	japanese_words::20 I think, they said, it might be	day20 japanese word
+A thing (concrete)	物/mono<br>[sound:d21w01.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+A thing (an act, a fact)	こと/koto<br>[sound:d21w02.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+A place	ところ/tokoro<br>[sound:d21w03.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+Sake; benefit	ため/tame<br>[sound:d21w04.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+A tool (IT)	ツール/tsūru<br>[sound:d21w05.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+A command (IT)	コマンド/komando<br>[sound:d21w06.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+A program (IT)	プログラム/puroguramu<br>[sound:d21w07.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+A developer (IT)	開発者/kaihatsusha<br>[sound:d21w08.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+A requirement (IT)	要件/yōken<br>[sound:d21w09.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+A specification (IT)	仕様/shiyō<br>[sound:d21w10.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+Design (of a system) (IT)	設計/sekkei<br>[sound:d21w11.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+Implementation (IT)	実装/jissō<br>[sound:d21w12.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+A method	方法/hōhō<br>[sound:d21w13.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+Information	情報/jōhō<br>[sound:d21w14.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+Contents	内容/naiyō<br>[sound:d21w15.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+A target; the subject (IT)	対象/taishō<br>[sound:d21w16.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+A condition	条件/jōken<br>[sound:d21w17.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+A document	文書/bunsho<br>[sound:d21w18.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+A record	記録/kiroku<br>[sound:d21w19.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+History (IT)	履歴/rireki<br>[sound:d21w20.mp3]	japanese_words::21 Sentences that describe a noun	day21 japanese word
+When; the occasion	とき/toki<br>[sound:d22w01.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+During; while	あいだ/aida<br>[sound:d22w02.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+Immediately after	直後/chokugo<br>[sound:d22w03.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+Previously; before	以前/izen<br>[sound:d22w04.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+From then on	以後/igo<br>[sound:d22w05.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+Simultaneous (な)	同時/dōji<br>[sound:d22w06.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+Order; a turn	順番/junban<br>[sound:d22w07.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+Start	開始/kaishi<br>[sound:d22w08.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+End	終了/shūryō<br>[sound:d22w09.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+In the middle of	途中/tochū<br>[sound:d22w10.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+Immediately before	直前/chokuzen<br>[sound:d22w11.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+From … onward	以降/ikō<br>[sound:d22w12.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+Regular; periodic (な)	定期/teiki<br>[sound:d22w13.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+Ad hoc; temporary (な)	臨時/rinji<br>[sound:d22w14.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+A period	期間/kikan<br>[sound:d22w15.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+A deadline	期限/kigen<br>[sound:d22w16.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+A schedule of dates	日程/nittei<br>[sound:d22w17.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+A calendar	カレンダー/karendā<br>[sound:d22w18.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+An alarm	アラーム/arāmu<br>[sound:d22w19.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+A reminder	リマインダー/rimaindā<br>[sound:d22w20.mp3]	japanese_words::22 When, before, and after	day22 japanese word
+A skill	スキル/sukiru<br>[sound:d23w01.mp3]	japanese_words::23 Being able to	day23 japanese word
+A beginner	初心者/shoshinsha<br>[sound:d23w02.mp3]	japanese_words::23 Being able to	day23 japanese word
+The basics	基本/kihon<br>[sound:d23w03.mp3]	japanese_words::23 Being able to	day23 japanese word
+Applied use	応用/ōyō<br>[sound:d23w04.mp3]	japanese_words::23 Being able to	day23 japanese word
+Building a system (IT)	構築/kōchiku<br>[sound:d23w05.mp3]	japanese_words::23 Being able to	day23 japanese word
+Debugging (IT)	デバッグ/debaggu<br>[sound:d23w06.mp3]	japanese_words::23 Being able to	day23 japanese word
+A solution	解決/kaiketsu<br>[sound:d23w07.mp3]	japanese_words::23 Being able to	day23 japanese word
+An improvement	改善/kaizen<br>[sound:d23w08.mp3]	japanese_words::23 Being able to	day23 japanese word
+Optimization (IT)	最適化/saitekika<br>[sound:d23w09.mp3]	japanese_words::23 Being able to	day23 japanese word
+Automation (IT)	自動化/jidōka<br>[sound:d23w10.mp3]	japanese_words::23 Being able to	day23 japanese word
+Manual; by hand (IT)	手動/shudō<br>[sound:d23w11.mp3]	japanese_words::23 Being able to	day23 japanese word
+Automatic (IT)	自動/jidō<br>[sound:d23w12.mp3]	japanese_words::23 Being able to	day23 japanese word
+Isolation (of a cause) (IT)	切り分け/kiriwake<br>[sound:d23w13.mp3]	japanese_words::23 Being able to	day23 japanese word
+A dependency (IT)	依存/izon<br>[sound:d23w14.mp3]	japanese_words::23 Being able to	day23 japanese word
+A library (IT)	ライブラリ/raiburari<br>[sound:d23w15.mp3]	japanese_words::23 Being able to	day23 japanese word
+A framework (IT)	フレームワーク/furēmuwāku<br>[sound:d23w16.mp3]	japanese_words::23 Being able to	day23 japanese word
+A module (IT)	モジュール/mojūru<br>[sound:d23w17.mp3]	japanese_words::23 Being able to	day23 japanese word
+A function (IT)	関数/kansū<br>[sound:d23w18.mp3]	japanese_words::23 Being able to	day23 japanese word
+To be visible	見える/mieru<br>[sound:d23w19.mp3]	japanese_words::23 Being able to	day23 japanese word
+To be audible	聞こえる/kikoeru<br>[sound:d23w20.mp3]	japanese_words::23 Being able to	day23 japanese word
+A work task	作業/sagyō<br>[sound:d24w01.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+Parallel; side by side	並行/heikō<br>[sound:d24w02.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+Concentration	集中/shūchū<br>[sound:d24w03.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+A nuisance; in the way (な)	邪魔/jama<br>[sound:d24w04.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+Quiet (な)	静か/shizuka<br>[sound:d24w05.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+Noisy	うるさい/urusai<br>[sound:d24w06.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+A voice	声/koe<br>[sound:d24w07.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+A sound	音/oto<br>[sound:d24w08.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+Chat (IT)	チャット/chatto<br>[sound:d24w09.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+A phone or voice call	通話/tsūwa<br>[sound:d24w10.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+Participation	参加/sanka<br>[sound:d24w11.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+Leaving a room or a call	退出/taishutsu<br>[sound:d24w12.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+Audio recording	録音/rokuon<br>[sound:d24w13.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+Video recording	録画/rokuga<br>[sound:d24w14.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+A memo	メモ/memo<br>[sound:d24w15.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+Meeting minutes	議事録/gijiroku<br>[sound:d24w16.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+An agenda item	議題/gidai<br>[sound:d24w17.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+A decision	決定/kettei<br>[sound:d24w18.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+On hold	保留/horyū<br>[sound:d24w19.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+Mute (IT)	ミュート/myūto<br>[sound:d24w20.mp3]	japanese_words::24 At the same time, and a few examples of what you do	day24 japanese word
+A plan	計画/keikaku<br>[sound:d25w01.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+A goal	目標/mokuhyō<br>[sound:d25w02.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+Next month	来月/raigetsu<br>[sound:d25w03.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+Next year	来年/rainen<br>[sound:d25w04.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+This year	今年/kotoshi<br>[sound:d25w05.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+Last week	先週/senshū<br>[sound:d25w06.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+This month	今月/kongetsu<br>[sound:d25w07.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+The future	将来/shōrai<br>[sound:d25w08.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+An outlook	見通し/mitooshi<br>[sound:d25w09.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+A risk	リスク/risuku<br>[sound:d25w10.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+Postponement	延期/enki<br>[sound:d25w11.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+Cancellation	中止/chūshi<br>[sound:d25w12.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+Carrying something out	実施/jisshi<br>[sound:d25w13.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+Preparation	準備/junbi<br>[sound:d25w14.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+A prospect; likelihood	見込み/mikomi<br>[sound:d25w15.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+A candidate	候補/kōho<br>[sound:d25w16.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+Priority	優先/yūsen<br>[sound:d25w17.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+A policy; a course	方針/hōshin<br>[sound:d25w18.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+A stage	段階/dankai<br>[sound:d25w19.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+A scope; a range	範囲/han'i<br>[sound:d25w20.mp3]	japanese_words::25 Plans and how sure you are	day25 japanese word
+If (optional marker)	もし/moshi<br>[sound:d26w01.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+A case	場合/baai<br>[sound:d26w02.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+Recovery	復旧/fukkyū<br>[sound:d26w03.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+Avoidance; a workaround	回避/kaihi<br>[sound:d26w04.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+A substitute	代替/daitai<br>[sound:d26w05.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+Normal	正常/seijō<br>[sound:d26w06.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+Abnormal	異常/ijō<br>[sound:d26w07.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+A symptom	症状/shōjō<br>[sound:d26w08.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+An occurrence	発生/hassei<br>[sound:d26w09.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+Clearing a problem	解消/kaishō<br>[sound:d26w10.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+Temporary (な)	一時的/ichijiteki<br>[sound:d26w11.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+Dealing with something	対処/taisho<br>[sound:d26w12.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+A rollback	切り戻し/kirimodoshi<br>[sound:d26w13.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+An assumption	想定/sōtei<br>[sound:d26w14.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+Outside the assumption	想定外/sōteigai<br>[sound:d26w15.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+An outage; a fault	障害/shōgai<br>[sound:d26w16.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+Recurrence	再発/saihatsu<br>[sound:d26w17.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+Prevention	予防/yobō<br>[sound:d26w18.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+Monitoring	監視/kanshi<br>[sound:d26w19.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+Detection	検知/kenchi<br>[sound:d26w20.mp3]	japanese_words::26 If and when it happens: たら	day26 japanese word
+Without fail	必ず/kanarazu<br>[sound:d27w01.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+Constantly	常に/tsune ni<br>[sound:d27w02.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+Once in a while	たまに/tamani<br>[sound:d27w03.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+A rule	ルール/rūru<br>[sound:d27w04.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+Behavior (of software)	挙動/kyodō<br>[sound:d27w05.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+Output	出力/shutsuryoku<br>[sound:d27w06.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+An argument (IT)	引数/hikisū<br>[sound:d27w07.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+A return value (IT)	戻り値/modorichi<br>[sound:d27w08.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+A branch (IT)	分岐/bunki<br>[sound:d27w09.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+A loop (IT)	ループ/rūpu<br>[sound:d27w10.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+A variable (IT)	変数/hensū<br>[sound:d27w11.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+A constant (IT)	定数/teisu<br>[sound:d27w12.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+A type (IT)	型/kata<br>[sound:d27w13.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+A value (IT)	値/atai<br>[sound:d27w14.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+A default	既定/kitei<br>[sound:d27w15.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+Overwrite	上書き/uwagaki<br>[sound:d27w16.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+Conversion	変換/henkan<br>[sound:d27w17.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+A character	文字/moji<br>[sound:d27w18.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+A numeral	数字/sūji<br>[sound:d27w19.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+Whitespace; a blank	空白/kūhaku<br>[sound:d27w20.mp3]	japanese_words::27 Whenever you do that, if it is true, and even if	day27 japanese word
+A second look; a revision	見直し/minaoshi<br>[sound:d28w01.mp3]	japanese_words::28 Advice	day28 japanese word
+A reduction	削減/sakugen<br>[sound:d28w02.mp3]	japanese_words::28 Advice	day28 japanese word
+An increase	増加/zōka<br>[sound:d28w03.mp3]	japanese_words::28 Advice	day28 japanese word
+A decrease	減少/genshō<br>[sound:d28w04.mp3]	japanese_words::28 Advice	day28 japanese word
+Keeping something as it is	維持/iji<br>[sound:d28w05.mp3]	japanese_words::28 Advice	day28 japanese word
+An improvement (in level)	向上/kōjō<br>[sound:d28w06.mp3]	japanese_words::28 Advice	day28 japanese word
+A drop; a decline	低下/teika<br>[sound:d28w07.mp3]	japanese_words::28 Advice	day28 japanese word
+A shortage	不足/fusoku<br>[sound:d28w08.mp3]	japanese_words::28 Advice	day28 japanese word
+An excess	過剰/kajō<br>[sound:d28w09.mp3]	japanese_words::28 Advice	day28 japanese word
+Appropriate (な)	適切/tekisetsu<br>[sound:d28w10.mp3]	japanese_words::28 Advice	day28 japanese word
+Inappropriate (な)	不適切/futekisetsu<br>[sound:d28w11.mp3]	japanese_words::28 Advice	day28 japanese word
+Clear (な)	明確/meikaku<br>[sound:d28w12.mp3]	japanese_words::28 Advice	day28 japanese word
+Unknown (な)	不明/fumei<br>[sound:d28w13.mp3]	japanese_words::28 Advice	day28 japanese word
+Ambiguous (な)	曖昧/aimai<br>[sound:d28w14.mp3]	japanese_words::28 Advice	day28 japanese word
+A recommendation	おすすめ/osusume<br>[sound:d28w15.mp3]	japanese_words::28 Advice	day28 japanese word
+A burden	負担/futan<br>[sound:d28w16.mp3]	japanese_words::28 Advice	day28 japanese word
+Person-hours; effort	工数/kōsū<br>[sound:d28w17.mp3]	japanese_words::28 Advice	day28 japanese word
+An estimate	見積もり/mitsumori<br>[sound:d28w18.mp3]	japanese_words::28 Advice	day28 japanese word
+A priority level	優先度/yūsendo<br>[sound:d28w19.mp3]	japanese_words::28 Advice	day28 japanese word
+An alternative plan	代替案/daitaian<br>[sound:d28w20.mp3]	japanese_words::28 Advice	day28 japanese word
+To give (away from me)	あげる/ageru<br>[sound:d29w01.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+To give (toward me)	くれる/kureru<br>[sound:d29w02.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+To receive	もらう/morau<br>[sound:d29w03.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+To hand over	渡す/watasu<br>[sound:d29w04.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+To borrow	借りる/kariru<br>[sound:d29w05.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+To lend	貸す/kasu<br>[sound:d29w06.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+To return something	返す/kaesu<br>[sound:d29w07.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+To arrive (a thing)	届く/todoku<br>[sound:d29w08.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+To receive (formally)	受け取る/uketoru<br>[sound:d29w09.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+A request for work	依頼/irai<br>[sound:d29w10.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+Being in charge	担当/tantō<br>[sound:d29w11.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+The person in charge	担当者/tantōsha<br>[sound:d29w12.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+A customer (polite)	お客様/okyakusama<br>[sound:d29w13.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+Inside the company	社内/shanai<br>[sound:d29w14.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+Outside the company	社外/shagai<br>[sound:d29w15.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+A consultation	相談/sōdan<br>[sound:d29w16.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+Support	サポート/sapōto<br>[sound:d29w17.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+Help	手伝い/tetsudai<br>[sound:d29w18.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+Cooperation	協力/kyōryoku<br>[sound:d29w19.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+To deliver	届ける/todokeru<br>[sound:d29w20.mp3]	japanese_words::29 Giving, receiving, and who owns the task	day29 japanese word
+Polite (な)	丁寧/teinei<br>[sound:d30w01.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+Rude; excuse me (な)	失礼/shitsurei<br>[sound:d30w02.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+Convenience	都合/tsugō<br>[sound:d30w03.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+A delivery date	納期/nōki<br>[sound:d30w04.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+A review (IT)	レビュー/rebyū<br>[sound:d30w05.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+Approval	承認/shōnin<br>[sound:d30w06.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+Rejection	却下/kyakka<br>[sound:d30w07.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+A comment	コメント/komento<br>[sound:d30w08.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+A pointed comment	指摘/shiteki<br>[sound:d30w09.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+A diff (IT)	差分/sabun<br>[sound:d30w10.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+A merge (IT)	マージ/māji<br>[sound:d30w11.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+A conflict (IT)	コンフリクト/konfurikuto<br>[sound:d30w12.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+A branch (IT)	ブランチ/buranchi<br>[sound:d30w13.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+A commit (IT)	コミット/komitto<br>[sound:d30w14.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+A repository (IT)	リポジトリ/ripojitori<br>[sound:d30w15.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+Issuing	発行/hakkō<br>[sound:d30w16.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+An assignment	割り当て/wariate<br>[sound:d30w17.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+A reminder; nudging	催促/saisoku<br>[sound:d30w18.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+A pull request (IT)	プルリクエスト/pururikuesuto<br>[sound:d30w19.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+Sending back for changes	差し戻し/sashimodoshi<br>[sound:d30w20.mp3]	japanese_words::30 Asking someone to do the work	day30 japanese word
+To try	試す/tamesu<br>[sound:d31w01.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+An experiment	実験/jikken<br>[sound:d31w02.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+Verification	検証/kenshō<br>[sound:d31w03.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+Temporary	一時/ichiji<br>[sound:d31w04.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+Provisional (な)	仮/kari<br>[sound:d31w05.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+A draft	下書き/shitagaki<br>[sound:d31w06.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+Staging (IT)	ステージング/sutējingu<br>[sound:d31w07.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+Local (IT)	ローカル/rōkaru<br>[sound:d31w08.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+Remote (IT)	リモート/rimōto<br>[sound:d31w09.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+A cache (IT)	キャッシュ/kyasshu<br>[sound:d31w10.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+A session (IT)	セッション/sesshon<br>[sound:d31w11.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+A token (IT)	トークン/tōkun<br>[sound:d31w12.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+Expired	期限切れ/kigengire<br>[sound:d31w13.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+By mistake	誤って/ayamatte<br>[sound:d31w14.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+Absent-mindedly	うっかり/ukkari<br>[sound:d31w15.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+To forget	忘れる/wasureru<br>[sound:d31w16.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+To leave in place	残す/nokosu<br>[sound:d31w17.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+To disappear	消える/kieru<br>[sound:d31w18.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+To break	壊れる/kowareru<br>[sound:d31w19.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+To get fixed	直る/naoru<br>[sound:d31w20.mp3]	japanese_words::31 Try it, do it ahead of time, and “oops”	day31 japanese word
+A change	変化/henka<br>[sound:d32w01.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+A state	状態/jōtai<br>[sound:d32w02.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+Getting worse	悪化/akka<br>[sound:d32w03.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+Recovery	回復/kaifuku<br>[sound:d32w04.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+Unstable (な)	不安定/fuantei<br>[sound:d32w05.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+Enabled; valid (な)	有効/yūkō<br>[sound:d32w06.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+Disabled; invalid (な)	無効/mukō<br>[sound:d32w07.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+On	オン/on<br>[sound:d32w08.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+Off	オフ/ofu<br>[sound:d32w09.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+Enabling	有効化/yūkōka<br>[sound:d32w10.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+Disabling	無効化/mukōka<br>[sound:d32w11.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+A switch	切り替え/kirikae<br>[sound:d32w12.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+A default	デフォルト/deforuto<br>[sound:d32w13.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+Standard (な)	標準/hyōjun<br>[sound:d32w14.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+Custom	カスタム/kasutamu<br>[sound:d32w15.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+An option	オプション/opushon<br>[sound:d32w16.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+Initialization	初期化/shokika<br>[sound:d32w17.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+A reset	リセット/risetto<br>[sound:d32w18.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+Applying a setting	適用/tekiyō<br>[sound:d32w19.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+Advanced settings	詳細設定/shōsai settei<br>[sound:d32w20.mp3]	japanese_words::32 Become, and make it so	day32 japanese word
+A purpose	目的/mokuteki<br>[sound:d33w01.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+Learning	学習/gakushū<br>[sound:d33w02.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+Acquisition of a skill	習得/shūtoku<br>[sound:d33w03.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+Protection	保護/hogo<br>[sound:d33w04.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+Prevention	防止/bōshi<br>[sound:d33w05.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+Detection	検出/kenshutsu<br>[sound:d33w06.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+Making something visible	可視化/kashika<br>[sound:d33w07.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+Making something more efficient	効率化/kōritsuka<br>[sound:d33w08.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+Shortening	短縮/tanshuku<br>[sound:d33w09.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+An extension	延長/enchō<br>[sound:d33w10.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+Securing; reserving	確保/kakuho<br>[sound:d33w11.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+Security	セキュリティ/sekyuriti<br>[sound:d33w12.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+Privacy	プライバシー/puraibashī<br>[sound:d33w13.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+Encryption	暗号化/angōka<br>[sound:d33w14.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+Decryption	復号/fukugō<br>[sound:d33w15.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+Authentication	認証/ninshō<br>[sound:d33w16.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+Authorization	認可/ninka<br>[sound:d33w17.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+A vulnerability	脆弱性/zeijakusei<br>[sound:d33w18.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+An attack	攻撃/kōgeki<br>[sound:d33w19.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+Defense	防御/bōgyo<br>[sound:d33w20.mp3]	japanese_words::33 In order to, and so that	day33 japanese word
+A duty	義務/gimu<br>[sound:d34w01.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+To follow; to protect	守る/mamoru<br>[sound:d34w02.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+To break (a rule)	破る/yaburu<br>[sound:d34w03.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+To obey; to follow	従う/shitagau<br>[sound:d34w04.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+Ignoring	無視/mushi<br>[sound:d34w05.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+A recommendation	推奨/suishō<br>[sound:d34w06.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+Deprecated; not recommended	非推奨/hisuishō<br>[sound:d34w07.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+Compliance	コンプライアンス/konpuraiansu<br>[sound:d34w08.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+A policy	ポリシー/porishī<br>[sound:d34w09.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+Terms	規約/kiyaku<br>[sound:d34w10.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+Agreement; consent	同意/dōi<br>[sound:d34w11.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+Refusal	拒否/kyohi<br>[sound:d34w12.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+Acceptance	承諾/shōdaku<br>[sound:d34w13.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+A signature	署名/shomei<br>[sound:d34w14.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+An edition; a version	版/ban<br>[sound:d34w15.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+The latest	最新/saishin<br>[sound:d34w16.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+An old version	旧版/kyūban<br>[sound:d34w17.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+Out of support	サポート切れ/sapōto gire<br>[sound:d34w18.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+A migration	移行/ikō<br>[sound:d34w19.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+Making something mandatory	義務化/gimuka<br>[sound:d34w20.mp3]	japanese_words::34 Must, should, and need not	day34 japanese word
+The look of a situation	様子/yōsu<br>[sound:d35w01.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+A feeling; an impression	感じ/kanji<br>[sound:d35w02.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+An impression	印象/inshō<br>[sound:d35w03.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+An announcement	発表/happyō<br>[sound:d35w04.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+Official (な)	公式/kōshiki<br>[sound:d35w05.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+Unofficial (な)	非公式/hikōshiki<br>[sound:d35w06.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+An article	記事/kiji<br>[sound:d35w07.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+Documentation	ドキュメント/dokyumento<br>[sound:d35w08.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+A manual	マニュアル/manyuaru<br>[sound:d35w09.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+A note; an annotation	注釈/chūshaku<br>[sound:d35w10.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+A hint	ヒント/hinto<br>[sound:d35w11.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+A sample	サンプル/sanpuru<br>[sound:d35w12.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+A reference	参考/sankō<br>[sound:d35w13.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+A source	出典/shutten<br>[sound:d35w14.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+A quotation	引用/in'yō<br>[sound:d35w15.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+A summary	要約/yōyaku<br>[sound:d35w16.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+An overview	概要/gaiyō<br>[sound:d35w17.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+A diagram	図/zu<br>[sound:d35w18.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+A table (grid)	表/hyō<br>[sound:d35w19.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+A rumor	噂/uwasa<br>[sound:d35w20.mp3]	japanese_words::35 It looks like, I heard, and it seems	day35 japanese word
+Sending	送信/sōshin<br>[sound:d36w01.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+Receiving	受信/jushin<br>[sound:d36w02.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+A lock	ロック/rokku<br>[sound:d36w03.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+Releasing a lock	解除/kaijo<br>[sound:d36w04.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+A block	ブロック/burokku<br>[sound:d36w05.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+Generation	生成/seisei<br>[sound:d36w06.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+Compression	圧縮/asshuku<br>[sound:d36w07.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+Extracting; expanding	展開/tenkai<br>[sound:d36w08.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+Synchronization	同期/dōki<br>[sound:d36w09.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+A conflict (of data)	競合/kyōgō<br>[sound:d36w10.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+Corruption	破損/hason<br>[sound:d36w11.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+Repair	修復/shūfuku<br>[sound:d36w12.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+Quarantine	隔離/kakuri<br>[sound:d36w13.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+A scan	スキャン/sukyan<br>[sound:d36w14.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+A threat	脅威/kyōi<br>[sound:d36w15.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+An event	イベント/ibento<br>[sound:d36w16.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+An audit	監査/kansa<br>[sound:d36w17.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+Tracking	追跡/tsuiseki<br>[sound:d36w18.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+A notification destination	通知先/tsūchisaki<br>[sound:d36w19.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+A sender (address)	送信元/sōshinmoto<br>[sound:d36w20.mp3]	japanese_words::36 When the file is saved, and when something happens to you	day36 japanese word
+An instruction	指示/shiji<br>[sound:d37w01.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+An order	命令/meirei<br>[sound:d37w02.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+A request	お願い/onegai<br>[sound:d37w03.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+To leave it to someone	任せる/makaseru<br>[sound:d37w04.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+A handover	引き継ぎ/hikitsugi<br>[sound:d37w05.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+Training	研修/kenshū<br>[sound:d37w06.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+A new employee	新人/shinjin<br>[sound:d37w07.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+A senior colleague	先輩/senpai<br>[sound:d37w08.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+A junior colleague	後輩/kōhai<br>[sound:d37w09.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+A subordinate	部下/buka<br>[sound:d37w10.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+A department head	部長/buchō<br>[sound:d37w11.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+A regular meeting	定例/teirei<br>[sound:d37w12.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+Coordination	調整/chōsei<br>[sound:d37w13.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+Attendance	出席/shusseki<br>[sound:d37w14.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+Absence	欠席/kesseki<br>[sound:d37w15.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+A substitute person	代理/dairi<br>[sound:d37w16.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+Agenda business	議事/giji<br>[sound:d37w17.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+Distribution	配布/haifu<br>[sound:d37w18.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+Holding an event	開催/kaisai<br>[sound:d37w19.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+Beforehand	事前/jizen<br>[sound:d37w20.mp3]	japanese_words::37 Let me, and have someone do it	day37 japanese word
+Until now	これまで/kore made<br>[sound:d38w01.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+From now on	これから/kore kara<br>[sound:d38w02.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+Up to now	今まで/ima made<br>[sound:d38w03.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+To continue	続ける/tsuzukeru<br>[sound:d38w04.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+To increase	増える/fueru<br>[sound:d38w05.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+To decrease	減る/heru<br>[sound:d38w06.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+To spread	広がる/hirogaru<br>[sound:d38w07.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+To advance	進む/susumu<br>[sound:d38w08.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+To return	戻る/modoru<br>[sound:d38w09.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+To remain	残る/nokoru<br>[sound:d38w10.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+To pile up	溜まる/tamaru<br>[sound:d38w11.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+Gradually	徐々に/jojo ni<br>[sound:d38w12.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+In sequence	順次/junji<br>[sound:d38w13.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+All at once	一斉/issei<br>[sound:d38w14.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+In stages (な)	段階的/dankaiteki<br>[sound:d38w15.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+Continuation	継続/keizoku<br>[sound:d38w16.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+Resuming	再開/saikai<br>[sound:d38w17.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+Accumulation	蓄積/chikuseki<br>[sound:d38w18.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+A tendency	傾向/keikō<br>[sound:d38w19.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+A trend over time	推移/suii<br>[sound:d38w20.mp3]	japanese_words::38 Toward now, from now on, and “I came to be able”	day38 japanese word
+To be; to go; to come (respect)	いらっしゃる/irassharu<br>[sound:d39w01.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+To say (respect)	おっしゃる/ossharu<br>[sound:d39w02.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+To look (respect)	ご覧になる/goran ni naru<br>[sound:d39w03.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+To know (humble)	存じる/zonjiru<br>[sound:d39w04.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+To go; to come (humble)	参る/mairu<br>[sound:d39w05.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+To say (humble)	申す/mōsu<br>[sound:d39w06.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+To do (humble)	いたす/itasu<br>[sound:d39w07.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+To receive; to eat (humble)	いただく/itadaku<br>[sound:d39w08.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+To give (respect)	くださる/kudasaru<br>[sound:d39w09.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+To visit; to ask (humble)	伺う/ukagau<br>[sound:d39w10.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+To look (humble)	拝見する/haiken suru<br>[sound:d39w11.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+Certainly (I accept)	かしこまる/kashikomaru<br>[sound:d39w12.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+To acknowledge	承知する/shōchi suru<br>[sound:d39w13.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+Feeling obliged (な)	恐縮/kyōshuku<br>[sound:d39w14.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+An apology	申し訳/mōshiwake<br>[sound:d39w15.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+Care; help	世話/sewa<br>[sound:d39w16.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+Holding back	遠慮/enryo<br>[sound:d39w17.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+Calling back	折り返し/orikaeshi<br>[sound:d39w18.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+Your confirmation	ご確認/gokakunin<br>[sound:d39w19.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+Excuse me (leaving or entering)	失礼します/shitsurei shimasu<br>[sound:d39w20.mp3]	japanese_words::39 Polite words you will hear at work	day39 japanese word
+A subject line	件名/kenmei<br>[sound:d40w01.mp3]	japanese_words::40 Email and chat	day40 japanese word
+An addressee	宛先/atesaki<br>[sound:d40w02.mp3]	japanese_words::40 Email and chat	day40 japanese word
+A sender	差出人/sashidashinin<br>[sound:d40w03.mp3]	japanese_words::40 Email and chat	day40 japanese word
+The body of a message	本文/honbun<br>[sound:d40w04.mp3]	japanese_words::40 Email and chat	day40 japanese word
+An attachment	添付/tenpu<br>[sound:d40w05.mp3]	japanese_words::40 Email and chat	day40 japanese word
+A reply	返信/henshin<br>[sound:d40w06.mp3]	japanese_words::40 Email and chat	day40 japanese word
+Forwarding	転送/tensō<br>[sound:d40w07.mp3]	japanese_words::40 Email and chat	day40 japanese word
+Urgent	至急/shikyū<br>[sound:d40w08.mp3]	japanese_words::40 Email and chat	day40 japanese word
+That is all; no less than	以上/ijō<br>[sound:d40w09.mp3]	japanese_words::40 Email and chat	day40 japanese word
+Consideration	検討/kentō<br>[sound:d40w10.mp3]	japanese_words::40 Email and chat	day40 japanese word
+A thread	スレッド/sureddo<br>[sound:d40w11.mp3]	japanese_words::40 Email and chat	day40 japanese word
+A mention	メンション/menshon<br>[sound:d40w12.mp3]	japanese_words::40 Email and chat	day40 japanese word
+Read (a message state)	既読/kidoku<br>[sound:d40w13.mp3]	japanese_words::40 Email and chat	day40 japanese word
+Unread	未読/midoku<br>[sound:d40w14.mp3]	japanese_words::40 Email and chat	day40 japanese word
+Sent	送信済み/sōshinzumi<br>[sound:d40w15.mp3]	japanese_words::40 Email and chat	day40 japanese word
+An inbox	受信トレイ/jushin torei<br>[sound:d40w16.mp3]	japanese_words::40 Email and chat	day40 japanese word
+A signature (also Day 34)	署名/shomei<br>[sound:d40w17.mp3]	japanese_words::40 Email and chat	day40 japanese word
+A boilerplate sentence	定型文/teikeibun<br>[sound:d40w18.mp3]	japanese_words::40 Email and chat	day40 japanese word
+A line break	改行/kaigyō<br>[sound:d40w19.mp3]	japanese_words::40 Email and chat	day40 japanese word
+An honorific title	敬称/keishō<br>[sound:d40w20.mp3]	japanese_words::40 Email and chat	day40 japanese word
+A path	パス/pasu<br>[sound:d41w01.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+A file extension	拡張子/kakuchōshi<br>[sound:d41w02.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+A level in a tree	階層/kaisō<br>[sound:d41w03.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+The root	ルート/rūto<br>[sound:d41w04.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+A relative path	相対パス/sōtai pasu<br>[sound:d41w05.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+An absolute path	絶対パス/zettai pasu<br>[sound:d41w06.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+Moving	移動/idō<br>[sound:d41w07.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+Renaming	改名/kaimei<br>[sound:d41w08.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+Unzipping	解凍/kaitō<br>[sound:d41w09.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+A shortcut	ショートカット/shōtokatto<br>[sound:d41w10.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+An owner	所有者/shoyūsha<br>[sound:d41w11.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+A modified timestamp	更新日時/kōshin nichiji<br>[sound:d41w12.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+A created timestamp	作成日時/sakusei nichiji<br>[sound:d41w13.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+The trash	ゴミ箱/gomibako<br>[sound:d41w14.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+Restoration	復元/fukugen<br>[sound:d41w15.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+A duplicate	重複/chōfuku<br>[sound:d41w16.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+Insufficient space	容量不足/yōryō fusoku<br>[sound:d41w17.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+Read-only	読み取り専用/yomitori sen'yō<br>[sound:d41w18.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+A hidden file	隠しファイル/kakushi fairu<br>[sound:d41w19.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+An overwrite prompt	上書き確認/uwagaki kakunin<br>[sound:d41w20.mp3]	japanese_words::41 Paths, folders, and where a file lives	day41 japanese word
+Steps to reproduce	再現手順/saigen tejun<br>[sound:d42w01.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+What you expected	期待/kitai<br>[sound:d42w02.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+What actually happened	実際/jissai<br>[sound:d42w03.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+Temporary (な)	暫定/zantei<br>[sound:d42w04.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+Permanent (な)	恒久/kōkyū<br>[sound:d42w05.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+A workaround	回避策/kaihisaku<br>[sound:d42w06.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+Severe (な)	重大/jūdai<br>[sound:d42w07.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+Minor (な)	軽微/keibi<br>[sound:d42w08.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+Opening a ticket	起票/kihyō<br>[sound:d42w09.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+A done condition	完了条件/kanryō jōken<br>[sound:d42w10.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+Reproducibility	再現性/saigensei<br>[sound:d42w11.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+Environment-dependent	環境依存/kankyō izon<br>[sound:d42w12.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+Frequency	頻度/hindo<br>[sound:d42w13.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+A screenshot	スクリーンショット/sukurīnshotto<br>[sound:d42w14.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+Not started	未着手/michakushu<br>[sound:d42w15.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+In progress	対応中/taiōchū<br>[sound:d42w16.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+Isolation done	切り分け済み/kiriwakezumi<br>[sound:d42w17.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+A blocker	ブロッカー/burokkā<br>[sound:d42w18.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+An expected value	期待値/kitaichi<br>[sound:d42w19.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+An actual measurement	実測/jissoku<br>[sound:d42w20.mp3]	japanese_words::42 Bugs, tickets, and what you expected	day42 japanese word
+A ticket	切符/kippu<br>[sound:d43w01.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+A wallet	財布/saifu<br>[sound:d43w02.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+Money	お金/okane<br>[sound:d43w03.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+A card	カード/kādo<br>[sound:d43w04.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+A receipt	レシート/reshīto<br>[sound:d43w05.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+A bag	袋/fukuro<br>[sound:d43w06.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+A checkout counter	レジ/reji<br>[sound:d43w07.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+A shop clerk	店員/ten'in<br>[sound:d43w08.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+A color	色/iro<br>[sound:d43w09.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+White	白い/shiroi<br>[sound:d43w10.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+Black	黒い/kuroi<br>[sound:d43w11.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+Red	赤い/akai<br>[sound:d43w12.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+Blue	青い/aoi<br>[sound:d43w13.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+Yellow	黄色い/kiiroi<br>[sound:d43w14.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+Trying on clothes	試着/shichaku<br>[sound:d43w15.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+To fit; to suit	合う/au<br>[sound:d43w16.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+To be enough	足りる/tariru<br>[sound:d43w17.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+Change (money)	お釣り/otsuri<br>[sound:d43w18.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+A formal receipt	領収書/ryōshūsho<br>[sound:d43w19.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+Points	ポイント/pointo<br>[sound:d43w20.mp3]	japanese_words::43 Shopping, colors, and “too”	day43 japanese word
+Actually	実は/jitsu wa<br>[sound:d44w01.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+Condition	具合/guai<br>[sound:d44w02.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+A fever	熱/netsu<br>[sound:d44w03.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+Painful	痛い/itai<br>[sound:d44w04.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+Fatigue	疲れ/tsukare<br>[sound:d44w05.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+Lateness	遅刻/chikoku<br>[sound:d44w06.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+An absence from work	欠勤/kekkin<br>[sound:d44w07.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+Leaving work early	早退/sōtai<br>[sound:d44w08.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+Physical condition	体調/taichō<br>[sound:d44w09.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+A headache	頭痛/zutsū<br>[sound:d44w10.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+A cold	風邪/kaze<br>[sound:d44w11.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+Medicine	薬/kusuri<br>[sound:d44w12.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+A hospital; a clinic	病院/byōin<br>[sound:d44w13.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+A reservation	予約/yoyaku<br>[sound:d44w14.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+A medical examination	診察/shinsatsu<br>[sound:d44w15.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+Worry (な)	心配/shinpai<br>[sound:d44w16.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+Relief (な)	安心/anshin<br>[sound:d44w17.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+Working from home	在宅/zaitaku<br>[sound:d44w18.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+Sleepy	眠い/nemui<br>[sound:d44w19.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+Feeling unwell	具合が悪い/guai ga warui<br>[sound:d44w20.mp3]	japanese_words::44 Explaining the situation: んです	day44 japanese word
+But	でも/demo<br>[sound:d45w01.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+However (written)	しかし/shikashi<br>[sound:d45w02.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+And then	そして/soshite<br>[sound:d45w03.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+Moreover	それに/sore ni<br>[sound:d45w04.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+So	だから/dakara<br>[sound:d45w05.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+But (spoken)	けど/kedo<br>[sound:d45w06.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+Only	だけ/dake<br>[sound:d45w07.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+Nothing but (with a negative)	しか/shika<br>[sound:d45w08.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+About (a time)	ごろ/goro<br>[sound:d45w09.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+About (an amount)	くらい/kurai<br>[sound:d45w10.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+To the extent that	ほど/hodo<br>[sound:d45w11.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+And so on	など/nado<br>[sound:d45w12.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+And (incomplete list)	や/ya<br>[sound:d45w13.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+Right?	ね/ne<br>[sound:d45w14.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+I tell you	よ/yo<br>[sound:d45w15.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+Isn’t that so	よね/yo ne<br>[sound:d45w16.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+Well	まあ/mā<br>[sound:d45w17.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+As expected	やはり/yahari<br>[sound:d45w18.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+A little; not really	ちょっと/chotto<br>[sound:d45w19.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+Not easily (with a negative)	なかなか/nakanaka<br>[sound:d45w20.mp3]	japanese_words::45 Only, lists, and the little words at the end	day45 japanese word
+An instruction booklet	説明書/setsumeisho<br>[sound:d46w01.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+Aimed at	向け/muke<br>[sound:d46w02.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+Elementary level	初級/shokyū<br>[sound:d46w03.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+Advanced level	上級/jōkyū<br>[sound:d46w04.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+A knack	コツ/kotsu<br>[sound:d46w05.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+An example	例/rei<br>[sound:d46w06.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+An illustrated explanation	図解/zukai<br>[sound:d46w07.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+An index	索引/sakuin<br>[sound:d46w08.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+A table of contents	目次/mokuji<br>[sound:d46w09.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+A chapter	章/shō<br>[sound:d46w10.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+A section	節/setsu<br>[sound:d46w11.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+An appendix	付録/furoku<br>[sound:d46w12.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+A term	用語/yōgo<br>[sound:d46w13.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+An abbreviation	略語/ryakugo<br>[sound:d46w14.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+Official (な)	正式/seishiki<br>[sound:d46w15.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+A common name	通称/tsūshō<br>[sound:d46w16.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+A warning note	注意書き/chūigaki<br>[sound:d46w17.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+An arrow	矢印/yajirushi<br>[sound:d46w18.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+Bold text	太字/futoji<br>[sound:d46w19.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+For beginners	初心者向け/shoshinsha muke<br>[sound:d46w20.mp3]	japanese_words::46 How to do it, and easy or hard to do	day46 japanese word
+Rare	珍しい/mezurashii<br>[sound:d47w01.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+Regrettable (な)	残念/zannen<br>[sound:d47w02.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+A letdown	期待外れ/kitaihazure<br>[sound:d47w03.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+As planned	予定通り/yoteidōri<br>[sound:d47w04.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+Unexpected (な)	意外/igai<br>[sound:d47w05.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+Natural; as a matter of course (な)	当然/tōzen<br>[sound:d47w06.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+Impossible; unreasonable (な)	無理/muri<br>[sound:d47w07.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+A track record	実績/jisseki<br>[sound:d47w08.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+A career history	経歴/keireki<br>[sound:d47w09.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+The past	過去/kako<br>[sound:d47w10.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+From now on (formal)	今後/kongo<br>[sound:d47w11.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+As usual; still	相変わらず/aikawarazu<br>[sound:d47w12.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+Many times	何度も/nando mo<br>[sound:d47w13.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+Not even once (with a negative)	一度も/ichido mo<br>[sound:d47w14.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+A result; an outcome	成果/seika<br>[sound:d47w15.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+A look back	振り返り/furikaeri<br>[sound:d47w16.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+A point to improve	改善点/kaizenten<br>[sound:d47w17.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+Perfect (な)	完璧/kanpeki<br>[sound:d47w18.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+Other	ほか/hoka<br>[sound:d47w19.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+Both	両方/ryōhō<br>[sound:d47w20.mp3]	japanese_words::47 I have done it before, and even so	day47 japanese word
+The client who orders the work	発注者/hatchūsha<br>[sound:d48w01.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+The contact person	窓口/madoguchi<br>[sound:d48w02.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+A user of the system	利用者/riyōsha<br>[sound:d48w03.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+A person involved	関係者/kankeisha<br>[sound:d48w04.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+An aim	狙い/nerai<br>[sound:d48w05.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+The background	背景/haikei<br>[sound:d48w06.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+A problem to solve	課題/kadai<br>[sound:d48w07.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+A request	要望/yōbō<br>[sound:d48w08.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+A requirements hearing	ヒアリング/hiaringu<br>[sound:d48w09.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+The current state	現状/genjō<br>[sound:d48w10.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+The desired state	理想/risō<br>[sound:d48w11.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+Business work	業務/gyōmu<br>[sound:d48w12.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+Introducing a system	導入/dōnyū<br>[sound:d48w13.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+A department	部署/busho<br>[sound:d48w14.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+An agreement	合意/gōi<br>[sound:d48w15.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+A point to settle	論点/ronten<br>[sound:d48w16.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+The workplace; the floor	現場/genba<br>[sound:d48w17.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+One’s boss	上長/jōchō<br>[sound:d48w18.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+The person who approves	承認者/shōninsha<br>[sound:d48w19.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+Paper	紙/kami<br>[sound:d48w20.mp3]	japanese_words::48 Who is in the room	day48 japanese word
+Your company	御社/onsha<br>[sound:d49w01.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+Our company	弊社/heisha<br>[sound:d49w02.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+Today, in formal speech	本日/honjitsu<br>[sound:d49w03.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+An agenda	アジェンダ/ajenda<br>[sound:d49w04.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+The group one belongs to	所属/shozoku<br>[sound:d49w05.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+A job title	役職/yakushoku<br>[sound:d49w06.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+A participant	参加者/sankasha<br>[sound:d49w07.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+The opening of a meeting	冒頭/bōtō<br>[sound:d49w08.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+The close of a meeting	締め/shime<br>[sound:d49w09.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+Formally; once again	改めて/aratamete<br>[sound:d49w10.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+A self-introduction	自己紹介/jikoshōkai<br>[sound:d49w11.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+A business card	名刺/meishi<br>[sound:d49w12.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+Meeting in person	対面/taimen<br>[sound:d49w13.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+A line	回線/kaisen<br>[sound:d49w14.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+Screen sharing	画面共有/gamen kyōyū<br>[sound:d49w15.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+A greeting	挨拶/aisatsu<br>[sound:d49w16.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+Taking a seat	着席/chakuseki<br>[sound:d49w17.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+Projecting a screen	投影/tōei<br>[sound:d49w18.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+Arriving late	遅参/chisan<br>[sound:d49w19.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+A name tag	名札/nafuda<br>[sound:d49w20.mp3]	japanese_words::49 Opening the meeting	day49 japanese word
+Work done by hand	手作業/tesagyō<br>[sound:d50w01.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+Reducing the labor	省力化/shōryokuka<br>[sound:d50w02.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+Shortening the time	時短/jitan<br>[sound:d50w03.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+A mistake	ミス/misu<br>[sound:d50w04.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+Doing the same thing twice	二重/nijū<br>[sound:d50w05.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+Copying data from one place to another	転記/tenki<br>[sound:d50w06.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+A business form	帳票/chōhyō<br>[sound:d50w07.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+Adding up figures	集計/shūkei<br>[sound:d50w08.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+A list on screen	一覧/ichiran<br>[sound:d50w09.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+Filtering a list	絞り込み/shiborikomi<br>[sound:d50w10.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+A workflow	ワークフロー/wākufurō<br>[sound:d50w11.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+Stamping a seal	押印/ōin<br>[sound:d50w12.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+Circulating a paper	回覧/kairan<br>[sound:d50w13.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+To get stuck	滞る/todokōru<br>[sound:d50w14.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+Waiting time	待ち時間/machijikan<br>[sound:d50w15.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+Work that only one person can do	属人化/zokujinka<br>[sound:d50w16.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+A record that shows who did what	証跡/shōseki<br>[sound:d50w17.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+A special case	特例/tokurei<br>[sound:d50w18.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+A cycle; how regularly	周期/shūki<br>[sound:d50w19.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+The number of cases	件数/kensū<br>[sound:d50w20.mp3]	japanese_words::50 Hearing what they want	day50 japanese word
+A concrete detail	具体/gutai<br>[sound:d51w01.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+Vague	漠然/bakzen<br>[sound:d51w02.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+An example case	事例/jirei<br>[sound:d51w03.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+The usual case	通常/tsūjō<br>[sound:d51w04.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+A rejection	否決/hiketsu<br>[sound:d51w05.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+Sending a request back	差戻し/sashimodoshi<br>[sound:d51w06.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+A pause	一時停止/ichiji teishi<br>[sound:d51w07.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+A route	経路/keiro<br>[sound:d51w08.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+The person who applies	申請者/shinseisha<br>[sound:d51w09.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+Acting for someone else	代行/daikō<br>[sound:d51w10.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+A sum of money	金額/kingaku<br>[sound:d51w11.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+An upper limit	上限/jōgen<br>[sound:d51w12.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+A lower limit	下限/kagen<br>[sound:d51w13.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+Spoken, not written	口頭/kōtō<br>[sound:d51w14.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+A document that proves a fact	証憑/shōhyō<br>[sound:d51w15.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+Still not entered	未入力/minyūryoku<br>[sound:d51w16.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+The person a notice goes to	宛先/atesaki<br>[sound:d51w17.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+Nighttime	夜間/yakan<br>[sound:d51w18.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+The same day	即日/sokujitsu<br>[sound:d51w19.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+The regular cycle	定例/teirei<br>[sound:d51w20.mp3]	japanese_words::51 Making the request concrete	day51 japanese word
+One’s understanding	認識/ninshiki<br>[sound:d52w01.mp3]	japanese_words::52 Saying it back	day52 japanese word
+A difference	相違/sōi<br>[sound:d52w02.mp3]	japanese_words::52 Saying it back	day52 japanese word
+Repeating back	復唱/fukushō<br>[sound:d52w03.mp3]	japanese_words::52 Saying it back	day52 japanese word
+A correction	訂正/teisei<br>[sound:d52w04.mp3]	japanese_words::52 Saying it back	day52 japanese word
+An added note	補足/hosoku<br>[sound:d52w05.mp3]	japanese_words::52 Saying it back	day52 japanese word
+A mismatch	齟齬/sogo<br>[sound:d52w06.mp3]	japanese_words::52 Saying it back	day52 japanese word
+Just to be sure	念のため/nen no tame<br>[sound:d52w07.mp3]	japanese_words::52 Saying it back	day52 japanese word
+For the moment	一旦/ittan<br>[sound:d52w08.mp3]	japanese_words::52 Saying it back	day52 japanese word
+To take an item back and think	持ち帰る/mochikaeru<br>[sound:d52w09.mp3]	japanese_words::52 Saying it back	day52 japanese word
+An answer on the spot	即答/sokutō<br>[sound:d52w10.mp3]	japanese_words::52 Saying it back	day52 japanese word
+Settled	確定/kakutei<br>[sound:d52w11.mp3]	japanese_words::52 Saying it back	day52 japanese word
+Not yet decided	未定/mitei<br>[sound:d52w12.mp3]	japanese_words::52 Saying it back	day52 japanese word
+Still unresolved	未決/miketsu<br>[sound:d52w13.mp3]	japanese_words::52 Saying it back	day52 japanese word
+To say it another way	言い換える/iikaeru<br>[sound:d52w14.mp3]	japanese_words::52 Saying it back	day52 japanese word
+Shared	共通/kyōtsū<br>[sound:d52w15.mp3]	japanese_words::52 Saying it back	day52 japanese word
+The main point	要点/yōten<br>[sound:d52w16.mp3]	japanese_words::52 Saying it back	day52 japanese word
+One short remark	一言/hitokoto<br>[sound:d52w17.mp3]	japanese_words::52 Saying it back	day52 japanese word
+Aligning two understandings	擦り合わせ/suriawase<br>[sound:d52w18.mp3]	japanese_words::52 Saying it back	day52 japanese word
+A point that differs	相違点/sōiten<br>[sound:d52w19.mp3]	japanese_words::52 Saying it back	day52 japanese word
+Building an agreement	合意形成/gōi keisei<br>[sound:d52w20.mp3]	japanese_words::52 Saying it back	day52 japanese word
+This round	今回/konkai<br>[sound:d53w01.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+Out of scope	対象外/taishōgai<br>[sound:d53w02.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+The next round	次回/jikai<br>[sound:d53w03.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+A decision to wait	見送り/miokuri<br>[sound:d53w04.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+To include	含める/fukumeru<br>[sound:d53w05.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+To leave out	除く/nozoku<br>[sound:d53w06.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+The first version	初期/shoki<br>[sound:d53w07.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+The following phase	次期/jiki<br>[sound:d53w08.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+The smallest useful set	最小/saishō<br>[sound:d53w09.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+The benefit	効果/kōka<br>[sound:d53w10.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+Whether to accept	採否/saihi<br>[sound:d53w11.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+A judgment of what matters	見極め/mikiwame<br>[sound:d53w12.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+Drawing the line	線引き/senbiki<br>[sound:d53w13.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+The scope	スコープ/sukōpu<br>[sound:d53w14.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+Pushing work to later	先送り/sakiokuri<br>[sound:d53w15.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+To separate into parts	切り分ける/kiriwakeru<br>[sound:d53w16.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+Coming along with	付随/fuzui<br>[sound:d53w17.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+Items left over	残件/zanken<br>[sound:d53w18.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+Optional	選択可/sentaku ka<br>[sound:d53w19.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+The main path	本線/honsen<br>[sound:d53w20.mp3]	japanese_words::53 What is in, and what waits	day53 japanese word
+A conclusion	決着/ketchaku<br>[sound:d54w01.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+Sending a document	送付/sōfu<br>[sound:d54w02.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+Making a decision known	周知/shūchi<br>[sound:d54w03.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+Inside the department	部内/bunai<br>[sound:d54w04.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+Outside the department	部外/bugai<br>[sound:d54w05.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+Whether someone can attend	参加可否/sanka kahi<br>[sound:d54w06.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+A handout	配布物/haifubutsu<br>[sound:d54w07.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+A draft	草案/sōan<br>[sound:d54w08.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+Corrections marked for the author	赤入れ/akaire<br>[sound:d54w09.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+Not yet answered	未回答/mikaitō<br>[sound:d54w10.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+Carried to the next meeting	持ち越し/mochikoshi<br>[sound:d54w11.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+A note that tells the team	周知文/shūchibun<br>[sound:d54w12.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+A table of who owns what	担当表/tantōhyō<br>[sound:d54w13.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+Having a due date	期限付き/kigentsuki<br>[sound:d54w14.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+A reminder	リマインド/rimaindo<br>[sound:d54w15.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+Closing an item	クローズ/kurōzu<br>[sound:d54w16.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+A short meeting note	議事メモ/giji memo<br>[sound:d54w17.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+Already agreed	合意済み/gōizumi<br>[sound:d54w18.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+Not yet agreed	未合意/migōi<br>[sound:d54w19.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+Where the document is sent	送付先/sōfusaki<br>[sound:d54w20.mp3]	japanese_words::54 The note after the meeting	day54 japanese word
+A person-day	人日/ninnichi<br>[sound:d55w01.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+The cost	費用/hiyō<br>[sound:d55w02.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+An assumption	前提/zentei<br>[sound:d55w03.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+A rate for one person-day	単価/tanka<br>[sound:d55w04.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+Before tax	税別/zeibetsu<br>[sound:d55w05.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+Including tax	税込/zeikomi<br>[sound:d55w06.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+A written estimate	見積書/mitsumorisho<br>[sound:d55w07.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+A breakdown	内訳/uchiwake<br>[sound:d55w08.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+Spare days for the unknown	バッファ/baffua<br>[sound:d55w09.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+A discount	値引き/nebiki<br>[sound:d55w10.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+A rough figure	概算/gaisan<br>[sound:d55w11.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+Checking the arithmetic	検算/kenzan<br>[sound:d55w12.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+The date a quote expires	有効期限/yūkō kigen<br>[sound:d55w13.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+A figure placed for now	仮置き/karioki<br>[sound:d55w14.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+The formal estimate	本見積/honmitsumori<br>[sound:d55w15.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+The table of effort	工数表/kōsūhyō<br>[sound:d55w16.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+Cost that moves when scope moves	変動費/hendōhi<br>[sound:d55w17.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+Cost that stays	固定費/koteihi<br>[sound:d55w18.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+A leftover fraction	端数/hasū<br>[sound:d55w19.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+A reserve	予備/yobi<br>[sound:d55w20.mp3]	japanese_words::55 The estimate and its assumptions	day55 japanese word
+A milestone	マイルストーン/mairusutōn<br>[sound:d56w01.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+The middle point	中間/chūkan<br>[sound:d56w02.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+Starting the work	着手/chakushu<br>[sound:d56w03.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+The planned finish	完了予定/kanryō yotei<br>[sound:d56w04.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+Weekly	週次/shūji<br>[sound:d56w05.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+Moving a date earlier	前倒し/maedaoshi<br>[sound:d56w06.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+Moving a date later	後ろ倒し/ushirodaoshi<br>[sound:d56w07.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+Depending on something else	依存/izon<br>[sound:d56w08.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+Side by side	並行/heikō<br>[sound:d56w09.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+One after another	直列/chokuretsu<br>[sound:d56w10.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+Freezing the scope	凍結/tōketsu<br>[sound:d56w11.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+A working day	稼働日/kadōbi<br>[sound:d56w12.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+A public holiday	祝日/shukujitsu<br>[sound:d56w13.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+A run of days off	連休/renkyū<br>[sound:d56w14.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+Counting back from the end	逆算/gyakusan<br>[sound:d56w15.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+The start point	起点/kiten<br>[sound:d56w16.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+The end point	終点/shūten<br>[sound:d56w17.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+Catching up lost days	回復/kaifuku<br>[sound:d56w18.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+Slack in the plan	余白/yohaku<br>[sound:d56w19.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+The number of days late	遅延日数/chien nissū<br>[sound:d56w20.mp3]	japanese_words::56 The dates you can keep	day56 japanese word
+A difficulty	困難/konnan<br>[sound:d57w01.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+Another proposal	別案/betsuan<br>[sound:d57w02.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+Realistic	現実的/genjitsuteki<br>[sound:d57w03.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+A place both sides can accept	落としどころ/otoshidokoro<br>[sound:d57w04.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+A compromise	妥協/dakkyō<br>[sound:d57w05.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+To cut something out	削る/kezuru<br>[sound:d57w06.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+An amount added on top	上乗せ/uwanose<br>[sound:d57w07.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+A simpler form	簡略/kanryaku<br>[sound:d57w08.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+A trial build	試作/shisaku<br>[sound:d57w09.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+Waiting to see	様子見/yōsumi<br>[sound:d57w10.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+All in one go	一気/ikki<br>[sound:d57w11.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+Splitting into parts	分割/bunkatsu<br>[sound:d57w12.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+An increase in effort	工数増/kōsū zō<br>[sound:d57w13.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+An increase in cost	費用増/hiyō zō<br>[sound:d57w14.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+A postponement	延期/enki<br>[sound:d57w15.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+Making it smaller	縮小/shukushō<br>[sound:d57w16.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+Making it larger	拡大/kakudai<br>[sound:d57w17.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+To stop waiting and decide	見切る/mikiru<br>[sound:d57w18.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+A mix of two wishes	折衷/setchū<br>[sound:d57w19.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+A step toward the other side	歩み寄り/ayumiyori<br>[sound:d57w20.mp3]	japanese_words::57 A smaller yes	day57 japanese word
+Acceptance of a proposal	了承/ryōshō<br>[sound:d58w01.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+With a condition	条件付き/jōkentsuki<br>[sound:d58w02.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+Leaving a decision to someone	一任/ichinin<br>[sound:d58w03.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+A signature	署名/shomei<br>[sound:d58w04.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+Concluding an agreement	締結/teiketsu<br>[sound:d58w05.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+Placing the order	発注/hatchū<br>[sound:d58w06.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+A written order	発注書/hatchūsho<br>[sound:d58w07.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+An internal approval circulation	稟議/ringi<br>[sound:d58w08.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+The final internal approval	決裁/kessai<br>[sound:d58w09.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+An objection	異議/igi<br>[sound:d58w10.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+Consent	承諾/shōdaku<br>[sound:d58w11.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+Moving forward	前進/zenshin<br>[sound:d58w12.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+Where a talk settles	着地/chakuchi<br>[sound:d58w13.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+A condition that must hold	前提条件/zentei jōken<br>[sound:d58w14.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+No further change	変更禁止/henkō kinshi<br>[sound:d58w15.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+The day the scope freezes	凍結日/tōketsubi<br>[sound:d58w16.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+A spoken promise	口約束/kuchiyakusoku<br>[sound:d58w17.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+A written record	記録/kiroku<br>[sound:d58w18.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+Both companies	両社/ryōsha<br>[sound:d58w19.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+The box for a seal	押印欄/ōinran<br>[sound:d58w20.mp3]	japanese_words::58 Agree, and name the condition	day58 japanese word
+A budget	予算/yosan<br>[sound:d59w01.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+Inside the budget	予算内/yosannai<br>[sound:d59w02.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+Over the budget	予算超過/yosan chōka<br>[sound:d59w03.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+Declining a request	辞退/jitai<br>[sound:d59w04.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+Presenting a figure again	再提示/saiteiji<br>[sound:d59w05.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+Separately	別途/betto<br>[sound:d59w06.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+Handling it in the next phase	次期対応/jiki taiō<br>[sound:d59w07.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+An adjustment	調整/chōsei<br>[sound:d59w08.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+To meet halfway	折り合う/oriau<br>[sound:d59w09.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+A smaller proposal	縮小案/shukushōan<br>[sound:d59w10.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+Looking at it again	再検討/saikentō<br>[sound:d59w11.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+Estimating again	見積直し/mitsumorinaoshi<br>[sound:d59w12.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+Quality	品質/hinshitsu<br>[sound:d59w13.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+The limit of what can be done	限界/genkai<br>[sound:d59w14.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+Doing two things at once	両立/ryōritsu<br>[sound:d59w15.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+Giving a wish up	断念/dannen<br>[sound:d59w16.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+A stand-in proposal	代案/daian<br>[sound:d59w17.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+Meeting again	再会合/saikaigō<br>[sound:d59w18.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+The safe side of a choice	安全側/anzen gawa<br>[sound:d59w19.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+A written proposal of the line	線引き案/senbikian<br>[sound:d59w20.mp3]	japanese_words::59 A no that keeps the work	day59 japanese word
+Feeling obliged	恐縮/kyōshuku<br>[sound:d60w01.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+Being very busy	多忙/tabō<br>[sound:d60w02.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+Checking what you received	査収/sashū<br>[sound:d60w03.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+The text below	下記/kaki<br>[sound:d60w04.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+Please, in a formal request	何卒/nanitozo<br>[sound:d60w05.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+In haste, for now	取り急ぎ/toriisogi<br>[sound:d60w06.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+The formal close of a letter	敬具/keigu<br>[sound:d60w07.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+The formal opening of a letter	拝啓/haikei<br>[sound:d60w08.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+The name on the letter	宛名/atena<br>[sound:d60w09.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+A reply turned around quickly	折り返し/orikaeshi<br>[sound:d60w10.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+Having many things to do	多用/tayō<br>[sound:d60w11.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+Doing something on one’s own	勝手/katte<br>[sound:d60w12.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+An instruction	指示/shiji<br>[sound:d60w13.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+One’s intention	意向/ikō<br>[sound:d60w14.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+Aligning people inside the company	社内調整/shanai chōsei<br>[sound:d60w15.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+Currently being checked	確認中/kakuninchū<br>[sound:d60w16.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+On hold for the moment	一旦保留/ittan horyū<br>[sound:d60w17.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+The wording of a message	文面/bunmen<br>[sound:d60w18.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+As the subject line says	件名通り/kenmei dōri<br>[sound:d60w19.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+The other party	先方/senpō<br>[sound:d60w20.mp3]	japanese_words::60 The careful sentence in an email	day60 japanese word
+The conclusion	結論/ketsuron<br>[sound:d61w01.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+The gist	要旨/yōshi<br>[sound:d61w02.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+The detail	詳細/shōsai<br>[sound:d61w03.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+A separate sheet	別紙/besshi<br>[sound:d61w04.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+An attached document	添付資料/tenpu shiryō<br>[sound:d61w05.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+A comparison	比較/hikaku<br>[sound:d61w06.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+What you recommend	推奨/suishō<br>[sound:d61w07.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+What you do not recommend	非推奨/hisuishō<br>[sound:d61w08.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+A benefit	利点/riten<br>[sound:d61w09.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+A drawback	欠点/ketten<br>[sound:d61w10.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+A risk	リスク/risuku<br>[sound:d61w11.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+A countermeasure	対策/taisaku<br>[sound:d61w12.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+An option	選択肢/sentakushi<br>[sound:d61w13.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+The first option	第一案/daiichian<br>[sound:d61w14.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+The second option	第二案/dainian<br>[sound:d61w15.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+Adopting an option	採用/saiyō<br>[sound:d61w16.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+Not adopting an option	不採用/fusaiyō<br>[sound:d61w17.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+The grounds	根拠/konkyo<br>[sound:d61w18.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+A figure	数値/sūchi<br>[sound:d61w19.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+The closing lines	末文/matsubun<br>[sound:d61w20.mp3]	japanese_words::61 The proposal, conclusion first	day61 japanese word
+Moving from one screen to another	遷移/sen'i<br>[sound:d62w01.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+An input field	入力欄/nyūryokuran<br>[sound:d62w02.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+A button	ボタン/botan<br>[sound:d62w03.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+Pressing a control	押下/ōka<br>[sound:d62w04.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+Showing something	表示/hyōji<br>[sound:d62w05.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+Keeping something hidden	非表示/hihyōji<br>[sound:d62w06.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+Enabled	活性/kassei<br>[sound:d62w07.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+Disabled	非活性/hikassei<br>[sound:d62w08.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+What the screen shows at first	初期表示/shoki hyōji<br>[sound:d62w09.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+The detail screen	詳細画面/shōsai gamen<br>[sound:d62w10.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+The list screen	一覧画面/ichiran gamen<br>[sound:d62w11.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+The mark on a required field	必須マーク/hissu māku<br>[sound:d62w12.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+The words in an error	エラー文言/erā mongon<br>[sound:d62w13.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+Cancel	キャンセル/kyanseru<br>[sound:d62w14.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+The button that commits	確定ボタン/kakutei botan<br>[sound:d62w15.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+To go back	戻る/modoru<br>[sound:d62w16.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+A check of the input	バリデーション/baridēshon<br>[sound:d62w17.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+Not yet saved	未保存/mihozon<br>[sound:d62w18.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+Throwing entered data away	破棄/haki<br>[sound:d62w19.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+The path the screen leads you along	導線/dōsen<br>[sound:d62w20.mp3]	japanese_words::62 Walking through the screen	day62 japanese word
+A demonstration	デモ/demo<br>[sound:d63w01.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+Sample data	仮データ/karidēta<br>[sound:d63w02.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+Live data	本番データ/honban dēta<br>[sound:d63w03.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+A cursor	カーソル/kāsoru<br>[sound:d63w04.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+Scrolling	スクロール/sukurōru<br>[sound:d63w05.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+Zooming in	ズーム/zūmu<br>[sound:d63w06.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+The whole	全体/zentai<br>[sound:d63w07.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+One part	一部/ichibu<br>[sound:d63w08.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+What you expected	想定/sōtei<br>[sound:d63w09.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+Outside what you expected	想定外/sōteigai<br>[sound:d63w10.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+A procedure	手順/tejun<br>[sound:d63w11.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+A pause in the demo	一旦停止/ittan teishi<br>[sound:d63w12.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+Running it again	再実行/saijikkō<br>[sound:d63w13.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+Slowly	ゆっくり/yukkuri<br>[sound:d63w14.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+Pointing at the screen	指差し/yubisashi<br>[sound:d63w15.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+A question	質問/shitsumon<br>[sound:d63w16.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+To be in the way	差し支える/sashitsukaeru<br>[sound:d63w17.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+Highlighting	強調/kyōchō<br>[sound:d63w18.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+A caution on the screen	注意書き/chūigaki<br>[sound:d63w19.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+The order of operations	操作順/sōsa jun<br>[sound:d63w20.mp3]	japanese_words::63 Showing the screen	day63 japanese word
+Not yet started	未着手/michakushu<br>[sound:d64w01.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+Started and underway	着手中/chakushuchū<br>[sound:d64w02.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+Work in progress	仕掛り/shikakari<br>[sound:d64w03.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+Just before	直前/chokuzen<br>[sound:d64w04.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+Just after	直後/chokugo<br>[sound:d64w05.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+Halfway through	途中/tochū<br>[sound:d64w06.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+Already finished	完了済み/kanryōzumi<br>[sound:d64w07.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+Under test	試験中/shikenchū<br>[sound:d64w08.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+Being corrected	修正中/shūseichū<br>[sound:d64w09.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+Waiting for a check	確認待ち/kakuninmachi<br>[sound:d64w10.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+A blockage	ブロック/burokku<br>[sound:d64w11.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+Clearing a blockage	解除/kaijo<br>[sound:d64w12.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+Work still left	残作業/zansagyō<br>[sound:d64w13.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+The part pushed later	先送り分/sakiokuribun<br>[sound:d64w14.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+Today’s portion	本日分/honjitsubun<br>[sound:d64w15.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+The finished state	仕上がり/shiagari<br>[sound:d64w16.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+A likely time it will be done	目途/medo<br>[sound:d64w17.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+A report just after	直後報告/chokugo hōkoku<br>[sound:d64w18.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+A report that work has started	着手報告/chakushu hōkoku<br>[sound:d64w19.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+A clean stopping point	区切り/kugiri<br>[sound:d64w20.mp3]	japanese_words::64 Where the work is right now	day64 japanese word
+A tenth; a share	割/wari<br>[sound:d65w01.mp3]	japanese_words::65 How much is done	day65 japanese word
+What remains	残り/nokori<br>[sound:d65w02.mp3]	japanese_words::65 How much is done	day65 japanese word
+Using up planned effort	消化/shōka<br>[sound:d65w03.mp3]	japanese_words::65 How much is done	day65 japanese word
+The outlook	見通し/mitōshi<br>[sound:d65w04.mp3]	japanese_words::65 How much is done	day65 japanese word
+Where you expect to land	着地見込み/chakuchi mikomi<br>[sound:d65w05.mp3]	japanese_words::65 How much is done	day65 japanese word
+Running ahead of plan	先行/senkō<br>[sound:d65w06.mp3]	japanese_words::65 How much is done	day65 japanese word
+Compared with the plan	計画比/keikakuhi<br>[sound:d65w07.mp3]	japanese_words::65 How much is done	day65 japanese word
+What actually happened	実績/jisseki<br>[sound:d65w08.mp3]	japanese_words::65 How much is done	day65 japanese word
+The gap	差分/sabun<br>[sound:d65w09.mp3]	japanese_words::65 How much is done	day65 japanese word
+Catching up	挽回/bankai<br>[sound:d65w10.mp3]	japanese_words::65 How much is done	day65 japanese word
+A contributing cause	要因/yōin<br>[sound:d65w11.mp3]	japanese_words::65 How much is done	day65 japanese word
+Adding people	増員/zōin<br>[sound:d65w12.mp3]	japanese_words::65 How much is done	day65 japanese word
+The normal end of the day	定時/teiji<br>[sound:d65w13.mp3]	japanese_words::65 How much is done	day65 japanese word
+Overtime	残業/zangyō<br>[sound:d65w14.mp3]	japanese_words::65 How much is done	day65 japanese word
+On time	オンタイム/ontaimu<br>[sound:d65w15.mp3]	japanese_words::65 How much is done	day65 japanese word
+Behind	ビハインド/bihaindo<br>[sound:d65w16.mp3]	japanese_words::65 How much is done	day65 japanese word
+The share that is finished	完了率/kanryōritsu<br>[sound:d65w17.mp3]	japanese_words::65 How much is done	day65 japanese word
+Days remaining	残日数/zan nissū<br>[sound:d65w18.mp3]	japanese_words::65 How much is done	day65 japanese word
+The day you report	報告日/hōkokubi<br>[sound:d65w19.mp3]	japanese_words::65 How much is done	day65 japanese word
+The regular report	定例報告/teirei hōkoku<br>[sound:d65w20.mp3]	japanese_words::65 How much is done	day65 japanese word
+An apology	お詫び/owabi<br>[sound:d66w01.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+Trouble caused to someone	迷惑/meiwaku<br>[sound:d66w02.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+A recovery plan	リカバリ/rikabari<br>[sound:d66w03.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+The new schedule	新日程/shin nittei<br>[sound:d66w04.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+A concrete move	打ち手/uchite<br>[sound:d66w05.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+To win the lost time back	取り戻す/torimodosu<br>[sound:d66w06.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+The staffing arrangement	体制/taisei<br>[sound:d66w07.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+How it came to be	経緯/keii<br>[sound:d66w08.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+A fact	事実/jijitsu<br>[sound:d66w09.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+A guess	推測/suisoku<br>[sound:d66w10.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+A follow-up report	続報/zokuhō<br>[sound:d66w11.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+The first report	一次報告/ichiji hōkoku<br>[sound:d66w12.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+A cause outside anyone’s control	不可抗力/fukakōryoku<br>[sound:d66w13.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+One’s own fault	落ち度/ochido<br>[sound:d66w14.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+How far the effect reaches	影響範囲/eikyō han'i<br>[sound:d66w15.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+A replacement day	代替日/daitainichi<br>[sound:d66w16.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+Late at night	深夜/shin'ya<br>[sound:d66w17.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+Working on a day off	休日出勤/kyūjitsu shukkin<br>[sound:d66w18.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+An explanation	説明/setsumei<br>[sound:d66w19.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+Happening again	再発/saihatsu<br>[sound:d66w20.mp3]	japanese_words::66 Late, and the new date	day66 japanese word
+Right in the middle of	最中/saichū<br>[sound:d67w01.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+A gap between steps	合間/aima<br>[sound:d67w02.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+A small sound that you are following	相づち/aizuchi<br>[sound:d67w03.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+A place the user trips	つまずき/tsumazuki<br>[sound:d67w04.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+Hesitation	迷い/mayoi<br>[sound:d67w05.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+Something you need in order to decide	判断材料/handan zairyō<br>[sound:d67w06.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+At the same time	同時/dōji<br>[sound:d67w07.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+In order	順に/jun ni<br>[sound:d67w08.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+Cutting in	割込/warikomi<br>[sound:d67w09.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+A question saved for later	保留質問/horyū shitsumon<br>[sound:d67w10.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+On the spot	その場/sonoba<br>[sound:d67w11.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+Gathering questions afterward	後集め/atoatsume<br>[sound:d67w12.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+An explanation of the operation	操作説明/sōsa setsumei<br>[sound:d67w13.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+An explanation of the screen	画面説明/gamen setsumei<br>[sound:d67w14.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+For a short time	一時/ichiji<br>[sound:d67w15.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+A break in the flow	途切れ/togire<br>[sound:d67w16.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+Being present while it is done	立会/tachiai<br>[sound:d67w17.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+A place to write a note	メモ欄/memoran<br>[sound:d67w18.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+To point out	指し示す/sashimesu<br>[sound:d67w19.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+To mark a stopping point	区切る/kugiru<br>[sound:d67w20.mp3]	japanese_words::67 While the screen is in front of them	day67 japanese word
+A change ticket	変更票/henkōhyō<br>[sound:d68w01.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+Opening a ticket	起票/kihyō<br>[sound:d68w02.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+Assigning a number	採番/saiban<br>[sound:d68w03.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+What is changing	変更内容/henkō naiyō<br>[sound:d68w04.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+Why it is changing	変更理由/henkō riyū<br>[sound:d68w05.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+An estimate done again	再見積/saimitsumori<br>[sound:d68w06.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+The difference in effort	工数差/kōsū sa<br>[sound:d68w07.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+The difference in cost	費用差/hiyō sa<br>[sound:d68w08.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+The difference in the schedule	日程差/nittei sa<br>[sound:d68w09.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+The frozen baseline	ベースライン/bēsurain<br>[sound:d68w10.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+A change that must be taken	必須変更/hissu henkō<br>[sound:d68w11.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+A change that can wait	任意変更/nin'i henkō<br>[sound:d68w12.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+Accepting a change	受諾/judaku<br>[sound:d68w13.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+Sending a change back	差戻/sashimodo<br>[sound:d68w14.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+How urgent it is	緊急度/kinkyūdo<br>[sound:d68w15.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+The day the effect hits	影響日/eikyōbi<br>[sound:d68w16.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+The added part	追加分/tsuikabun<br>[sound:d68w17.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+The removed part	削除分/sakujobun<br>[sound:d68w18.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+Swapping one thing for another	交換/kōkan<br>[sound:d68w19.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+The stamp that accepts a change	承認印/shōnin'in<br>[sound:d68w20.mp3]	japanese_words::68 A change after the freeze	day68 japanese word
+What was observed	事象/jishō<br>[sound:d69w01.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+For now, until the real fix	暫定/zantei<br>[sound:d69w02.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+The lasting fix	恒久/eikyū<br>[sound:d69w03.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+A way around the defect	回避/kaihi<br>[sound:d69w04.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+An occurrence	発生/hassei<br>[sound:d69w05.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+Happening often	頻発/hinpatsu<br>[sound:d69w06.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+Happening once, by chance	偶発/gūhatsu<br>[sound:d69w07.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+The first time	初回/shokai<br>[sound:d69w08.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+How often it can be shown again	再現率/saigenritsu<br>[sound:d69w09.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+What should have happened	期待/kitai<br>[sound:d69w10.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+What did happen	実際/jissai<br>[sound:d69w11.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+Severe	重大/jūdai<br>[sound:d69w12.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+Minor	軽微/keibi<br>[sound:d69w13.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+A difference between environments	環境差/kankyō sa<br>[sound:d69w14.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+A difference in the data	データ差/dēta sa<br>[sound:d69w15.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+Separating possible causes	切り分け/kiriwake<br>[sound:d69w16.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+The first cause you can name	一次原因/ichiji gen'in<br>[sound:d69w17.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+The course of events	経過/keika<br>[sound:d69w18.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+Restoring service	復旧/fukkyū<br>[sound:d69w19.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+Testing again	再試験/saishiken<br>[sound:d69w20.mp3]	japanese_words::69 A defect, without blame	day69 japanese word
+To hurry someone	急がす/isogasu<br>[sound:d70w01.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+To keep someone waiting	待たす/matasu<br>[sound:d70w02.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+To do over	やり直す/yarinaosu<br>[sound:d70w03.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+Forcing a wish onto someone	押し付け/oshitsuke<br>[sound:d70w04.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+Caught between two demands	板挟み/itabasami<br>[sound:d70w05.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+Forcing something unreasonable	無理強い/murijii<br>[sound:d70w06.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+Too much	過剰/kajō<br>[sound:d70w07.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+Load	負荷/fuka<br>[sound:d70w08.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+Past the limit	限界超/genkaichō<br>[sound:d70w09.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+Two priorities colliding	優先衝突/yūsen shōtotsu<br>[sound:d70w10.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+An assignment of work	割当/wariate<br>[sound:d70w11.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+The burden pushed onto one place	しわ寄せ/shiwayose<br>[sound:d70w12.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+Absorbing extra work	吸収/kyūshū<br>[sound:d70w13.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+A refusal	拒否/kyohi<br>[sound:d70w14.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+Offering another proposal	代替案提示/daitai an teiji<br>[sound:d70w15.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+Calm	冷静/reisei<br>[sound:d70w16.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+Feelings	感情/kanjō<br>[sound:d70w17.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+Based on facts	事実ベース/jijitsu bēsu<br>[sound:d70w18.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+Offering options	選択肢提示/sentakushi teiji<br>[sound:d70w19.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+The right to decide	決定権/ketteiken<br>[sound:d70w20.mp3]	japanese_words::70 When the pressure lands on you	day70 japanese word
+Acceptance of the finished work	受入/ukeire<br>[sound:d71w01.mp3]	japanese_words::71 Acceptance	day71 japanese word
+A condition for acceptance	受入条件/ukeire jōken<br>[sound:d71w02.mp3]	japanese_words::71 Acceptance	day71 japanese word
+An item to check	確認項目/kakunin kōmoku<br>[sound:d71w03.mp3]	japanese_words::71 Acceptance	day71 japanese word
+A pass	合格/gōkaku<br>[sound:d71w04.mp3]	japanese_words::71 Acceptance	day71 japanese word
+A fail	不合格/fugōkaku<br>[sound:d71w05.mp3]	japanese_words::71 Acceptance	day71 japanese word
+Formal acceptance of delivery	検収/kenshū<br>[sound:d71w06.mp3]	japanese_words::71 Acceptance	day71 japanese word
+An issue left at acceptance	残課題/zankadai<br>[sound:d71w07.mp3]	japanese_words::71 Acceptance	day71 japanese word
+Pass or fail	合否/gōhi<br>[sound:d71w08.mp3]	japanese_words::71 Acceptance	day71 japanese word
+The judgment	判定/hantei<br>[sound:d71w09.mp3]	japanese_words::71 Acceptance	day71 japanese word
+The meeting that judges	判定会/hanteikai<br>[sound:d71w10.mp3]	japanese_words::71 Acceptance	day71 japanese word
+A test with the client present	立会試験/tachiai shiken<br>[sound:d71w11.mp3]	japanese_words::71 Acceptance	day71 japanese word
+A checklist	チェック表/chekku hyō<br>[sound:d71w12.mp3]	japanese_words::71 Acceptance	day71 japanese word
+Declaring the work complete	完了宣言/kanryō sengen<br>[sound:d71w13.mp3]	japanese_words::71 Acceptance	day71 japanese word
+The box for a signature	署名欄/shomeiran<br>[sound:d71w14.mp3]	japanese_words::71 Acceptance	day71 japanese word
+Handling what is left	残件処理/zanken shori<br>[sound:d71w15.mp3]	japanese_words::71 Acceptance	day71 japanese word
+Approval of an exception	例外承認/reigai shōnin<br>[sound:d71w16.mp3]	japanese_words::71 Acceptance	day71 japanese word
+Before live use	本稼働前/honkadō mae<br>[sound:d71w17.mp3]	japanese_words::71 Acceptance	day71 japanese word
+The acceptance meeting	受入会/ukeirekai<br>[sound:d71w18.mp3]	japanese_words::71 Acceptance	day71 japanese word
+Checking the record of who did what	証跡確認/shōseki kakunin<br>[sound:d71w19.mp3]	japanese_words::71 Acceptance	day71 japanese word
+A pass with a condition	条件付き合格/jōkentsuki gōkaku<br>[sound:d71w20.mp3]	japanese_words::71 Acceptance	day71 japanese word
+A release	リリース/rirīsu<br>[sound:d72w01.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+The time the system is stopped	停止時間/teishi jikan<br>[sound:d72w02.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+Putting the previous version back	切り戻し/kirimodoshi<br>[sound:d72w03.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+Applying it to the live system	本番反映/honban han'ei<br>[sound:d72w04.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+The window set aside for the work	保守窓/hoshu mado<br>[sound:d72w05.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+A notice sent ahead	告知/kokuchi<br>[sound:d72w06.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+Starting again	再開/saikai<br>[sound:d72w07.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+A backup	バックアップ/bakkuappu<br>[sound:d72w08.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+Watching the live system	監視/kanshi<br>[sound:d72w09.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+The person on duty	当番/tōban<br>[sound:d72w10.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+The chain of whom to call	連絡網/renrakumō<br>[sound:d72w11.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+The switch	切替/kirikae<br>[sound:d72w12.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+A rehearsal	リハーサル/rihāsaru<br>[sound:d72w13.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+The word to proceed	ゴー/gō<br>[sound:d72w14.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+The word to stop	ノーゴー/nōgō<br>[sound:d72w15.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+The work procedure	作業手順/sagyō tejun<br>[sound:d72w16.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+A notice to the users	利用者告知/riyōsha kokuchi<br>[sound:d72w17.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+The judgment to put it back	切戻判定/kirimodoshi hantei<br>[sound:d72w18.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+After it is applied	反映後/han'eigo<br>[sound:d72w19.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+Running the work on paper again	紙運用/kami un'yō<br>[sound:d72w20.mp3]	japanese_words::72 The day it goes live	day72 japanese word
+A question from a user	問い合わせ/toiawase<br>[sound:d73w01.mp3]	japanese_words::73 After it is live	day73 japanese word
+Keeping the system running	保守/hoshu<br>[sound:d73w02.mp3]	japanese_words::73 After it is live	day73 japanese word
+The time by which you will answer	対応期限/taiō kigen<br>[sound:d73w03.mp3]	japanese_words::73 After it is live	day73 japanese word
+The person who takes it first	一次受け/ichiji uke<br>[sound:d73w04.mp3]	japanese_words::73 After it is live	day73 japanese word
+The person who takes it next	二次受け/niji uke<br>[sound:d73w05.mp3]	japanese_words::73 After it is live	day73 japanese word
+The time you aim to answer in	目標時間/mokuhyō jikan<br>[sound:d73w06.mp3]	japanese_words::73 After it is live	day73 japanese word
+The time it actually took	実績時間/jisseki jikan<br>[sound:d73w07.mp3]	japanese_words::73 After it is live	day73 japanese word
+Already known	既知/kichi<br>[sound:d73w08.mp3]	japanese_words::73 After it is live	day73 japanese word
+Not yet known	未知/michi<br>[sound:d73w09.mp3]	japanese_words::73 After it is live	day73 japanese word
+A corrected version	修正版/shūseiban<br>[sound:d73w10.mp3]	japanese_words::73 After it is live	day73 japanese word
+A small fix	パッチ/patchi<br>[sound:d73w11.mp3]	japanese_words::73 After it is live	day73 japanese word
+Outside working hours	時間外/jikangai<br>[sound:d73w12.mp3]	japanese_words::73 After it is live	day73 japanese word
+Business hours	営業時間/eigyō jikan<br>[sound:d73w13.mp3]	japanese_words::73 After it is live	day73 japanese word
+Receiving a question	受付/uketsuke<br>[sound:d73w14.mp3]	japanese_words::73 After it is live	day73 japanese word
+The notice that it is done	完了連絡/kanryō renraku<br>[sound:d73w15.mp3]	japanese_words::73 After it is live	day73 japanese word
+A written answer kept for next time	ナレッジ/narejji<br>[sound:d73w16.mp3]	japanese_words::73 After it is live	day73 japanese word
+The regular upkeep	定例保守/teirei hoshu<br>[sound:d73w17.mp3]	japanese_words::73 After it is live	day73 japanese word
+An urgent call	緊急連絡/kinkyū renraku<br>[sound:d73w18.mp3]	japanese_words::73 After it is live	day73 japanese word
+A way around it is already in place	回避済み/kaihizumi<br>[sound:d73w19.mp3]	japanese_words::73 After it is live	day73 japanese word
+Applied on the next release	次回反映/jikai han'ei<br>[sound:d73w20.mp3]	japanese_words::73 After it is live	day73 japanese word
+An apology that admits fault	申し訳/mōshiwake<br>[sound:d74w01.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+Stopping it from happening again	再発防止/saihatsu bōshi<br>[sound:d74w02.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+Dissatisfaction	不満/fuman<br>[sound:d74w03.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+A defense of oneself	弁明/benmei<br>[sound:d74w04.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+Making up for a loss	補償/hoshō<br>[sound:d74w05.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+Another way to get the work done	代替手段/daitai shudan<br>[sound:d74w06.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+Trust	信頼/shinrai<br>[sound:d74w07.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+An apology	謝罪/shazai<br>[sound:d74w08.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+An improvement	改善/kaizen<br>[sound:d74w09.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+A promise	約束/yakusoku<br>[sound:d74w10.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+How heated the conversation is	温度感/ondokan<br>[sound:d74w11.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+The first reply	一次回答/ichiji kaitō<br>[sound:d74w12.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+Taking it to one’s own boss	上申/jōshin<br>[sound:d74w13.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+Repairing the relationship	関係修復/kankei shūfuku<br>[sound:d74w14.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+Explaining again	再説明/sai setsumei<br>[sound:d74w15.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+Sincerity	誠意/seii<br>[sound:d74w16.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+For the time being	当面/tōmen<br>[sound:d74w17.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+Bringing an incident to a close	収束/shūsoku<br>[sound:d74w18.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+A concrete improvement	改善策/kaizensaku<br>[sound:d74w19.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+Responsibility	責任/sekinin<br>[sound:d74w20.mp3]	japanese_words::74 When the client is unhappy	day74 japanese word
+The check at the opening	冒頭確認/bōtō kakunin<br>[sound:d75w01.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+Sharing the purpose	目的共有/mokuteki kyōyū<br>[sound:d75w02.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+Checking the current state	現状確認/genjō kakunin<br>[sound:d75w03.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+Checking a difference	相違確認/sōi kakunin<br>[sound:d75w04.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+Checking a decision	決定確認/kettei kakunin<br>[sound:d75w05.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+Checking what is taken away	宿題確認/shukudai kakunin<br>[sound:d75w06.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+Checking the next meeting	次回確認/jikai kakunin<br>[sound:d75w07.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+How the hour is split	時間配分/jikan haibun<br>[sound:d75w08.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+The order of speaking	発言順/hatsugen jun<br>[sound:d75w09.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+The sentence you both agree	合意文/gōibun<br>[sound:d75w10.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+The list of what is unresolved	未決一覧/miketsu ichiran<br>[sound:d75w11.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+The list of what was decided	決定一覧/kettei ichiran<br>[sound:d75w12.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+Reading a note aloud	読み上げ/yomiage<br>[sound:d75w13.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+A place to correct	訂正箇所/teisei kasho<br>[sound:d75w14.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+The words of the approval	承認文言/shōnin mongon<br>[sound:d75w15.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+The close of the meeting	クロージング/kurōjingu<br>[sound:d75w16.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+Time remaining	残時間/zanjikan<br>[sound:d75w17.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+Staying on one point	一点集中/itten shūchū<br>[sound:d75w18.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+Leaving the point	脱線/dassen<br>[sound:d75w19.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+Coming back to the point	復帰/fukki<br>[sound:d75w20.mp3]	japanese_words::75 One meeting, in order	day75 japanese word
+The place that hurts in the work	痛点/tsūten<br>[sound:d76w01.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+A felt sense of how often	頻度感/hindokan<br>[sound:d76w02.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+The trouble something takes	手間/tema<br>[sound:d76w03.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+The place data is copied from	転記元/tenkimoto<br>[sound:d76w04.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+The place data is copied to	転記先/tenkisaki<br>[sound:d76w05.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+A queue of waiting work	待ち行列/machi gyōretsu<br>[sound:d76w06.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+Work sitting still	滞留/tairyū<br>[sound:d76w07.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+Making the state visible	見える化/mieruka<br>[sound:d76w08.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+The standard path	標準/hyōjun<br>[sound:d76w09.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+Handling an exception	例外処理/reigai shori<br>[sound:d76w10.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+The main route	主経路/shu keiro<br>[sound:d76w11.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+A side route	副経路/fuku keiro<br>[sound:d76w12.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+Abolishing something	廃止/haishi<br>[sound:d76w13.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+Keeping something in place	存続/sonzoku<br>[sound:d76w14.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+Stopping the use of paper	紙廃止/kami haishi<br>[sound:d76w15.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+Entering the same data twice	二重入力/nijū nyūryoku<br>[sound:d76w16.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+A reduction	削減/sakugen<br>[sound:d76w17.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+A target figure	目標値/mokuhyōchi<br>[sound:d76w18.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+The figure as it is now	現状値/genjōchi<br>[sound:d76w19.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+What “success” will mean	成功条件/seikō jōken<br>[sound:d76w20.mp3]	japanese_words::76 The first hearing, in your words	day76 japanese word
+One side of a contrast	一方/ippō<br>[sound:d77w01.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+The other side	他方/tahō<br>[sound:d77w02.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+To include	含む/fukumu<br>[sound:d77w03.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+To not include	含まない/fukumanai<br>[sound:d77w04.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+Stating it outright	明示/meiji<br>[sound:d77w05.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+Left unspoken	暗黙/anmoku<br>[sound:d77w06.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+The total amount	総額/sōgaku<br>[sound:d77w07.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+A subtotal	小計/shōkei<br>[sound:d77w08.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+Consumption tax	消費税/shōhizei<br>[sound:d77w09.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+After a discount	値引後/nebikigo<br>[sound:d77w10.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+Before a discount	値引前/nebikimae<br>[sound:d77w11.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+Reasonable	妥当/datō<br>[sound:d77w12.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+Too large	過大/kadai<br>[sound:d77w13.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+Too small	過小/kashō<br>[sound:d77w14.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+The duty to explain	説明責任/setsumei sekinin<br>[sound:d77w15.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+The line you compare along	比較軸/hikaku jiku<br>[sound:d77w16.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+Three options	三案/san'an<br>[sound:d77w17.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+The option you recommend	推奨案/suishōan<br>[sound:d77w18.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+An option you do not recommend	非推奨案/hisuishōan<br>[sound:d77w19.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+The “provided that” note	但し書き/tadashigaki<br>[sound:d77w20.mp3]	japanese_words::77 The estimate, with both sides	day77 japanese word
+An item that was pointed out	指摘事項/shiteki jikō<br>[sound:d78w01.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+The number of a comment	指摘番号/shiteki bangō<br>[sound:d78w02.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+A comment we will take	採用コメント/saiyō komento<br>[sound:d78w03.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+A comment we will not take this round	見送りコメント/miokuri komento<br>[sound:d78w04.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+A difference on the screen	画面差分/gamen sabun<br>[sound:d78w05.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+A difference in the wording	文言差分/mongon sabun<br>[sound:d78w06.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+A red box marking a spot	赤枠/akawaku<br>[sound:d78w07.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+Agreement	同意/dōi<br>[sound:d78w08.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+Disagreement	不同意/fudōi<br>[sound:d78w09.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+A fix made during the demo	その場修正/sonoba shūsei<br>[sound:d78w10.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+A fix taken away to do later	持ち帰り修正/mochikaeri shūsei<br>[sound:d78w11.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+A demonstration done again	再デモ/saidemo<br>[sound:d78w12.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+The point of view of a check	確認観点/kakunin kanten<br>[sound:d78w13.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+The line that counts as a pass	合格ライン/gōkaku rain<br>[sound:d78w14.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+Not yet reaching the line	未達/mitatsu<br>[sound:d78w15.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+Reaching the line	到達/tōtatsu<br>[sound:d78w16.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+The note from the demonstration	デモメモ/demomemo<br>[sound:d78w17.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+Something that failed to be applied	反映漏れ/han'ei more<br>[sound:d78w18.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+No response needed	対応不要/taiō fuyō<br>[sound:d78w19.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+The day we check again	再確認日/saikakuninbi<br>[sound:d78w20.mp3]	japanese_words::78 After the demo, based on what they said	day78 japanese word
+Conforming to a written line	準拠/junkyo<br>[sound:d79w01.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+Leaving that line	逸脱/itsudatsu<br>[sound:d79w02.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+To follow a line	沿う/sou<br>[sound:d79w03.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+At no extra charge	無償/mushō<br>[sound:d79w04.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+At an extra charge	有償/yūshō<br>[sound:d79w05.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+Inside the estimated effort	工数内/kōsūnai<br>[sound:d79w06.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+Outside the estimated effort	工数外/kōsūgai<br>[sound:d79w07.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+Inside the schedule	日程内/nitteinai<br>[sound:d79w08.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+Outside the schedule	日程外/nitteigai<br>[sound:d79w09.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+The ledger of changes	変更台帳/henkō daichō<br>[sound:d79w10.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+A version	版/ban<br>[sound:d79w11.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+The latest version	最新版/saishinban<br>[sound:d79w12.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+An older version	旧版/kyūban<br>[sound:d79w13.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+Permission	許諾/kyodaku<br>[sound:d79w14.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+A change made only by speech	口頭変更/kōtō henkō<br>[sound:d79w15.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+The duty to write it down	記録義務/kiroku gimu<br>[sound:d79w16.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+The written screen specification	画面仕様/gamen shiyō<br>[sound:d79w17.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+The written acceptance specification	受入仕様/ukeire shiyō<br>[sound:d79w18.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+The scope covered at no extra charge	無償範囲/mushō han'i<br>[sound:d79w19.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+An estimate for chargeable work	有償見積/yūshō mitsumori<br>[sound:d79w20.mp3]	japanese_words::79 A change that stays inside the line	day79 japanese word
+Waiting for a result	結果待ち/kekkamachi<br>[sound:d80w01.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+Becoming clear	判明/hanmei<br>[sound:d80w02.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+Not yet clear	未判明/mihanmei<br>[sound:d80w03.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+The first report	第一報/daiippō<br>[sound:d80w04.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+The second report	第二報/dainihō<br>[sound:d80w05.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+Forward movement	進展/shinten<br>[sound:d80w06.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+Standing still	停滞/teitai<br>[sound:d80w07.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+A forecast that was wrong	見込み違い/mikomichigai<br>[sound:d80w08.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+Setting a date again	再設定/saisettei<br>[sound:d80w09.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+Silence	沈黙/chinmoku<br>[sound:d80w10.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+A promised message that does not come	空振り/karaburi<br>[sound:d80w11.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+A report from the middle	途中経過/tochū keika<br>[sound:d80w12.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+A message at a set time	定時連絡/teiji renraku<br>[sound:d80w13.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+When something is wrong	異常時/ijōji<br>[sound:d80w14.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+The next business day	翌営業日/yoku eigyōbi<br>[sound:d80w15.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+The situation	状況/jōkyō<br>[sound:d80w16.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+Unchanged	変わらず/kawarazu<br>[sound:d80w17.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+Updating a promise	約束更新/yakusoku kōshin<br>[sound:d80w18.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+When the message will come	連絡時期/renraku jiki<br>[sound:d80w19.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+Waiting for a judgment	判断待ち/handanmachi<br>[sound:d80w20.mp3]	japanese_words::80 The next message depends on the result	day80 japanese word
+A formal intention	所存/shozon<br>[sound:d81w01.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+Submitting a document	提出/teishutsu<br>[sound:d81w02.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+The documents you submit	提出物/teishutsubutsu<br>[sound:d81w03.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+A request for formal acceptance	検収依頼/kenshū irai<br>[sound:d81w04.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+The text of a request	依頼文/iraibun<br>[sound:d81w05.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+A list of what is attached	添付一覧/tenpu ichiran<br>[sound:d81w06.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+A list of what is left	残件一覧/zanken ichiran<br>[sound:d81w07.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+Stating the deadline in the letter	期限明記/kigen meiki<br>[sound:d81w08.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+The end of the letter	文末/bunmatsu<br>[sound:d81w09.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+The closing sentence	結び/musubi<br>[sound:d81w10.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+A formal thanks	御礼/onrei<br>[sound:d81w11.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+A report that the work is finished	完了報告/kanryō hōkoku<br>[sound:d81w12.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+The next stage of the work	次工程/jikōtei<br>[sound:d81w13.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+Humble wording for one’s own action	謙譲/kenjō<br>[sound:d81w14.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+The thing itself, not a description	実物/jitsubutsu<br>[sound:d81w15.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+Checking one thing against another	照合/shōgō<br>[sound:d81w16.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+No difference	相違なし/sōi nashi<br>[sound:d81w17.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+The deadline for formal acceptance	検収期限/kenshū kigen<br>[sound:d81w18.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+A condition that keeps it on hold	保留条件/horyū jōken<br>[sound:d81w19.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+Receipt of what was sent	受領/juryō<br>[sound:d81w20.mp3]	japanese_words::81 The letter that asks for acceptance	day81 japanese word
+The ticket that received the question	受付票/uketsuke hyō<br>[sound:d82w01.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+The history of how it was handled	対応履歴/taiō rireki<br>[sound:d82w02.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+Telling the user the way through for now	暫定案内/zantei annai<br>[sound:d82w03.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+The plan for the lasting fix	恒久予定/eikyū yotei<br>[sound:d82w04.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+How many people are affected	影響人数/eikyō ninzū<br>[sound:d82w05.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+The steps of the way around it	回避手順/kaihi tejun<br>[sound:d82w06.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+Collecting the log	ログ取得/rogu shutoku<br>[sound:d82w07.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+From a distance	遠隔/enkaku<br>[sound:d82w08.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+A check on the floor	現場確認/genba kakunin<br>[sound:d82w09.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+Settled	解決/kaiketsu<br>[sound:d82w10.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+Not yet settled	未解決/mikaiketsu<br>[sound:d82w11.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+Opening a closed ticket again	再オープン/saiōpun<br>[sound:d82w12.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+The condition for closing	クローズ条件/kurōzu jōken<br>[sound:d82w13.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+A further question	追加質問/tsuika shitsumon<br>[sound:d82w14.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+The next time the office is open	翌営業/yoku eigyō<br>[sound:d82w15.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+Confirming that it is really settled	解決確認/kaiketsu kakunin<br>[sound:d82w16.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+The effect on users	利用者影響/riyōsha eikyō<br>[sound:d82w17.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+The first separation of causes	一次切り分け/ichiji kiriwake<br>[sound:d82w18.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+The person who owns the response	対応オーナー/taiō ōnā<br>[sound:d82w19.mp3]	japanese_words::82 The call after it is live	day82 japanese word
+The time it was finished	完了時刻/kanryō jikoku<br>[sound:d82w20.mp3]	japanese_words::82 The call after it is live	day82 japanese word

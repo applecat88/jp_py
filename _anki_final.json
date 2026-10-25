@@ -1,0 +1,42 @@
+{
+  "lesson_decks": 82,
+  "bad": [],
+  "sample": [
+    {
+      "tags": [
+        "day01",
+        "japanese"
+      ],
+      "Back": "私/watashi",
+      "Front": "I"
+    },
+    {
+      "tags": [
+        "day01",
+        "japanese"
+      ],
+      "Back": "今日/kyō",
+      "Front": "Today"
+    }
+  ],
+  "removed": [
+    "Japanese::01 Days 01-05",
+    "Japanese::02 Days 06-10",
+    "Japanese::03 Days 11-15",
+    "Japanese::04 Days 16-20",
+    "Japanese::05 Days 21-25",
+    "Japanese::06 Days 26-30",
+    "Japanese::07 Days 31-35",
+    "Japanese::08 Days 36-40",
+    "Japanese::09 Days 41-45",
+    "Japanese::10 Days 46-50",
+    "Japanese::11 Days 51-55",
+    "Japanese::12 Days 56-60",
+    "Japanese::13 Days 61-65",
+    "Japanese::14 Days 66-70",
+    "Japanese::15 Days 71-75",
+    "Japanese::16 Days 76-80",
+    "Japanese::17 Days 81-82"
+  ],
+  "word_notes": 1640
+}
