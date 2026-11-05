@@ -376,63 +376,14 @@
     return !progress.hidePronunciation;
   }
 
-  function isHiraChar(ch) {
-    var code = ch.charCodeAt(0);
-    return code >= 0x3041 && code <= 0x3096;
-  }
-
-  function isPunctChar(ch) {
-    return "。、！？「」『』（）()…・,.!?　 ".indexOf(ch) >= 0;
-  }
-
-  function cutPronunciation(jp, hira) {
-    if (!jp || !hira) return hira || "";
-    var parts = [];
-    var i = 0;
-    var j = 0;
-    while (i < jp.length && j < hira.length) {
-      var ch = jp.charAt(i);
-      if ((isHiraChar(ch) || isPunctChar(ch)) && ch === hira.charAt(j)) {
-        i += 1;
-        j += 1;
-        continue;
-      }
-      if (isPunctChar(ch)) {
-        i += 1;
-        continue;
-      }
-      var start = i;
-      while (i < jp.length && !isHiraChar(jp.charAt(i)) && !isPunctChar(jp.charAt(i))) i += 1;
-      if (i === start) return hira;
-      var mark = hira.length;
-      if (i < jp.length && isPunctChar(jp.charAt(i))) mark = hira.indexOf(jp.charAt(i), j);
-      else if (i < jp.length && isHiraChar(jp.charAt(i))) {
-        var k = i;
-        while (k < jp.length && isHiraChar(jp.charAt(k))) k += 1;
-        mark = hira.indexOf(jp.substring(i, k), j);
-      }
-      if (mark < j || mark === j) return hira;
-      parts.push(hira.substring(j, mark));
-      j = mark;
-    }
-    if (j < hira.length && i >= jp.length) {
-      var rest = hira.substring(j).replace(/^[。、！？]+/, "");
-      if (rest) parts.push(rest);
-    }
-    return parts.join(" ");
-  }
-
-  function pronunciationOf(item, track) {
-    var hira = (item && item.hira) || "";
-    if (!hira) return "";
-    if (track === "word" || track === "listen-word") return hira;
-    return cutPronunciation((item && (item.jp || item.answer)) || "", hira);
+  function pronunciationOf(item) {
+    return (item && item.hira) || "";
   }
 
   function guidesHTML(item) {
     var html = "";
     if (!item) return html;
-    var pronunciation = pronunciationOf(item, "");
+    var pronunciation = pronunciationOf(item);
     if (showPronunciation() && pronunciation) html += '<p class="pronunciation">' + esc(pronunciation) + "</p>";
     if (showRomaji() && item.romaji) html += '<p class="romaji">' + esc(item.romaji) + "</p>";
     return html;
@@ -484,7 +435,7 @@
     var prefs = itemPrefs(track, index);
     var html = "";
     if (!item) return html;
-    var pronunciation = pronunciationOf(item, track);
+    var pronunciation = pronunciationOf(item);
     if (prefs.pron && pronunciation) html += '<p class="pronunciation">' + esc(pronunciation) + "</p>";
     if (prefs.roma && item.romaji) html += '<p class="romaji">' + esc(item.romaji) + "</p>";
     return html;

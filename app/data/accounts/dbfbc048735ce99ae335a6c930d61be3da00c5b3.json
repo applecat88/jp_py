@@ -1,450 +1,183 @@
 {
- "mode": "study",
- "repeats": 3,
- "hidePronunciation": false,
  "startDate": "2026-10-14",
- "grammarDepth": "detail",
- "volume": 0.65,
- "selectedDay": 9,
- "hideRomaji": false,
  "days": {
-  "67": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "80": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "81": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "44": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "56": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "73": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "66": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "14": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "54": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "22": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "4": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "76": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "6": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "12": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "63": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "57": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "53": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "24": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "20": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "8": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "41": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "10": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "18": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "25": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "78": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "19": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "60": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "47": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "13": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "32": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "45": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "72": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "15": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "70": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "36": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "51": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "49": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "43": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "9": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "50": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "38": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "82": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "46": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "23": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "11": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "27": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "58": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "69": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "39": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "75": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "26": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "7": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "5": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
   "35": {
-   "tests": [],
    "studied": false,
-   "studyLogs": []
-  },
-  "29": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "21": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "74": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "64": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "77": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "33": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "37": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "30": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "62": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
   "42": {
-   "tests": [],
    "studied": false,
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "48": {
-   "tests": [],
+  "36": {
    "studied": false,
-   "studyLogs": []
-  },
-  "52": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
-  },
-  "34": {
-   "tests": [],
-   "studied": false,
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
   "3": {
-   "tests": [],
    "studied": false,
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "2": {
-   "studied": true,
-   "misses": [
-    {
-     "answer": "Is this an error?",
-     "prompt": "これはエラーですか。"
-    },
-    {
-     "answer": "That over there is a screen.",
-     "prompt": "あれは画面です。"
-    },
-    {
-     "answer": "それ",
-     "prompt": "Which word is near the listener?"
-    },
-    {
-     "answer": "これは何ですか。",
-     "prompt": "How do you ask “what is this?”"
-    },
-    {
-     "answer": "Directly before the noun: 新しい本.",
-     "prompt": "Where does an い-adjective sit before a noun?"
-    },
-    {
-     "answer": "買います",
-     "prompt": "What is the ます form of 買う?"
-    }
-   ],
-   "studyLogs": [
-    {
-     "id": "lmvb7xc3r2",
-     "note": "Studied",
-     "at": "2026-10-16T17:05:03.111Z"
-    }
-   ],
-   "tests": [
-    {
-     "identifier": "appleapplecat88@gmail.com",
-     "total": 18,
-     "score": 12,
-     "at": "2026-10-16T17:05:03.111Z",
-     "id": "lmvb7xc3r1",
-     "attempts": 1,
-     "scope": "day"
-    }
-   ]
-  },
-  "55": {
-   "tests": [],
+  "66": {
    "studied": false,
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
+  },
+  "32": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "53": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "6": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "44": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
   },
   "17": {
-   "tests": [],
    "studied": false,
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "65": {
-   "tests": [],
+  "76": {
    "studied": false,
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "40": {
-   "tests": [],
+  "5": {
    "studied": false,
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "68": {
-   "tests": [],
+  "33": {
    "studied": false,
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
+  },
+  "62": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "38": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "49": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "80": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "43": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "47": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "64": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "75": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "50": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "24": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "51": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "8": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "10": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "60": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "59": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "55": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "67": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "13": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "7": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
   },
   "61": {
-   "tests": [],
    "studied": false,
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
+  },
+  "45": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "79": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
   },
   "1": {
    "studied": true,
-   "misses": [
-    {
-     "answer": "I write Japanese.",
-     "prompt": "日本語を書きます。"
-    },
-    {
-     "answer": "Add か.",
-     "prompt": "How do you make a polite question?"
-    },
-    {
-     "answer": "が",
-     "prompt": "Which particle does 分かる take?"
-    },
-    {
-     "answer": "仕事をします。",
-     "prompt": "How do you say “I do work”?"
-    }
-   ],
    "studyLogs": [
     {
      "id": "lmvaxde822",
@@ -452,48 +185,315 @@
      "at": "2026-10-16T12:09:36.578Z"
     }
    ],
+   "misses": [
+    {
+     "prompt": "日本語を書きます。",
+     "answer": "I write Japanese."
+    },
+    {
+     "prompt": "How do you make a polite question?",
+     "answer": "Add か."
+    },
+    {
+     "prompt": "Which particle does 分かる take?",
+     "answer": "が"
+    },
+    {
+     "prompt": "How do you say “I do work”?",
+     "answer": "仕事をします。"
+    }
+   ],
    "tests": [
     {
      "identifier": "appleapplecat88@gmail.com",
      "total": 18,
-     "score": 14,
      "at": "2026-10-25T13:06:06.970Z",
+     "scope": "day",
+     "score": 14,
      "id": "lmvaxde821",
-     "attempts": 2,
-     "scope": "day"
+     "attempts": 2
     }
    ]
   },
-  "59": {
-   "tests": [],
+  "14": {
    "studied": false,
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "71": {
-   "tests": [],
+  "78": {
    "studied": false,
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "28": {
-   "tests": [],
+  "58": {
    "studied": false,
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "16": {
-   "tests": [],
+  "22": {
    "studied": false,
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
   },
-  "79": {
-   "tests": [],
+  "19": {
    "studied": false,
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
+  },
+  "46": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "34": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
   },
   "31": {
-   "tests": [],
    "studied": false,
-   "studyLogs": []
+   "studyLogs": [],
+   "tests": []
+  },
+  "54": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "77": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "15": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "70": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "48": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "69": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "82": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "20": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "2": {
+   "studied": true,
+   "studyLogs": [
+    {
+     "id": "lmvb7xc3r2",
+     "note": "Studied",
+     "at": "2026-10-16T17:05:03.111Z"
+    }
+   ],
+   "misses": [
+    {
+     "prompt": "これはエラーですか。",
+     "answer": "Is this an error?"
+    },
+    {
+     "prompt": "あれは画面です。",
+     "answer": "That over there is a screen."
+    },
+    {
+     "prompt": "Which word is near the listener?",
+     "answer": "それ"
+    },
+    {
+     "prompt": "How do you ask “what is this?”",
+     "answer": "これは何ですか。"
+    },
+    {
+     "prompt": "Where does an い-adjective sit before a noun?",
+     "answer": "Directly before the noun: 新しい本."
+    },
+    {
+     "prompt": "What is the ます form of 買う?",
+     "answer": "買います"
+    }
+   ],
+   "tests": [
+    {
+     "identifier": "appleapplecat88@gmail.com",
+     "total": 18,
+     "at": "2026-10-16T17:05:03.111Z",
+     "scope": "day",
+     "score": 12,
+     "id": "lmvb7xc3r1",
+     "attempts": 1
+    }
+   ]
+  },
+  "37": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "74": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "27": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "73": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "28": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "39": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "56": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "65": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "21": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "12": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "71": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "29": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "63": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "81": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "16": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "52": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "4": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "18": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "40": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "11": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "26": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "9": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "68": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "25": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "72": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "30": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "41": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "23": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
+  },
+  "57": {
+   "studied": false,
+   "studyLogs": [],
+   "tests": []
   }
  },
- "rate": 0.8
+ "volume": 0.65,
+ "hideRomaji": false,
+ "mode": "study",
+ "repeats": 3,
+ "rate": 0.8,
+ "selectedDay": 13,
+ "grammarDepth": "detail",
+ "hidePronunciation": false
 }
