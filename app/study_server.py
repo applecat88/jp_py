@@ -27,6 +27,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 WEB = os.path.normpath(os.path.join(ROOT, "web"))
 DATA = os.path.join(ROOT, "data")
 COURSE = os.path.join(DATA, "course.json")
+SENTENCE_LESSONS = os.path.join(DATA, "sentence_lessons.json")
 PROGRESS = os.path.join(DATA, "progress.json")
 USERS = os.path.join(DATA, "users.json")
 ACCOUNTS = os.path.join(DATA, "accounts")
@@ -57,6 +58,33 @@ BINARY_TYPES = {
 def read_file(path):
     with io.open(path, "r", encoding="utf-8") as handle:
         return handle.read()
+
+
+def course_payload():
+    course = json.loads(read_file(COURSE))
+    if not os.path.isfile(SENTENCE_LESSONS):
+        return json.dumps(course, ensure_ascii=False)
+    extra = json.loads(read_file(SENTENCE_LESSONS))
+    by_day = {}
+    for item in extra.get("days") or []:
+        try:
+            by_day[int(item.get("day"))] = item
+        except (TypeError, ValueError):
+            continue
+    for day in course.get("days") or []:
+        try:
+            number = int(day.get("day"))
+        except (TypeError, ValueError):
+            continue
+        pack = by_day.get(number)
+        if not pack:
+            continue
+        day["sentenceLesson"] = {
+            "brief": pack.get("brief") or "",
+            "grammar": pack.get("grammar") or [],
+            "sentences": pack.get("sentences") or [],
+        }
+    return json.dumps(course, ensure_ascii=False)
 
 
 def load_course():
@@ -543,7 +571,7 @@ class Handler(BaseHTTPRequestHandler):
             )
             return
         if path == "/api/course":
-            self._send(200, read_file(COURSE), "application/json; charset=utf-8")
+            self._send(200, course_payload(), "application/json; charset=utf-8")
             return
         if path == "/api/session":
             identifier = session_identifier(self)

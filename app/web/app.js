@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var MODES = ["calendar", "study", "grammar", "practice", "test", "logs", "listening"];
+  var MODES = ["calendar", "study", "grammar", "sentences", "practice", "test", "logs", "listening"];
   var course = null;
   var progress = null;
   var account = null;
@@ -721,6 +721,7 @@
     if (progress.mode === "calendar") view.innerHTML = calendarHTML();
     else if (progress.mode === "study") view.innerHTML = studyHTML();
     else if (progress.mode === "grammar") view.innerHTML = grammarLibraryHTML();
+    else if (progress.mode === "sentences") view.innerHTML = sentencesModeHTML();
     else if (progress.mode === "practice") view.innerHTML = practiceHTML();
     else if (progress.mode === "test") view.innerHTML = testHTML();
     else if (progress.mode === "logs") view.innerHTML = logsHTML();
@@ -1048,6 +1049,44 @@
         '<p class="jp">' + esc(item.jp) + "</p>" + guidesHTML(item) +
         '<p class="en">' + esc(item.en) + "</p></div>";
     }).join("");
+  }
+
+  function sentencesModeHTML() {
+    var day = currentDay();
+    var pack = day.sentenceLesson || { brief: "", grammar: [], sentences: [] };
+    var patterns = (pack.grammar || []).map(function (item, index) {
+      return '<section class="sentence-pattern"><h3>Pattern ' + (index + 1) + "</h3>" +
+        "<h4>" + esc(item.title || "") + "</h4>" +
+        "<p>" + esc(item.explanation || "") + "</p></section>";
+    }).join("");
+    var lines = (pack.sentences || []).map(function (line, index) {
+      var id = speakId(line.jp || "", null);
+      var pron = showPronunciation()
+        ? '<p class="sentence-label">Hiragana</p><p class="pronunciation">' + esc(line.hira || "") + "</p>" +
+          '<p class="sentence-label">Katakana</p><p class="pronunciation">' + esc(line.kata || "") + "</p>"
+        : "";
+      var roma = showRomaji()
+        ? '<p class="sentence-label">Romaji</p><p class="romaji">' + esc(line.romaji || "") + "</p>"
+        : "";
+      return '<article class="sentence-item">' +
+        '<p class="meta">Sentence ' + (index + 1) + "</p>" +
+        '<div class="item-play">' +
+        '<button type="button" class="small primary" data-act="speak" data-id="' + id + '">Start</button>' +
+        '<button type="button" class="small" data-act="stop">Stop</button></div>' +
+        '<p class="sentence-label">Japanese</p><p class="jp">' + esc(line.jp || "") + "</p>" +
+        pron + roma +
+        '<p class="sentence-label">English</p><p class="en">' + esc(line.en || "") + "</p></article>";
+    }).join("");
+    if (!lines) {
+      lines = '<p class="meta">This lesson has no sentence set yet.</p>';
+    }
+    return '<p class="kicker">Sentences · day ' + day.day + " · " + iso(lessonDate(day.day)) + "</p>" +
+      "<h2>" + esc(day.title) + "</h2>" +
+      (day.goal ? '<p class="goal">' + esc(day.goal) + "</p>" : "") +
+      '<div class="card"><h3>Grammar</h3><p>' + esc(pack.brief || "") + "</p>" + patterns + "</div>" +
+      '<div class="card"><h3>Example sentences</h3>' +
+      '<p class="meta">Each example is the Japanese sentence, then the pronunciation in hiragana, then the same pronunciation in katakana, then the romaji, and a direct English translation. A word in parentheses is required by English and is not written in the Japanese.</p>' +
+      lines + "</div>";
   }
 
   function studyHTML() {

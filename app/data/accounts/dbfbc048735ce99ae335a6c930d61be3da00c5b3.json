@@ -1,188 +1,70 @@
 {
+ "rate": 0.8,
  "startDate": "2026-10-14",
  "days": {
-  "35": {
+  "68": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "42": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "36": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
   "3": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "66": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "32": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "53": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "6": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "44": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "17": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "76": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "5": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "33": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "62": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "38": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "49": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "80": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "43": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "47": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
   "64": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "75": {
+  "12": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "50": {
+  "43": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "24": {
+  "52": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "51": {
+  "69": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "8": {
+  "56": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "10": {
+  "53": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "60": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "59": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "55": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "67": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "13": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "7": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "61": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "45": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "79": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
   "1": {
+   "tests": [
+    {
+     "at": "2026-10-25T13:06:06.970Z",
+     "total": 18,
+     "score": 14,
+     "attempts": 2,
+     "identifier": "appleapplecat88@gmail.com",
+     "id": "lmvaxde821",
+     "scope": "day"
+    }
+   ],
    "studied": true,
    "studyLogs": [
     {
-     "id": "lmvaxde822",
      "note": "Studied",
-     "at": "2026-10-16T12:09:36.578Z"
+     "at": "2026-10-16T12:09:36.578Z",
+     "id": "lmvaxde822"
     }
    ],
    "misses": [
@@ -202,106 +84,266 @@
      "prompt": "How do you say “I do work”?",
      "answer": "仕事をします。"
     }
-   ],
-   "tests": [
-    {
-     "identifier": "appleapplecat88@gmail.com",
-     "total": 18,
-     "at": "2026-10-25T13:06:06.970Z",
-     "scope": "day",
-     "score": 14,
-     "id": "lmvaxde821",
-     "attempts": 2
-    }
    ]
   },
-  "14": {
+  "38": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "78": {
+  "71": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "58": {
+  "61": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "22": {
+  "80": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "19": {
+  "18": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "46": {
+  "79": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "34": {
+  "6": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "31": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "54": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "77": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
   "15": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
   "70": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
+  },
+  "13": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "66": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "60": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "63": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "24": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "49": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
   },
   "48": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "69": {
+  "76": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
+  },
+  "10": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "34": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "75": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "22": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "55": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "42": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "72": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "19": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "26": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "44": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "4": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "25": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "46": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "51": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "50": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
   },
   "82": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "20": {
+  "28": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
+  },
+  "23": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "9": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "78": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "74": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "39": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "21": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "30": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "40": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "35": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "36": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "77": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "33": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "31": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "59": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
   },
   "2": {
+   "tests": [
+    {
+     "at": "2026-10-16T17:05:03.111Z",
+     "total": 18,
+     "score": 12,
+     "attempts": 1,
+     "identifier": "appleapplecat88@gmail.com",
+     "id": "lmvb7xc3r1",
+     "scope": "day"
+    }
+   ],
    "studied": true,
    "studyLogs": [
     {
-     "id": "lmvb7xc3r2",
      "note": "Studied",
-     "at": "2026-10-16T17:05:03.111Z"
+     "at": "2026-10-16T17:05:03.111Z",
+     "id": "lmvb7xc3r2"
     }
    ],
    "misses": [
@@ -329,171 +371,129 @@
      "prompt": "What is the ます form of 買う?",
      "answer": "買います"
     }
-   ],
-   "tests": [
-    {
-     "identifier": "appleapplecat88@gmail.com",
-     "total": 18,
-     "at": "2026-10-16T17:05:03.111Z",
-     "scope": "day",
-     "score": 12,
-     "id": "lmvb7xc3r1",
-     "attempts": 1
-    }
    ]
   },
-  "37": {
+  "57": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "74": {
+  "20": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "27": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "73": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "28": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "39": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "56": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "65": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "21": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "12": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "71": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "29": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "63": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "81": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "16": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "52": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "4": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "18": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
-  },
-  "40": {
-   "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
   "11": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "26": {
+  "65": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "9": {
+  "58": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "68": {
+  "62": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "25": {
+  "32": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "72": {
+  "67": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "30": {
+  "14": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
+  },
+  "17": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "73": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "7": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "8": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "27": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "47": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
   },
   "41": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "23": {
+  "45": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
   },
-  "57": {
+  "29": {
+   "tests": [],
    "studied": false,
-   "studyLogs": [],
-   "tests": []
+   "studyLogs": []
+  },
+  "5": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "81": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "54": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "16": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
+  },
+  "37": {
+   "tests": [],
+   "studied": false,
+   "studyLogs": []
   }
  },
- "volume": 0.65,
- "hideRomaji": false,
- "mode": "study",
+ "mode": "sentences",
+ "hidePronunciation": false,
  "repeats": 3,
- "rate": 0.8,
- "selectedDay": 13,
+ "hideRomaji": false,
  "grammarDepth": "detail",
- "hidePronunciation": false
+ "volume": 0.65,
+ "selectedDay": 7
 }

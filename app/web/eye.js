@@ -3,9 +3,9 @@
 
   /* Protects the eyes while this page is the screen in front of you.
      Visible time counts. Looking away, hiding the page, or a real break
-     resets the cycle. 20-20-20, complete blinks, and a longer hourly rest.
-     Evening warmth is for glare and night comfort. This is a work routine,
-     not treatment for refraction or eye disease. */
+     resets the cycle. Breaks include a look into the distance and guided
+     pressure on points around the eyes. This is a work routine, not
+     treatment for refraction or eye disease. */
 
   var KEY = "japanese-study-eyes";
   var TAB = Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
@@ -28,12 +28,40 @@
   };
   var COPY = {
     look: ["Look away", "Look past the screen", "Rest your eyes on something about 6 meters away. Blink fully."],
-    blink: ["Blink", "Close your eyes slowly and fully", "Let the upper and lower lashes meet. Pause for a second, then open easily."],
+    blink: ["Blink", "Close your eyes slowly and fully", "Let the upper and lower lashes meet. Pause for a second, then open easily. Repeat until the count ends."],
     palm: ["Palm rest", "Close your eyes and cover them with your palms", "Block the light without pressing. Breathe in, then breathe out slowly."],
     eight: ["Figure eight", "Follow the dot with your eyes only", "Keep your head still and follow only the dot."],
     near: ["Near and far", "Shift focus between near and far", "For near, focus on your thumb about 30 cm in front of the screen. For far, focus across the room."],
-    gaze: ["Directions", "Look toward the light with your eyes only", "Keep your head still. Pause briefly in each direction."]
+    gaze: ["Directions", "Look toward the light with your eyes only", "Keep your head still. Pause briefly in each direction."],
+    points: ["Acupoints", "Press around the eyes", "Use the pad of a clean finger. Small circles on the bone. Never press the eyeball. Stop if it hurts."],
+    orbit: ["Around the eye", "Trace the bone around each eye", "Eyes closed. Slide from the inner brow outward, around the outer corner, and back along the bone under the eye."]
   };
+  var POINTS = [
+    { id: "jingming", name: "Jingming", place: "Inner corner of the eye",
+      how: "Eyes closed. Rest a fingertip on each inner corner, beside the nose. Press lightly, then ease off. Stay off the eyeball.",
+      dots: [[94, 114], [126, 114]] },
+    { id: "zanzhu", name: "Zanzhu", place: "Inner end of the eyebrow",
+      how: "Place a fingertip at the inner end of each eyebrow. Make small circles on the bone.",
+      dots: [[84, 98], [136, 98]] },
+    { id: "yuyao", name: "Yuyao", place: "Middle of the eyebrow",
+      how: "Press the middle of each eyebrow, directly above the pupil. One small circle a second.",
+      dots: [[74, 90], [146, 90]] },
+    { id: "sizhukong", name: "Sizhukong", place: "Outer end of the eyebrow",
+      how: "Press the hollow at the outer end of each eyebrow. Small circles.",
+      dots: [[58, 98], [162, 98]] },
+    { id: "tongziliao", name: "Tongziliao", place: "Outer corner of the eye",
+      how: "Press the hollow just outside each outer corner. Light pressure only.",
+      dots: [[50, 116], [170, 116]] },
+    { id: "taiyang", name: "Taiyang", place: "Temple",
+      how: "Press each temple, about a finger-width out from the midpoint between the outer corner and the brow. Circles with the thumb pad.",
+      dots: [[34, 112], [186, 112]] },
+    { id: "chengqi", name: "Chengqi", place: "Bone under the eye",
+      how: "Press the bone directly under each pupil. The fingertip stays on the bone, not on the eye.",
+      dots: [[74, 130], [146, 130]] },
+    { id: "sibai", name: "Sibai", place: "Hollow below the eye",
+      how: "Move one finger-width below the bone under the eye. Press that hollow and circle.",
+      dots: [[74, 148], [146, 148]] }
+  ];
   var GAZE = [
     ["Up", -90], ["Up right", -45], ["Right", 0], ["Down right", 45],
     ["Down", 90], ["Down left", 135], ["Left", 180], ["Up left", 225]
@@ -48,46 +76,66 @@
     ink: { name: "Ink", warm: "#d9c7b0", sky: "#efe4d4", hill: "#8d7b68", night: "#2c2622", paper: "#fbf7f1", glow: "#f0d7a4", cheek: "#c98978", ink: "#2a241e" }
   };
   var EYE_MARK =
-    '<svg class="eye-icon" viewBox="0 0 64 48" aria-hidden="true">' +
-      '<ellipse cx="24" cy="28" rx="14" ry="12" fill="none" stroke="currentColor" stroke-width="2.2"/>' +
-      '<path d="M16 16l6 8M32 16l-6 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>' +
-      '<path d="M18 28c2.2 2 4.2 2 6.2 0M24 28c2.2 2 4.2 2 6.2 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>' +
-      '<path d="M40 22h10l3 6H37z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>' +
-      '<path d="M45 22v-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>' +
-      '<circle cx="45" cy="16" r="2" fill="currentColor"/>' +
+    '<svg class="eye-icon" viewBox="0 0 64 40" aria-hidden="true">' +
+      '<path d="M4 20c8-11 18-16 28-16s20 5 28 16c-8 11-18 16-28 16S12 31 4 20z" fill="none" stroke="currentColor" stroke-width="2.4"/>' +
+      '<circle cx="32" cy="20" r="6" fill="currentColor"/>' +
     "</svg>";
 
-  function storybook() {
-    return '<svg class="storybook" viewBox="0 0 640 360" role="img" aria-label="A lantern keeper resting on a hill under the moon">' +
-      '<rect class="sb-sky" width="640" height="360" rx="28"/>' +
-      '<g class="sb-stars sb-glow">' +
-        '<circle cx="70" cy="48" r="3"/><circle cx="128" cy="86" r="2"/><circle cx="210" cy="42" r="2.4"/>' +
-        '<circle cx="360" cy="58" r="2"/><circle cx="430" cy="36" r="2.6"/><circle cx="560" cy="120" r="2"/>' +
-      "</g>" +
-      '<circle class="sb-glow" cx="508" cy="74" r="34"/>' +
-      '<path class="sb-hill" d="M0 214c70-48 130-48 200 0 72-52 140-40 210 8 60-28 120-20 230-8v146H0z"/>' +
-      '<path class="sb-night" d="M150 250c18-10 28-10 46 0 16-8 30-6 44 2v28h-90z" opacity="0.35"/>' +
-      '<g class="sb-keeper">' +
-        '<ellipse class="sb-paper" cx="286" cy="214" rx="78" ry="62"/>' +
-        '<path class="sb-paper" d="M232 168l18 28h-28zM340 168l-18 28h28z"/>' +
-        '<path class="sb-cheek" d="M238 176l8 14h-14zM334 176l-8 14h14z"/>' +
-        '<path class="sb-ink" d="M250 208c8 6 14 6 22 0M300 208c8 6 14 6 22 0" stroke-width="3" stroke-linecap="round"/>' +
-        '<path class="sb-ink" d="M274 228c8 8 18 8 26 0" stroke-width="2.4" stroke-linecap="round"/>' +
-        '<circle class="sb-cheek" cx="246" cy="224" r="8" opacity="0.85"/>' +
-        '<circle class="sb-cheek" cx="328" cy="224" r="8" opacity="0.85"/>' +
-        '<path class="sb-hill" d="M236 258c16 16 84 16 102 0 8 18-10 28-51 28s-59-10-51-28z"/>' +
-      "</g>" +
-      '<g class="sb-lantern">' +
-        '<path class="sb-ink" d="M430 168v18" stroke-width="3" stroke-linecap="round"/>' +
-        '<rect class="sb-glow" x="408" y="186" width="44" height="52" rx="10"/>' +
-        '<path class="sb-paper" d="M422 200c6 10 6 18 0 26M438 198c6 12 6 20 0 30" stroke-width="2"/>' +
-        '<circle class="sb-glow" cx="430" cy="160" r="5"/>' +
-      "</g>" +
-      '<g class="sb-book">' +
-        '<path class="sb-paper" d="M168 248h52v28h-52z"/>' +
-        '<path class="sb-ink" d="M194 248v28" stroke-width="2"/>' +
-        '<path class="sb-cheek" d="M194 248v10" stroke-width="3" stroke-linecap="round"/>' +
-      "</g>" +
+  function pointById(id) {
+    var i;
+    for (i = 0; i < POINTS.length; i++) {
+      if (POINTS[i].id === id) return POINTS[i];
+    }
+    return POINTS[0];
+  }
+
+  function stepPointIds(step) {
+    if (step && step.ids && step.ids.length) return step.ids;
+    var ids = [];
+    var i;
+    for (i = 0; i < POINTS.length; i++) ids.push(POINTS[i].id);
+    return ids;
+  }
+
+  function orbitPath(cx, cy) {
+    var parts = [];
+    var i;
+    for (i = 0; i <= 48; i++) {
+      var a = -Math.PI / 2 + (i / 48) * Math.PI * 2;
+      var x = cx + Math.cos(a) * 24;
+      var y = cy + Math.sin(a) * 15;
+      parts.push((i ? "L" : "M") + x.toFixed(1) + " " + y.toFixed(1));
+    }
+    return parts.join(" ") + " Z";
+  }
+
+  function faceSvg(live) {
+    var dots = "";
+    var i;
+    var j;
+    for (i = 0; i < POINTS.length; i++) {
+      for (j = 0; j < POINTS[i].dots.length; j++) {
+        var spot = POINTS[i].dots[j];
+        dots += '<circle class="face-point" data-point="' + POINTS[i].id + '" cx="' + spot[0] + '" cy="' + spot[1] + '" r="4.2"></circle>';
+      }
+    }
+    var fingers = live
+      ? '<circle class="face-finger" data-eye="finger-l" cx="74" cy="99" r="5.5"></circle><circle class="face-finger" data-eye="finger-r" cx="146" cy="99" r="5.5"></circle>'
+      : "";
+    return '<svg class="eye-face" viewBox="0 0 220 236" role="img" aria-label="A face with pressure points around the eyes">' +
+      '<ellipse class="face-skin" cx="110" cy="124" rx="74" ry="92"/>' +
+      '<path class="face-line" d="M52 108c4-52 30-74 58-74s54 22 58 74"/>' +
+      '<path class="face-brow" d="M56 100c14-14 30-12 42 0"/>' +
+      '<path class="face-brow" d="M164 100c-14-14-30-12-42 0"/>' +
+      '<ellipse class="face-eye" cx="74" cy="114" rx="16" ry="8"/>' +
+      '<ellipse class="face-eye" cx="146" cy="114" rx="16" ry="8"/>' +
+      '<circle class="face-pupil" cx="74" cy="114" r="2.2"/>' +
+      '<circle class="face-pupil" cx="146" cy="114" r="2.2"/>' +
+      '<path class="face-orbit" d="' + orbitPath(74, 114) + '"/>' +
+      '<path class="face-orbit" d="' + orbitPath(146, 114) + '"/>' +
+      '<path class="face-line" d="M110 124v28c-10 8-16 8-20 2"/>' +
+      '<path class="face-line" d="M90 178c14 12 26 12 40 0"/>' +
+      dots + fingers +
     "</svg>";
   }
 
@@ -312,13 +360,6 @@
     var tint = TINTS[settings.tint] || TINTS.amber;
     var root = document.documentElement;
     root.style.setProperty("--eye-tint", tint.warm);
-    root.style.setProperty("--sb-sky", tint.sky);
-    root.style.setProperty("--sb-hill", tint.hill);
-    root.style.setProperty("--sb-night", tint.night);
-    root.style.setProperty("--sb-paper", tint.paper);
-    root.style.setProperty("--sb-glow", tint.glow);
-    root.style.setProperty("--sb-cheek", tint.cheek);
-    root.style.setProperty("--sb-ink", tint.ink);
   }
 
   function applyFilter(now) {
@@ -421,58 +462,79 @@
     osc.stop(t + dur + 0.03);
   }
 
-  function fit(weights, total) {
-    var sum = 0;
-    var used = 0;
+  function withTime(steps) {
     var out = [];
     var i;
-    for (i = 0; i < weights.length; i++) sum += weights[i];
-    for (i = 0; i < weights.length; i++) {
-      if (i === weights.length - 1) out.push(Math.max(0, total - used));
-      else {
-        var part = Math.round(total * weights[i] / sum);
-        out.push(part);
-        used += part;
-      }
+    for (i = 0; i < steps.length; i++) {
+      if (steps[i].ms > 0) out.push(steps[i]);
     }
-    return out;
+    return out.length ? out : [{ id: "look", ms: 8000 }];
   }
 
   function planLong(ms) {
-    if (ms <= 45000) {
-      var look = Math.round(ms * 0.55);
-      return [{ id: "look", ms: look }, { id: "blink", ms: ms - look }];
+    var core = ["jingming", "zanzhu", "yuyao", "sizhukong", "tongziliao", "taiyang", "chengqi", "sibai"];
+    var brief = ["jingming", "yuyao", "taiyang", "chengqi"];
+    var look;
+    var each;
+    var press;
+    var orbit;
+    var rest;
+    var palm;
+    var more;
+    if (ms < 70000) {
+      var ids = ms < 36000 ? ["jingming", "taiyang"] : brief;
+      look = Math.min(8000, Math.round(ms * 0.25));
+      each = Math.max(2000, Math.floor((ms - look) / (ids.length + 1)));
+      press = each * ids.length;
+      orbit = ms - look - press;
+      return withTime([
+        { id: "look", ms: look },
+        { id: "points", ms: press, each: each, ids: ids },
+        { id: "orbit", ms: orbit }
+      ]);
     }
-    var steps = [{ id: "look", ms: 20000 }, { id: "blink", ms: 20000 }];
-    var rest = ms - 40000;
-    var ids;
-    var parts;
-    var i;
-    if (rest < 50000) {
+    look = 20000;
+    each = ms >= 240000 ? 10000 : 7000;
+    press = each * core.length;
+    orbit = ms >= 240000 ? 18000 : 12000;
+    rest = ms - look - press - orbit - 12000;
+    var steps = [
+      { id: "look", ms: look },
+      { id: "points", ms: press, each: each, ids: core },
+      { id: "orbit", ms: orbit },
+      { id: "blink", ms: 12000 }
+    ];
+    if (rest < 24000) {
       steps.push({ id: "palm", ms: rest });
-      return steps;
+      return withTime(steps);
     }
-    if (rest <= 156000) {
-      ids = rest < 90000 ? ["palm", "eight"] : ["palm", "eight", "near", "gaze"];
-      parts = fit(rest < 90000 ? [55, 45] : [40, 36, 40, 32], rest);
-      for (i = 0; i < ids.length; i++) steps.push({ id: ids[i], ms: parts[i] });
-      return steps;
+    if (rest < 80000) {
+      palm = Math.round(rest * 0.55);
+      steps.push({ id: "palm", ms: palm });
+      steps.push({ id: "eight", ms: rest - palm });
+      return withTime(steps);
     }
     steps.push({ id: "palm", ms: 40000 });
     steps.push({ id: "eight", ms: 36000 });
+    more = rest - 76000;
+    if (more < 36000) {
+      steps.push({ id: "near", ms: more });
+      return withTime(steps);
+    }
     steps.push({ id: "near", ms: 40000 });
-    steps.push({ id: "gaze", ms: 32000 });
-    steps.push({ id: "look", ms: rest - 148000 });
-    return steps;
+    steps.push({ id: "gaze", ms: more - 40000 });
+    return withTime(steps);
   }
 
   function drillMs(kind) {
     if (kind === "look") return settings.lookFor;
-    if (kind === "blink") return 20000;
-    if (kind === "palm") return 45000;
+    if (kind === "blink") return 16000;
+    if (kind === "palm") return 40000;
     if (kind === "eight") return 32000;
     if (kind === "near") return 40000;
     if (kind === "gaze") return 32000;
+    if (kind === "points") return POINTS.length * 8000;
+    if (kind === "orbit") return 18000;
     return settings.longFor;
   }
 
@@ -549,7 +611,7 @@
     var lookLeft = Math.max(0, settings.lookEvery - state.lookMs);
     var longLeft = Math.max(0, settings.longEvery - state.longMs);
     if (longLeft <= lookLeft) return { kind: "long", left: longLeft, every: settings.longEvery, name: "Long break" };
-    return { kind: "look", left: lookLeft, every: settings.lookEvery, name: "Look away" };
+    return { kind: "look", left: lookLeft, every: settings.lookEvery, name: "Eye break" };
   }
 
   function dimLabel(value) {
@@ -573,12 +635,12 @@
       '<div class="eye-full" data-eye="full">' +
         '<div class="eye-head">' +
           '<span class="eye-mark" aria-hidden="true">' + EYE_MARK + "</span>" +
-          '<div class="eye-head-text"><h2>Eye protection</h2></div>' +
+          '<div class="eye-head-text"><h2>Eye exercises</h2></div>' +
           '<span class="eye-status"><i></i><span data-eye="status">On</span></span>' +
           '<button type="button" class="eye-shrink" data-act="shrink">Hide</button>' +
         "</div>" +
-        '<p class="eye-note">While eye protection is on, a lesson pauses until the break and the eye exercises are finished.</p>' +
-        '<div class="eye-picture">' + storybook() + "</div>" +
+        '<p class="eye-note">Breaks pause the lesson, then walk through pressure points around the eyes.</p>' +
+        '<div class="eye-face-card">' + faceSvg(false) + "</div>" +
         '<div class="eye-hero">' +
           '<div class="eye-ring-wrap">' +
             '<svg class="eye-ring" viewBox="0 0 120 120" aria-hidden="true">' +
@@ -588,7 +650,7 @@
             '<div class="eye-ring-center"><strong data-eye="clock">20:00</strong><span data-eye="next">Look away</span></div>' +
           "</div>" +
           '<p class="eye-defer" data-eye="defer" hidden></p>' +
-          '<button type="button" class="primary eye-go" data-act="go" data-eye="go">Rest 20 sec now</button>' +
+          '<button type="button" class="primary eye-go" data-act="go" data-eye="go">Press the points</button>' +
         "</div>" +
         '<dl class="eye-stats">' +
           '<div><dt>Screen today</dt><dd data-eye="screen">under 1 min</dd></div>' +
@@ -604,6 +666,8 @@
           '<button type="button" data-act="away" data-eye="away">Step away</button>' +
         "</div>" +
         '<div class="eye-menu" data-eye="menu" hidden>' +
+          drill("points", "Acupoints") +
+          drill("orbit", "Around the eye") +
           drill("look", "Look away") +
           drill("blink", "Full blinks") +
           drill("palm", "Palm rest") +
@@ -635,12 +699,12 @@
           seg("lookFor", [["20000", "20 sec"], ["30000", "30 sec"]]) +
           '<p class="eye-label">Long break</p>' + seg("longEvery", [["2700000", "45 min"], ["3600000", "60 min"], ["5400000", "90 min"]]) +
           seg("longFor", [["60000", "1 min"], ["120000", "2 min"], ["300000", "5 min"]]) +
-          "<p>Two minutes covers looking away, blinking, palms, and a figure eight. Five minutes also adds near-and-far and directions, then ends by looking away again.</p>" +
+          "<p>A short break looks into the distance, presses four points, and traces around the eye. Two minutes uses all eight points, then blinks, palms, and a figure eight. Five minutes also adds near-and-far and directions.</p>" +
           '<p data-eye="longest"></p>' +
         "</details>" +
         '<details class="eye-fold"><summary>Why this helps</summary>' +
-          "<p>Staring up close, and blinking less so the eyes dry out, is the core of screen strain. The American Optometric Association suggests looking about 6 meters away for at least 20 seconds every 20 minutes. A full blink spreads tears. At night, warmer color cuts glare.</p>" +
-          "<p>These steps lower the load while you look at this screen. Refraction and eye disease belong with an eye doctor.</p>" +
+          "<p>Staring up close, and blinking less so the eyes dry out, is the core of screen strain. The American Optometric Association suggests looking about 6 meters away for at least 20 seconds every 20 minutes. Pressing the brow, the corners, the temple, and the bone under the eye is a common way to ease that heavy, tired feeling. Use a fingertip, keep the pressure light, and stay off the eyeball.</p>" +
+          "<p>Stop if a point hurts, or if vision changes. Refraction and eye disease belong with an eye doctor.</p>" +
           '<button type="button" class="eye-power" data-act="power" data-eye="power">Stop protection</button>' +
         "</details>" +
         '<p class="eye-sr" data-eye="live" aria-live="polite"></p>' +
@@ -648,7 +712,7 @@
     if (blink) {
       blink.innerHTML =
         '<span class="eye-blink-mark" aria-hidden="true">' + EYE_MARK + "</span>" +
-        "<p>Blink fully 3 times. Learning stays paused until you finish. Let the upper and lower lashes meet.</p>" +
+        "<p>Close until the lashes meet, pause, then open. Do that three times. The lesson stays paused until you press Done.</p>" +
         '<button type="button" data-act="blink-done">Done</button>';
     }
     var overlay = document.createElement("div");
@@ -660,7 +724,7 @@
         '<p class="eye-kicker" data-eye="kicker"></p>' +
         '<h2 id="eyeRestTitle" data-eye="title"></h2>' +
         '<p class="eye-copy" data-eye="body"></p>' +
-        '<p class="eye-rule">The lesson stays paused until this break and the exercises are finished.</p>' +
+        '<p class="eye-rule">The lesson stays paused until this exercise is finished.</p>' +
         '<div class="eye-stage" data-eye="stage"></div>' +
         '<p class="eye-count" data-eye="count" aria-hidden="true"></p>' +
         '<p class="eye-hold" data-eye="hold"></p>' +
@@ -795,7 +859,7 @@
       paint();
       return;
     }
-    startRest("look", false);
+    startRest("points", false);
   }
 
   function onPower() {
@@ -861,7 +925,7 @@
     bar("blink", state.blinkMs, settings.blinkEvery);
     bar("look", state.lookMs, settings.lookEvery);
     bar("long", state.longMs, settings.longEvery);
-    var go = current === "off" ? "Start protection" : current === "away" ? "I'm back" : "Rest " + shortDur(settings.lookFor) + " now";
+    var go = current === "off" ? "Start protection" : current === "away" ? "I'm back" : "Press the points";
     text("go", go);
     show(ui.nodes.away, current === "watch" || current === "defer");
     show(ui.nodes.defer, current === "defer");
@@ -878,8 +942,10 @@
     text("dur-eight", shortDur(drillMs("eight")));
     text("dur-near", shortDur(drillMs("near")));
     text("dur-gaze", shortDur(drillMs("gaze")));
+    text("dur-points", shortDur(drillMs("points")));
+    text("dur-orbit", shortDur(drillMs("orbit")));
     text("dur-long", shortDur(drillMs("long")));
-    text("strict-note", "While eye protection is on, a lesson pauses until the break and the eye exercises finish. A scheduled break cannot be skipped.");
+    text("strict-note", "While this is on, a lesson pauses until the eye exercise is finished. A scheduled break cannot be skipped.");
     text("power", !settings.enabled ? "Start protection" : ui.powerArm && Date.now() - ui.powerArm < 6000 ? "Stopping means breaks will not come" : "Stop protection");
     if (ui.nodes.ring) ui.nodes.ring.style.strokeDashoffset = String(C * (1 - Math.max(0, Math.min(1, progress))));
     markPressed();
@@ -965,10 +1031,13 @@
   }
 
   function mandatoryLook() {
+    var ids = ["jingming", "yuyao", "taiyang", "chengqi"];
+    var each = 7000;
     return [
       { id: "look", ms: settings.lookFor },
-      { id: "blink", ms: drillMs("blink") },
-      { id: "eight", ms: drillMs("eight") }
+      { id: "points", ms: ids.length * each, each: each, ids: ids },
+      { id: "orbit", ms: 12000 },
+      { id: "blink", ms: 12000 }
     ];
   }
 
@@ -1173,15 +1242,16 @@
     var token = pos.index + ":" + pos.step.id;
     if (rest.shown !== token) {
       rest.shown = token;
+      rest.pointShown = -1;
       buildStage(pos.step, rest);
       trail(rest, pos.index);
       var copy = COPY[pos.step.id] || COPY.look;
       text("kicker", copy[0]);
       text("title", copy[1]);
       text("body", stillMotion() && pos.step.id === "eight" ? "Keep your head still and trace a slow figure eight with your eyes." : copy[2]);
-      text("announce", copy[1] + copy[2]);
-      ui.overlay.classList.remove("is-look", "is-palm", "is-work", "is-done");
-      ui.overlay.classList.add(pos.step.id === "palm" ? "is-palm" : pos.step.id === "look" ? "is-look" : "is-work");
+      text("announce", copy[1] + ". " + copy[2]);
+      ui.overlay.classList.remove("is-look", "is-palm", "is-work", "is-points", "is-done");
+      ui.overlay.classList.add(pos.step.id === "palm" ? "is-palm" : pos.step.id === "look" ? "is-look" : (pos.step.id === "points" || pos.step.id === "orbit") ? "is-points" : "is-work");
       syncActions(rest);
     }
     text("count", bigCount(rest.endsAt - now));
@@ -1201,7 +1271,7 @@
     text("announce", "You can return to the screen");
     if (ui.nodes.stage) ui.nodes.stage.innerHTML = "";
     if (ui.nodes.steps) ui.nodes.steps.innerHTML = "";
-    ui.overlay.classList.remove("is-look", "is-palm", "is-work");
+    ui.overlay.classList.remove("is-look", "is-palm", "is-work", "is-points");
     ui.overlay.classList.add("is-done");
     syncActions(rest);
   }
@@ -1211,26 +1281,85 @@
     if (!stage) return;
     var html = "";
     if (step.id === "look") {
-      html = '<div class="eye-look">' + storybook() + "</div>";
+      html = '<div class="eye-far"><strong>6 m</strong><span>Past the screen</span></div>';
+    } else if (step.id === "points" || step.id === "orbit") {
+      html = '<div class="eye-face-card is-live">' + faceSvg(true) + '<p class="eye-press" data-eye="press"></p></div>';
     } else if (step.id === "blink") {
       html = '<div class="eye-lidbox" aria-hidden="true"><div class="eye-lid-shape"><i class="top"></i><i class="bot"></i></div></div><p class="eye-beat" data-eye="beat"></p>';
     } else if (step.id === "palm") {
       html = '<p class="eye-breath" data-eye="breath">In</p>';
     } else if (step.id === "eight") {
-      html = '<div class="eye-eight"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="' + eightPath() + '" fill="none" stroke="rgba(243,234,220,0.35)" stroke-width="1.2"></path></svg>' +
+      html = '<div class="eye-eight"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="' + eightPath() + '" fill="none" stroke="rgba(20,33,31,0.28)" stroke-width="1.4"></path></svg>' +
         (stillMotion() ? "" : '<i class="eye-dot" data-eye="dot"></i>') + "</div>";
     } else if (step.id === "near") {
       html = '<div class="eye-near"><p data-eye="far">Far</p><p data-eye="near">Near</p></div>';
     } else if (step.id === "gaze") {
-      html = '<div class="eye-gaze"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="38" fill="none" stroke="rgba(243,234,220,0.28)" stroke-width="1"></circle></svg>' +
+      html = '<div class="eye-gaze"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="38" fill="none" stroke="rgba(20,33,31,0.22)" stroke-width="1.2"></circle></svg>' +
         '<i class="eye-dot" data-eye="dot"></i><p class="eye-gaze-name" data-eye="gaze-name">Up</p></div>';
     }
     stage.innerHTML = html;
     grab();
   }
 
+  function faceNode() {
+    return ui.nodes.stage ? ui.nodes.stage.querySelector(".eye-face") : null;
+  }
+
+  function markFace(id) {
+    var stage = ui.nodes.stage;
+    if (!stage) return;
+    var dots = stage.querySelectorAll(".face-point");
+    var i;
+    for (i = 0; i < dots.length; i++) {
+      dots[i].classList.toggle("is-on", dots[i].getAttribute("data-point") === id);
+    }
+  }
+
+  function placeFinger(node, cx, angle) {
+    if (!node) return;
+    node.setAttribute("cx", (cx + Math.cos(angle) * 24).toFixed(1));
+    node.setAttribute("cy", (114 + Math.sin(angle) * 15).toFixed(1));
+  }
+
   function moveStage(pos) {
     var step = pos.step;
+    var rest = ui.rest;
+    if (step.id === "points") {
+      var ids = stepPointIds(step);
+      var each = step.each || Math.max(1, Math.round(step.ms / ids.length));
+      var index = Math.min(ids.length - 1, Math.floor(pos.into / each));
+      if (!rest || rest.pointShown !== index) {
+        if (rest) rest.pointShown = index;
+        var point = pointById(ids[index]);
+        text("kicker", "Point " + (index + 1) + " of " + ids.length);
+        text("title", point.name);
+        text("body", point.place + ". " + point.how);
+        text("announce", point.name + ". " + point.place + ". " + point.how);
+        markFace(point.id);
+        if (faceNode()) faceNode().classList.remove("is-orbit");
+      }
+      text("press", (pos.into % 2800) < 1700 ? "Press" : "Ease off");
+      return;
+    }
+    if (step.id === "orbit") {
+      if (!rest || rest.pointShown !== "orbit") {
+        if (rest) rest.pointShown = "orbit";
+        text("kicker", COPY.orbit[0]);
+        text("title", COPY.orbit[1]);
+        text("body", COPY.orbit[2]);
+        text("announce", COPY.orbit[1] + ". " + COPY.orbit[2]);
+        markFace("");
+        if (faceNode()) faceNode().classList.add("is-orbit");
+      }
+      var laps = 3;
+      var period = Math.max(1, step.ms / laps);
+      var turn = (pos.into % period) / period * Math.PI * 2;
+      var lap = Math.min(laps, Math.floor(pos.into / period) + 1);
+      text("press", "Lap " + lap + " of " + laps);
+      placeFinger(ui.nodes["finger-l"], 74, -turn);
+      placeFinger(ui.nodes["finger-r"], 146, Math.PI + turn);
+      return;
+    }
     if (step.id === "blink") {
       var n = Math.min(5, Math.floor(pos.into / step.ms * 5) + 1);
       text("beat", n + " / 5");

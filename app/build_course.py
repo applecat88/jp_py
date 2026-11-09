@@ -482,6 +482,11 @@ def main():
         handle.write(text)
     print("\n".join(report))
     print("wrote", OUT)
+    try:
+        import build_sentence_lessons
+        build_sentence_lessons.main()
+    except Exception as exc:
+        print("sentence lessons were not rebuilt:", exc)
 
 
 if __name__ == "__main__":
