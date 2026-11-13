@@ -1008,8 +1008,14 @@
     return { items: bits.slice(0, 3), more: bits.length > 3 };
   }
 
+  function plain(title) {
+    var map = window.JapaneseStudyGrammarPlain || {};
+    return map[title] || "";
+  }
+
   window.JapaneseStudyGrammar = {
     points: points,
+    plain: plain,
     green: function (title) {
       return book[title] || [];
     },

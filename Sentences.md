@@ -1,6 +1,6 @@
 # Sentence learning
 
-Each day has a short explanation of that day’s grammar, then 8 example sentences. The sentences use that day’s vocabulary and show the grammar.
+Each day explains that day’s sentence patterns in short, plain English, then gives 8 example sentences. The sentences use that day’s vocabulary and show the grammar.
 
 Each example has five lines:
 
@@ -105,21 +105,19 @@ The English is a direct translation of the Japanese sentence. It follows the Jap
 
 **Goal:** Say who you are, what you study, and what you do at work.
 
-This lesson’s grammar: A は B です — A is B; A は B ですか — Is A B?; A を Vます — I do A. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. A は B です — A is B
 
-は marks the topic and is pronounced wa. です is the polite ending for “is.” Time words such as 今日, 明日, and 毎日 usually do not need は when they start the sentence.
+は, pronounced wa, names what the sentence is about. です is the polite word for is.
 
 #### Pattern 2. A は B ですか — Is A B?
 
-Add か to make a polite question. The word order stays the same. Answer with はい or いいえ, then the sentence.
+Add か at the end to ask a question. The word order stays the same. Answer with はい, yes, or いいえ, no.
 
 #### Pattern 3. A を Vます — I do A
 
-を marks the thing the verb acts on, and is pronounced o. Change the dictionary verb to the ます stem: 読む→読みます, 書く→書きます, 見る→見ます, 聞く→聞きます, 作る→作ります, 使う→使います. 勉強 is a noun, so say 勉強します. 仕事 is also a noun: 仕事をします. 分かる takes が, not を.
+を, pronounced o, marks the thing the action is done to. The polite verb ends in ます.
 
 ### Example sentences
 
@@ -195,21 +193,19 @@ Add か to make a polite question. The word order stays the same. Answer with �
 
 **Goal:** Point at things, ask what they are, and describe them.
 
-This lesson’s grammar: これ／それ／あれ — this, that, that over there; 何ですか — what is it?; Noun は い-adjective です. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. これ／それ／あれ — this, that, that over there
 
-これ is near the speaker. それ is near the listener. あれ is far from both. These words stand alone. They do not sit in front of a noun.
+これ is by you, それ is by the other person, and あれ is far from both. These words stand alone. They do not come before a noun.
 
 #### Pattern 2. 何ですか — what is it?
 
-何 is “what.” In 何ですか the reading is often nan, not nani. Answer by replacing 何 with the noun.
+何 means what. Ask 何ですか, and answer by putting the thing in place of 何.
 
 #### Pattern 3. Noun は い-adjective です
 
-い-adjectives such as 新しい, 古い, 大きい, and 小さい come before です, or directly before a noun. Do not say 新しいな. 保存 is a noun here: 保存をします.
+Words such as 新しい, new, and 大きい, big, end in い. Put them before です, or straight before a noun. Do not add な.
 
 ### Example sentences
 
@@ -285,21 +281,19 @@ This lesson’s grammar: これ／それ／あれ — this, that, that over ther
 
 **Goal:** Say where things are, where people are, and where you go.
 
-This lesson’s grammar: Place に あります／います; Place へ 行きます; Place は どこですか. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Place に あります／います
 
-あります is for things. います is for people and animals. に marks the place of existence. Use が to introduce the thing or person.
+あります is for things. います is for people and animals. に marks the place, and が introduces what is there.
 
 #### Pattern 2. Place へ 行きます
 
-へ marks the destination and is pronounced e. 行きます is “go.” 来ます is “come.” 来ます is irregular: 来る → 来ます.
+へ, pronounced e, marks where you are going. 行きます means go. 来ます means come.
 
 #### Pattern 3. Place は どこですか
 
-どこ means “where.” ここ is near the speaker, そこ is near the listener, and あそこ is far from both. 上, 下, 中, 外, 前, and 後ろ attach with の: 本の上.
+どこ means where. ここ is here by you, そこ is there by the other person, and あそこ is over there.
 
 ### Example sentences
 
@@ -375,21 +369,19 @@ This lesson’s grammar: Place に あります／います; Place へ 行きま
 
 **Goal:** Count files and people, and ask the price.
 
-This lesson’s grammar: Reading bigger numbers; Price — いくらですか; Counters — number + 個 / 人 / 枚. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Reading bigger numbers
 
-Say the digit, then 十, 百, 千, or 万. Some sounds change. Memorize the changes; do not invent them. - 三百 is さんびゃく (sanbyaku), not sanhyaku. - 六百 is ろっぴゃく (roppyaku). 八百 is はっぴゃく (happyaku). - 三千 is さんぜん (sanzen). 八千 is はっせん (hassen). - 四百 is よんひゃく. 四千 is よんせん. Prefer よん when you are counting.
+Say the digit, then 十, 百, 千, or 万. A few readings change, such as 三百, sanbyaku, and 八千, hassen. Learn those. Do not guess them.
 
 #### Pattern 2. Price — いくらですか
 
-The example sentences use this pattern: Price — いくらですか.
+いくらですか asks how much it is. Answer with the number plus 円.
 
 #### Pattern 3. Counters — number + 個 / 人 / 枚
 
-A counter is a word you attach to a number. You cannot say “three files” as 三ファイル. Say ファイルが三個. 四個 is よんこ. 四人 is よにん (yonin), not yonnin. 七人 is ななにん or しちにん.
+A counter is the word attached to a number. 個 is for small objects, 人 for people, and 枚 for flat things. Say ファイルが三個, not 三ファイル.
 
 ### Example sentences
 
@@ -465,21 +457,19 @@ A counter is a word you attach to a number. You cannot say “three files” as 
 
 **Goal:** Say when you work, study, and have a meeting.
 
-This lesson’s grammar: Time に; から ～ まで; 何時ですか / 何曜日ですか. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Time に
 
-Put に after a clock time or a day of the week. Do not put に after 今日, 明日, 毎日, 今, or 毎週 by itself. 朝, 昼, and 夜 are usually used without に. Clock readings that are irregular: Minutes: 一分 いっぷん, 二分 にふん, 三分 さんぷん, 五分 ごふん, 六分 ろっぷん, 十分 じゅっぷん.
+Put に after a clock time or a weekday, as in 七時に. Do not put に after 今日, 明日, or 毎日.
 
 #### Pattern 2. から ～ まで
 
-から is the start. まで is the end.
+から is the start. まで is the end. From nine until five is 九時から五時まで.
 
 #### Pattern 3. 何時ですか / 何曜日ですか
 
-The example sentences use this pattern: 何時ですか / 何曜日ですか.
+何時ですか asks the time. 何曜日ですか asks the day of the week.
 
 ### Example sentences
 
@@ -555,21 +545,19 @@ The example sentences use this pattern: 何時ですか / 何曜日ですか.
 
 **Goal:** Name people and things around work, and connect two nouns with の, と, and も.
 
-This lesson’s grammar: この / その / あの + noun; Noun の Noun; も and と. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. この / その / あの + noun
 
-これ means “this one” by itself. この needs a noun after it: この本, このファイル, この人. The same is true of その and あの.
+この, その, and あの must be followed by a noun: この本, this book. これ, それ, and あれ stand alone.
 
 #### Pattern 2. Noun の Noun
 
-の connects two nouns. The first noun owns or describes the second. Read it backward in English: 私の本 = “my book,” 会社のシステム = “the company’s system.”
+の links two nouns. Read from the second noun back. 私の本 is my book.
 
 #### Pattern 3. も and と
 
-も replaces は or が and means “also.” と between two nouns means “and.” と after a person means “with.”
+も means also, and it replaces は or が. と between nouns means and. と after a person means with.
 
 ### Example sentences
 
@@ -645,21 +633,19 @@ This lesson’s grammar: この / その / あの + noun; Noun の Noun; も and
 
 **Goal:** Separate three places-particles you now know: に, へ, and で.
 
-This lesson’s grammar: Place で + action; Tool で; に or で? Choose by the verb. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Place で + action
 
-で marks the place where an action happens. に marks where something exists, or the destination. へ marks the direction you move.
+で marks the place where an action happens.
 
 #### Pattern 2. Tool で
 
-The same で also marks the tool or means: “by means of,” “using.”
+The same で marks the tool or the means: by bicycle, with a pen.
 
 #### Pattern 3. に or で? Choose by the verb
 
-Exists or lives → に + あります／います. Action → で. Movement toward → へ or に.
+Use に when something is in a place, or when you head toward a place. Use で when you do an action there.
 
 ### Example sentences
 
@@ -735,21 +721,19 @@ Exists or lives → に + あります／います. Action → で. Movement tow
 
 **Goal:** Say what you did, what you did not do, and what happened yesterday.
 
-This lesson’s grammar: Vません; Vました; Vませんでした and question words. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Vません
 
-Change ます to ません for “do not / will not.”
+Change ます to ません to say do not.
 
 #### Pattern 2. Vました
 
-Change ます to ました for a completed action.
+Change ます to ました for an action that is finished.
 
 #### Pattern 3. Vませんでした and question words
 
-ませんでした is the past negative: “did not.” Place the question word where the answer will go: 何を (what), どこで (where), だれと (with whom), 何時に (at what time).
+ませんでした means did not. Put the question word where the answer will go: 何を, what, or どこで, where.
 
 ### Example sentences
 
@@ -825,21 +809,19 @@ Change ます to ました for a completed action.
 
 **Goal:** Say how often you do something, and whether it is already done.
 
-This lesson’s grammar: Frequency words sit before the verb; もう + past, まだ + negative; 回 — how many times. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Frequency words sit before the verb
 
-The usual order is: time, place, object, frequency, verb. Frequency can also start the sentence. あまり and ぜんぜん need a negative verb. They do not mean “a little” and “completely” by themselves in this pattern.
+Words such as 毎日, every day, usually sit just before the verb. あまり and ぜんぜん need a negative verb: not much, and not at all.
 
 #### Pattern 2. もう + past, まだ + negative
 
-The example sentences use this pattern: もう + past, まだ + negative.
+もう with a past verb means already. まだ with a negative means not yet.
 
 #### Pattern 3. 回 — how many times
 
-一回（いっかい）, 二回（にかい）, 三回（さんかい）, 何回（なんかい）.
+回 counts times. 一回 is once, 二回 is twice, and 何回 asks how many times.
 
 ### Example sentences
 
@@ -915,21 +897,19 @@ The example sentences use this pattern: もう + past, まだ + negative.
 
 **Goal:** Say that something is not easy, was busy, or became “it was fine.”
 
-This lesson’s grammar: い-adjectives — negative and past; な-adjectives — じゃない and でした; とても / 少し, and adjective + noun. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. い-adjectives — negative and past
 
-Drop the final い, then add the ending. いい is irregular: it becomes よ (よくない, よかった).
+For an い-adjective, drop the final い. くないです means is not, and かったです means was. いい becomes よ: よくない, よかった.
 
 #### Pattern 2. な-adjectives — じゃない and でした
 
-じゃないです is the same idea as じゃありません. Both are fine at this level. ではありません is the more formal twin.
+For a な-adjective, add じゃないです for is not, and でした for was. These words do not end in い, so do not drop one.
 
 #### Pattern 3. とても / 少し, and adjective + noun
 
-とても means “very.” 少し (sukoshi) means “a little.” An い-adjective goes straight before a noun. A な-adjective needs な.
+とても means very. 少し means a little. An い-adjective sits directly before a noun. A な-adjective needs な before the noun.
 
 ### Example sentences
 
@@ -1005,21 +985,19 @@ Drop the final い, then add the ending. いい is irregular: it becomes よ (�
 
 **Goal:** Say what you like, what you are good at, and what you want.
 
-This lesson’s grammar: Noun が 好きです / 嫌いです; Noun が 上手です / 下手です / 得意です / 苦手です; Noun が 欲しいです. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Noun が 好きです / 嫌いです
 
-The thing you like is marked with が, not を. 好き and 嫌い behave like な-adjectives.
+The thing you like or dislike takes が, not を. 日本語が好きです means I like Japanese.
 
 #### Pattern 2. Noun が 上手です / 下手です / 得意です / 苦手です
 
-The example sentences use this pattern: Noun が 上手です / 下手です / 得意です / 苦手です.
+上手, 下手, 得意, and 苦手 also take が. 上手 and 得意 mean you are good at it. 下手 and 苦手 mean you are not.
 
 #### Pattern 3. Noun が 欲しいです
 
-欲しい is an い-adjective. The thing wanted takes が. Past: 欲しかったです. Negative: 欲しくないです.
+欲しい means you want a thing. The thing takes が. It changes like an い-adjective: 欲しくないです, 欲しかったです.
 
 ### Example sentences
 
@@ -1095,21 +1073,19 @@ The example sentences use this pattern: Noun が 上手です / 下手です / �
 
 **Goal:** Say what you want to do, invite a colleague, and say “let’s.”
 
-This lesson’s grammar: Verb stem + たいです; Vませんか — an invitation; Vましょう / Vましょうか. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Verb stem + たいです
 
-The stem is the ます-form without ます. 読みます → 読みたいです. 食べます → 食べたいです. します → したいです. たい conjugates like an い-adjective: たくないです, たかったです. The thing you want to act on can take を or が. This file uses を, which is clear for beginners. が is also correct and a little more about the feeling.
+Drop ます and add たいです. 読みます becomes 読みたいです, I want to read. たい then changes like an い-adjective.
 
 #### Pattern 2. Vませんか — an invitation
 
-This is not only “don’t you?”. With a rising, friendly tone it means “would you like to…?”
+ませんか is a friendly invitation: won't you, or shall we.
 
 #### Pattern 3. Vましょう / Vましょうか
 
-ましょう means “let’s.” ましょうか means “shall I?” or “shall we?”.
+ましょう means let's. ましょうか means shall I, or shall we.
 
 ### Example sentences
 
@@ -1185,21 +1161,19 @@ This is not only “don’t you?”. With a rising, friendly tone it means “wo
 
 **Goal:** Build the て form for every verb you know. Days 14–16 all use this form.
 
-This lesson’s grammar: Godan verbs (the large group); Ichidan verbs; Three irregulars. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Godan verbs (the large group)
 
-Look at the last hiragana before ます in the dictionary, or at the last sound of the dictionary form.
+For most verbs, the sound before ます decides the て form. 書く becomes 書いて, 読む becomes 読んで, and 話す becomes 話して.
 
 #### Pattern 2. Ichidan verbs
 
-If the verb is ichidan, drop る and add て. You already know many of these because the ます-form drops ます and the stem already ends in え or い with no consonant change: 食べます, 見ます, 閉じます, 起きます. 食べる → 食べて、見る → 見て、閉じる → 閉じて、出る → 出て、降りる → 降りて、着る → 着て、浴びる → 浴びて、教える → 教えて、始める → 始めて. 開く is godan (hiraku): 開いて, not 開って. 閉じる is ichidan: 閉じて.
+If the verb ends in an え or い sound plus る, drop る and add て. 食べる becomes 食べて, and 見る becomes 見て.
 
 #### Pattern 3. Three irregulars
 
-The example sentences use this pattern: Three irregulars.
+Three verbs do not follow the groups. する becomes して, 来る becomes 来て, and 行く becomes 行って.
 
 ### Example sentences
 
@@ -1275,21 +1249,19 @@ The example sentences use this pattern: Three irregulars.
 
 **Goal:** Tell someone the steps: please do this, do this and only then that, please don’t.
 
-This lesson’s grammar: Vてください — please do; Vてから — only after doing; Vないでください — please don’t. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Vてください — please do
 
-The example sentences use this pattern: Vてください — please do.
+The て form plus ください means please do this.
 
 #### Pattern 2. Vてから — only after doing
 
-てから is stricter than て、. It means “after you have done A, do B.” Procedures love it.
+AてからB means do B only after A is finished.
 
 #### Pattern 3. Vないでください — please don’t
 
-Take the ない form, drop nothing else, add でください. 書かない → 書かないでください.
+The ない form plus でください means please don't. 書かないでください is please don't write.
 
 ### Example sentences
 
@@ -1365,21 +1337,19 @@ Take the ない form, drop nothing else, add でください. 書かない → �
 
 **Goal:** Read status lines: loading, in use, offline, finished, not yet.
 
-This lesson’s grammar: An action in progress; A state that remains; まだ ～ていません — not yet done. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. An action in progress
 
-The example sentences use this pattern: An action in progress.
+ています means an action is going on now. 書いています is I am writing.
 
 #### Pattern 2. A state that remains
 
-Some verbs, in the ている form, do not mean “in the middle of.” They mean the result is still true. Do not say 知ります to mean “I know.” Say 知っています.
+For some verbs, ています means the result is still true. 知っています means I know, not I am in the middle of knowing.
 
 #### Pattern 3. まだ ～ていません — not yet done
 
-The polite “have not yet” form is まだ + ていません. This is more precise than Day 9’s まだ送りません.
+まだ plus ていません means you have not done it yet.
 
 ### Example sentences
 
@@ -1455,21 +1425,19 @@ The polite “have not yet” form is まだ + ていません. This is more pre
 
 **Goal:** Say what a user may do, must not do, and need not do.
 
-This lesson’s grammar: Vてもいいです — you may; Vてはいけません — you must not; Vなくてもいいです — you don’t have to. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Vてもいいです — you may
 
-Take the て form and add もいいです.
+The て form plus もいいです means you may.
 
 #### Pattern 2. Vてはいけません — you must not
 
-て form + はいけません. This is a rule, stronger than ないでください.
+The て form plus はいけません means you must not. This is a rule.
 
 #### Pattern 3. Vなくてもいいです — you don’t have to
 
-Start from the ない form, drop い, add くてもいいです. 書かない → 書かなくてもいいです。しない → しなくてもいいです。来ない → 来なくてもいいです。
+From the ない form, 書かない becomes 書かなくてもいいです: you don't have to write.
 
 ### Example sentences
 
@@ -1545,21 +1513,19 @@ Start from the ない form, drop い, add くてもいいです. 書かない �
 
 **Goal:** Give a reason for a bug, a delay, or a day off.
 
-This lesson’s grammar: Sentence + から — because; Sentence + ので — because, a bit softer; が and けど — but. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Sentence + から — because
 
-から gives your reason. It can sound a little direct. どうして / なぜ asks “why.”
+Put から after a sentence to give a reason: because. どうして and なぜ ask why.
 
 #### Pattern 2. Sentence + ので — because, a bit softer
 
-ので is the better choice in requests and reports. It sounds less like a personal excuse and more like an objective cause.
+ので also means because, and it sounds softer. It fits requests and reports.
 
 #### Pattern 3. が and けど — but
 
-が is a little more written and polite. けど is what people say. Put them after a polite clause.
+が and けど both mean but. が is a little more formal. けど is what people say. Put them after a polite clause.
 
 ### Example sentences
 
@@ -1635,21 +1601,19 @@ This lesson’s grammar: Sentence + から — because; Sentence + ので — be
 
 **Goal:** Compare two servers, two apps, or two ways of working.
 
-This lesson’s grammar: A は B より adjective; A のほうが B より adjective; どちら / どれ / 一番. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. A は B より adjective
 
-B is the baseline. A is different from it in the direction of the adjective.
+Bより is the thing you compare against. AはBより大きいです means A is bigger than B.
 
 #### Pattern 2. A のほうが B より adjective
 
-This stresses the choice of A. You can omit B if the listener already knows it: このほうが軽いです.
+Aのほうが stresses that A is the one. You can leave B out when everyone already knows the comparison.
 
 #### Pattern 3. どちら / どれ / 一番
 
-Two things: どちら. Three or more: どれ or どの + noun. The top of a group: 一番.
+どちら asks about two things. どれ, or どの plus a noun, asks about three or more. 一番 means the most.
 
 ### Example sentences
 
@@ -1725,21 +1689,19 @@ Two things: どちら. Three or more: どれ or どの + noun. The top of a grou
 
 **Goal:** Make the dictionary form, the ない form, and the plain past. Later days put these forms in front of と思う, nouns, and もし.
 
-This lesson’s grammar: Dictionary form; ない form, finished; Plain past — the た form. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Dictionary form
 
-This is the form in a dictionary. It is also the plain non-past.
+This is the plain do or does form, the one a dictionary lists. 書く means write. The polite form is 書きます.
 
 #### Pattern 2. ない form, finished
 
-You started this on Day 14. The full map:
+The ない form is the plain do not. 書かない means don't write. The polite form is 書きません.
 
 #### Pattern 3. Plain past — the た form
 
-Make the て form, then change て to た and で to だ.
+Make the て form, then change て to た and で to だ. 書いて becomes 書いた, wrote.
 
 ### Example sentences
 
@@ -1815,21 +1777,19 @@ Make the て form, then change て to た and で to だ.
 
 **Goal:** Report a guess about a bug without sounding more certain than you are.
 
-This lesson’s grammar: Plain + と思います; Plain + と言います; Plain + かもしれません — might. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Plain + と思います
 
-い-adjectives stay as they are. Nouns and な-adjectives take だ. Verbs use the dictionary form, the ない form, or the た form.
+Say the thought in the plain form, then と思います. Nouns and な-adjectives need だ before it: 静かだと思います.
 
 #### Pattern 2. Plain + と言います
 
-Use this to quote. 言っていました means “they were saying / they said,” and it is very common for second-hand information at work.
+と言います quotes someone's words. 言っていました means they said, or they were saying.
 
 #### Pattern 3. Plain + かもしれません — might
 
-Nouns and な-adjectives do not take だ here. い-adjectives and verbs stay plain.
+The plain form plus かもしれません means might. A noun does not take だ here: 雨かもしれません.
 
 ### Example sentences
 
@@ -1905,21 +1865,19 @@ Nouns and な-adjectives do not take だ here. い-adjectives and verbs stay pla
 
 **Goal:** Read phrases like “the file I saved yesterday” and “a tool that can send mail.”
 
-This lesson’s grammar: Plain verb + noun; Adjective + noun, including a short clause; こと and の turn a verb into a noun. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Plain verb + noun
 
-Non-past plain: a habit, or something not yet done. Past plain: already done.
+A plain verb can sit in front of a noun and describe it. 読む本 is a book I read. 読んだ本 is a book I already read.
 
 #### Pattern 2. Adjective + noun, including a short clause
 
-い-adjectives sit directly in front. な-adjectives need な. A longer phrase works the same way.
+An い-adjective goes straight before the noun. A な-adjective needs な. A short clause can describe a noun in the same way.
 
 #### Pattern 3. こと and の turn a verb into a noun
 
-Dictionary form + こと names the act. の does the same job in speech, especially with 好き, 見る, and 聞く. もの is a physical thing.
+The dictionary form plus こと, or の, turns an action into a thing you can talk about. 泳ぐことが好きです means I like swimming.
 
 ### Example sentences
 
@@ -1995,21 +1953,19 @@ Dictionary form + こと names the act. の does the same job in speech, especia
 
 **Goal:** Put steps in time: before you save, after you log in, while it is running.
 
-This lesson’s grammar: Dictionary とき and た とき; 前に and 後で; あいだ and 期間. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Dictionary とき and た とき
 
-Dictionary form + とき: the moment you are about to do it, or whenever you do it. た form + とき: after it has happened.
+The dictionary form plus とき means when you do it, or when you are about to. The た form plus とき means after it has happened.
 
 #### Pattern 2. 前に and 後で
 
-前に takes the dictionary form, even if the whole sentence is past. 後で takes the た form. Nouns use の: 会議の前に, 仕事の後で.
+前に means before and takes the dictionary form. 後で means after and takes the た form. A noun needs の: 会議の前に.
 
 #### Pattern 3. あいだ and 期間
 
-あいだ is a span during which something is true. あいだに means “at some point during that span.”
+あいだ is the whole span. あいだに means at some point during that span.
 
 ### Example sentences
 
@@ -2085,21 +2041,19 @@ Dictionary form + とき: the moment you are about to do it, or whenever you do 
 
 **Goal:** Say what you can read, what a user can do, and what merely “is visible.”
 
-This lesson’s grammar: Dictionary form + ことができる; The potential form; 見える and 聞こえる. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Dictionary form + ことができる
 
-This is the clear, slightly formal “can.” It works for every verb, so use it when the potential form feels uncertain.
+The dictionary form plus ことができる means can. It works for every verb.
 
 #### Pattern 2. The potential form
 
-The object often changes from を to が: 日本語が読めます. を is also heard. This file uses が with the potential form.
+The potential form also means can, built into the verb: 読めます, can read. The thing you can do often takes が instead of を.
 
 #### Pattern 3. 見える and 聞こえる
 
-These are not the potential of 見る and 聞く. They mean the thing reaches your eyes or ears, with no special effort.
+見える means something is visible. 聞こえる means something is audible. They are not simply can look and can listen.
 
 ### Example sentences
 
@@ -2175,21 +2129,19 @@ These are not the potential of 見る and 聞く. They mean the thing reaches yo
 
 **Goal:** Say what you do while something else is happening, and give a sample of your day without listing every step.
 
-This lesson’s grammar: Stem + ながら — while; たり … たりする — a sample of actions; Choose て, ながら, or たり. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Stem + ながら — while
 
-The stem is the ます-form without ます. The main action is the verb at the end. The ながら action is the background.
+The ます stem plus ながら means while. The verb at the end is the main action. 音楽を聞きながら勉強します means I study while I listen to music.
 
 #### Pattern 2. たり … たりする — a sample of actions
 
-Use the た form plus り. You need at least two. The sentence means “things like A and B,” not a complete ordered list.
+Use the た form plus り, at least twice, then する. It means things like A and B, not a full list in order.
 
 #### Pattern 3. Choose て, ながら, or たり
 
-The example sentences use this pattern: Choose て, ながら, or たり.
+て joins steps in order. ながら is two actions at the same time. たり gives a few examples of what someone does.
 
 ### Example sentences
 
@@ -2265,21 +2217,19 @@ The example sentences use this pattern: Choose て, ながら, or たり.
 
 **Goal:** Say what you intend to do this month, and how likely a risk feels.
 
-This lesson’s grammar: Dictionary form + つもりです; ない form + つもりです; Plain + でしょう — a prediction. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Dictionary form + つもりです
 
-つもり is a personal intention. It is not a promise to other people, and it is not a calendar fact. Use the dictionary form, never ます, in front of it.
+The dictionary form plus つもりです is your own plan: I intend to. It is not a promise, and it is not a fixed date.
 
 #### Pattern 2. ない form + つもりです
 
-The example sentences use this pattern: ない form + つもりです.
+The ない form plus つもりです means I intend not to.
 
 #### Pattern 3. Plain + でしょう — a prediction
 
-でしょう is a guess you are willing to say out loud. かもしれません is less sure. つもり is only your own intention.
+The plain form plus でしょう is a prediction you are willing to say aloud. かもしれません is less sure. つもり is only your own plan.
 
 ### Example sentences
 
@@ -2355,21 +2305,19 @@ The example sentences use this pattern: ない form + つもりです.
 
 **Goal:** Write the sentence every runbook needs: if it fails, do this.
 
-This lesson’s grammar: Verb た form + ら; Adjective and noun + たら; もし and 場合. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Verb た form + ら
 
-The example sentences use this pattern: Verb た form + ら.
+The た form plus ら means if or when that happens. 雨が降ったら、行きます means if it rains, I will go.
 
 #### Pattern 2. Adjective and noun + たら
 
-い-adjectives: かったら. いい becomes よかったら. な-adjectives and nouns: だったら.
+An い-adjective uses かったら. A な-adjective or a noun uses だったら. いい becomes よかったら.
 
 #### Pattern 3. もし and 場合
 
-もし adds no new grammar. It simply warns the listener that a condition is coming. 場合 is a noun: “in the case of.”
+もし does not add a new rule. It only signals that a condition is coming. 場合 means in the case that, and a noun needs の before it.
 
 ### Example sentences
 
@@ -2445,21 +2393,19 @@ The example sentences use this pattern: Verb た form + ら.
 
 **Goal:** Separate three “if” feelings: automatic result, a stated case, and “even if.”
 
-This lesson’s grammar: Dictionary form + と — automatic result; Plain + なら — if that is the case; ても — even if. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Dictionary form + と — automatic result
 
-と means “whenever you do A, B happens.” B is not a request and not your will. You cannot say 押すと、見てください. You can say 押すと、開きます.
+The dictionary form plus と means whenever A happens, B follows. B is a result, not a request and not your decision.
 
 #### Pattern 2. Plain + なら — if that is the case
 
-なら follows a noun, a な-adjective, or a plain verb. It picks up a situation someone already mentioned.
+なら means if that is the case. It picks up a situation someone has already mentioned.
 
 #### Pattern 3. ても — even if
 
-Verb: て form + も. い-adjective: drop い, add くても. な-adjective and noun: でも.
+The て form plus も means even if. An い-adjective uses くても. A noun uses でも.
 
 ### Example sentences
 
@@ -2535,21 +2481,19 @@ Verb: て form + も. い-adjective: drop い, add くても. な-adjective and 
 
 **Goal:** Tell a teammate what is better, what is better avoided, and offer a suggestion.
 
-This lesson’s grammar: た form + ほうがいいです — had better; ない form + ほうがいいです — better not; たらどうですか — why don’t you. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. た form + ほうがいいです — had better
 
-This is advice, not a rule. てはいけません is a rule. ほうがいい is a recommendation.
+The た form plus ほうがいいです is advice: it would be better to. It is a suggestion, not a rule.
 
 #### Pattern 2. ない form + ほうがいいです — better not
 
-ない form, then ほうがいい. Do not use the た form here.
+The ない form plus ほうがいいです means it would be better not to.
 
 #### Pattern 3. たらどうですか — why don’t you
 
-Softer than ほうがいい. You are offering, not telling.
+たらどうですか is a gentle suggestion: why don't you, or how about.
 
 ### Example sentences
 
@@ -2625,21 +2569,19 @@ Softer than ほうがいい. You are offering, not telling.
 
 **Goal:** Say who gave the file to whom, and who is in charge.
 
-This lesson’s grammar: あげる — I give, or someone gives outward; くれる — someone gives toward me; もらう — I receive. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. あげる — I give, or someone gives outward
 
-Giver は Receiver に Thing を あげます.
+あげる is giving away from yourself. The giver は, the receiver に, the thing を, then あげます.
 
 #### Pattern 2. くれる — someone gives toward me
 
-The example sentences use this pattern: くれる — someone gives toward me.
+くれる is giving toward you, or toward your side. Use it when you are the one who receives.
 
 #### Pattern 3. もらう — I receive
 
-Receiver は Giver に (or から) Thing を もらいます.
+もらう is receiving. The receiver は, the giver に or から, the thing を, then もらいます.
 
 ### Example sentences
 
@@ -2715,21 +2657,19 @@ Receiver は Giver に (or から) Thing を もらいます.
 
 **Goal:** Ask for a review, a fix, or a little more time without sounding blunt.
 
-This lesson’s grammar: Vてくれますか; Vてもらえますか; Vていただけますか. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Vてくれますか
 
-The example sentences use this pattern: Vてくれますか.
+てくれますか asks someone to do something for you. It is direct, and still polite.
 
 #### Pattern 2. Vてもらえますか
 
-The example sentences use this pattern: Vてもらえますか.
+てもらえますか is the same request, a little softer: could you do this for me.
 
 #### Pattern 3. Vていただけますか
 
-The example sentences use this pattern: Vていただけますか.
+ていただけますか is the most polite of the three. Use it with a client or someone senior.
 
 ### Example sentences
 
@@ -2805,21 +2745,19 @@ The example sentences use this pattern: Vていただけますか.
 
 **Goal:** Say “I’ll try,” “I’ll leave it ready,” and “I deleted it by mistake.”
 
-This lesson’s grammar: Vてみる — try and see; Vておく — do it in advance, or leave it that way; Vてしまう — finish completely, or do by accident. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Vてみる — try and see
 
-The example sentences use this pattern: Vてみる — try and see.
+The て form plus みる means try it and see what happens. 食べてみます is I'll try eating it.
 
 #### Pattern 2. Vておく — do it in advance, or leave it that way
 
-The example sentences use this pattern: Vておく — do it in advance, or leave it that way.
+The て form plus おく means do it ahead of time, or leave it as it is.
 
 #### Pattern 3. Vてしまう — finish completely, or do by accident
 
-Context decides. With 誤って or うっかり, it is an accident. Without them, it often means “finish off.”
+てしまう means finish it completely. With a word such as うっかり, it means do it by accident.
 
 ### Example sentences
 
@@ -2895,21 +2833,19 @@ Context decides. With 誤って or うっかり, it is an accident. Without them
 
 **Goal:** Say that a server became slow, that you made a file private, and that a decision was made.
 
-This lesson’s grammar: くなる and になる — become; くする and にする — make it that way; ことにする and ことになる. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. くなる and になる — become
 
-い-adjectives: drop い, add くなる. いい becomes よくなる. な-adjectives and nouns: になる.
+Drop い and add くなる: 大きくなる, become big. A noun or a な-adjective uses になる. いい becomes よくなる.
 
 #### Pattern 2. くする and にする — make it that way
 
-You are the one causing the change.
+くする and にする mean you make it that way. 大きくする is make it big.
 
 #### Pattern 3. ことにする and ことになる
 
-ことにする is your decision. ことになる is a decision that came down, or a result you ended up with.
+ことにする is a decision you make. ことになる is a decision that comes to you, or a result you end up with.
 
 ### Example sentences
 
@@ -2985,21 +2921,19 @@ You are the one causing the change.
 
 **Goal:** Say why a control exists: to prevent a bug, so that users can log in.
 
-This lesson’s grammar: Dictionary form + ために — in order to; ように — so that a state becomes true; Noun のために — for the sake of. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Dictionary form + ために — in order to
 
-The subject of both halves is the same person, and the action is intentional.
+The dictionary form plus ために means in order to. The same person does both parts, on purpose.
 
 #### Pattern 2. ように — so that a state becomes true
 
-Use ように when the result is ability, visibility, or a negative you hope for. The subject of the two halves can differ.
+ように means so that a state becomes true, such as being able to do something. The two halves can have different subjects.
 
 #### Pattern 3. Noun のために — for the sake of
 
-The example sentences use this pattern: Noun のために — for the sake of.
+A noun plus のために means for the sake of that person or that goal.
 
 ### Example sentences
 
@@ -3075,21 +3009,19 @@ The example sentences use this pattern: Noun のために — for the sake of.
 
 **Goal:** Read a policy: required, recommended, and optional.
 
-This lesson’s grammar: なければならない — must; なくてもいい — you need not; Dictionary form + べきです — ought to. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. なければならない — must
 
-ない form, drop い, add ければならない. The polite sentence ends in なりません.
+なければならない means must. From 書かない, the polite sentence is 書かなければなりません.
 
 #### Pattern 2. なくてもいい — you need not
 
-You learned the shape on Day 16. Today, put it next to “must” so the contrast is sharp.
+なくてもいい means you don't have to. It is the opposite of must.
 
 #### Pattern 3. Dictionary form + べきです — ought to
 
-べき is a judgment about the right thing. It is stronger than ほうがいい and softer than a law. するべき is also said すべき.
+The dictionary form plus べきです means ought to. It is stronger than advice and softer than a rule. するべき is also said すべき.
 
 ### Example sentences
 
@@ -3165,21 +3097,19 @@ You learned the shape on Day 16. Today, put it next to “must” so the contras
 
 **Goal:** Avoid sounding more certain than the evidence.
 
-This lesson’s grammar: Stem + そう — it looks as if it is about to, or it looks like; Plain + そうです — I heard that; ようだ and らしい — it seems. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Stem + そう — it looks as if it is about to, or it looks like
 
-Verb: the ます stem + そう. い-adjective: drop い + そう. いい becomes よさそう. な-adjective: drop な + そう. This is what you see with your own eyes. Do not use it for a rumor.
+This そう is what you can see: it looks like, or it looks about to. 降りそうです means it looks like rain. いい becomes よさそう.
 
 #### Pattern 2. Plain + そうです — I heard that
 
-This is hearsay. Nouns and な-adjectives take だ before そう.
+The plain form plus そうです means I heard that. A noun needs だ: 雨だそうです.
 
 #### Pattern 3. ようだ and らしい — it seems
 
-ようだ is your conclusion from evidence in front of you. らしい is closer to “from what I gather,” often from talk or a general sign. Nouns take の before ようだ: 障害のようです. Before らしい, a noun sits directly: 障害らしいです.
+ようだ is your conclusion from what is in front of you. らしい means it seems, often from what people say or from a general sign.
 
 ### Example sentences
 
@@ -3255,21 +3185,19 @@ This is hearsay. Nouns and な-adjectives take だ before そう.
 
 **Goal:** Read system messages, and say what was done to you.
 
-This lesson’s grammar: A thing is acted on; A person receives the action; Passive + ています — the state is still true. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. A thing is acted on
 
-The example sentences use this pattern: A thing is acted on.
+The passive says what is done to something. The thing becomes the subject: ファイルが保存されます, the file gets saved.
 
 #### Pattern 2. A person receives the action
 
-The doer is marked with に.
+When the action lands on a person, the doer takes に. It often feels like something was done to you.
 
 #### Pattern 3. Passive + ています — the state is still true
 
-Status text often uses passive + ています: the state is still true.
+The passive plus ています means that state is still true. 保存されています means it is in a saved state.
 
 ### Example sentences
 
@@ -3345,21 +3273,19 @@ Status text often uses passive + ています: the state is still true.
 
 **Goal:** Ask to join, and ask someone else to do the work.
 
-This lesson’s grammar: Causative — make or let someone do; させてください — please let me; に Vてもらう — have someone do it for you. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Causative — make or let someone do
 
-The person you make or let is marked with に.
+The causative means make someone do something, or let them do it. That person takes に.
 
 #### Pattern 2. させてください — please let me
 
-This is the polite way to volunteer.
+させてください means please let me do it. This is a polite way to volunteer.
 
 #### Pattern 3. に Vてもらう — have someone do it for you
 
-The example sentences use this pattern: に Vてもらう — have someone do it for you.
+A person plus に, then the て form plus もらう, means have that person do it for you.
 
 ### Example sentences
 
@@ -3435,21 +3361,19 @@ The example sentences use this pattern: に Vてもらう — have someone do it
 
 **Goal:** Describe a change that has been happening, and a skill you finally have.
 
-This lesson’s grammar: Vてくる — toward the present, or start to; Vていく — away from now, or continue into the future; ようになる — reach a new state. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Vてくる — toward the present, or start to
 
-The example sentences use this pattern: Vてくる — toward the present, or start to.
+てくる can mean movement toward here, or that something has come up to the present.
 
 #### Pattern 2. Vていく — away from now, or continue into the future
 
-The example sentences use this pattern: Vていく — away from now, or continue into the future.
+ていく can mean movement away from here, or that something will go on from now.
 
 #### Pattern 3. ようになる — reach a new state
 
-Dictionary form or potential + ようになる. Negative: なくなる for “stop being / no longer.”
+The dictionary form plus ようになる means you reach a new state, often come to be able to. なくなる means no longer, or stop.
 
 ### Example sentences
 
@@ -3525,21 +3449,19 @@ Dictionary form or potential + ようになる. Negative: なくなる for “st
 
 **Goal:** Recognize respect and humility, and use three safe patterns.
 
-This lesson’s grammar: お + stem + になります — respect; お + stem + します — humble; Fixed lines you can memorize whole. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. お + stem + になります — respect
 
-The other person’s action. Do not use it about yourself.
+お plus the verb stem plus になります talks about the other person's action, with respect. Do not use it about yourself.
 
 #### Pattern 2. お + stem + します — humble
 
-Your action, done toward the other person.
+お plus the verb stem plus します humbles your own action when you do it for someone else.
 
 #### Pattern 3. Fixed lines you can memorize whole
 
-The example sentences use this pattern: Fixed lines you can memorize whole.
+Some polite work lines are best learned whole, such as お世話になっております and よろしくお願いいたします.
 
 ### Example sentences
 
@@ -3615,21 +3537,19 @@ The example sentences use this pattern: Fixed lines you can memorize whole.
 
 **Goal:** Open a message, ask for a check, and close it.
 
-This lesson’s grammar: ご + noun + ください; お + stem + ください; ていただけますと幸いです. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ご + noun + ください
 
-The example sentences use this pattern: ご + noun + ください.
+ご before a noun, plus ください, politely asks the other person to do it. ご確認ください means please check.
 
 #### Pattern 2. お + stem + ください
 
-The other person’s action, politely.
+お plus the verb stem plus ください is the same polite request, built from a verb.
 
 #### Pattern 3. ていただけますと幸いです
 
-Softer than てください. 幸い (saiwai) means “happiness”; the whole line means “I would be glad if you could.”
+ていただけますと幸いです means I would be glad if you could. It is softer than てください.
 
 ### Example sentences
 
@@ -3705,21 +3625,19 @@ Softer than てください. 幸い (saiwai) means “happiness”; the whole li
 
 **Goal:** Read a path and say whether it is relative, absolute, or read-only.
 
-This lesson’s grammar: Noun modification, applied to paths; という — called; によって — depending on, or by. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Noun modification, applied to paths
 
-The example sentences use this pattern: Noun modification, applied to paths.
+A phrase can describe a file or folder, just as it describes any noun. 昨日作ったフォルダ is the folder I made yesterday.
 
 #### Pattern 2. という — called
 
-The example sentences use this pattern: という — called.
+という means called, or that says. 報告書というファイル is the file called a report.
 
 #### Pattern 3. によって — depending on, or by
 
-The example sentences use this pattern: によって — depending on, or by.
+によって means depending on, or by. 設定によって means depending on the settings.
 
 ### Example sentences
 
@@ -3795,21 +3713,19 @@ The example sentences use this pattern: によって — depending on, or by.
 
 **Goal:** Write the four lines every bug report needs.
 
-This lesson’s grammar: てみる in a report — I tried; かどうか — whether; Embedded か — an inside question. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. てみる in a report — I tried
 
-The example sentences use this pattern: てみる in a report — I tried.
+In a report, てみました means I tried. It states the attempt, not a guess.
 
 #### Pattern 2. かどうか — whether
 
-Plain form + かどうか. Nouns and な-adjectives take かどうか directly: 本番かどうか.
+The plain form plus かどうか means whether or not.
 
 #### Pattern 3. Embedded か — an inside question
 
-The question sits inside the sentence and does not need a question mark of its own.
+A question can sit inside a larger sentence. 何が原因か分かりません means I don't know what the cause is.
 
 ### Example sentences
 
@@ -3885,21 +3801,19 @@ The question sits inside the sentence and does not need a question mark of its o
 
 **Goal:** Buy something, and say that it is too expensive or too small.
 
-This lesson’s grammar: をください — I’ll take this; Stem + すぎる — too; が足ります / 足りません. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. をください — I’ll take this
 
-The example sentences use this pattern: をください — I’ll take this.
+A noun plus をください means I'll take this, or please give me this, when you are buying.
 
 #### Pattern 2. Stem + すぎる — too
 
-ます stem + すぎる. い-adjectives drop い. いい becomes よすぎる. すぎる then conjugates as an ichidan verb: すぎます, すぎました.
+The ます stem plus すぎる means too much. 高すぎます is too expensive. いい becomes よすぎる.
 
 #### Pattern 3. が足ります / 足りません
 
-The example sentences use this pattern: が足ります / 足りません.
+足ります means there is enough. 足りません means there is not enough. The thing takes が.
 
 ### Example sentences
 
@@ -3975,21 +3889,19 @@ The example sentences use this pattern: が足ります / 足りません.
 
 **Goal:** Give the reason behind a request, a late arrival, or a day off.
 
-This lesson’s grammar: んです / のです; くて and で — join descriptions; て、すみません — the reason for an apology. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. んです / のです
 
-Plain form + んです. Nouns and な-adjectives take なんです. Use it when you are explaining, not when you are stating a bare fact. のです is the same pattern in writing.
+The plain form plus んです explains a situation or gives a reason. A noun or a な-adjective needs な: 病気なんです.
 
 #### Pattern 2. くて and で — join descriptions
 
-い-adjectives: drop い, add くて. な-adjectives and nouns: で.
+Drop い and add くて to join い-adjectives. A noun or a な-adjective uses で. 安くて便利です means cheap and convenient.
 
 #### Pattern 3. て、すみません — the reason for an apology
 
-The example sentences use this pattern: て、すみません — the reason for an apology.
+The て form plus すみません gives the reason for an apology: I'm sorry that this happened.
 
 ### Example sentences
 
@@ -4065,21 +3977,19 @@ The example sentences use this pattern: て、すみません — the reason for
 
 **Goal:** Limit a sentence, give examples, and sound like you are actually talking.
 
-This lesson’s grammar: だけ and しか〜ない; や … など — an incomplete list; ね, よ, and よね. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. だけ and しか〜ない
 
-だけ simply limits. しか also limits, but the verb must be negative. The meaning of しか〜ない is still “only.”
+だけ means only. しか also means only, but the verb must be negative. 水しかありません means there is only water.
 
 #### Pattern 2. や … など — an incomplete list
 
-と is a complete list. や is “and, among other things.” など closes the list with “and so on.”
+と lists every item. や means and, among other things. など closes the list with and so on.
 
 #### Pattern 3. ね, よ, and よね
 
-ね invites agreement. よ hands over information the listener may not have. よね checks a shared memory. Do not put よ on a correction to your boss; it can sound like a push.
+ね asks the listener to agree. よ hands over information they may not have. よね checks something you think you both know.
 
 ### Example sentences
 
@@ -4155,21 +4065,19 @@ This lesson’s grammar: だけ and しか〜ない; や … など — an incom
 
 **Goal:** Read headings such as 使い方 and 分かりにくいエラー.
 
-This lesson’s grammar: Stem + 方 — the way of doing; Stem + やすい / にくい; 方 and やすい together. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. Stem + 方 — the way of doing
 
-ます stem + 方 (かた). する becomes し方, usually written 仕方 (しかた).
+The ます stem plus 方, read かた, means the way of doing it. 書き方 is how to write. する becomes 仕方.
 
 #### Pattern 2. Stem + やすい / にくい
 
-やすい = easy to. にくい = hard to. Both then behave as い-adjectives.
+The stem plus やすい means easy to. The stem plus にくい means hard to. Both then work like い-adjectives.
 
 #### Pattern 3. 方 and やすい together
 
-The example sentences use this pattern: 方 and やすい together.
+The two can sit together. 読みやすい書き方 is a way of writing that is easy to read.
 
 ### Example sentences
 
@@ -4245,21 +4153,19 @@ The example sentences use this pattern: 方 and やすい together.
 
 **Goal:** Talk about experience, and about a result that does not match the reason.
 
-This lesson’s grammar: たことがある — have the experience; ことがある — sometimes happens; のに — even though. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. たことがある — have the experience
 
-た form + ことがある. Negative: たことがない. 一度も needs the negative.
+The た form plus ことがある means you have the experience of doing it. たことがない means you never have.
 
 #### Pattern 2. ことがある — sometimes happens
 
-Dictionary form + ことがある means “there are times when.” It is not the same as the experience pattern. The た form is the difference.
+The dictionary form plus ことがある means it sometimes happens. The た form is the one that means you have done it before.
 
 #### Pattern 3. のに — even though
 
-Plain form + のに. The result is contrary to the reason, often with a feeling of “and yet.” Nouns and な-adjectives take なのに.
+The plain form plus のに means even though, often with the feeling and yet. A noun or a な-adjective needs な: 静かなのに.
 
 ### Example sentences
 
@@ -4335,21 +4241,19 @@ Plain form + のに. The result is contrary to the reason, often with a feeling 
 
 **Goal:** Name the client, the developer, the user, and the problem.
 
-This lesson’s grammar: ～について — about; AをBと呼びます — we call A “B”; Aの役割はBです — A’s role is B. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～について — about
 
-について follows a noun. Use it when the meeting has a topic.
+A noun plus について means about. Use it for the topic of a meeting.
 
 #### Pattern 2. AをBと呼びます — we call A “B”
 
-と呼ぶ names a role. The ます form is 呼びます.
+AをBと呼びます means we call A by the name B.
 
 #### Pattern 3. Aの役割はBです — A’s role is B
 
-役割 (やくわり, yakuwari) is “role.” It is a tool word for today, not one of the 20.
+Aの役割はBです means A's role is B. 役割 means role.
 
 ### Example sentences
 
@@ -4425,21 +4329,19 @@ This lesson’s grammar: ～について — about; AをBと呼びます — we 
 
 **Goal:** Start a client meeting, introduce yourself, and close it on time.
 
-This lesson’s grammar: 本日は～ — naming the meeting; ～させていただきます — I will humbly do it; ～から始めて、～で締めます. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. 本日は～ — naming the meeting
 
-本日 is the formal word for 今日. Put the purpose right after it.
+本日 is the formal word for today. Put the purpose of the meeting right after it.
 
 #### Pattern 2. ～させていただきます — I will humbly do it
 
-Use this when you do the action, and the client is the person you are showing respect to. Do not use it for the client’s action.
+させていただきます says that you will do the action, politely. Do not use it for the client's action.
 
 #### Pattern 3. ～から始めて、～で締めます
 
-Say the start and the end so the client knows the shape of the hour.
+Name how the meeting starts and how it ends, so the other person can see the shape of the hour.
 
 ### Example sentences
 
@@ -4515,21 +4417,19 @@ Say the start and the end so the client knows the shape of the hour.
 
 **Goal:** Let the client describe the work, and write it down as a request.
 
-This lesson’s grammar: ～てほしいです — I want you to; 今は～ています — this is what happens now; ～回 / ～件 — how often and how many. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～てほしいです — I want you to
 
-The client uses this to ask for a change. て is the て-form you already know.
+てほしいです means I want you to do this. A client uses it to ask for a change.
 
 #### Pattern 2. 今は～ています — this is what happens now
 
-Use ています for a process that is still the current way of working.
+ています describes the way the work happens now.
 
 #### Pattern 3. ～回 / ～件 — how often and how many
 
-頻度 takes 回. 件数 takes 件. 一回 is いっかい. 一件 is いっけん.
+回 counts how often. 件 counts how many cases or items. 一回 is once. 一件 is one item.
 
 ### Example sentences
 
@@ -4605,21 +4505,19 @@ Use ています for a process that is still the current way of working.
 
 **Goal:** Turn a vague wish into a case you can build.
 
-This lesson’s grammar: つまり～ということですね — so you mean; 具体的には — specifically; ～場合は — when that case happens. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. つまり～ということですね — so you mean
 
-Put a plain clause before という. This is how you check a vague request.
+つまり, then ということですね, means so you mean. Use it to check a vague request in plain words.
 
 #### Pattern 2. 具体的には — specifically
 
-Use this when you need one real case, not a general wish.
+具体的には means specifically. Use it when you need one real case, not a general wish.
 
 #### Pattern 3. ～場合は — when that case happens
 
-Use the plain form before 場合. A noun takes の. 場合 itself is a word you already know. The pattern is how you sort cases.
+The plain form plus 場合は means when that case happens. A noun needs の: エラーの場合は.
 
 ### Example sentences
 
@@ -4695,21 +4593,19 @@ Use the plain form before 場合. A noun takes の. 場合 itself is a word you 
 
 **Goal:** Repeat the request in your own words and correct a mismatch before you estimate.
 
-This lesson’s grammar: ～という理解で合っていますか — is this the right reading?; 認識が違います — that is not our reading; 確認させてください — let me confirm. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～という理解で合っていますか — is this the right reading?
 
-Say your understanding, then ask. Wait for yes or a correction.
+という理解で合っていますか asks whether your reading of what they said is right.
 
 #### Pattern 2. 認識が違います — that is not our reading
 
-The client uses this when your repeat is wrong. Do not defend. Ask which point.
+認識が違います means that is not how we see it. Ask which point is wrong before you argue.
 
 #### Pattern 3. 確認させてください — let me confirm
 
-This is your own action, said with respect. Use it before you write the note.
+確認させてください means please let me confirm. Say it before you write the note down.
 
 ### Example sentences
 
@@ -4785,21 +4681,19 @@ This is your own action, said with respect. Use it before you write the note.
 
 **Goal:** Draw the line for this version so the estimate has a boundary.
 
-This lesson’s grammar: 今回の範囲は～です — this round covers; ～は対象外です — that waits outside; ～は次回に回します — we schedule it for the next round. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. 今回の範囲は～です — this round covers
 
-範囲 is a word you know. Put the included work after は.
+今回の範囲は〜です says what this round of work includes.
 
 #### Pattern 2. ～は対象外です — that waits outside
 
-Say the excluded item clearly. A soft silence becomes a later argument.
+〜は対象外です says that item is outside this round. Say the exclusion out loud.
 
 #### Pattern 3. ～は次回に回します — we schedule it for the next round
 
-回す here means “move it to a later time,” not “spin.”
+次回に回します means we will move it to the next round.
 
 ### Example sentences
 
@@ -4875,21 +4769,19 @@ Say the excluded item clearly. A soft silence becomes a later argument.
 
 **Goal:** Write what was decided, what is still open, and when you meet again.
 
-This lesson’s grammar: ～と決まりました — it was decided that; 持ち帰りは～です — the item to take back is; 次は～に送ります — the next delivery. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～と決まりました — it was decided that
 
-The clause before と is plain. 決まる does not take を. The decision happened. You are reporting it.
+A plain clause plus と決まりました means it was decided that. You are reporting the decision.
 
 #### Pattern 2. 持ち帰りは～です — the item to take back is
 
-Name the owner and the due date in the same sentence when you can.
+持ち帰りは〜です names the item someone will take away and answer later. Say who owns it, and by when.
 
 #### Pattern 3. 次は～に送ります — the next delivery
 
-Say what you will send, and by when.
+次は〜に送ります says what you will send next, and by when.
 
 ### Example sentences
 
@@ -4965,21 +4857,19 @@ Say what you will send, and by when.
 
 **Goal:** Give a figure, and say what must stay true for that figure to hold.
 
-This lesson’s grammar: 前提は～です — the assumption is; ～人日 — person-days; 税別で～円です — the price before tax. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. 前提は～です — the assumption is
 
-A price without an assumption is a guess. Say the assumption in the same breath as the number.
+前提は〜です states the assumption the number depends on. Say the assumption together with the price.
 
 #### Pattern 2. ～人日 — person-days
 
-Read 人 here as にん, not ひとり. 一人日 is いちにんにち. 二人日 is ににんにち. 五人日 is ごにんにち.
+人日 is a person-day. 一人日 is one person-day. Read 人 here as にん.
 
 #### Pattern 3. 税別で～円です — the price before tax
 
-Say 税別 or 税込 every time. A bare number starts an argument.
+税別 means before tax. 税込 means tax included. Say one of them with every price.
 
 ### Example sentences
 
@@ -5055,21 +4945,19 @@ Say 税別 or 税込 every time. A bare number starts an argument.
 
 **Goal:** Promise a date, and show the check in the middle.
 
-This lesson’s grammar: ～までに終わらせます — I will have it finished by; 中間確認は～です — the check in the middle is; ～てから — after that, the next step. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～までに終わらせます — I will have it finished by
 
-までに is the deadline. 終わらせる takes を, because you are causing the work to finish.
+までに is the deadline. 終わらせます means I will get it finished by then.
 
 #### Pattern 2. 中間確認は～です — the check in the middle is
 
-Do not wait until the end to show the screen. Name the day.
+中間確認は〜です names the check in the middle of the work. Give the day. Do not wait until the end to show it.
 
 #### Pattern 3. ～てから — after that, the next step
 
-You know てから. On a schedule, it shows what cannot start early.
+てから means the next step starts only after the earlier one is finished.
 
 ### Example sentences
 
@@ -5145,21 +5033,19 @@ You know てから. On a schedule, it shows what cannot start early.
 
 **Goal:** Say that the full wish is too large, and offer a path the client can still want.
 
-This lesson’s grammar: ～のは難しいです — doing that is difficult; 代わりに～ではどうですか — how about this instead; 段階的に～ — in stages. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～のは難しいです — doing that is difficult
 
-The phrase before の is plain. You are naming the hard thing, not blaming the person.
+A plain phrase plus のは難しいです names the hard thing: doing that is difficult. It talks about the work, not the person.
 
 #### Pattern 2. 代わりに～ではどうですか — how about this instead
 
-Offer one concrete smaller thing. A no with no path sounds like a closed door.
+代わりに〜ではどうですか offers one smaller alternative: how about this instead.
 
 #### Pattern 3. 段階的に～ — in stages
 
-You already know 段階的. Here it is the sentence you use when the client wants everything now.
+段階的に means in stages. Use it when the whole job cannot be done at once.
 
 ### Example sentences
 
@@ -5235,21 +5121,19 @@ You already know 段階的. Here it is the sentence you use when the client want
 
 **Goal:** Accept a direction out loud, and tie it to the condition that makes it true.
 
-This lesson’s grammar: 承知しました。～で進めます — understood, and here is the path; 条件は～ことです — the condition is that; ～に一任します — we leave that to. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. 承知しました。～で進めます — understood, and here is the path
 
-承知する is a word you know. In the meeting, follow it at once with the path. A bare 承知しました can mean two different things.
+承知しました means understood. Follow it at once with how you will proceed, so the word is not left vague.
 
 #### Pattern 2. 条件は～ことです — the condition is that
 
-The condition is a plain clause plus こと. If the condition fails, the agreement fails with it.
+条件は〜ことです states the condition. The condition is a plain clause plus こと. If it fails, the agreement fails with it.
 
 #### Pattern 3. ～に一任します — we leave that to
 
-Use this only for a decision you truly hand over. Do not use it to avoid a hard sentence.
+〜に一任します means we leave that decision to them. Use it only when you truly hand the choice over.
 
 ### Example sentences
 
@@ -5325,21 +5209,19 @@ Use this only for a decision you truly hand over. Do not use it to avoid a hard 
 
 **Goal:** Refuse this round, and say the smaller yes you can still offer.
 
-This lesson’s grammar: 今回は見送らせてください — please let this wait; ～れば対応できます — if that holds, we can do it; 代案は～です — the stand-in is. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. 今回は見送らせてください — please let this wait
 
-見送る is “to leave for later.” 見送らせてください asks the client to allow that. It is softer than できません, and it is still a no for this round.
+今回は見送らせてください means please let this one wait. It is a no for this round, said softly.
 
 #### Pattern 2. ～れば対応できます — if that holds, we can do it
 
-れば is the provisional. A bare no is incomplete. Show the condition that turns it into a yes.
+〜れば対応できます means if that holds, we can do it. Show the condition that turns a no into a yes.
 
 #### Pattern 3. 代案は～です — the stand-in is
 
-One sentence. One path. Do not offer five.
+代案は〜です gives one alternative. Offer one path, not several.
 
 ### Example sentences
 
@@ -5415,21 +5297,19 @@ One sentence. One path. Do not offer five.
 
 **Goal:** Use させていただく for your own action, and ask for the client’s action with ご～ください.
 
-This lesson’s grammar: ～させていただきます — I will humbly do this; ご検討ください — please consider it; ご返信をお待ちしております — I am waiting for your reply. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～させていただきます — I will humbly do this
 
-This is your action. Do not put the client’s action here. 検討 is the client’s work, so you do not say 検討させていただきます for their review.
+In an email, させていただきます says what you yourself will do, politely. Do not use it for an action the client must do.
 
 #### Pattern 2. ご検討ください — please consider it
 
-ご～ください asks the client to act. 検討する becomes ご検討ください.
+ご検討ください means please consider it. It asks the client to act.
 
 #### Pattern 3. ご返信をお待ちしております — I am waiting for your reply
 
-This closes the email. It does not demand a minute. It names what you are waiting for.
+ご返信をお待ちしております means I am waiting for your reply. It closes the email.
 
 ### Example sentences
 
@@ -5505,21 +5385,19 @@ This closes the email. It does not demand a minute. It names what you are waitin
 
 **Goal:** Write the estimate email so the client sees the decision before the detail.
 
-This lesson’s grammar: 結論から申します — I will start from the conclusion; ～より～の方が — one option over another; ～をお願いいたします — I humbly ask. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. 結論から申します — I will start from the conclusion
 
-申す is the humble word for 言う. The first sentence is the decision. Detail follows.
+結論から申します means I will start with the conclusion. 申します is the humble word for say.
 
 #### Pattern 2. ～より～の方が — one option over another
 
-より marks the thing you are leaving. の方が marks the one you recommend.
+より marks the option you set aside. の方が marks the one you recommend.
 
 #### Pattern 3. ～をお願いいたします — I humbly ask
 
-いたします is humble. Use it for the ask at the end, after the conclusion is clear.
+〜をお願いいたします is a humble please. Put the request after the conclusion is clear.
 
 ### Example sentences
 
@@ -5595,21 +5473,19 @@ This lesson’s grammar: 結論から申します — I will start from the conc
 
 **Goal:** Explain the path a user takes, before you show it moving.
 
-This lesson’s grammar: 画面の流れは～です — the flow of the screen is; ～すると、～になります — when you do this, it becomes; 入力欄に～を入れます — you put this in the field. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. 画面の流れは～です — the flow of the screen is
 
-Name three steps, in order. A client can follow three.
+画面の流れは〜です names the steps on the screen, in order. Three steps is enough to follow.
 
 #### Pattern 2. ～すると、～になります — when you do this, it becomes
 
-すると takes the plain form. Use it for one action and one result.
+A plain verb plus と, then になります, means when you do this, it becomes that. One action, one result.
 
 #### Pattern 3. 入力欄に～を入れます — you put this in the field
 
-Say what is typed, and what is only shown.
+入力欄に〜を入れます means you type this in the field. Say what is typed, and what is only shown.
 
 ### Example sentences
 
@@ -5685,21 +5561,19 @@ Say what is typed, and what is only shown.
 
 **Goal:** Demo the path in the client’s words, and stop when they have a question.
 
-This lesson’s grammar: 今からお見せします — I will show you now; ～をクリックすると — when you click; ご質問はありますか — do you have a question?. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. 今からお見せします — I will show you now
 
-Say what you will show, then move. Do not talk for a minute before the screen changes.
+今からお見せします means I will show you now. Say what you will show, then change the screen.
 
 #### Pattern 2. ～をクリックすると — when you click
 
-クリックする is a word you know. In the demo, the next thing the client sees is the result.
+〜をクリックすると means when you click this. The next words are what the other person will see.
 
 #### Pattern 3. ご質問はありますか — do you have a question?
 
-Stop after each of the three steps. A silent client is not always a convinced client.
+ご質問はありますか means do you have a question. Pause after each step and ask.
 
 ### Example sentences
 
@@ -5775,21 +5649,19 @@ Stop after each of the three steps. A silent client is not always a convinced cl
 
 **Goal:** Say whether the work is about to start, in the middle, or just finished.
 
-This lesson’s grammar: ～ているところです — in the middle of it; ～たばかりです — it has just finished; ～るところです — just about to. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～ているところです — in the middle of it
 
-ところ names the point on the timeline. ているところ is “right in the middle.”
+ているところです means the work is in the middle right now.
 
 #### Pattern 2. ～たばかりです — it has just finished
 
-ばかり is a short window after the end. Do not use it for work that finished last month.
+たばかりです means it has just finished. Do not use it for something that ended long ago.
 
 #### Pattern 3. ～るところです — just about to
 
-The dictionary form plus ところ means it has not started. Say this before you ask the client for something you need first.
+The dictionary form plus ところです means it is just about to start. It has not started yet.
 
 ### Example sentences
 
@@ -5865,21 +5737,19 @@ The dictionary form plus ところ means it has not started. Say this before you
 
 **Goal:** Report progress as a share, and separate finished work from work still left.
 
-This lesson’s grammar: ～割終わっています — this share is finished; 残りは～です — what is left is; 見通しは～です — the outlook is. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～割終わっています — this share is finished
 
-一割 is ten percent. 五割 is half. 八割 is eighty percent. 割 attaches to the number: 八割.
+割 is one tenth. 五割 is half. 八割終わっています means eighty percent is finished.
 
 #### Pattern 2. 残りは～です — what is left is
 
-Say the remainder in person-days or in a piece of the screen. A percent without a remainder is hard to trust.
+残りは〜です says what is left. Give it as days of work, or as a piece of the screen, not only as a percent.
 
 #### Pattern 3. 見通しは～です — the outlook is
 
-見通し is a judgment, not a wish. Tie it to the remainder.
+見通しは〜です is your outlook. Tie it to what is left. It is a judgment, not a wish.
 
 ### Example sentences
 
@@ -5955,21 +5825,19 @@ Say the remainder in person-days or in a piece of the screen. A percent without 
 
 **Goal:** Apologize, give the cause, and name the date you can now keep.
 
-This lesson’s grammar: 遅延の理由は～です — the reason for the delay is; 新しい日付は～です — the new date is; ～で取り戻します — we will win it back by. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. 遅延の理由は～です — the reason for the delay is
 
-Give one fact. A pile of guesses sounds like an excuse. 推測 is labeled as a guess if you must say it.
+遅延の理由は〜です gives one factual reason for the delay. If you are guessing, say that it is a guess.
 
 #### Pattern 2. 新しい日付は～です — the new date is
 
-Say the new date in the same message as the apology. An apology without a date leaves the client holding the risk.
+新しい日付は〜です gives the new date in the same message as the apology.
 
 #### Pattern 3. ～で取り戻します — we will win it back by
 
-Name the move. Do not offer unlimited overtime as the plan.
+〜で取り戻します says how you will make up the lost time. Name the actual step.
 
 ### Example sentences
 
@@ -6045,21 +5913,19 @@ Name the move. Do not offer unlimited overtime as the plan.
 
 **Goal:** Tell the client when to speak, and when to wait, during a walk-through.
 
-This lesson’s grammar: ～ているうちに — while that is still going on; ～ないうちに — before that happens; ～あいだに — during that span. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～ているうちに — while that is still going on
 
-うちに means “in the time while this is still true.” The action should happen before that state ends.
+ているうちに means while that is still going on. Do the next action before that state ends.
 
 #### Pattern 2. ～ないうちに — before that happens
 
-ないうちに is “while it has not happened yet.” Use it for a fix that must land before the next gate.
+ないうちに means while it has not happened yet, or before it happens.
 
 #### Pattern 3. ～あいだに — during that span
 
-あいだに is a span with a start and an end. Something else happens inside it.
+あいだに means during that span, a period with a start and an end.
 
 ### Example sentences
 
@@ -6135,21 +6001,19 @@ This lesson’s grammar: ～ているうちに — while that is still going on;
 
 **Goal:** Take a change request, name the effect, and price it again.
 
-This lesson’s grammar: 変更内容は～です — what is changing is; 影響は～です — the effect is; 再見積してから受諾します — we accept after the new estimate. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. 変更内容は～です — what is changing is
 
-One ticket, one change. A ticket that says “and also” becomes two tickets.
+変更内容は〜です says what is changing. Keep one change to one item.
 
 #### Pattern 2. 影響は～です — the effect is
 
-Say effort, cost, and date. If one of them does not move, say that too.
+影響は〜です says the effect on effort, cost, or the date. If one of those does not move, say that too.
 
 #### Pattern 3. 再見積してから受諾します — we accept after the new estimate
 
-受諾 comes after the number. A spoken “fine” before the number is how scope slips.
+再見積してから受諾します means we accept after we see the new estimate. The number comes before the yes.
 
 ### Example sentences
 
@@ -6225,21 +6089,19 @@ Say effort, cost, and date. If one of them does not move, say that too.
 
 **Goal:** Describe what happened, how to see it again, and what you will do today versus later.
 
-This lesson’s grammar: 事象は～です — what we observed is; 暫定は～、恒久は～ — for now, and for good; ～ても再現します — it still happens even if. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. 事象は～です — what we observed is
 
-事象 is what happened on the screen. It is not yet a cause, and it is not a person.
+事象は〜です says what was seen on the screen. It is not yet a cause, and it does not name a person.
 
 #### Pattern 2. 暫定は～、恒久は～ — for now, and for good
 
-Say both. A temporary bypass that is never replaced becomes the system.
+暫定 is the fix for now. 恒久 is the lasting fix. Say both.
 
 #### Pattern 3. ～ても再現します — it still happens even if
 
-You know ても. Here it knocks out a guess. 再現 is a word you know.
+〜ても再現します means it still happens even if you try that. Use it to rule out a guess.
 
 ### Example sentences
 
@@ -6315,21 +6177,19 @@ You know ても. Here it knocks out a guess. 再現 is a word you know.
 
 **Goal:** Recognize “I am being made to,” and answer with a date instead of a complaint.
 
-This lesson’s grammar: ～させられる / ～される — be made to; しわ寄せは～に来ています — the burden is landing on; 決定権は～にあります。選択肢は二つです — the choice sits here. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～させられる / ～される — be made to
 
-This is the causative-passive. 待つ becomes 待たされる. 急ぐ becomes 急がされる. 作る becomes 作らされる. You will hear it when a project is under pressure. You do not say it to the client.
+させられる, or される, means be made to do something. 待つ becomes 待たされる, be kept waiting. You may hear it under pressure. Do not say it to the client.
 
 #### Pattern 2. しわ寄せは～に来ています — the burden is landing on
 
-Name the place. A hidden burden becomes a surprise delay.
+しわ寄せは〜に来ています means the extra burden is landing on that person or team. Name the place.
 
 #### Pattern 3. 決定権は～にあります。選択肢は二つです — the choice sits here
 
-Replace the complaint with two options and the person who chooses.
+決定権は〜にあります means the decision sits with that person. Then give two choices.
 
 ### Example sentences
 
@@ -6405,21 +6265,19 @@ Replace the complaint with two options and the person who chooses.
 
 **Goal:** Agree the checks that mean the client will take the program.
 
-This lesson’s grammar: 受入条件は～です — the condition for acceptance is; 合格です / 不合格です — it passes, it fails; 条件付きで合格にします — we pass it with a condition. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. 受入条件は～です — the condition for acceptance is
 
-Write the condition so a stranger could test it. “It works” is not a condition.
+受入条件は〜です states a test someone else could run. It works is not a condition.
 
 #### Pattern 2. 合格です / 不合格です — it passes, it fails
 
-Say which item. A blanket pass hides the one that failed.
+合格です means this item passes. 不合格です means it fails. Say which item.
 
 #### Pattern 3. 条件付きで合格にします — we pass it with a condition
 
-A conditional pass names the leftover and its date. Otherwise it is a fail.
+条件付きで合格にします means we pass it on one condition. Name what is left, and the date.
 
 ### Example sentences
 
@@ -6495,21 +6353,19 @@ A conditional pass names the leftover and its date. Otherwise it is a fail.
 
 **Goal:** Say when the system stops, what you will do, and how you put the old one back.
 
-This lesson’s grammar: 停止時間は～です — the stop lasts; ～たら、切り戻します — if that happens, we put it back; 反映後に～を確認します — after it is applied, we check. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. 停止時間は～です — the stop lasts
 
-Give the clock time, not “a short while.”
+停止時間は〜です says how long the system will be down. Give the clock time, not a short while.
 
 #### Pattern 2. ～たら、切り戻します — if that happens, we put it back
 
-たら is the “when it turns out that” you know. On release day it is the abort rule, written before you start.
+〜たら、切り戻します means if that happens, we put the old version back. Write this rule before you start.
 
 #### Pattern 3. 反映後に～を確認します — after it is applied, we check
 
-The release is not finished when the file is copied. It is finished when one real path works.
+反映後に〜を確認します means after the change is applied, we check this. The release is finished when a real path works.
 
 ### Example sentences
 
@@ -6585,21 +6441,19 @@ The release is not finished when the file is copied. It is finished when one rea
 
 **Goal:** Take a question from the floor, and say who answers it by when.
 
-This lesson’s grammar: 問い合わせは～に入ります — a question comes in to; 対応期限は～です — the answer is due by; 既知なら～、未知なら～ — if we have seen it, if we have not. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. 問い合わせは～に入ります — a question comes in to
 
-Name the front door. A question that arrives in five inboxes arrives in none.
+問い合わせは〜に入ります says where a question arrives. Name one front door.
 
 #### Pattern 2. 対応期限は～です — the answer is due by
 
-A promise of “soon” is not a promise. Give the clock.
+対応期限は〜です is the time the answer is due. Give a clock time, not soon.
 
 #### Pattern 3. 既知なら～、未知なら～ — if we have seen it, if we have not
 
-Sort the question before you investigate. A known question should not wait behind a new one.
+既知 means you have seen this question before. 未知 means you have not. Sort it before you start looking.
 
 ### Example sentences
 
@@ -6675,21 +6529,19 @@ Sort the question before you investigate. A known question should not wait behin
 
 **Goal:** Accept the anger, state the fact, and name what will stop it happening again.
 
-This lesson’s grammar: 申し訳ございません — I am at fault; ご指摘のとおりです — it is as you pointed out; 再発防止は～です — what stops a repeat is. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. 申し訳ございません — I am at fault
 
-Say this once, then the fact. Repeating it without a fact sounds empty.
+申し訳ございません is a formal I am sorry. Say it once, then give the fact.
 
 #### Pattern 2. ご指摘のとおりです — it is as you pointed out
 
-指摘 is a word you know. Agree with the true part before you add context. Do not start with “but.”
+ご指摘のとおりです means it is as you pointed out. Agree with the true part before you add any context.
 
 #### Pattern 3. 再発防止は～です — what stops a repeat is
 
-A promise with no action is another disappointment. Name the action and the day.
+再発防止は〜です says what will stop a repeat. Name the action and the day.
 
 ### Example sentences
 
@@ -6765,21 +6617,19 @@ A promise with no action is another disappointment. Name the action and the day.
 
 **Goal:** Run the whole conversation: hear, repeat, state where the work is, and close.
 
-This lesson’s grammar: ～という理解で合っていますか — say it back; ～ところです — say where the work is; 確認させていただきます — close on your action. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～という理解で合っていますか — say it back
 
-You learned the shape on day 52. Today it is the spine of the meeting. Use it after each decision, not only at the end.
+という理解で合っていますか says a decision back and asks if that reading is right. Use it after each decision, not only at the end.
 
 #### Pattern 2. ～ところです — say where the work is
 
-You learned this on day 64. Put it in the middle of the meeting, when the client asks “where are we?”
+ところです answers where the work is. It can mean about to start, in the middle, or just finished.
 
 #### Pattern 3. 確認させていただきます — close on your action
 
-The last minute is yours to confirm, and the client’s to correct.
+確認させていただきます closes on the next thing you will confirm, and leaves room for a correction.
 
 ### Example sentences
 
@@ -6855,21 +6705,19 @@ The last minute is yours to confirm, and the client’s to correct.
 
 **Goal:** Hear the request and mark what is included and what is not, with だけでなく.
 
-This lesson’s grammar: ～だけでなく、～も — not only, but also; 現状値は～、目標値は～ — now, and the target; 副経路は次回です — the side route waits. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～だけでなく、～も — not only, but also
 
-だけでなく adds the second thing without erasing the first. Use it when the client names one pain and you can hear another.
+だけでなく adds a second thing without erasing the first: not only this, but also that.
 
 #### Pattern 2. 現状値は～、目標値は～ — now, and the target
 
-A hearing without numbers becomes a wish. Ask for both.
+現状値 is the number now. 目標値 is the number you are aiming for. Ask for both.
 
 #### Pattern 3. 副経路は次回です — the side route waits
 
-Say what survives this round, and what is abolished.
+副経路は次回です means the side route waits until next time. Say what stays in this round, and what does not.
 
 ### Example sentences
 
@@ -6945,21 +6793,19 @@ Say what survives this round, and what is abolished.
 
 **Goal:** Show the price and the thing you are not including, with 一方で.
 
-This lesson’s grammar: ～一方で、～ — and on the other side; 明示しないものは、含みません — what is not stated is not included; 推奨案は～です — the option we recommend is. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～一方で、～ — and on the other side
 
-一方で holds two truths in one breath. Use it so the client hears the price and the exclusion together.
+一方で holds two facts in one breath: and on the other side. Use it so the price and the exclusion are heard together.
 
 #### Pattern 2. 明示しないものは、含みません — what is not stated is not included
 
-暗黙 is how scope grows. 但し書き is where you kill it.
+明示しないものは、含みません means what is not written down is not included.
 
 #### Pattern 3. 推奨案は～です — the option we recommend is
 
-Three options is the maximum. One of them is marked.
+推奨案は〜です marks the option you recommend. Offer three options at most, and mark one.
 
 ### Example sentences
 
@@ -7035,21 +6881,19 @@ Three options is the maximum. One of them is marked.
 
 **Goal:** Turn comments from the demonstration into a short list you will change, with を踏まえて.
 
-This lesson’s grammar: ～を踏まえて — based on; 採用は～、見送りは～ — taken, and not taken; その場で直す / 持ち帰って直す — fix here, or take it away. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～を踏まえて — based on
 
-を踏まえて follows a noun. The next clause is what you will do because of that noun.
+A noun plus を踏まえて means based on that thing. The next clause is what you will do because of it.
 
 #### Pattern 2. 採用は～、見送りは～ — taken, and not taken
 
-Sort the comments before you leave the room. An unsorted list becomes next month’s argument.
+採用 is what you will take. 見送り is what you will not take. Sort the comments before you leave the room.
 
 #### Pattern 3. その場で直す / 持ち帰って直す — fix here, or take it away
 
-Say which is which. A promise of “we will look” is neither.
+その場で直す means we will fix it here. 持ち帰って直す means we will take it away and fix it. Say which is which.
 
 ### Example sentences
 
@@ -7125,21 +6969,19 @@ Say which is which. A promise of “we will look” is neither.
 
 **Goal:** Judge a change against the written line, with に沿って.
 
-This lesson’s grammar: ～に沿って — in line with; 準拠です / 逸脱です — inside the line, or off it; 口頭では変えません — speech does not change it. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～に沿って — in line with
 
-に沿って follows a noun that is a written line: a specification, a condition, a policy.
+A noun plus に沿って means in line with a written rule, a specification, or a policy.
 
 #### Pattern 2. 準拠です / 逸脱です — inside the line, or off it
 
-Say which, in the first sentence of the reply.
+準拠です means it stays inside that line. 逸脱です means it leaves the line. Say which one in the first sentence.
 
 #### Pattern 3. 口頭では変えません — speech does not change it
 
-The ledger changes the version. A conversation does not.
+口頭では変えません means spoken words do not change the written agreement. The written record does.
 
 ### Example sentences
 
@@ -7215,21 +7057,19 @@ The ledger changes the version. A conversation does not.
 
 **Goal:** Tell the client when you will write again, with 次第.
 
-This lesson’s grammar: ～次第です — it depends on; ～次第、連絡します — as soon as it happens, I will write; 定時連絡は～です — the set-time message is. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～次第です — it depends on
 
-次第です follows a noun. The result is not chosen yet. Do not use it to hide a date you already know.
+A noun plus 次第です means it depends on that thing. Do not use it to hide a date you already know.
 
 #### Pattern 2. ～次第、連絡します — as soon as it happens, I will write
 
-This 次第 follows the masu-stem. 終わる becomes 終わり次第. It means “at that moment,” not “sometime.”
+The verb stem plus 次第 means as soon as that happens. 終わり次第、連絡します means I will write the moment it is finished.
 
 #### Pattern 3. 定時連絡は～です — the set-time message is
 
-Silence is a message, and it is a bad one. Name the time you will write even when nothing has changed.
+定時連絡は〜です names the regular time you will write, even when nothing has changed.
 
 ### Example sentences
 
@@ -7305,21 +7145,19 @@ Silence is a message, and it is a bad one. Name the time you will write even whe
 
 **Goal:** Write the formal request that the client accept the work, with 所存です.
 
-This lesson’s grammar: ～所存です — I formally intend; ～をご提出いたします — I humbly submit; 検収のほど、お願いいたします — I ask for formal acceptance. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. ～所存です — I formally intend
 
-所存です follows the dictionary form. It belongs in a letter, not in a hallway. It is your intention, said humbly.
+The dictionary form plus 所存です is a formal I intend to. It belongs in a letter, not in a hallway.
 
 #### Pattern 2. ～をご提出いたします — I humbly submit
 
-いたします is the humble form of します. The attachment list is part of the sentence, not a surprise.
+〜をご提出いたします means I humbly submit this. いたします is the humble form of します. Name the attachments in the same sentence.
 
 #### Pattern 3. 検収のほど、お願いいたします — I ask for formal acceptance
 
-ほど softens the request. The deadline is in the same sentence.
+検収のほど、お願いいたします asks for formal acceptance. ほど softens the request. Put the deadline in the same sentence.
 
 ### Example sentences
 
@@ -7395,21 +7233,19 @@ This lesson’s grammar: ～所存です — I formally intend; ～をご提出�
 
 **Goal:** Take one live question from start to close, using the sentences you now own.
 
-This lesson’s grammar: 事象は～ということです — the observation is; 今は～ところです — where this ticket is; 対応を確認させていただきます — I will confirm the response. Read the short note under each pattern, then the example sentences. The sentences use this day’s vocabulary. The English under each sentence is a direct translation of the Japanese. A word in parentheses is required by English and is not written in the Japanese.
-
 ### Grammar
 
 #### Pattern 1. 事象は～ということです — the observation is
 
-You are saying back what the floor reported. Plain form before という.
+事象は〜ということです says back what was reported. Use the plain form before という.
 
 #### Pattern 2. 今は～ところです — where this ticket is
 
-Use the three points you know: about to, in the middle, just finished.
+今は〜ところです says where this ticket is: about to start, in the middle, or just finished.
 
 #### Pattern 3. 対応を確認させていただきます — I will confirm the response
 
-Close the call with the owner, the time, and the way through for now.
+対応を確認させていただきます means I will confirm how we respond. Close with who owns it, when, and the path for now.
 
 ### Example sentences
 

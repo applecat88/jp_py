@@ -88,8 +88,13 @@
         <ol id="dayList"></ol>
         <div class="aside-tools">
           <label>Course start <input id="startDate" type="date"></label>
-          <label class="check"><input id="hidePronunciation" type="checkbox"> Hide pronunciation</label>
+          <label class="check"><input id="hideHiragana" type="checkbox"> Hide hiragana</label>
+          <label class="check"><input id="hideKatakana" type="checkbox"> Hide katakana</label>
           <label class="check"><input id="hideRomaji" type="checkbox"> Hide romaji</label>
+          <label class="check"><input id="hideTop" type="checkbox"> Hide top menu</label>
+          <label class="check"><input id="hideLessons" type="checkbox"> Hide left menu</label>
+          <label class="check"><input id="hideEyes" type="checkbox"> Hide eye panel</label>
+          <label class="check"><input id="hideStatus" type="checkbox"> Hide status bar</label>
         </div>
         <footer class="foot">
           <div class="foot-progress">
@@ -114,7 +119,9 @@
       </div>
     </div>
   </div>
+  <button type="button" id="showMenus" class="show-menus" hidden>Show menus</button>
   <script src="grammar.js"></script>
+  <script src="grammar_plain.js"></script>
   <script src="app.js"></script>
   <script src="eye.js"></script>
 </body>

@@ -91,6 +91,15 @@
     return list;
   }
 
+  function applyLayout() {
+    document.body.classList.toggle("hide-top", !!progress.hideTop);
+    document.body.classList.toggle("hide-lessons", !!progress.hideLessons);
+    document.body.classList.toggle("hide-eyes", !!progress.hideEyes);
+    document.body.classList.toggle("hide-status", !!progress.hideStatus);
+    var back = document.getElementById("showMenus");
+    if (back) back.hidden = !progress.hideLessons;
+  }
+
   function save() {
     window.clearTimeout(saveTimer);
     var token = authToken;
@@ -372,32 +381,35 @@
     return !progress.hideRomaji;
   }
 
-  function showPronunciation() {
-    return !progress.hidePronunciation;
+  function showHiragana() {
+    return !progress.hideHiragana;
   }
 
-  function pronunciationOf(item) {
-    return (item && item.hira) || "";
+  function showKatakana() {
+    return !progress.hideKatakana;
   }
 
   function guidesHTML(item) {
     var html = "";
     if (!item) return html;
-    var pronunciation = pronunciationOf(item);
-    if (showPronunciation() && pronunciation) html += '<p class="pronunciation">' + esc(pronunciation) + "</p>";
+    if (showHiragana() && item.hira) html += '<p class="pronunciation">' + esc(item.hira) + "</p>";
+    if (showKatakana() && item.kata) html += '<p class="pronunciation">' + esc(item.kata) + "</p>";
     if (showRomaji() && item.romaji) html += '<p class="romaji">' + esc(item.romaji) + "</p>";
     return html;
   }
 
   function guideCells(item) {
     var html = "";
-    if (showPronunciation()) html += '<td class="pronunciation">' + esc((item && item.hira) || "") + "</td>";
+    if (showHiragana()) html += '<td class="pronunciation">' + esc((item && item.hira) || "") + "</td>";
+    if (showKatakana()) html += '<td class="pronunciation">' + esc((item && item.kata) || "") + "</td>";
     if (showRomaji()) html += '<td class="romaji">' + esc((item && item.romaji) || "") + "</td>";
     return html;
   }
 
   function guideHeads() {
-    return (showPronunciation() ? "<th>Pronunciation</th>" : "") + (showRomaji() ? "<th>Romaji</th>" : "");
+    return (showHiragana() ? "<th>Hiragana</th>" : "") +
+      (showKatakana() ? "<th>Katakana</th>" : "") +
+      (showRomaji() ? "<th>Romaji</th>" : "");
   }
 
   function itemKey(track, index) {
@@ -408,7 +420,8 @@
     session.itemPrefs = session.itemPrefs || {};
     var saved = session.itemPrefs[itemKey(track, index)] || {};
     return {
-      pron: saved.pron != null ? saved.pron : !progress.hidePronunciation,
+      hira: saved.hira != null ? saved.hira : (saved.pron != null ? saved.pron : showHiragana()),
+      kata: saved.kata != null ? saved.kata : (saved.pron != null ? saved.pron : showKatakana()),
       roma: saved.roma != null ? saved.roma : !progress.hideRomaji,
       times: saved.times || clampRepeats(progress.repeats || 1),
       rate: saved.rate || Number(progress.rate || 0.9)
@@ -421,11 +434,13 @@
     if (!root) return prefs;
     var times = root.querySelector(".item-times");
     var rate = root.querySelector(".item-rate");
-    var pron = root.querySelector('[data-guide="pron"]');
+    var hira = root.querySelector('[data-guide="hira"]');
+    var kata = root.querySelector('[data-guide="kata"]');
     var roma = root.querySelector('[data-guide="roma"]');
     if (times) prefs.times = clampRepeats(times.value);
     if (rate && String(rate.value).length) prefs.rate = Number(rate.value);
-    if (pron) prefs.pron = pron.checked;
+    if (hira) prefs.hira = hira.checked;
+    if (kata) prefs.kata = kata.checked;
     if (roma) prefs.roma = roma.checked;
     session.itemPrefs[itemKey(track, index)] = prefs;
     return prefs;
@@ -435,8 +450,8 @@
     var prefs = itemPrefs(track, index);
     var html = "";
     if (!item) return html;
-    var pronunciation = pronunciationOf(item);
-    if (prefs.pron && pronunciation) html += '<p class="pronunciation">' + esc(pronunciation) + "</p>";
+    if (prefs.hira && item.hira) html += '<p class="pronunciation">' + esc(item.hira) + "</p>";
+    if (prefs.kata && item.kata) html += '<p class="pronunciation">' + esc(item.kata) + "</p>";
     if (prefs.roma && item.romaji) html += '<p class="romaji">' + esc(item.romaji) + "</p>";
     return html;
   }
@@ -449,22 +464,26 @@
     document.body.classList.toggle("listening-live", !!session.playing);
   }
 
-  function itemControls(track, index) {
+  function itemControls(track, index, item) {
     var prefs = itemPrefs(track, index);
     var locked = settingsDisabled();
+    var kata = item && item.kata
+      ? '<label class="check"><input class="item-guide" data-guide="kata" type="checkbox"' + (prefs.kata ? " checked" : "") + "> Katakana</label>"
+      : "";
     return '<div class="item-play">' +
       '<button type="button" class="small primary" data-act="item-start" data-track="' + track + '" data-index="' + index + '">Start</button>' +
       '<button type="button" class="small" data-act="stop">Stop</button>' +
       '<label class="setting">Times <input class="item-times" type="number" min="1" max="10" step="1" value="' + prefs.times + '"' + locked + '></label>' +
       '<label class="setting">Speed <input class="item-rate" type="range" min="0.6" max="1.2" step="0.1" value="' + prefs.rate + '"' + locked + '></label>' +
-      '<label class="check"><input class="item-guide" data-guide="pron" type="checkbox"' + (prefs.pron ? " checked" : "") + "> Pronunciation</label>" +
+      '<label class="check"><input class="item-guide" data-guide="hira" type="checkbox"' + (prefs.hira ? " checked" : "") + "> Hiragana</label>" +
+      kata +
       '<label class="check"><input class="item-guide" data-guide="roma" type="checkbox"' + (prefs.roma ? " checked" : "") + "> Romaji</label>" +
       '<span class="review-status" data-status="' + track + "-" + index + '"></span></div>';
   }
 
   function pieceHTML(track, index, item) {
     return '<div class="piece" data-review-item="' + track + "-" + index + '">' +
-      itemControls(track, index) +
+      itemControls(track, index, item) +
       '<p class="jp">' + esc(item.jp || "") + "</p>" +
       '<div class="guide-slot">' + guidesFor(item, track, index) + "</div>" +
       (item.en ? '<p class="en">' + esc(item.en) + "</p>" : "") +
@@ -942,14 +961,23 @@
       '<div class="calendar">' + cells + "</div>" + scoreDialogHTML();
   }
 
-  function grammarPointsHTML(explanation) {
+  function tidyGrammar(text) {
+    return String(text || "").replace(/\*\*/g, "").replace(/\s+/g, " ").trim();
+  }
+
+  function grammarExplain(pattern) {
     var api = window.JapaneseStudyGrammar;
-    var summary = api && api.points ? api.points(explanation) : { items: [explanation || ""], more: false };
-    var items = (summary.items || []).map(function (item) {
-      return "<li>" + esc(item) + "</li>";
-    }).join("");
-    var more = summary.more ? '<p class="meta grammar-more">The rest of the rule is in the explanation.</p>' : "";
-    return '<section class="grammar-points"><h4><span>1</span> Key points</h4><ul>' + items + "</ul>" + more + "</section>";
+    var title = pattern && pattern.title;
+    var text = api && api.plain ? api.plain(title) : "";
+    if (text) return text;
+    return tidyGrammar(pattern && pattern.explanation);
+  }
+
+  function grammarPointsHTML(pattern) {
+    var text = grammarExplain(pattern);
+    if (!text) text = "Read the examples, then try this pattern in a sentence of your own.";
+    return '<section class="grammar-points"><h4><span>1</span> In English</h4>' +
+      '<p class="grammar-plain">' + esc(text) + "</p></section>";
   }
 
   function grammarStage(blocks) {
@@ -970,10 +998,9 @@
       '<svg class="leaf" viewBox="0 0 32 32"><path d="M16 28C16 18 8 12 6 4c10 2 20 8 21 18-3 2-7 5-11 6z" fill="currentColor"/><path d="M16 26c0-10 2-16 6-20" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></div>' +
       '<p class="grammar-index">Pattern ' + (patternIndex + 1) + "</p>" +
       "<h3>" + esc(pattern.title) + "</h3>" +
-      grammarPointsHTML(pattern.explanation) +
-      '<section class="grammar-detail"><h4><span>2</span> Explanation and examples</h4>' +
-      '<p class="grammar-prose">' + esc(pattern.explanation) + "</p>" +
-      "<h5>Lesson examples</h5>" + lessonHTML +
+      grammarPointsHTML(pattern) +
+      '<section class="grammar-detail"><h4><span>2</span> Examples</h4>' +
+      lessonHTML +
       (green ? '<div class="grammar-green"><h5>The same pattern, on the living world</h5>' +
         '<p class="meta">Forests, water, and energy. Read these aloud, then cover the English and say them again.</p>' +
         grammarStage(green) + "</div>" : "") +
@@ -1011,7 +1038,7 @@
     }).join("");
     return '<p class="kicker">All ' + dayCount() + " lessons</p>" +
       "<h2>Grammar</h2>" +
-      '<p class="goal">Every pattern in the course. Summary shows the key points. In detail adds the explanation, the lesson lines, and the living-world lines.</p>' +
+      '<p class="goal">Every pattern in the course. Each one has a short explanation in English. In detail adds the lesson lines and the living-world lines.</p>' +
       '<div class="grammar-tools">' +
       '<div class="grammar-switch" role="group" aria-label="How much to show">' +
       '<button type="button" data-act="grammar-depth" data-depth="summary"' + (depth === "summary" ? ' aria-pressed="true"' : "") + ">Summary</button>" +
@@ -1057,14 +1084,18 @@
     var patterns = (pack.grammar || []).map(function (item, index) {
       return '<section class="sentence-pattern"><h3>Pattern ' + (index + 1) + "</h3>" +
         "<h4>" + esc(item.title || "") + "</h4>" +
-        "<p>" + esc(item.explanation || "") + "</p></section>";
+        '<p class="grammar-label">In English</p>' +
+        '<p class="grammar-plain">' + esc(grammarExplain(item)) + "</p></section>";
     }).join("");
     var lines = (pack.sentences || []).map(function (line, index) {
       var id = speakId(line.jp || "", null);
-      var pron = showPronunciation()
-        ? '<p class="sentence-label">Hiragana</p><p class="pronunciation">' + esc(line.hira || "") + "</p>" +
-          '<p class="sentence-label">Katakana</p><p class="pronunciation">' + esc(line.kata || "") + "</p>"
-        : "";
+      var pron = "";
+      if (showHiragana()) {
+        pron += '<p class="sentence-label">Hiragana</p><p class="pronunciation">' + esc(line.hira || "") + "</p>";
+      }
+      if (showKatakana()) {
+        pron += '<p class="sentence-label">Katakana</p><p class="pronunciation">' + esc(line.kata || "") + "</p>";
+      }
       var roma = showRomaji()
         ? '<p class="sentence-label">Romaji</p><p class="romaji">' + esc(line.romaji || "") + "</p>"
         : "";
@@ -1083,7 +1114,9 @@
     return '<p class="kicker">Sentences · day ' + day.day + " · " + iso(lessonDate(day.day)) + "</p>" +
       "<h2>" + esc(day.title) + "</h2>" +
       (day.goal ? '<p class="goal">' + esc(day.goal) + "</p>" : "") +
-      '<div class="card"><h3>Grammar</h3><p>' + esc(pack.brief || "") + "</p>" + patterns + "</div>" +
+      '<div class="card"><h3>Grammar</h3>' +
+      '<p class="meta">The sentence structures for this lesson. Each note is a short explanation in English.</p>' +
+      patterns + "</div>" +
       '<div class="card"><h3>Example sentences</h3>' +
       '<p class="meta">Each example is the Japanese sentence, then the pronunciation in hiragana, then the same pronunciation in katakana, then the romaji, and a direct English translation. A word in parentheses is required by English and is not written in the Japanese.</p>' +
       lines + "</div>";
@@ -1489,7 +1522,7 @@
       "<h2>" + esc(currentDay().title) + "</h2>";
     if (item.type === "mc") {
       return head + '<div class="card"><p class="meta">Choose the English.</p><p class="jp">' + esc(item.prompt) +
-        "</p>" + (showPronunciation() && item.hint ? '<p class="pronunciation">' + esc(item.hint) + "</p>" : "") + choiceHTML(item) + "</div>";
+        "</p>" + (showHiragana() && item.hint ? '<p class="pronunciation">' + esc(item.hint) + "</p>" : "") + choiceHTML(item) + "</div>";
     }
     if (item.type === "listen") {
       var playing = item.phase === "playing";
@@ -2573,11 +2606,33 @@
       save();
       render();
     });
-    document.getElementById("hidePronunciation").addEventListener("change", function (event) {
-      progress.hidePronunciation = event.target.checked;
+    document.getElementById("hideHiragana").addEventListener("change", function (event) {
+      progress.hideHiragana = event.target.checked;
       session.itemPrefs = {};
       save();
       render();
+    });
+    document.getElementById("hideKatakana").addEventListener("change", function (event) {
+      progress.hideKatakana = event.target.checked;
+      session.itemPrefs = {};
+      save();
+      render();
+    });
+    ["hideTop", "hideLessons", "hideEyes", "hideStatus"].forEach(function (key) {
+      var box = document.getElementById(key);
+      if (!box) return;
+      box.addEventListener("change", function (event) {
+        progress[key] = event.target.checked;
+        applyLayout();
+        save();
+      });
+    });
+    document.getElementById("showMenus").addEventListener("click", function () {
+      progress.hideLessons = false;
+      var box = document.getElementById("hideLessons");
+      if (box) box.checked = false;
+      applyLayout();
+      save();
     });
     document.getElementById("view").addEventListener("input", function (event) {
       if (session.playing && event.target.closest && event.target.closest("label.setting")) return;
@@ -2675,7 +2730,12 @@
       selectedDay: 1,
       mode: "calendar",
       hideRomaji: false,
-      hidePronunciation: false,
+      hideHiragana: false,
+      hideKatakana: false,
+      hideTop: false,
+      hideLessons: false,
+      hideEyes: false,
+      hideStatus: false,
       rate: 0.9,
       repeats: 1,
       volume: 1,
@@ -2688,8 +2748,16 @@
     progress.repeats = clampRepeats(progress.repeats || 1);
     progress.volume = volumeLevel();
     document.getElementById("startDate").value = progress.startDate;
+    if (progress.hideHiragana == null) progress.hideHiragana = !!progress.hidePronunciation;
+    if (progress.hideKatakana == null) progress.hideKatakana = !!progress.hidePronunciation;
     document.getElementById("hideRomaji").checked = !!progress.hideRomaji;
-    document.getElementById("hidePronunciation").checked = !!progress.hidePronunciation;
+    document.getElementById("hideHiragana").checked = !!progress.hideHiragana;
+    document.getElementById("hideKatakana").checked = !!progress.hideKatakana;
+    document.getElementById("hideTop").checked = !!progress.hideTop;
+    document.getElementById("hideLessons").checked = !!progress.hideLessons;
+    document.getElementById("hideEyes").checked = !!progress.hideEyes;
+    document.getElementById("hideStatus").checked = !!progress.hideStatus;
+    applyLayout();
     var eyebrow = document.querySelector(".eyebrow");
     if (eyebrow) eyebrow.textContent = dayCount() + " days · client work";
     var lesson = dayForDate(parseDate(todayISO()));

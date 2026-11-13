@@ -15,6 +15,8 @@ import os
 import re
 import zipfile
 
+import grammar_plain
+
 ROOT = os.path.dirname(os.path.abspath(__file__))
 COURSE = os.path.join(ROOT, "data", "course.json")
 PACK = os.path.join(ROOT, "data", "sentence_lessons.json")
@@ -95,23 +97,16 @@ def literal_english(jp, en, table):
 
 def pattern_note(pattern):
     title = clean_markup(pattern.get("title") or "")
-    explanation = shorten(pattern.get("explanation") or "", 420)
+    explanation = grammar_plain.PLAIN.get(title) or shorten(pattern.get("explanation") or "", 280)
     if not explanation:
-        explanation = "The example sentences use this pattern: " + title + "."
+        explanation = "This pattern is the sentence structure in the heading above."
     return {"title": title, "explanation": explanation}
 
 
-def day_brief(title, patterns):
-    names = [item["title"] for item in patterns if item.get("title")]
-    if not names:
-        return "This lesson’s sentences use the grammar for “" + title + "”."
-    return (
-        "This lesson’s grammar: " + "; ".join(names) + ". "
-        "Read the short note under each pattern, then the example sentences. "
-        "The sentences use this day’s vocabulary. "
-        "The English under each sentence is a direct translation of the Japanese. "
-        "A word in parentheses is required by English and is not written in the Japanese."
-    )
+def day_brief(goal, title):
+    if goal:
+        return goal
+    return "This lesson is about " + title + "."
 
 
 def pick_sentences(day, table):
@@ -140,11 +135,12 @@ def build_pack(course, table):
     for day in course.get("days") or []:
         patterns = [pattern_note(item) for item in (day.get("grammar") or [])]
         sentences = pick_sentences(day, table)
+        goal = day.get("goal") or ""
         days.append({
             "day": day.get("day"),
             "title": day.get("title") or "",
-            "goal": day.get("goal") or "",
-            "brief": day_brief(day.get("title") or "", patterns),
+            "goal": goal,
+            "brief": day_brief(goal, day.get("title") or ""),
             "grammar": patterns,
             "sentences": sentences,
         })
@@ -167,7 +163,7 @@ def render_markdown(pack):
     add = lines.append
     add("# Sentence learning")
     add("")
-    add("Each day has a short explanation of that day’s grammar, then 8 example sentences. The sentences use that day’s vocabulary and show the grammar.")
+    add("Each day explains that day’s sentence patterns in short, plain English, then gives 8 example sentences. The sentences use that day’s vocabulary and show the grammar.")
     add("")
     add("Each example has five lines:")
     add("")
@@ -194,8 +190,6 @@ def render_markdown(pack):
         if day.get("goal"):
             add("**Goal:** %s" % day["goal"])
             add("")
-        add(day.get("brief") or "")
-        add("")
         add("### Grammar")
         add("")
         for index, pattern in enumerate(day.get("grammar") or [], 1):
@@ -241,7 +235,7 @@ def docx_p(text, style=None, bold=False):
 def render_docx(pack):
     body = [docx_p("Sentence learning", "Heading1")]
     body.append(docx_p(
-        "Each day has a short explanation of that day’s grammar, then 8 example sentences. "
+        "Each day explains that day’s sentence patterns in short, plain English, then gives 8 example sentences. "
         "The sentences use that day’s vocabulary and show the grammar."
     ))
     body.append(docx_p(
@@ -254,8 +248,6 @@ def render_docx(pack):
         body.append(docx_p("Day %s — %s" % (day["day"], day["title"]), "Heading2"))
         if day.get("goal"):
             body.append(docx_p("Goal: " + day["goal"], bold=True))
-        if day.get("brief"):
-            body.append(docx_p(day["brief"]))
         body.append(docx_p("Grammar", "Heading3"))
         for index, pattern in enumerate(day.get("grammar") or [], 1):
             body.append(docx_p("Pattern %s. %s" % (index, pattern.get("title") or ""), bold=True))
@@ -379,8 +371,28 @@ def report(pack):
     print("kata  ", sample["kata"])
 
 
+def write_plain_js():
+    path = os.path.join(ROOT, "web", "grammar_plain.js")
+    text = "window.JapaneseStudyGrammarPlain = " + json.dumps(
+        grammar_plain.PLAIN, ensure_ascii=False, indent=1, sort_keys=True
+    ) + ";\n"
+    write_text(path, text)
+    print("wrote", path)
+
+
 def main():
     course = json.loads(read_text(COURSE))
+    missing = []
+    for day in course.get("days") or []:
+        for pattern in day.get("grammar") or []:
+            title = pattern.get("title") or ""
+            if title not in grammar_plain.PLAIN:
+                missing.append("day %s %s" % (day.get("day"), title))
+    if missing:
+        print("missing English explanations", len(missing))
+        for line in missing:
+            print(line)
+    write_plain_js()
     table = load_literal()
     pack = build_pack(course, table)
     write_text(PACK, json.dumps(pack, ensure_ascii=False, indent=1))

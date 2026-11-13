@@ -1,12 +1,12 @@
 {
-  "users": [
-    {
-      "birth": "2001-01-01",
-      "name": "AppleCat Apple",
-      "password": "d12dfee387a3931c4c837307fb02379ebf9de63cef0fc4e54b89a23e36fbc866",
-      "salt": "7374064e7c368ffa6361bf1d20ac4198",
-      "gender": "male",
-      "identifier": "appleapplecat88@gmail.com"
-    }
-  ]
+ "users": [
+  {
+   "salt": "7374064e7c368ffa6361bf1d20ac4198",
+   "identifier": "appleapplecat88@gmail.com",
+   "password": "d12dfee387a3931c4c837307fb02379ebf9de63cef0fc4e54b89a23e36fbc866",
+   "birth": "2001-01-01",
+   "gender": "male",
+   "name": "AppleCat Apple"
+  }
+ ]
 }

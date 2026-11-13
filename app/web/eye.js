@@ -36,31 +36,35 @@
     points: ["Acupoints", "Press around the eyes", "Use the pad of a clean finger. Small circles on the bone. Never press the eyeball. Stop if it hurts."],
     orbit: ["Around the eye", "Trace the bone around each eye", "Eyes closed. Slide from the inner brow outward, around the outer corner, and back along the bone under the eye."]
   };
+  var PHOTO = "eye-face.jpg";
+  var EYES = { lx: 37.0, rx: 63.0, y: 36.0, rxp: 8.0, ryp: 5.0 };
+  var SPOTS = {
+    jingming: [[42.0, 36.4], [58.0, 36.4]],
+    zanzhu: [[42.2, 32.0], [57.8, 32.0]],
+    yuyao: [[37.0, 30.6], [63.0, 30.6]],
+    sizhukong: [[29.4, 31.2], [70.6, 31.2]],
+    tongziliao: [[30.2, 36.4], [69.8, 36.4]],
+    taiyang: [[26.0, 34.0], [74.0, 34.0]],
+    chengqi: [[37.0, 40.4], [63.0, 40.4]],
+    sibai: [[37.2, 44.6], [62.8, 44.6]]
+  };
   var POINTS = [
     { id: "jingming", name: "Jingming", place: "Inner corner of the eye",
-      how: "Eyes closed. Rest a fingertip on each inner corner, beside the nose. Press lightly, then ease off. Stay off the eyeball.",
-      dots: [[94, 114], [126, 114]] },
+      how: "Eyes closed. Rest a fingertip on each inner corner, beside the nose. Press lightly, then ease off. Stay off the eyeball." },
     { id: "zanzhu", name: "Zanzhu", place: "Inner end of the eyebrow",
-      how: "Place a fingertip at the inner end of each eyebrow. Make small circles on the bone.",
-      dots: [[84, 98], [136, 98]] },
+      how: "Place a fingertip at the inner end of each eyebrow. Make small circles on the bone." },
     { id: "yuyao", name: "Yuyao", place: "Middle of the eyebrow",
-      how: "Press the middle of each eyebrow, directly above the pupil. One small circle a second.",
-      dots: [[74, 90], [146, 90]] },
+      how: "Press the middle of each eyebrow, directly above the pupil. One small circle a second." },
     { id: "sizhukong", name: "Sizhukong", place: "Outer end of the eyebrow",
-      how: "Press the hollow at the outer end of each eyebrow. Small circles.",
-      dots: [[58, 98], [162, 98]] },
+      how: "Press the hollow at the outer end of each eyebrow. Small circles." },
     { id: "tongziliao", name: "Tongziliao", place: "Outer corner of the eye",
-      how: "Press the hollow just outside each outer corner. Light pressure only.",
-      dots: [[50, 116], [170, 116]] },
+      how: "Press the hollow just outside each outer corner. Light pressure only." },
     { id: "taiyang", name: "Taiyang", place: "Temple",
-      how: "Press each temple, about a finger-width out from the midpoint between the outer corner and the brow. Circles with the thumb pad.",
-      dots: [[34, 112], [186, 112]] },
+      how: "Press each temple, about a finger-width out from the midpoint between the outer corner and the brow. Circles with the thumb pad." },
     { id: "chengqi", name: "Chengqi", place: "Bone under the eye",
-      how: "Press the bone directly under each pupil. The fingertip stays on the bone, not on the eye.",
-      dots: [[74, 130], [146, 130]] },
+      how: "Press the bone directly under each pupil. The fingertip stays on the bone, not on the eye." },
     { id: "sibai", name: "Sibai", place: "Hollow below the eye",
-      how: "Move one finger-width below the bone under the eye. Press that hollow and circle.",
-      dots: [[74, 148], [146, 148]] }
+      how: "Move one finger-width below the bone under the eye. Press that hollow and circle." }
   ];
   var GAZE = [
     ["Up", -90], ["Up right", -45], ["Right", 0], ["Down right", 45],
@@ -81,6 +85,27 @@
       '<circle cx="32" cy="20" r="6" fill="currentColor"/>' +
     "</svg>";
 
+  function photoHTML(live) {
+    var marks = "";
+    var i;
+    var j;
+    var id;
+    if (live) {
+      for (i = 0; i < POINTS.length; i++) {
+        id = POINTS[i].id;
+        var pair = SPOTS[id] || [];
+        for (j = 0; j < pair.length; j++) {
+          marks += '<i class="eye-spot" data-point="' + id + '" style="left:' + pair[j][0] + "%;top:" + pair[j][1] + '%"></i>';
+        }
+      }
+      marks += '<i class="eye-finger" data-eye="finger-l" style="left:' + EYES.lx + "%;top:" + (EYES.y - EYES.ryp) + '%"></i>' +
+        '<i class="eye-finger" data-eye="finger-r" style="left:' + EYES.rx + "%;top:" + (EYES.y - EYES.ryp) + '%"></i>';
+    }
+    return '<div class="eye-photo' + (live ? " is-live" : "") + '">' +
+      '<img src="' + PHOTO + '" alt="A person facing the camera, used to show where to press around the eyes">' +
+      marks + "</div>";
+  }
+
   function pointById(id) {
     var i;
     for (i = 0; i < POINTS.length; i++) {
@@ -95,48 +120,6 @@
     var i;
     for (i = 0; i < POINTS.length; i++) ids.push(POINTS[i].id);
     return ids;
-  }
-
-  function orbitPath(cx, cy) {
-    var parts = [];
-    var i;
-    for (i = 0; i <= 48; i++) {
-      var a = -Math.PI / 2 + (i / 48) * Math.PI * 2;
-      var x = cx + Math.cos(a) * 24;
-      var y = cy + Math.sin(a) * 15;
-      parts.push((i ? "L" : "M") + x.toFixed(1) + " " + y.toFixed(1));
-    }
-    return parts.join(" ") + " Z";
-  }
-
-  function faceSvg(live) {
-    var dots = "";
-    var i;
-    var j;
-    for (i = 0; i < POINTS.length; i++) {
-      for (j = 0; j < POINTS[i].dots.length; j++) {
-        var spot = POINTS[i].dots[j];
-        dots += '<circle class="face-point" data-point="' + POINTS[i].id + '" cx="' + spot[0] + '" cy="' + spot[1] + '" r="4.2"></circle>';
-      }
-    }
-    var fingers = live
-      ? '<circle class="face-finger" data-eye="finger-l" cx="74" cy="99" r="5.5"></circle><circle class="face-finger" data-eye="finger-r" cx="146" cy="99" r="5.5"></circle>'
-      : "";
-    return '<svg class="eye-face" viewBox="0 0 220 236" role="img" aria-label="A face with pressure points around the eyes">' +
-      '<ellipse class="face-skin" cx="110" cy="124" rx="74" ry="92"/>' +
-      '<path class="face-line" d="M52 108c4-52 30-74 58-74s54 22 58 74"/>' +
-      '<path class="face-brow" d="M56 100c14-14 30-12 42 0"/>' +
-      '<path class="face-brow" d="M164 100c-14-14-30-12-42 0"/>' +
-      '<ellipse class="face-eye" cx="74" cy="114" rx="16" ry="8"/>' +
-      '<ellipse class="face-eye" cx="146" cy="114" rx="16" ry="8"/>' +
-      '<circle class="face-pupil" cx="74" cy="114" r="2.2"/>' +
-      '<circle class="face-pupil" cx="146" cy="114" r="2.2"/>' +
-      '<path class="face-orbit" d="' + orbitPath(74, 114) + '"/>' +
-      '<path class="face-orbit" d="' + orbitPath(146, 114) + '"/>' +
-      '<path class="face-line" d="M110 124v28c-10 8-16 8-20 2"/>' +
-      '<path class="face-line" d="M90 178c14 12 26 12 40 0"/>' +
-      dots + fingers +
-    "</svg>";
   }
 
   function tintSwatches() {
@@ -640,7 +623,7 @@
           '<button type="button" class="eye-shrink" data-act="shrink">Hide</button>' +
         "</div>" +
         '<p class="eye-note">Breaks pause the lesson, then walk through pressure points around the eyes.</p>' +
-        '<div class="eye-face-card">' + faceSvg(false) + "</div>" +
+        photoHTML(false) +
         '<div class="eye-hero">' +
           '<div class="eye-ring-wrap">' +
             '<svg class="eye-ring" viewBox="0 0 120 120" aria-hidden="true">' +
@@ -1283,7 +1266,7 @@
     if (step.id === "look") {
       html = '<div class="eye-far"><strong>6 m</strong><span>Past the screen</span></div>';
     } else if (step.id === "points" || step.id === "orbit") {
-      html = '<div class="eye-face-card is-live">' + faceSvg(true) + '<p class="eye-press" data-eye="press"></p></div>';
+      html = photoHTML(true) + '<p class="eye-press" data-eye="press"></p>';
     } else if (step.id === "blink") {
       html = '<div class="eye-lidbox" aria-hidden="true"><div class="eye-lid-shape"><i class="top"></i><i class="bot"></i></div></div><p class="eye-beat" data-eye="beat"></p>';
     } else if (step.id === "palm") {
@@ -1301,14 +1284,14 @@
     grab();
   }
 
-  function faceNode() {
-    return ui.nodes.stage ? ui.nodes.stage.querySelector(".eye-face") : null;
+  function photoNode() {
+    return ui.nodes.stage ? ui.nodes.stage.querySelector(".eye-photo") : null;
   }
 
-  function markFace(id) {
+  function markPhoto(id) {
     var stage = ui.nodes.stage;
     if (!stage) return;
-    var dots = stage.querySelectorAll(".face-point");
+    var dots = stage.querySelectorAll(".eye-spot");
     var i;
     for (i = 0; i < dots.length; i++) {
       dots[i].classList.toggle("is-on", dots[i].getAttribute("data-point") === id);
@@ -1317,8 +1300,8 @@
 
   function placeFinger(node, cx, angle) {
     if (!node) return;
-    node.setAttribute("cx", (cx + Math.cos(angle) * 24).toFixed(1));
-    node.setAttribute("cy", (114 + Math.sin(angle) * 15).toFixed(1));
+    node.style.left = (cx + Math.cos(angle) * EYES.rxp).toFixed(2) + "%";
+    node.style.top = (EYES.y + Math.sin(angle) * EYES.ryp).toFixed(2) + "%";
   }
 
   function moveStage(pos) {
@@ -1335,8 +1318,8 @@
         text("title", point.name);
         text("body", point.place + ". " + point.how);
         text("announce", point.name + ". " + point.place + ". " + point.how);
-        markFace(point.id);
-        if (faceNode()) faceNode().classList.remove("is-orbit");
+        markPhoto(point.id);
+        if (photoNode()) photoNode().classList.remove("is-orbit");
       }
       text("press", (pos.into % 2800) < 1700 ? "Press" : "Ease off");
       return;
@@ -1348,16 +1331,16 @@
         text("title", COPY.orbit[1]);
         text("body", COPY.orbit[2]);
         text("announce", COPY.orbit[1] + ". " + COPY.orbit[2]);
-        markFace("");
-        if (faceNode()) faceNode().classList.add("is-orbit");
+        markPhoto("");
+        if (photoNode()) photoNode().classList.add("is-orbit");
       }
       var laps = 3;
       var period = Math.max(1, step.ms / laps);
       var turn = (pos.into % period) / period * Math.PI * 2;
       var lap = Math.min(laps, Math.floor(pos.into / period) + 1);
       text("press", "Lap " + lap + " of " + laps);
-      placeFinger(ui.nodes["finger-l"], 74, -turn);
-      placeFinger(ui.nodes["finger-r"], 146, Math.PI + turn);
+      placeFinger(ui.nodes["finger-l"], EYES.lx, -turn);
+      placeFinger(ui.nodes["finger-r"], EYES.rx, Math.PI + turn);
       return;
     }
     if (step.id === "blink") {
